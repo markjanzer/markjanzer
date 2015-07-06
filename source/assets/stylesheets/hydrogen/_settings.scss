@@ -1,0 +1,83 @@
+// Copyright 2015 Zeppelin
+// settings.scss
+
+// Global Styles
+// - - - - - - - - - - - - - - - -
+$base-font-size: 16px !default;
+$base-line-height: 1.618;
+$base-letter-spacing: 0.0375em;
+
+$body-background: rgb(255, 255, 255); // #ffffff
+$body-font-color: rgb(51, 51, 51); // #333333
+$body-font-family: "Helvetica", Helvetica, sans-serif;;
+
+$color-primary: rgb(50, 50, 50); // #
+$color-secondary: rgb(135, 135, 135); // #
+$color-black: rgb(85, 85, 85); // #555555
+$color-gray-4: rgb(136, 136, 136); // #888888
+$color-gray-3: rgb(206, 206, 206); // #cecece
+$color-gray-2: rgb(234, 234, 234); // #eaeaea
+$color-gray-1: rgb(247, 247, 247); // #f7f7f7
+$color-white: rgb(255, 255, 255); // #ffffff
+
+
+// Grid
+// - - - - - - - - - - - - - - - -
+// columns
+$grid-columns: 24;
+$grid-gutter: 1rem; // 16px
+$grid-width: 75rem; // 1200px
+
+// media queries
+$screen-xs-min: 0em; // 0px - 640px
+$screen-sm-min: 40.063em; // 641px - 768px
+$screen-md-min: 48.063em; // 769px - 1024px
+$screen-lg-min: 64.063em; // 1025px - 1440px
+$screen-xl-min: 90.063em; // 1440px and above
+
+// XS screens
+// @media only screen { } /* Define mobile styles */
+// @media only screen and (max-width: 47.999em) { } /* max-width 767px, mobile-only styles, use when QAing mobile issues */
+
+// SM screens
+// @media only screen and (min-width: 48em) { } /* min-width 641px, medium screens */
+// @media only screen and (min-width: 48em) and (max-width: 64em) { } /* min-width 768px and max-width 1024px, use when QAing tablet-only issues */
+
+// MD screens
+// @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+// @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// LG screens
+// @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+// @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+
+// Typography
+// - - - - - - - - - - - - - - - -
+$font-family-primary: "proxima-nova-soft", "Proxima Nova Soft", "Proxima Nova", Helvetica, Arial, sans-serif;
+$font-family-secondary: "Courier", Courier, monospace;
+
+$font-size-micro: 10px;
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-medium: 22px;
+$font-size-large: 27px;
+$font-size-huge: 36px;
+$font-size-mega: 60px;
+
+
+// Transitions
+// - - - - - - - - - - - - - - - -
+$transition-speed: 0.375s;
+$transition-easing: ease-in-out;
+
+
+// Z-Index
+// - - - - - - - - - - - - - - - -
+$z4: 4; // alerts and modals
+$z3: 3; // header
+$z2: 2; // layout overlays
+$z1: 1; // everything else
+
+
+

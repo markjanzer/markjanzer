@@ -1,0 +1,58 @@
+// Copyright 2015 Zeppelin
+// hydrogen/defaults.scss
+
+// Defualt html, body styles
+//------------------------------------------------
+html,
+body {
+	margin:0;
+	padding:0;
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	background: $body-background;
+	color: $body-font-color;
+	font-family: $body-font-family;
+}
+
+
+// Clear formatting
+//------------------------------------------------
+ol,
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+  color: $color-gray-2;
+}
+input::-webkit-input-placeholder {
+  color: $color-gray-2;
+}
+input::-moz-placeholder {
+  color: $color-gray-2;
+}
+
+
+// Transitions
+//------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ol,
+ul,
+li,
+button {
+	@include transition(all $transition-speed, $transition-easing);
+}

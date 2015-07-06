@@ -1,10 +1,34 @@
 ---
-title: Welcome to Middleman
+typeof: WebPage
+title: Dixon &amp; Moe
+description: A bespoke web design and development freelance outfit based in SF.
+changefreq: "daily"
+priority: 1.0
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("meta/meta_index") %>
+<% end %>
+
+<%# Page Content %>
+<article vocab="http://schema.org/" typeof="Article">
+
+	<%# Page Header %>
+  <header class="row">
+  	<div class="col-xs-24">
+	    <h1 property="name">This is an H1 title</h1>
+			<p>SEO friendly description for googling.</p>
+		</div>
+	</header>
+
+  <%# Page Section %>
+  <section>
+    <div class="row">
+      <div class="col-xs-24">
+        <h2>This is an H2</h2>
+      </div>
+    </div>
+  </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</article>

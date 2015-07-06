@@ -1,0 +1,118 @@
+// typography
+// typography.scss
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin:0;
+	padding:0;
+	font-family: $font-family-primary;
+	line-height: $base-line-height;
+	letter-spacing: $base-letter-spacing;
+}
+h1 { // page main headers title (60px bold black)
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	@include font-size($font-size-mega);
+}
+
+h1 span { // page main headers subtitle (27px regular gray)
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	display: block;
+	@include font-size($font-size-large);
+}
+
+h2 { // page section headers (36px bold black)
+	font-style: normal;
+	font-weight: 700;
+	@include font-size($font-size-huge);
+}
+
+h3 { // main nav titles (27px bold white)
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	@include font-size($font-size-large);
+}
+
+h3 span { // main nav subtitles (14px regular white)
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: block;
+	@include font-size($font-size-base);
+}
+
+h4 { // sub nav titles (14px bold white)
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	@include font-size($font-size-base);
+}
+
+h5 { // sidebar titles (14px bold gray)
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	@include font-size($font-size-base);
+}
+
+h6 { // tool subtitles (12px bold black)
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	@include font-size($font-size-small);
+}
+
+p { // paragraph text (22px regular)
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	@include font-size($font-size-medium);
+}
+
+a { // anchors (inherit)
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+code { // code (12px regular black)
+	font-family: $font-family-secondary;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	line-height: $base-letter-spacing;
+	color: $color-black;
+	@include font-size($font-size-small);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

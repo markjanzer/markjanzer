@@ -1,19 +1,107 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="http://dixonandmoe.com<%= current_page.url %>">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <%# Meta Tags %>
+    <%= yield_content :meta %>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%# CSS Assets %>
+    <%= stylesheet_link_tag "all" %>
+
+    <%# CSS Custom %>
+    <style><%= yield_content :stylesheets %></style>
+
+    <%# Typekit Fonts %>
+
+    <%# Favicons %>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/assets/images/favicon.ico">
+    <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
+
+    <%# Google Webmaster Tools %>
+    <meta name="google-site-verification" content="" />
+
+    <%# Google Knowledge Graph %>
+    <script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "url" : "http://dixonandmoe.com/",
+      "name" : "Dixon & Moe",
+      "logo" : "http://dixonandmoe.com<%= image_path('dixonandmoe-logo.png') %>",
+      "image" : "http://dixonandmoe.com<%= image_path('dixonandmoe-hero.jpg') %>",
+      "foundingDate" : "2010",
+      "founder" : [
+        { "@type" : "Person",
+          "name" : "Alexander Dixon",
+          "email" : "alex@dixonandmoe.com"
+        },
+        { "@type" : "Person",
+          "name" : "Moe Amaya",
+          "email" : "moe@dixonandmoe.com"
+        } ],
+      "address" : [
+        { "@type" : "PostalAddress",
+          "streetAddress" : "14 Turk Street #1205",
+          "addressLocality" : "San Francisco",
+          "addressRegion" : "CA",
+          "postalCode" : "94115",
+          "addressCountry" : "USA"
+        } ],
+      "contactPoint" : [
+        { "@type" : "ContactPoint",
+          "url" : "http://dixonandmoe.com/",
+          "email" : "hello@dixonandmoe.com",
+          "contactType" : "customer service"
+        } ]
+    }
+    </script>
   </head>
+  
+  <body vocab="http://schema.org/" typeof="<%= current_page.data.typeof %>" class="<%= page_classes %>">
+    <meta property="url" content="http://dixonandmoe.com<%= current_page.url %>">
 
-  <body class="<%= page_classes %>">
-    <%= yield %>
+    <%# Header %>
+    <%= partial "partials/header" %>
+
+    <%# Main %>
+    <main id="main" class="animate delay-125 fadeIn" property="mainContentOfPage" typeof="WebPageElement" role="main">
+
+      <%# Mobile Overlay %>
+      <div class="nav-overlay"></div>
+
+      <%# Mobile Header %>
+      <nav id="mobile" class="row hide-md">
+        <div class="col-xs-24">
+          <h2><%= link_to "Dixon & Moe", "/" %></h2>
+          <a id="nav-open-button" class="nav-button hide-md"><span></span></a>
+        </div>
+      </nav>
+
+      <%# Content %>
+      <%= yield %>
+
+      <%# Footer %>
+      <%= partial "partials/footer" %>
+
+    </main>
+
+    <%# JS Body Assets %>
+    <%= javascript_include_tag "body" %>
+
+    <%# Google Anlaytics %>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64800746-1', 'auto');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
