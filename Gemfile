@@ -8,7 +8,7 @@ gem "middleman", "~>3.3.10"
 gem "middleman-livereload", "~> 3.3.0"
 
 # Auto prefix CSS
-gem "middleman-autoprefixer"
+# gem "middleman-autoprefixer"
 
 # Build dynamic XML sitemaps
 gem "builder"
