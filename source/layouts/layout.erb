@@ -59,15 +59,14 @@
     }
     </script>
   </head>
-  
+
   <body vocab="http://schema.org/" typeof="<%= current_page.data.typeof %>" class="<%= page_classes %>">
     <meta property="url" content="http://dixonandmoe.com<%= current_page.url %>">
 
-    <%# Header %>
-    <%= partial "partials/header" %>
-
     <%# Main %>
     <main id="main" class="animate delay-125 fadeIn" property="mainContentOfPage" typeof="WebPageElement" role="main">
+      <%# Desktop Header %>
+      <%= partial "partials/header" %>
 
       <%# Mobile Overlay %>
       <div class="nav-overlay"></div>

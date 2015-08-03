@@ -1,6 +1,5 @@
 //= require fastclick.min
 //= require html5shiv.min
-//= require headroom.min
 //= require classie
 //= require offcanvas
 
@@ -16,47 +15,47 @@ if ('addEventListener' in document) {
 // ------------------------
 // headroom settings
 // ------------------------
-var desktop = document.querySelector("#nav");
-var desktop_headroom = new Headroom(desktop, {
-  "offset" : 40,
-  "tolerance" : 5,
-  "classes" : {
-    "initial" : "nav-transition",
-    "pinned" : "nav-down",
-    "unpinned" : "nav-up",
-    "top" : "nav-top",
-    "notTop" : "nav-not-top"
-  }
-});
+// var desktop = document.querySelector("#nav");
+// var desktop_headroom = new Headroom(desktop, {
+//   "offset" : 40,
+//   "tolerance" : 5,
+//   "classes" : {
+//     "initial" : "nav-transition",
+//     "pinned" : "nav-down",
+//     "unpinned" : "nav-up",
+//     "top" : "nav-top",
+//     "notTop" : "nav-not-top"
+//   }
+// });
 
-var mobile = document.querySelector("#mobile");
-var mobile_headroom = new Headroom(mobile, {
-  "offset" : 0,
-  "tolerance" : 5,
-  "classes" : {
-    "initial" : "nav-transition",
-    "pinned" : "nav-down",
-    "unpinned" : "nav-up",
-    "top" : "nav-top",
-    "notTop" : "nav-not-top"
-  }
-});
+// var mobile = document.querySelector("#mobile");
+// var mobile_headroom = new Headroom(mobile, {
+//   "offset" : 0,
+//   "tolerance" : 5,
+//   "classes" : {
+//     "initial" : "nav-transition",
+//     "pinned" : "nav-down",
+//     "unpinned" : "nav-up",
+//     "top" : "nav-top",
+//     "notTop" : "nav-not-top"
+//   }
+// });
 
-function initHeadroom() {
-	var viewport = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-	if( viewport > 768 ) {
-		desktop_headroom.init();
-	} else {
-		mobile_headroom.init();
-	}
-}
+// function initHeadroom() {
+// 	var viewport = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+// 	if( viewport > 768 ) {
+// 		desktop_headroom.init();
+// 	} else {
+// 		mobile_headroom.init();
+// 	}
+// }
 
 
 
 // ------------------------
 // headroom init
 // ------------------------
-initHeadroom();
+// initHeadroom();
 
 
 // ------------------------

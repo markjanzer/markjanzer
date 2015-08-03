@@ -14,7 +14,7 @@ article.home {
   color: #54524d;
 
   .link {
-    margin-bottom: 1.0em;
+    margin-bottom: 2.0em;
   }
 
   a {
@@ -42,28 +42,70 @@ article.home {
     line-height: 1.618;
     letter-spacing: 0;
     font-size: 22px;
-    font-size: 1.375rem;    
+    font-size: 1.375rem;
   }
 
   header {
-    margin-bottom: 6em;
+    margin-bottom: 8em;
     h1 {
+      font-size: 4em;
+      line-height: 1.2;
       font-weight: 400;
       color: #54524d;
       letter-spacing: 0.0em;
     }
+    span.dash {
+      display: block;
+      width: 24px;
+      height: 6px;
+      background: rgb(51, 51, 51);
+      margin: 10em 0 1em;
+    }
     p {
-      color: #969086;
+      color: #54524d;
       letter-spacing: 0.01em;
-      font-size: 32px;
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
 
-  section.intro {
+  section.gray {
+    padding: 6em 0 8em;
     margin-bottom: 4em;
+    background: #e5e5ea;
     h6 {
+      text-align: center;
+      font-size: 0.8em;
+      font-weight: normal;
+      letter-spacing: 0.2em;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.4em;
+      line-height: 1.7;
+      font-weight: 400;
+      color: #54524d;
+      letter-spacing: -0.01em;
+    }
+    .base-image {
+      display: block;
+      width: 100%;
+      height: 240px;
+      background: #fff;
+      margin-top: 5em;
       margin-bottom: 1em;
+    }
+    h3 {
+      font-size: 1.4em;
+      line-height: 1.7;
+      font-weight: 400;
+      color: #54524d;
+      letter-spacing: -0.01em;
+    }
+    h4 {
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 1em;
     }
   }
 }

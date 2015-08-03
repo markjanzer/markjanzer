@@ -1,47 +1,47 @@
 <nav id="nav" class="nav-right" vocab="http://schema.org/" typeof="SiteNavigationElement" role="navigation">
-	
+
 	<%# Main Nav Links %>
-	<ul class="row">
+	<div class="row">
 
-		<%# Logo %>
-		<% active_link_to "/", property: "url" do %>
-			<li class="col-md-3" property="name">
-				<h3>Logo</h3>
-			</li>
-		<% end %>
+		<ul class="col-md-9 float-left">
+			<%# Logo %>
+			<% active_link_to "/", property: "url" do %>
+				<li property="name">
+					<h3>WORK</h3>
+				</li>
+			<% end %>
 
-		<%# Color Picker %>
-		<% active_link_to "/html-color-picker/", property: "url" do %>
-			<li class="col-md-4" property="name">
-				<h3>Work</h3>
-			</li>
-		<% end %>
+			<%# Color Picker %>
+			<% active_link_to "/html-color-picker/", property: "url" do %>
+				<li property="name">
+					<h3>BLOG</h3>
+				</li>
+			<% end %>
+		</ul>
 
-		<%# Color Chart %>
-		<% active_link_to "/html-color-chart/", property: "url" do %>
-			<li class="col-md-4 chart" property="name">
-				<h3>Blog</h3>
-			</li>
-		<% end %>
+		<ul class="col-md-6 float-center">
+			<% active_link_to "/html-color-picker/", property: "url" do %>
+				<li property="name">
+					<h1>Dixon &amp; Moe</h1>
+				</li>
+			<% end %>
+		</ul>
 
-		<%# Color Names %>
-		<% active_link_to "/html-color-names/", property: "url" do %>
-			<li class="col-md-4" property="name">
-				<h3>Stuff</h3>
-			</li>
-		<% end %>
+		<ul class="col-md-9 float-right">
+			<%# Color Chart %>
+			<% active_link_to "/html-color-chart/", property: "url" do %>
+				<li property="name">
+					<h3>FUN</h3>
+				</li>
+			<% end %>
 
-		<%# Color Palettes %>
-		<% active_link_to "/color-palette-generator/", property: "url" do %>
-			<li class="col-md-4" property="name">
-				<h3>Things</h3>
-			</li>
-		<% end %>
+			<%# Color Names %>
+			<% active_link_to "/html-color-names/", property: "url" do %>
+				<li property="name">
+					<h3>CONTACT</h3>
+				</li>
+			<% end %>
+		</ul>
 
-		<% active_link_to "/tutorials/", property: "url" do %>
-			<li class="col-md-4" property="name">
-				<h3>More</h3>
-			</li>
-		<% end %>
-	</ul>
+	</div>
 </nav>
