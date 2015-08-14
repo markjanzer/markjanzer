@@ -11,7 +11,7 @@ article {
 }
 
 article.home {
-  color: #54524d;
+  // color: #54524d;
 
   .link {
     margin-bottom: 2.0em;
@@ -19,16 +19,18 @@ article.home {
 
   a {
     display: inline-block;
-    padding-bottom: 0.1em;
-    border-bottom: 2px solid #c0bcb6;
+    padding-bottom: 0.08em;
+    border-bottom: 2px solid #ccc;
 
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
     font-size: 22px;
     font-size: 1.375rem;
+
+    transition: border 300ms linear;
     &:hover {
-      border-color: #969086;
+      border-color: #888;
     }
   }
 
@@ -51,18 +53,18 @@ article.home {
       font-size: 4em;
       line-height: 1.2;
       font-weight: 400;
-      color: #54524d;
+      // color: #54524d;
       letter-spacing: 0.0em;
     }
     span.dash {
       display: block;
       width: 24px;
-      height: 6px;
+      height: 4px;
       background: rgb(51, 51, 51);
       margin: 10em 0 1em;
     }
     p {
-      color: #54524d;
+      // color: #54524d;
       letter-spacing: 0.01em;
       font-size: 1.2rem;
     }
@@ -83,7 +85,7 @@ article.home {
       font-size: 2.4em;
       line-height: 1.7;
       font-weight: 400;
-      color: #54524d;
+      // color: #54524d;
       letter-spacing: -0.01em;
     }
     .base-image {
@@ -98,7 +100,7 @@ article.home {
       font-size: 1.4em;
       line-height: 1.7;
       font-weight: 400;
-      color: #54524d;
+      // color: #54524d;
       letter-spacing: -0.01em;
     }
     h4 {
