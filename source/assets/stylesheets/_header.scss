@@ -9,7 +9,7 @@ html, body {
 //------------------------------------------------
 @media only screen and (max-width: 48em) {
 	nav#nav {
-    position: relative;
+    position: fixed;
     width: 240px;
     height: 100%;
     top: 0;
@@ -29,7 +29,7 @@ html, body {
     position: fixed;
     z-index: $z3;
     background-color: $body-background;
-    padding:1em 0;
+    padding: 0.6em 0;
     top: 0;
     backface-visibility: hidden;
   }
@@ -60,6 +60,15 @@ html, body {
     -moz-transition: -moz-transform .25s cubic-bezier(.16, .68, .43, .99);
     -o-transition: -o-transform .25s cubic-bezier(.16, .68, .43, .99);
     transition: transform .25s cubic-bezier(.16, .68, .43, .99);
+  }
+  #main {
+    margin: 10px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .nav-button {
+    display: none !important;
   }
 }
 
