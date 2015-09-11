@@ -25,10 +25,6 @@ page "/sitemap.xml", layout: false
 # Pretty URLs
 activate :directory_indexes
 
-# Enable autoprefixing on CSS
-activate :autoprefixer do |config|
-  config.ignore   = ['normalize.scss']
-end
 
 # Define asset paths
 set :css_dir, 'assets/stylesheets'
