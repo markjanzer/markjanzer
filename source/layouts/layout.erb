@@ -9,13 +9,16 @@
     <%# Meta Tags %>
     <%= yield_content :meta %>
 
+    <%# Typekit Fonts %>
+    <script src="//use.typekit.net/byb6vzw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
     <%# CSS Assets %>
     <%= stylesheet_link_tag "all" %>
 
     <%# CSS Custom %>
     <style><%= yield_content :stylesheets %></style>
-
-    <%# Typekit Fonts %>
 
     <%# Favicons %>
     <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/assets/images/favicon.ico">
@@ -64,7 +67,7 @@
     <meta property="url" content="http://dixonandmoe.com<%= current_page.url %>">
 
     <%# Main %>
-    <main id="main" class="animate delay-125 fadeIn" property="mainContentOfPage" typeof="WebPageElement" role="main">
+    <main id="main" class="animate-delay-fade" property="mainContentOfPage" typeof="WebPageElement" role="main">
       <%# Desktop Header %>
       <%= partial "partials/header" %>
 

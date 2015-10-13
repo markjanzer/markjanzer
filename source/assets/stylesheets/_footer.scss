@@ -6,4 +6,31 @@
 	section {
 		padding-top: 3em;
 	}
+
+  a {
+    color: #999;
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+//----------------------------------------
+// Mobile
+//----------------------------------------
+
+@media only screen and (max-width: 48em) {
+  section {
+    padding-top: 2em;
+  }
+
+  #footer {
+    .contact {
+      margin-top: 2em;
+    }
+    .social,
+    .copyright {
+      margin-top: 1.4em;
+    }
+  }
 }

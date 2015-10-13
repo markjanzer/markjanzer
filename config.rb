@@ -27,10 +27,6 @@ page "/feed.xml", layout: false
 # Pretty URLs
 activate :directory_indexes
 
-# Enable autoprefixing on CSS
-# activate :autoprefixer do |config|
-#   config.ignore   = ['normalize.scss']
-# end
 
 # Blog settings
 activate :blog do |blog|
@@ -45,6 +41,7 @@ activate :blog do |blog|
   blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
+
 
 
 # Define asset paths
