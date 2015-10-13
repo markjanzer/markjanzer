@@ -18,6 +18,8 @@ require 'json'
 # Sitemap generation
 page "/sitemap.xml", layout: false
 
+# RSS feed
+page "/feed.xml", layout: false
 
 
 #### GLOBAL CONFIGURATION
@@ -26,9 +28,24 @@ page "/sitemap.xml", layout: false
 activate :directory_indexes
 
 # Enable autoprefixing on CSS
-activate :autoprefixer do |config|
-  config.ignore   = ['normalize.scss']
+# activate :autoprefixer do |config|
+#   config.ignore   = ['normalize.scss']
+# end
+
+# Blog settings
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  blog.prefix = "blog"
+
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+
+  # Enable pagination
+  blog.paginate = true
+  blog.per_page = 10
+  # blog.page_link = "page/{num}"
 end
+
 
 # Define asset paths
 set :css_dir, 'assets/stylesheets'

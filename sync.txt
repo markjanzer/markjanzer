@@ -1,0 +1,26 @@
+== Unknown Extension: autoprefixer
+      create  build/assets/stylesheets/all-14ace8a7.css
+      create  build/assets/stylesheets/hydrogen-d1088b47.css
+      create  build/assets/stylesheets/normalize-6197e73d.css
+      create  build/assets/javascripts/body-e2d4e07b.js
+      create  build/assets/javascripts/classie-60d57e07.js
+      create  build/assets/javascripts/fastclick.min-2973f0ad.js
+      create  build/assets/javascripts/offcanvas-135466de.js
+      create  build/assets/javascripts/html5shiv.min-25ea771a.js
+      create  build/assets/javascripts/headroom.min-fadd0d12.js
+      create  build/index.html
+      create  build/robots.txt
+      create  build/sitemap.xml
+        gzip  build/assets/javascripts/classie-60d57e07.js.gz (453 Bytes smaller)
+        gzip  build/assets/javascripts/headroom.min-fadd0d12.js.gz (2.8 KB smaller)
+        gzip  build/assets/javascripts/body-e2d4e07b.js.gz (8 KB smaller)
+        gzip  build/assets/javascripts/offcanvas-135466de.js.gz (520 Bytes smaller)
+        gzip  build/assets/javascripts/html5shiv.min-25ea771a.js.gz (1.3 KB smaller)
+        gzip  build/assets/javascripts/fastclick.min-2973f0ad.js.gz (5.2 KB smaller)
+        gzip  build/assets/stylesheets/normalize-6197e73d.css.gz (912 Bytes smaller)
+        gzip  build/robots.txt.gz (16 Bytes larger)
+        gzip  build/index.html.gz (6.9 KB smaller)
+        gzip  build/assets/stylesheets/hydrogen-d1088b47.css.gz (25 KB smaller)
+        gzip  build/assets/stylesheets/all-14ace8a7.css.gz (29.9 KB smaller)
+        gzip  build/sitemap.xml.gz (69 Bytes smaller)
+        gzip  Total gzip savings: 81 KB
