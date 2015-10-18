@@ -76,7 +76,7 @@ h6 { // tool subtitles (12px bold black)
 p { // paragraph text (22px regular)
 	font-style: normal;
 	font-weight: 400;
-	letter-spacing: 0.025em;
+	letter-spacing: 0.01em;
 	@include font-size($font-size-medium);
 }
 

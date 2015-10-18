@@ -1,26 +1,59 @@
-== Unknown Extension: autoprefixer
-      create  build/assets/stylesheets/all-14ace8a7.css
-      create  build/assets/stylesheets/hydrogen-d1088b47.css
-      create  build/assets/stylesheets/normalize-6197e73d.css
-      create  build/assets/javascripts/body-e2d4e07b.js
-      create  build/assets/javascripts/classie-60d57e07.js
-      create  build/assets/javascripts/fastclick.min-2973f0ad.js
-      create  build/assets/javascripts/offcanvas-135466de.js
-      create  build/assets/javascripts/html5shiv.min-25ea771a.js
-      create  build/assets/javascripts/headroom.min-fadd0d12.js
-      create  build/index.html
-      create  build/robots.txt
-      create  build/sitemap.xml
+   identical  build/assets/stylesheets/normalize-6197e73d.css
+      create  build/assets/stylesheets/all-1fccb169.css
+      create  build/assets/stylesheets/hydrogen-449994e4.css
+      create  build/assets/images/htmlcolorcodes-76ce20b2.svg
+      create  build/assets/images/groove-9813af9f.svg
+      create  build/assets/images/monograph-1a2f98cd.svg
+      create  build/assets/images/teespring-9402043b.svg
+      create  build/assets/images/aptible-42d59026.svg
+      create  build/assets/images/htmlarrows-73a9496d.svg
+   identical  build/assets/javascripts/offcanvas-135466de.js
+   identical  build/assets/javascripts/html5shiv.min-25ea771a.js
+   identical  build/assets/javascripts/body-e2d4e07b.js
+   identical  build/assets/javascripts/headroom.min-fadd0d12.js
+   identical  build/assets/javascripts/classie-60d57e07.js
+   identical  build/assets/javascripts/fastclick.min-2973f0ad.js
+      create  build/blog/tags/example.html
+      update  build/sitemap.xml
+   identical  build/robots.txt
+      create  build/blog/2012.html
+      create  build/blog/2012/01.html
+      update  build/index.html
+      create  build/feed.xml
+      create  build/blog/2012/01/01/example-article.html
+      create  build/blog/index.html
+      create  build/blog/2012/01/01.html
+      remove  build/assets/javascripts/body-e2d4e07b.js.gz
+      remove  build/assets/javascripts/classie-60d57e07.js.gz
+      remove  build/assets/javascripts/fastclick.min-2973f0ad.js.gz
+      remove  build/assets/javascripts/headroom.min-fadd0d12.js.gz
+      remove  build/assets/javascripts/html5shiv.min-25ea771a.js.gz
+      remove  build/assets/javascripts/offcanvas-135466de.js.gz
+      remove  build/assets/stylesheets/all-14ace8a7.css
+      remove  build/assets/stylesheets/all-14ace8a7.css.gz
+      remove  build/assets/stylesheets/hydrogen-d1088b47.css
+      remove  build/assets/stylesheets/hydrogen-d1088b47.css.gz
+      remove  build/assets/stylesheets/normalize-6197e73d.css.gz
+      remove  build/index.html.gz
+      remove  build/robots.txt.gz
+      remove  build/sitemap.xml.gz
         gzip  build/assets/javascripts/classie-60d57e07.js.gz (453 Bytes smaller)
         gzip  build/assets/javascripts/headroom.min-fadd0d12.js.gz (2.8 KB smaller)
         gzip  build/assets/javascripts/body-e2d4e07b.js.gz (8 KB smaller)
-        gzip  build/assets/javascripts/offcanvas-135466de.js.gz (520 Bytes smaller)
-        gzip  build/assets/javascripts/html5shiv.min-25ea771a.js.gz (1.3 KB smaller)
         gzip  build/assets/javascripts/fastclick.min-2973f0ad.js.gz (5.2 KB smaller)
+        gzip  build/assets/javascripts/html5shiv.min-25ea771a.js.gz (1.3 KB smaller)
+        gzip  build/assets/stylesheets/hydrogen-449994e4.css.gz (25.4 KB smaller)
         gzip  build/assets/stylesheets/normalize-6197e73d.css.gz (912 Bytes smaller)
+        gzip  build/assets/javascripts/offcanvas-135466de.js.gz (520 Bytes smaller)
+        gzip  build/assets/stylesheets/all-1fccb169.css.gz (31.2 KB smaller)
+        gzip  build/blog/2012/01/01/example-article.html.gz (2.8 KB smaller)
+        gzip  build/blog/2012/01/01.html.gz (2.8 KB smaller)
+        gzip  build/blog/2012/01.html.gz (2.8 KB smaller)
+        gzip  build/blog/2012.html.gz (2.7 KB smaller)
+        gzip  build/blog/tags/example.html.gz (2.8 KB smaller)
+        gzip  build/blog/index.html.gz (3.1 KB smaller)
+        gzip  build/sitemap.xml.gz (1.1 KB smaller)
+        gzip  build/feed.xml.gz (476 Bytes smaller)
         gzip  build/robots.txt.gz (16 Bytes larger)
-        gzip  build/index.html.gz (6.9 KB smaller)
-        gzip  build/assets/stylesheets/hydrogen-d1088b47.css.gz (25 KB smaller)
-        gzip  build/assets/stylesheets/all-14ace8a7.css.gz (29.9 KB smaller)
-        gzip  build/sitemap.xml.gz (69 Bytes smaller)
-        gzip  Total gzip savings: 81 KB
+        gzip  build/index.html.gz (7.3 KB smaller)
+        gzip  Total gzip savings: 101.6 KB

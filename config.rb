@@ -22,16 +22,15 @@ page "/sitemap.xml", layout: false
 page "/feed.xml", layout: false
 
 
-#### GLOBAL CONFIGURATION
 
-# Pretty URLs
-activate :directory_indexes
+#### GLOBAL CONFIGURATION
 
 
 # Blog settings
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
+  blog.permalink = "{title}.html"
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
@@ -42,7 +41,8 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
-
+# Pretty URLs
+activate :directory_indexes
 
 # Define asset paths
 set :css_dir, 'assets/stylesheets'

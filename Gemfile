@@ -10,8 +10,8 @@ gem "middleman-blog", "~> 3.5.3"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.3.0"
 
-# Auto prefix CSS
-# gem "middleman-autoprefixer"
+# Nokogiri to parse text and create summary
+gem "nokogiri"
 
 # Build dynamic XML sitemaps
 gem "builder"
