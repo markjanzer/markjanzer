@@ -12,7 +12,7 @@ per_page: 10
     </div>
     <div class="col-xs-24">
       <span class="dash"></span>
-      <p>Failed startups, SEO nerds and beer.</p>
+      <p>Lessons learned turning design experiments into conversions</p>
     </div>
   </header>
 
@@ -32,8 +32,6 @@ per_page: 10
 
       <% blog.articles.each_with_index do |article, i| %>
         <h2><%= link_to article.title, article %></h2> <h4><%= article.date.strftime('%b %e') %></h4>
-        <!-- use article.summary(250) if you have Nokogiri available to show just
-             the first 250 characters -->
         <%= article.summary(250) %>
       <% end %>
 

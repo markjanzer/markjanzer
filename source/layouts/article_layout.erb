@@ -1,16 +1,18 @@
 <% wrap_layout :layout do %>
 
 
-  <div class="row">
-    <article class="blog-post">
+  
+  <article class="blog-post">
+    <div class="row">
+      <h2><%= current_page.data.title %></h2>
       <%= yield %>
-    </article>
-  </div>
+    </div>
+  </article>
 
   <br><br><br><br>
   <aside>
     <div class="row">
-      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-centered">
+      <div class="col-xs-24 col-sm-20 col-md-16 col-sm-centered">
         <h4>Recent Articles</h4>
         <ol>
           <% blog.articles[0...10].each do |article| %>

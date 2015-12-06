@@ -21,7 +21,7 @@ page "/sitemap.xml", layout: false
 # RSS feed
 page "/feed.xml", layout: false
 
-
+page "/blog/*.html", layout: :article_layout
 
 #### GLOBAL CONFIGURATION
 
