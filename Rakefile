@@ -11,6 +11,7 @@ data = JSON.load(File.read("keys.json"))
 website = data["website"]
 bucket = data["bucket"]
 
+
 desc "build static pages"
 task :build do
   puts "[INIT] >>>> Compiling static pages"
@@ -76,9 +77,24 @@ task :sync do
 
 end
 
+
+# Checks github to make sure you've pushed recent commit
+def check_github
+  check =  `git st -sb`
+  if check.include? "ahead"
+    puts "You need to commit to Github before deploying"
+    return false
+  else
+    return true
+  end
+end
+
 desc "pull, build, gzip and sync"
 task :deploy do
-  Rake::Task["build"].invoke
-  Rake::Task["gzip"].invoke
-  Rake::Task["sync"].invoke
+  if check_github
+    Rake::Task["build"].invoke
+    Rake::Task["gzip"].invoke
+    Rake::Task["sync"].invoke
+  end
 end
+
