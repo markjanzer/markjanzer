@@ -1,68 +1,47 @@
-   identical  build/assets/stylesheets/hydrogen-904c5afc.css
-   identical  build/assets/stylesheets/all-c1fa74a2.css
-   identical  build/assets/stylesheets/normalize-6197e73d.css
-   identical  build/assets/images/htmlcolorcodes-76ce20b2.svg
-   identical  build/assets/images/monograph-1a2f98cd.svg
-   identical  build/assets/images/teespring-9402043b.svg
-   identical  build/assets/images/groove-9813af9f.svg
-   identical  build/assets/images/aptible-42d59026.svg
-   identical  build/assets/images/htmlarrows-73a9496d.svg
-   identical  build/assets/javascripts/offcanvas-135466de.js
-   identical  build/assets/javascripts/html5shiv.min-25ea771a.js
-   identical  build/assets/javascripts/body-e2d4e07b.js
-   identical  build/assets/javascripts/headroom.min-fadd0d12.js
-   identical  build/assets/javascripts/classie-60d57e07.js
-   identical  build/assets/javascripts/fastclick.min-2973f0ad.js
-   identical  build/typesetting/index.html
-      update  build/sitemap.xml
-   identical  build/robots.txt
-   identical  build/blog/tags/animation/index.html
-   identical  build/blog/2015/index.html
-   identical  build/blog/2015/10/index.html
-      update  build/index.html
-   identical  build/feed.xml
-   identical  build/blog/web-animation/index.html
-   identical  build/blog/index.html
-   identical  build/blog/2015/10/20/index.html
-      remove  build/assets/javascripts/body-e2d4e07b.js.gz
-      remove  build/assets/javascripts/classie-60d57e07.js.gz
-      remove  build/assets/javascripts/fastclick.min-2973f0ad.js.gz
-      remove  build/assets/javascripts/headroom.min-fadd0d12.js.gz
-      remove  build/assets/javascripts/html5shiv.min-25ea771a.js.gz
-      remove  build/assets/javascripts/offcanvas-135466de.js.gz
-      remove  build/assets/stylesheets/all-c1fa74a2.css.gz
-      remove  build/assets/stylesheets/hydrogen-904c5afc.css.gz
-      remove  build/assets/stylesheets/normalize-6197e73d.css.gz
-      remove  build/blog/2015/10/20/index.html.gz
-      remove  build/blog/2015/10/index.html.gz
-      remove  build/blog/2015/index.html.gz
-      remove  build/blog/index.html.gz
-      remove  build/blog/tags/animation/index.html.gz
-      remove  build/blog/web-animation/index.html.gz
-      remove  build/feed.xml.gz
-      remove  build/index.html.gz
-      remove  build/robots.txt.gz
-      remove  build/sitemap.xml.gz
-      remove  build/typesetting/index.html.gz
-      remove  build/blog/2012
-        gzip  build/assets/javascripts/classie-60d57e07.js.gz (453 Bytes smaller)
+      create  build/assets/stylesheets/hydrogen-904c5afc.css
+      create  build/assets/stylesheets/all-c1fa74a2.css
+      create  build/assets/stylesheets/normalize-6197e73d.css
+      create  build/assets/images/htmlcolorcodes-76ce20b2.svg
+      create  build/assets/images/monograph-1a2f98cd.svg
+      create  build/assets/images/teespring-9402043b.svg
+      create  build/assets/images/groove-9813af9f.svg
+      create  build/assets/images/aptible-42d59026.svg
+      create  build/assets/images/htmlarrows-73a9496d.svg
+      create  build/assets/javascripts/offcanvas-135466de.js
+      create  build/assets/javascripts/html5shiv.min-25ea771a.js
+      create  build/assets/javascripts/body-e2d4e07b.js
+      create  build/assets/javascripts/headroom.min-fadd0d12.js
+      create  build/assets/javascripts/classie-60d57e07.js
+      create  build/assets/javascripts/fastclick.min-2973f0ad.js
+      create  build/typesetting/index.html
+      create  build/sitemap.xml
+      create  build/robots.txt
+      create  build/blog/tags/animation/index.html
+      create  build/blog/2015/index.html
+      create  build/blog/2015/10/index.html
+      create  build/index.html
+      create  build/feed.xml
+      create  build/blog/web-animation/index.html
+      create  build/blog/index.html
+      create  build/blog/2015/10/20/index.html
         gzip  build/assets/javascripts/fastclick.min-2973f0ad.js.gz (5.2 KB smaller)
+        gzip  build/assets/javascripts/classie-60d57e07.js.gz (453 Bytes smaller)
         gzip  build/assets/javascripts/body-e2d4e07b.js.gz (8 KB smaller)
         gzip  build/assets/javascripts/html5shiv.min-25ea771a.js.gz (1.3 KB smaller)
         gzip  build/assets/javascripts/headroom.min-fadd0d12.js.gz (2.8 KB smaller)
-        gzip  build/assets/javascripts/offcanvas-135466de.js.gz (520 Bytes smaller)
         gzip  build/assets/stylesheets/normalize-6197e73d.css.gz (912 Bytes smaller)
         gzip  build/assets/stylesheets/all-c1fa74a2.css.gz (31.9 KB smaller)
-        gzip  build/blog/2015/10/20/index.html.gz (3.3 KB smaller)
-        gzip  build/blog/2015/10/index.html.gz (3.3 KB smaller)
+        gzip  build/assets/javascripts/offcanvas-135466de.js.gz (520 Bytes smaller)
         gzip  build/assets/stylesheets/hydrogen-904c5afc.css.gz (25.4 KB smaller)
+        gzip  build/blog/2015/10/index.html.gz (3.3 KB smaller)
+        gzip  build/blog/2015/10/20/index.html.gz (3.3 KB smaller)
         gzip  build/blog/2015/index.html.gz (3.3 KB smaller)
         gzip  build/blog/index.html.gz (3.2 KB smaller)
-        gzip  build/blog/web-animation/index.html.gz (3.7 KB smaller)
         gzip  build/blog/tags/animation/index.html.gz (3.3 KB smaller)
-        gzip  build/feed.xml.gz (945 Bytes smaller)
-        gzip  build/sitemap.xml.gz (1.3 KB smaller)
-        gzip  build/index.html.gz (7.2 KB smaller)
+        gzip  build/blog/web-animation/index.html.gz (3.7 KB smaller)
+        gzip  build/feed.xml.gz (937 Bytes smaller)
         gzip  build/robots.txt.gz (16 Bytes larger)
+        gzip  build/index.html.gz (7.2 KB smaller)
+        gzip  build/sitemap.xml.gz (1.3 KB smaller)
         gzip  build/typesetting/index.html.gz (6.5 KB smaller)
         gzip  Total gzip savings: 112.3 KB

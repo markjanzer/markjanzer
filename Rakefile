@@ -80,7 +80,7 @@ end
 
 # Checks github to make sure you've pushed recent commit
 def check_github
-  check =  `git st -sb`
+  check =  `git status -sb`
   if check.include? "ahead"
     puts "You need to commit to Github before deploying"
     return false
