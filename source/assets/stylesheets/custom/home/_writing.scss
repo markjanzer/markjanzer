@@ -1,0 +1,32 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Home Page — Writing
+// stylesheets/custom/home/_writing.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.home-writing {
+	margin-bottom: 144px;
+}
+.home-writing__title {
+	position: relative;
+	float: left;
+	margin-top: 16px;
+	margin-left: -48px;
+	transform:rotate(270deg);
+}
+.home-post {
+	position: relative;
+	margin-bottom: 96px;
+}
+.home-post__title {
+	@include font-size($font-size-500);
+}
+.home-post__description {
+	line-height: 1.618;
+	@include font-size($font-size-300);
+}
+.home-post__link {
+	font-family: $font-family-secondary;
+	padding-bottom: 4px;
+	border-bottom: 2px solid $color-blue-dk;
+}

@@ -1,0 +1,56 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Process Page — Phases
+// stylesheets/custom/process/_phases.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.process-phases {
+	margin-bottom: 240px;
+}
+.process-phase {
+	margin-bottom: 96px;
+}
+.process-phase__title {
+	margin-bottom: 24px;
+}
+.process-phase__subtitle {
+	font-family: $font-family-secondary;
+}
+.process-phase__description {
+	line-height: 1.618;
+	@include font-size($font-size-300);
+}
+
+
+
+
+
+
+
+.home-clients__title {
+	position: relative;
+	float: left;
+	margin-top: 64px;
+	margin-left: -48px;
+	transform:rotate(270deg);
+}
+.home-clients__link {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.home-clients__logo img {
+	width:100%;
+	max-width:180px;
+}
+.home-clients__description {
+	margin-top: 48px;
+	line-height: 1.618;
+	@include font-size($font-size-300);
+}
+.home-clients__tags {
+	font-family: $font-family-secondary;
+}
+.home-clients__tag {
+	padding-bottom: 4px;
+	border-bottom: 2px solid $color-blue-dk;
+}

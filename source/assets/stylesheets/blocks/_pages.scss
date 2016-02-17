@@ -1,0 +1,40 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Pages
+// stylesheets/blocks/_pages.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+.page-header {
+	margin-top: 320px;
+	margin-bottom: 0;
+}
+.page-header__title {
+	margin-bottom: 24px;
+	@include font-size($font-size-600);
+}
+.page-header__subtitle {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+}
+.page-header__link {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+	padding-bottom: 8px;
+	border-bottom: 4px solid $color-blue-dk;
+}
+
+
+.page-section {
+	margin-bottom: 180px;
+}
+.page-section__title {
+	margin-bottom: 24px;
+	@include font-size($font-size-600);
+}
+.page-section__link {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+	padding-bottom: 8px;
+	border-bottom: 4px solid $color-blue-dk;
+}

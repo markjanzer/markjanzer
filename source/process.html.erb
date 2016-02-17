@@ -1,0 +1,160 @@
+---
+itemtype: WebPage
+title: Process — Dixon &amp; Moe
+description: A bespoke web design and development outfit based in SF.
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "monograph-hero.jpg",
+    local_title:       "Dixon & Moe — San Francisco Design and Software Consultancy",
+    local_description: "Branding, development and design."
+  }) %>
+<% end %>
+
+<%# Header %>
+<header class="page-header" style="position:relative;z-index:5">
+  <div class="row">
+    <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-2">
+      <h1 class="page-header__title">Our process.</h1>
+    </div>
+  </div>
+</header>
+
+
+<%# Process Graphic %>
+<section class="process-graphic">
+  <div class="row process-graphic__grid">
+    <div class="col-xs-24">
+      <span class="process-graphic__grid-col grid-col-1-a"></span>
+      <span class="process-graphic__grid-col grid-col-1-b"></span>
+      <span class="process-graphic__grid-col grid-col-2-a"></span>
+      <span class="process-graphic__grid-col grid-col-2-b"></span>
+      <span class="process-graphic__grid-col grid-col-3-a"></span>
+      <span class="process-graphic__grid-col grid-col-3-b"></span>
+      <span class="process-graphic__grid-col grid-col-4-a"></span>
+      <span class="process-graphic__grid-col grid-col-4-b"></span>
+      <span class="process-graphic__grid-col grid-col-5-a"></span>
+      <span class="process-graphic__grid-col grid-col-5-b"></span>
+      <span class="process-graphic__grid-col grid-col-6-a"></span>
+      <span class="process-graphic__grid-col grid-col-6-b"></span>
+      <span class="process-graphic__grid-col grid-col-7-a"></span>
+      <span class="process-graphic__grid-col grid-col-7-b"></span>
+      <span class="process-graphic__grid-col grid-col-8-a"></span>
+      <span class="process-graphic__grid-col grid-col-8-b"></span>
+      <span class="process-graphic__grid-col grid-col-9-a"></span>
+      <span class="process-graphic__grid-col grid-col-9-b"></span>
+      <span class="process-graphic__grid-col grid-col-10-a"></span>
+      <span class="process-graphic__grid-col grid-col-10-b"></span>
+      <span class="process-graphic__grid-col grid-col-11-a"></span>
+      <span class="process-graphic__grid-col grid-col-11-b"></span>
+      <span class="process-graphic__grid-col grid-col-12-a"></span>
+      <span class="process-graphic__grid-col grid-col-12-b"></span>
+      <span class="process-graphic__grid-col grid-col-13-a"></span>
+    </div>
+  </div>
+  <div class="row process-graphic__phases">
+    <div class="col-xs-4 col-xs-offset-2">
+      <h4 class="process-graphic__phase-title" style="margin-left:16px;">discovery</h4>
+      <h5 class="process-graphic__phase-percent">00%</h5>
+    </div>
+    <div class="col-xs-4">
+      <h4 class="process-graphic__phase-title" style="margin-left:8px;margin-top:4px;">design</h4>
+      <h5 class="process-graphic__phase-percent" style="margin-left:-8px;margin-top:-4px;">15%</h5>
+    </div>
+    <div class="col-xs-4 col-xs-offset-2">
+      <h4 class="process-graphic__phase-title" style="margin-left:-8px;margin-top:12px;">development</h4>
+      <h5 class="process-graphic__phase-percent" style="margin-left:-16px;margin-top:-12px;">55%</h5>
+    </div>
+    <div class="col-xs-4">
+      <h4 class="process-graphic__phase-title" style="margin-left:-16px;margin-top:16px;">content</h4>
+      <h5 class="process-graphic__phase-percent" style="margin-left:-24px;margin-top:-16px;">85%</h5>
+    </div>
+    <div class="col-xs-4">
+      <h4 class="process-graphic__phase-title" style="margin-left:-32px;margin-top:24px;">testing</h4>
+      <h5 class="process-graphic__phase-percent" style="margin-left:-32px;margin-top:-24px;">95%</h5>
+    </div>
+  </div>
+  <%= image_tag("process-test-5.png", class: "process-graphic__image") %>
+</section>
+
+<%# Process Phases %>
+<section class="process-phases">
+  <%# Discovery %>
+  <div class="process-phase">
+    <div class="row">
+      <div class="col-lg-9 col-lg-offset-2">
+        <h2 class="process-phase__title">Discovery</h2>
+        <h4 class="process-phase__subtitle">phase one</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content. they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+  <%# Design %>
+  <div class="process-phase">
+    <div class="row">
+      <div class="col-md-3 col-lg-8 col-lg-offset-2">
+        <h2 class="process-phase__title">Design</h2>
+        <h4 class="process-phase__subtitle">phase two</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+  <%# Development %>
+  <div class="process-phase">
+    <div class="row">
+      <div class="col-md-3 col-lg-9 col-lg-offset-2">
+        <h2 class="process-phase__title">Development</h2>
+        <h4 class="process-phase__subtitle">phase three</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+  <%# Content %>
+  <div class="process-phase">
+    <div class="row">
+      <div class="col-md-3 col-lg-8 col-lg-offset-2">
+        <h2 class="process-phase__title">Content</h2>
+        <h4 class="process-phase__subtitle">phase four</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+  <%# Testing %>
+  <div class="process-phase">
+    <div class="row">
+      <div class="col-md-3 col-lg-9 col-lg-offset-2">
+        <h2 class="process-phase__title">Testing</h2>
+        <h4 class="process-phase__subtitle">phase five</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+  <%# Launch! %>
+  <div class="process-phase">
+    <div class="row">
+      <div class="col-md-3 col-lg-8 col-lg-offset-2">
+        <h2 class="process-phase__title">Launch!</h2>
+        <h4 class="process-phase__subtitle">phase six</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+<header class="layout-header js-layout-header">
+
+	<%# Visible Navigation %>
+	<nav class="nav-visible" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+
+		<ul class="nav-visible__list">
+			<li class="nav-visible__list-item">
+				<% active_link_to "/", class: "nav-visible__logo", itemprop: "url" do %>
+					<span itemprop="name">Dixon & Moe</span>
+				<% end %>
+			</li>
+			<li class="nav-visible__list-item">
+				<% active_link_to "/blog/", class: "nav-visible__link", itemprop: "url" do %>
+					<span itemprop="name">Blog</span>
+				<% end %>
+			</li>
+		</ul>
+
+		<%# Mobile Navigation Open Button %>
+		<button class="nav-button__open js-nav-hidden-open">
+			<span class="nav-button__ampersand">&amp;</span>
+		</button>
+
+		<%# Mobile Navigation Close Button %>
+		<button class="nav-button__close js-nav-hidden-close">
+			<span class="nav-button__times">&times;</span>
+		</button>
+	</nav>
+</header>
+
+<%# Hidden Navigation %>
+<nav class="nav-hidden" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+	<ul class="nav-hidden__list">
+		<li class="nav-hidden__list-item">
+			<% active_link_to "/", class: "nav-hidden__link", itemprop: "url" do %>
+				<span itemprop="name">Home</span>
+			<% end %>
+		</li>
+		<li class="nav-hidden__list-item">
+			<% active_link_to "/#clients", class: "nav-hidden__link", itemprop: "url" do %>
+				<span itemprop="name">Clients</span>
+			<% end %>
+		</li>
+		<li class="nav-hidden__list-item">
+			<% active_link_to "/team/", class: "nav-hidden__link", itemprop: "url" do %>
+				<span itemprop="name">Team</span>
+			<% end %>
+		</li>
+		<li class="nav-hidden__list-item">
+			<% active_link_to "/blog/", class: "nav-hidden__link", itemprop: "url" do %>
+				<span itemprop="name">Blog</span>
+			<% end %>
+		</li>
+		<li class="nav-hidden__list-item">
+			<% active_link_to "/contact/", class: "nav-hidden__link", itemprop: "url" do %>
+				<span itemprop="name">Contact</span>
+			<% end %>
+		</li>
+	</ul>
+</nav>

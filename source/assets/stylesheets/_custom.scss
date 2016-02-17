@@ -1,0 +1,16 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Custom Manifest
+// stylesheets/_custom.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Home Page
+@import "custom/home/header";
+@import "custom/home/clients";
+@import "custom/home/process";
+@import "custom/home/writing";
+@import "custom/home/products";
+
+// Process Page
+@import "custom/process/graphic";
+@import "custom/process/phases";

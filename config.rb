@@ -2,18 +2,24 @@ require "builder"
 require 'json'
 
 
-#### DATA
+#### GLOBAL CONFIGURATION
 
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
+# Global Variables
+set :global_url,     "http://dixonandmoe.com"
+set :global_name,    "Dixon & Moe"
+set :global_email,   "alex@dixonandmoe.com"
+set :global_domain,  "dixonandmoe.com"
+set :global_twitter, "@dixonandmoe"
 
-# # Color Codes
-# data.languages.each do |lang|
-#   proxy "/#{lang["directory"]}.html", "/template.html", locals: { lang: lang }, ignore: true
-# end
+# Blog Variables
+set :blog_title,    "Dixon & Moe — Blog"
+set :blog_subtitle, "Design and Marketing"
+set :blog_author,   "Dixon & Moe"
 
-
-
-#### SITEMAP
+# Asset paths
+set :css_dir, "assets/stylesheets"
+set :js_dir, "assets/javascripts"
+set :images_dir, "assets/images"
 
 # Sitemap generation
 page "/sitemap.xml", layout: false
@@ -21,10 +27,8 @@ page "/sitemap.xml", layout: false
 # RSS feed
 page "/feed.xml", layout: false
 
-page "/blog/*.html", layout: :article_layout
-
-#### GLOBAL CONFIGURATION
-
+# Blog
+page "/blog/*.html", layout: :layout_article
 
 # Blog settings
 activate :blog do |blog|
@@ -45,8 +49,8 @@ end
 activate :directory_indexes
 
 # Define asset paths
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
+set :css_dir,    'assets/stylesheets'
+set :js_dir,     'assets/javascripts'
 set :images_dir, 'assets/images'
 
 

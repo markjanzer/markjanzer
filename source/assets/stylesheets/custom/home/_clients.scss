@@ -1,0 +1,39 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Home Page — Clients
+// stylesheets/custom/home/_clients.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.home-clients {
+	margin-bottom: 144px; // to compensate for home-client padding-bottom
+}
+.home-client {
+	margin-bottom: 96px;
+}
+.home-client__title {
+	position: relative;
+	float: left;
+	margin-top: 64px;
+	margin-left: -48px;
+	transform:rotate(270deg);
+}
+.home-client__link {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.home-client__logo img {
+	width:100%;
+	max-width:180px;
+}
+.home-client__description {
+	margin-top: 48px;
+	line-height: 1.618;
+	@include font-size($font-size-300);
+}
+.home-client__tags {
+	font-family: $font-family-secondary;
+}
+.home-client__tag {
+	padding-bottom: 4px;
+	border-bottom: 2px solid $color-blue-dk;
+}
