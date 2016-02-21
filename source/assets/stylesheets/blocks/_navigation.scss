@@ -37,14 +37,14 @@ html, body {
 }
 
 // Headroom
-.js-headroom--unpinned {
-  transform: translate3d(0,-24px,0);
-  opacity: 0;
-}
-.js-headroom--pinned {
-  transform: translate3d(0,0,0);
-  opacity: 1;
-}
+// .js-headroom--unpinned {
+//   transform: translate3d(0,-24px,0);
+//   opacity: 0;
+// }
+// .js-headroom--pinned {
+//   transform: translate3d(0,0,0);
+//   opacity: 1;
+// }
 
 // Visible Nav
 .nav-visible {
@@ -105,11 +105,11 @@ html, body {
 // Sub pages
 .nav-hidden--is-visible .blog .nav-visible__link,
 .process .nav-visible__logo,
-.blog .nav-visible__logo {
+.writing .nav-visible__logo {
   color: $color-black;
 }
 .nav-hidden--is-visible .blog .nav-visible__logo,
-.blog .nav-visible__link {
+.writing .nav-visible__link {
   color: $color-white;
 }
 
@@ -136,7 +136,7 @@ html, body {
 }
 .nav-hidden__list {
   float: right;
-  margin-top: 192px;
+  margin-top: 120px;
 }
 .nav-hidden__list-item {
   margin-bottom: 32px;
@@ -178,6 +178,10 @@ html, body {
   transform: translate3d(160px,0,0);
   transition: transform 200ms $transition-easing, opacity 200ms $transition-easing;
 }
+.nav-hidden__list-item:nth-child(6) {
+  transform: translate3d(160px,0,0);
+  transition: transform 150ms $transition-easing, opacity 200ms $transition-easing;
+}
 
 // Nav slide-in
 .nav-hidden--is-visible .nav-hidden__list-item {
@@ -198,6 +202,9 @@ html, body {
 }
 .nav-hidden--is-visible .nav-hidden__list-item:nth-child(5) {
   transition: transform 500ms 200ms $transition-easing, opacity 100ms 200ms $transition-easing;
+}
+.nav-hidden--is-visible .nav-hidden__list-item:nth-child(6) {
+  transition: transform 550ms 200ms $transition-easing, opacity 100ms 200ms $transition-easing;
 }
 
 // Nav button
@@ -226,9 +233,19 @@ html, body {
     margin-left: 8px;
   }
 }
+.nav-button__close {
+  opacity: 0;
+  z-index: $z0;
+  transition: opacity 200ms $transition-easing;
+}
 .nav-button__open:focus,
 .nav-button__close:focus {
   outline: none;
+}
+.nav-hidden--is-visible .nav-button__close {
+  opacity: 1;
+  z-index: $z6;
+  transition: opacity 800ms $transition-easing;
 }
 .nav-button__ampersand {
   color: $color-black;
@@ -239,13 +256,13 @@ html, body {
   @include font-size($font-size-500);
   transition: opacity 800ms $transition-easing;
 }
+// Blog page
+.writing .nav-button__ampersand {
+  color: $color-white;
+}
 .nav-hidden--is-visible .nav-button__ampersand {
   opacity: 0;
   transition: opacity 200ms $transition-easing;
-}
-// Blog page
-.blog .nav-button__ampersand {
-  color: $color-white;
 }
 .nav-button__times {
   color: $color-white;
@@ -253,14 +270,6 @@ html, body {
   font-weight: $font-weight-bold;
   line-height: 0.625;
   @include font-size($font-size-600);
-  opacity: 0;
-  z-index: $z0;
-  transition: opacity 200ms $transition-easing;
-}
-.nav-hidden--is-visible .nav-button__times {
-  opacity: 1;
-  z-index: $z6;
-  transition: opacity 800ms $transition-easing;
 }
 
 // Nav Overlay

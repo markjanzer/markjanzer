@@ -12,7 +12,7 @@ set :global_domain,  "dixonandmoe.com"
 set :global_twitter, "@dixonandmoe"
 
 # Blog Variables
-set :blog_title,    "Dixon & Moe — Blog"
+set :blog_title,    "Writing — Dixon & Moe"
 set :blog_subtitle, "Design and Marketing"
 set :blog_author,   "Dixon & Moe"
 
@@ -28,12 +28,12 @@ page "/sitemap.xml", layout: false
 page "/feed.xml", layout: false
 
 # Blog
-page "/blog/*.html", layout: :layout_article
+page "/writing/*.html", layout: :layout_article
 
 # Blog settings
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  blog.prefix = "blog"
+  blog.prefix = "writing"
   blog.permalink = "{title}.html"
 
   blog.tag_template = "tag.html"

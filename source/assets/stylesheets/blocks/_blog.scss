@@ -1,5 +1,5 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Dixon & Moe Blog
+// Blog
 // stylesheets/blocks/_blog.scss
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -54,26 +54,31 @@
 	margin-bottom: 64px;
 }
 .blog-content h2 {
-	// display: inline-block;
+	margin-top: 64px;
+	// font-weight: 700;
 	// font-family: $font-family-secondary;
 	@include font-size($font-size-500);
 	// padding-bottom: 8px;
 	// border-bottom: 4px solid $color-blue-dk;
 }
+// .blog-content h2:after {
+// 	content: "";
+// 	display: block;
+// 	position: absolute;
+// 	margin-top: -64px;
+// 	margin-left: -24px;
+// 	width: 72px;
+// 	height: 72px;
+// 	// background: $color-gray-200;
+// 	border: 1px solid $color-blue-dk;
+// 	transform: rotate(45deg);
+// 	z-index: $z0;
+// }
 .blog-content p {
-	// float: left;
-	// position: relative;
+	margin-top: 16px;
+	margin-bottom: 32px;
 	line-height: 1.618;
-	// padding-right: 16px;
-	// padding-left: 16px;
 }
-// .blog-content p:nth-child(odd) {
-// 	width: 50%;
-// }
-// .blog-content p:nth-child(even) {
-// 	width: 50%;
-// 	// margin-right: 10%;
-// }
 
 
 

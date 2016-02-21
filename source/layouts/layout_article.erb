@@ -6,7 +6,7 @@
       local_type:        "website",
       local_card:        "summary_large_image",
       local_image:       "your-page-hero.jpg",
-      local_title:       "Monograph Blog",
+      local_title:       "Writing — Dixon & Moe",
       local_description: "Your page description"
     }) %>
   <% end %>
@@ -29,7 +29,9 @@
       <div class="row">
         <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-2">
           <h1 class="blog-header__title" itemprop="headline"><%= current_page.data.title %></h1>
-          <time class="blog-header__date" datetime="<%= current_page.data.date %>" itemprop="datePublished">Posted on <%= current_page.data.date %></datetime>
+          <span class="blog-header__date">Posted on
+            <time datetime="<%= current_page.data.date %>" itemprop="datePublished"><%= current_page.data.date.strftime("%b %d, %Y") %></datetime>
+          </span>
         </div>
       </div>
     </header>

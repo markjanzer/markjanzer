@@ -1,0 +1,36 @@
+---
+itemtype: CollectionPage
+title: Work — Dixon & Moe
+description: A bespoke web design and development outfit based in SF.
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "monograph-hero.jpg",
+    local_title:       "Work — Dixon & Moe",
+    local_description: "Branding, development and design."
+  }) %>
+<% end %>
+
+<%# Header %>
+<header class="page-header" style="position:relative;z-index:5">
+  <div class="row">
+    <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-2">
+      <h1 class="page-header__title">Guides.</h1>
+    </div>
+  </div>
+</header>
+
+
+<%# Guides Graphic %>
+<section class="guides-graphic">
+</section>
+
+<%# Process Phases %>
+<section class="guides-list">
+</section>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html itemscope itemtype="https://schema.org/<%= current_page.data.itemtype %>">
+<html>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <%# Meta Tags %>
     <% if content_for?(:meta) %>
@@ -29,7 +29,7 @@
     <%= partial("partials/head/knowledge_graph") %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>" itemscope itemtype="https://schema.org/<%= current_page.data.itemtype %>">
 
     <!-- <div style="position:fixed;top:0;right:0;left:0;bottom:0;width:100%;height:100%;border:12px solid #0F0D20;"></div> -->
 
@@ -43,12 +43,12 @@
     <%= partial("partials/navigation") %>
 
     <%# Layout Content %>
-    <main class="layout-content" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement" role="main">
+    <main class="layout-content parallax" <% unless current_page.data.itemtype == "Article" %>itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement"<% end %> role="main">
       <%= yield %>
     </main>
 
     <%# Layout Footer %>
-    <%= partial("partials/footer") %>
+    <%# partial("partials/footer") %>
 
     <%# JS Assets %>
     <%= javascript_include_tag "all" %>

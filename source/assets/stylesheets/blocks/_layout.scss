@@ -1,5 +1,5 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Monograph Layout
+// Layout
 // stylesheets/blocks/_layout.scss
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -14,10 +14,18 @@ body {
 }
 body {
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 	color: $color-black;
 	background: $color-white;
 	font-family: $font-family-primary;
+}
+::selection {
+	color: $color-white;
+  background: rgba(15, 13, 32, 0.99);
+}
+::-moz-selection {
+	color: $color-white;
+  background: rgba(15, 13, 32, 0.99);
 }
 
 .row {

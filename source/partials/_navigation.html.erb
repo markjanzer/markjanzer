@@ -10,8 +10,8 @@
 				<% end %>
 			</li>
 			<li class="nav-visible__list-item">
-				<% active_link_to "/blog/", class: "nav-visible__link", itemprop: "url" do %>
-					<span itemprop="name">Blog</span>
+				<% active_link_to "/work/", class: "nav-visible__link", itemprop: "url" do %>
+					<span itemprop="name">Work</span>
 				<% end %>
 			</li>
 		</ul>
@@ -26,35 +26,41 @@
 			<span class="nav-button__times">&times;</span>
 		</button>
 	</nav>
+
+	<%# Hidden Navigation %>
+	<nav class="nav-hidden" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+		<ul class="nav-hidden__list">
+			<li class="nav-hidden__list-item">
+				<% active_link_to "/", class: "nav-hidden__link", itemprop: "url" do %>
+					<span itemprop="name">Home</span>
+				<% end %>
+			</li>
+			<li class="nav-hidden__list-item">
+				<% active_link_to "/work/", class: "nav-hidden__link", itemprop: "url" do %>
+					<span itemprop="name">Work</span>
+				<% end %>
+			</li>
+			<li class="nav-hidden__list-item">
+				<% active_link_to "/team/", class: "nav-hidden__link", itemprop: "url" do %>
+					<span itemprop="name">Team</span>
+				<% end %>
+			</li>
+			<li class="nav-hidden__list-item">
+				<% active_link_to "/guides/", class: "nav-hidden__link", itemprop: "url" do %>
+					<span itemprop="name">Guides</span>
+				<% end %>
+			</li>
+			<li class="nav-hidden__list-item">
+				<% active_link_to "/writing/", class: "nav-hidden__link", itemprop: "url" do %>
+					<span itemprop="name">Writing</span>
+				<% end %>
+			</li>
+			<li class="nav-hidden__list-item">
+				<% active_link_to "/contact/", class: "nav-hidden__link", itemprop: "url" do %>
+					<span itemprop="name">Contact</span>
+				<% end %>
+			</li>
+		</ul>
+	</nav>
 </header>
 
-<%# Hidden Navigation %>
-<nav class="nav-hidden" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
-	<ul class="nav-hidden__list">
-		<li class="nav-hidden__list-item">
-			<% active_link_to "/", class: "nav-hidden__link", itemprop: "url" do %>
-				<span itemprop="name">Home</span>
-			<% end %>
-		</li>
-		<li class="nav-hidden__list-item">
-			<% active_link_to "/#clients", class: "nav-hidden__link", itemprop: "url" do %>
-				<span itemprop="name">Clients</span>
-			<% end %>
-		</li>
-		<li class="nav-hidden__list-item">
-			<% active_link_to "/team/", class: "nav-hidden__link", itemprop: "url" do %>
-				<span itemprop="name">Team</span>
-			<% end %>
-		</li>
-		<li class="nav-hidden__list-item">
-			<% active_link_to "/blog/", class: "nav-hidden__link", itemprop: "url" do %>
-				<span itemprop="name">Blog</span>
-			<% end %>
-		</li>
-		<li class="nav-hidden__list-item">
-			<% active_link_to "/contact/", class: "nav-hidden__link", itemprop: "url" do %>
-				<span itemprop="name">Contact</span>
-			<% end %>
-		</li>
-	</ul>
-</nav>
