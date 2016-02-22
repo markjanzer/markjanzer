@@ -5,17 +5,13 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .home-process {
-	margin-bottom: 360px;
+	margin-bottom: 120px;
 }
 .home-process__title {
 	float: right;
 	margin-top: 168px;
 	margin-right: -32px;
 	transform: rotate(270deg);
-}
-.home-process__description {
-	margin-bottom: 24px;
-	@include font-size($font-size-600);
 }
 .home-process__link {
 	font-family: $font-family-secondary;

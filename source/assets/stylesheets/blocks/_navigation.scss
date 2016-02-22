@@ -96,6 +96,7 @@ html, body {
 }
 .nav-visible__logo {
   color: $color-white;
+  z-index: $z6;
   transition: color 400ms $transition-easing;
 }
 .nav-visible__logo:hover,
@@ -103,7 +104,10 @@ html, body {
   color: $color-blue-lt;
 }
 .nav-visible__logo--is-dark .nav-visible__logo {
-  color: $color-black !important;
+  color: $color-black;
+}
+.nav-hidden--is-visible .nav-visible__logo {
+  color: $color-white !important;
 }
 
 // Sub pages
