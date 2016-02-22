@@ -7,6 +7,22 @@
 .home-process {
 	margin-bottom: 360px;
 }
+.home-process__title {
+	float: right;
+	margin-top: 168px;
+	margin-right: -32px;
+	transform: rotate(270deg);
+}
+.home-process__description {
+	margin-bottom: 24px;
+	@include font-size($font-size-600);
+}
+.home-process__link {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+	padding-bottom: 8px;
+	border-bottom: 4px solid $color-blue-dk;
+}
 .home-process__graphic {
 	position: absolute;
 	// right: -120px;
@@ -19,6 +35,7 @@
 	// max-width: 1280px;
 	opacity: 0.25;
 }
+
 
 // .home-process {
 // 	position: relative;

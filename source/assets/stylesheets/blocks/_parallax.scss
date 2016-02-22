@@ -8,14 +8,15 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
+  -webkit-perspective: 30px;
+  perspective: 30px;
   -webkit-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
 .parallax__group {
   position: relative;
   height: 100vh;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   // transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
@@ -32,25 +33,25 @@
 .parallax__layer--0 {
   // 1 + (90 * -1) / 300
   transform: translate3d(0,0,0) scale(1);
-  z-index: $z4
 }
 .parallax__layer--1 {
-  transform: translate3d(0,0,-120px) scale(1.4);
-  z-index: $z4;
+  transform: translate3d(0,0,-6px) scale(1.2);
 }
 .parallax__layer--2 {
-  transform: translate3d(0,0,-180px) scale(1.6);
-  z-index: $z4;
+  transform: translate3d(0,0,-12px) scale(1.4);
 }
 .parallax__layer--3 {
-  transform: translate3d(0,0,-300px) scale(2);
-  z-index: $z3;
+  transform: translate3d(0,0,-18px) scale(1.6);
 }
 .parallax__layer--4 {
-  transform: translate3d(0,0,-600px) scale(3);
-  z-index: $z2;
+  transform: translate3d(0,0,-24px) scale(1.8);
 }
 .parallax__layer--5 {
-  transform: translate3d(0,0,-900px) scale(4);
-  z-index: $z2;
+  transform: translate3d(0,0,-36px) scale(2.2);
+}
+.parallax__layer--6 {
+  transform: translate3d(0,0,-48px) scale(2.6);
+}
+.parallax__layer--7 {
+  transform: translate3d(0,0,-60px) scale(3);
 }
