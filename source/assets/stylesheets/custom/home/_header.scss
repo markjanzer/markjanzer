@@ -4,10 +4,6 @@
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-section {
-	// opacity: 0;
-}
-
 .home-header {
 	margin-bottom: 840px;
 }
@@ -44,26 +40,37 @@ section {
 		margin: -144px 0 0 -144px;
 	}
 }
-.home-header__ampersand {
-	// position: absolute;
+.home-header__ampersands {
 	width: 480px;
-	margin: 0 auto;
-	right: 0;
-	left: 0;
+	margin: 30vh auto 0;
+}
+.home-header__ampersand {
+	position: absolute;
+	width: 480px;
 	@include animation(scaleInDelay 1200ms);
 	@include keyframes(scaleInDelay) {
 		0%   { transform: scale(1.125); opacity: 0; }
 		25%  { transform: scale(1.125); opacity: 0; }
 		100% { transform: scale(1); opacity: 1; }
 	}
-	@media only screen and (min-width: $screen-sm-min) {
-		// margin: -60px auto 0;
-	}
-	@media only screen and (min-width: $screen-md-min) {
-		// margin: 240px auto 0;
-		margin: 0 auto;
-	}
+	// @media only screen and (min-width: $screen-sm-min) {
+	// 	// margin: -60px auto 0;
+	// }
+	// @media only screen and (min-width: $screen-md-min) {
+	// 	// margin: 240px auto 0;
+	// 	// margin: 0 auto;
+	// }
 }
+.home-header__ampersand img {
+	width: 100%;
+}
+.home-header__ampersand--hatch {
+	margin-top: 48px;
+	margin-left: 84px;
+}
+
+
+
 .home-header__ampersand-solid {
 	// @media only screen and (min-width: $screen-md-min) {
 	// 	margin: 240px auto 0;
@@ -75,10 +82,6 @@ section {
 		// margin-left: 84px;
 		// margin-right: 480px;
 	}
-}
-.home-header__ampersand-solid img,
-.home-header__ampersand-hatch img {
-	width: 100%;
 }
 .home-header__email {
 	float: right;

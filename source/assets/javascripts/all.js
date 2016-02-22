@@ -4,7 +4,7 @@
 //= require blocks/_navigation
 
 // ------------------------
-// fastclick init
+// fastclick.js init
 // ------------------------
 if ('addEventListener' in document) {
   document.addEventListener('DOMContentLoaded', function() {
@@ -13,10 +13,34 @@ if ('addEventListener' in document) {
 }
 
 // ------------------------
-// parallax init
+// parallax.js init
 // ------------------------
 var scene = document.getElementsByClassName('js-parallax-scene')[0];
 var parallax = new Parallax(scene);
+
+
+// ------------------------
+// logo color swap
+// ------------------------
+function logoColor(offset) {
+	var body = document.body,
+			main = document.getElementsByClassName('js-layout-content')[0];
+
+	function listener() {
+		var y = main.scrollTop;
+		if ( y >= offset ) {
+			classie.add( body, 'nav-visible__logo--is-dark' );
+		} else {
+			classie.remove( body, 'nav-visible__logo--is-dark');
+		}
+	}
+
+  main.addEventListener( 'scroll', listener, false );
+}
+
+
+
+
 // ------------------------
 // headroom init
 // ------------------------

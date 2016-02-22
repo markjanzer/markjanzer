@@ -96,10 +96,14 @@ html, body {
 }
 .nav-visible__logo {
   color: $color-white;
+  transition: color 400ms $transition-easing;
 }
 .nav-visible__logo:hover,
 .nav-visible__link:hover {
   color: $color-blue-lt;
+}
+.nav-visible__logo--is-dark .nav-visible__logo {
+  color: $color-black !important;
 }
 
 // Sub pages

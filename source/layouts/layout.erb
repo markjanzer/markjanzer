@@ -43,7 +43,7 @@
     <%= partial("partials/navigation") %>
 
     <%# Layout Content %>
-    <main class="layout-content parallax" <% unless current_page.data.itemtype == "Article" %>itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement"<% end %> role="main">
+    <main class="layout-content parallax js-layout-content" <% unless current_page.data.itemtype == "Article" %>itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement"<% end %> role="main">
       <%= yield %>
     </main>
 
@@ -52,6 +52,11 @@
 
     <%# JS Assets %>
     <%= javascript_include_tag "all" %>
+
+    <%# JS Custom %>
+    <% if content_for?(:javascripts) %>
+      <script><%= yield_content :javascripts %></script>
+    <% end %>
 
     <%# Google Anlaytics %>
     <script>

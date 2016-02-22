@@ -39,11 +39,9 @@
 
 	function toggleNav(e) {
 		if(isOpen) {
-			classie.remove( html, 'nav-hidden--is-visible' );
 			classie.remove( body, 'nav-hidden--is-visible' );
 			body.removeEventListener( 'touchmove', disableTouch )
 		} else {
-			classie.add( html, 'nav-hidden--is-visible' );
 			classie.add( body, 'nav-hidden--is-visible' );
 			body.addEventListener( 'touchmove', disableTouch )
 		}
