@@ -1,0 +1,39 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Process Page — Header
+// stylesheets/custom/process/_header.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Text
+.work-header__text {
+	margin-top: 40vh;
+}
+
+// Shapes
+.process-graphic__shapes {
+	width: 100%;
+	margin-top: 50vh;
+}
+.process-graphic__shape-start {
+	margin-top: 30vh;
+	margin-left: 5vw;
+}
+.process-graphic__shape-discovery {
+	margin-top: 12vh;
+	margin-left: 9vw;
+}
+.process-graphic__shape-design {
+	margin-left: 13vw;
+}
+.process-graphic__shape-development {
+	margin-top: 9vh;
+	margin-left: 41vw;
+}
+.process-graphic__shape-content {
+	margin-top: 18vh;
+	margin-left: 68vw;
+}
+.process-graphic__shape-testing {
+	margin-top: 68vh;
+	margin-left: 60vw;
+}

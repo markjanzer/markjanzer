@@ -5,7 +5,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .home-header {
-	margin-bottom: 840px;
+	margin-top: 300px;
+	margin-bottom: 480px;
 }
 .home-header__graphic {
 	position: absolute;
@@ -13,7 +14,7 @@
 	height: 420px;
 	margin: -144px 0 0 -144px;
 	background: $color-black;
-	transform: rotate(45deg);
+	transform: rotate(60deg);
 	@include animation(fadeIn 800ms, headerRotate 800ms);
 	@include keyframes(headerRotate) {
 		0%   { transform: rotate(90deg); }
@@ -37,15 +38,18 @@
 	@media only screen and (min-width: $screen-lg-min) {
 		width: 960px;
 		height: 960px;
-		margin: -144px 0 0 -144px;
+		margin: -540px 0 0 -144px;
 	}
 }
 .home-header__ampersands {
+	position: absolute;
 	width: 480px;
-	margin: 30vh auto 0;
+	left: 0;
+	right: 0;
+	margin: -84px auto 0;
 }
 .home-header__ampersand {
-	position: absolute;
+	// position: absolute;
 	width: 480px;
 	@include animation(scaleInDelay 1200ms);
 	@include keyframes(scaleInDelay) {
@@ -61,31 +65,25 @@
 	// 	// margin: 0 auto;
 	// }
 }
-.home-header__ampersand img {
+.home-header__ampersand--solid,
+.home-header__ampersand--hatch {
 	width: 100%;
 }
 .home-header__ampersand--hatch {
 	margin-top: 48px;
 	margin-left: 84px;
-}
-
-
-
-.home-header__ampersand-solid {
-	// @media only screen and (min-width: $screen-md-min) {
-	// 	margin: 240px auto 0;
-	// }
-}
-.home-header__ampersand-hatch {
+	@include animation(slideOutDelay 1200ms);
+	@include keyframes(slideOutDelay) {
+		0%   { margin-top: 0; margin-left: 0; }
+		100% { margin-top: 48px; margin-left: 84px; }
+	}
 	@media only screen and (min-width: $screen-md-min) {
-		// margin-top: 48px;
-		// margin-left: 84px;
-		// margin-right: 480px;
 	}
 }
+
 .home-header__email {
 	float: right;
-	margin-top: 50vh;
+	margin-top: 84px;
 	margin-right: -102px;
 	transform: rotate(270deg);
 	color: $color-black;
@@ -98,7 +96,7 @@
 	}
 }
 .home-header__text {
-	margin-top: 40vh;
+	// margin-top: 40vh;
 }
 .home-header__description {
 	margin-bottom: 24px;

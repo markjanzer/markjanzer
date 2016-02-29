@@ -21,11 +21,14 @@
 	transform: rotate(270deg);
 }
 .home-product {
-	margin-bottom: 96px;
+	margin-bottom: 64px;
 }
 .home-product__logo {
 	display: inline-block;
 	vertical-align: middle;
+}
+.home-product__logo img {
+	max-width: 240px;
 }
 .home-product__description {
 	margin-bottom: 32px;

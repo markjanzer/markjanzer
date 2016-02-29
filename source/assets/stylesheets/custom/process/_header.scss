@@ -1,22 +1,57 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Dixon & Moe Process Page — Graphic
-// stylesheets/custom/process/_graphic.scss
+// Dixon & Moe Process Page — Header
+// stylesheets/custom/process/_header.scss
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.process-graphic {
-	position: relative;
-	margin-bottom: 240px;
+// Text
+.process-header__text {
+	margin-top: 40vh;
 }
-.process-graphic__image {
-	position: absolute;
-	top: 0;
-	width: 125%;
+
+// Shapes
+.process-graphic__shapes {
+	width: 100%;
+	margin-top: 50vh;
+}
+.process-graphic__shape-start {
+	margin-top: 30vh;
+	margin-left: 5vw;
+}
+.process-graphic__shape-discovery {
+	margin-top: 12vh;
+	margin-left: 9vw;
+}
+.process-graphic__shape-design {
+	margin-left: 13vw;
+}
+.process-graphic__shape-development {
+	margin-top: 9vh;
+	margin-left: 41vw;
+}
+.process-graphic__shape-content {
+	margin-top: 18vh;
+	margin-left: 68vw;
+}
+.process-graphic__shape-testing {
+	margin-top: 68vh;
+	margin-left: 60vw;
+}
+
+// .process-graphic__image {
+// 	position: absolute;
+// 	top: 0;
+// 	width: 125%;
+// }
+
+
+// Grid
+.process-graphic__grid {
+	margin-top: 50vh;
 }
 .process-graphic__grid-col {
 	display: block;
 	float: left;
-	// margin-top: 60px;
 	width: 4.15%;
 	height: 720px;
 	border-left: 1px solid $color-gray-200;
@@ -24,8 +59,6 @@
 .process-graphic__grid-col:last-child {
 	width: 0%;
 }
-
-// Grid columns — a series
 .grid-col-1-a {
 	height: 705px;
 	margin-top: 15px;
@@ -78,9 +111,6 @@
 	height: 845px;
 	margin-top: -125px;
 }
-
-
-// Grid columns — b series
 .grid-col-1-b {
 	height: 900px;
 	margin-top: -120px;

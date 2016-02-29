@@ -111,13 +111,16 @@ html, body {
 }
 
 // Sub pages
-.nav-hidden--is-visible .blog .nav-visible__link,
+.work .nav-visible__logo,
 .process .nav-visible__logo,
 .writing .nav-visible__logo {
   color: $color-black;
 }
-.nav-hidden--is-visible .blog .nav-visible__logo,
-.writing .nav-visible__link {
+
+// Sub pages menu active states
+.nav-hidden--is-visible .work .nav-visible__logo,
+.nav-hidden--is-visible .process .nav-visible__logo,
+.nav-hidden--is-visible .writing .nav-visible__logo {
   color: $color-white;
 }
 

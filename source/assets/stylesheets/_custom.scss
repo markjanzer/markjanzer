@@ -12,9 +12,12 @@
 @import "custom/home/products";
 
 // Process Page
-@import "custom/process/graphic";
+@import "custom/process/header";
 @import "custom/process/phases";
 
-// Guides Page
-@import "custom/guides/header";
-@import "custom/guides/section";
+// Work Page
+@import "custom/work/header";
+
+// Writing Page
+@import "custom/writing/header";
+@import "custom/writing/section";

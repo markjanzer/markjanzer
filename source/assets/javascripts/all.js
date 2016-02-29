@@ -23,11 +23,10 @@ var parallax = new Parallax(scene);
 // logo color swap
 // ------------------------
 function logoColor(offset) {
-	var body = document.body,
-			main = document.getElementsByClassName('js-layout-content')[0];
+	var body = document.body;
 
 	function listener() {
-		var y = main.scrollTop;
+		var y = window.pageYOffset;
 		if ( y >= offset ) {
 			classie.add( body, 'nav-visible__logo--is-dark' );
 		} else {
@@ -35,7 +34,7 @@ function logoColor(offset) {
 		}
 	}
 
-  main.addEventListener( 'scroll', listener, false );
+  window.addEventListener( 'scroll', listener, false );
 }
 
 
