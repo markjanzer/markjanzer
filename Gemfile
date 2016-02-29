@@ -15,3 +15,5 @@ gem "nokogiri"
 
 # Build dynamic XML sitemaps
 gem "builder"
+
+gem "aws-sdk", "2.0.31"
