@@ -23,6 +23,9 @@ page "/feed.xml", layout: false
 
 page "/blog/*.html", layout: :article_layout
 
+page "/rellax.html", layout: false
+
+
 #### GLOBAL CONFIGURATION
 
 
