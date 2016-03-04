@@ -142,7 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (= 2.0.31)
+  aws-sdk
   builder
   middleman (~> 3.3.10)
   middleman-blog (~> 3.5.3)
