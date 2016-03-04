@@ -13,6 +13,7 @@
 # Ignore the build directory
 /build
 /gzip
+sync.txt
 
 # Ignore cache
 /.sass-cache
