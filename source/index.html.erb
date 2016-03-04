@@ -22,141 +22,182 @@ priority: 1.0
 <header class="home-header">
 
   <%# Header Graphic %>
-  <div class="home-header__graphic"></div>
+  <div class="home-header__shapes">
+    <div class="rellax" data-rellax-speed="-1">
+      <div class="home-header__shape"></div>
+    </div>
+  </div>
 
   <%# Header Ampersands %>
   <div class="home-header__ampersands">
-    <div class="js-parallax-scene">
-      <div class="layer" data-depth="0.50">
-        <figure class="home-header__ampersand">
-          <%= image_tag("ampersand-hatch.svg", class: "home-header__ampersand--hatch") %>
-        </figure>
-      </div>
-      <div class="layer" data-depth="1.00">
-        <figure class="home-header__ampersand">
-          <%= image_tag("ampersand-solid.svg", class: "home-header__ampersand--solid") %>
-        </figure>
+    <div class="rellax" data-rellax-speed="0">
+      <div class="js-parallax-scene">
+        <div class="layer" data-depth="0.75">
+          <figure class="home-header__ampersand">
+            <%= image_tag("ampersand-hatch.svg", class: "home-header__ampersand--hatch") %>
+          </figure>
+        </div>
+        <div class="layer" data-depth="1.50">
+          <figure class="home-header__ampersand">
+            <%= image_tag("ampersand-solid.svg", class: "home-header__ampersand--solid") %>
+          </figure>
+        </div>
       </div>
     </div>
   </div>
 
   <%# Header Text %>
-  <div class="home-header__text">
-    <div class="row">
-      <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12">
-        <h1 class="home-header__description" itemprop="description">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
-        <%= link_to "get in touch", "mailto:hello@dixonandmoe.com", class: "home-header__link" %>
-      </div>
-      <div class="col-xs-24 col-sm-3 col-md-6 col-lg-12 show-sm">
-        <%= link_to "hello@dixonandmoe.com", "mailto:hello@dixonandmoe.com", class: "home-header__email" %>
+    <div class="home-header__text">
+      <div class="row">
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12">
+            <h1 class="home-header__description" itemprop="description">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
+            <%= link_to "get in touch", "mailto:hello@dixonandmoe.com", class: "home-header__link" %>
+          </div>
+        </div>
+        <div class="rellax" data-rellax-speed="0">
+          <div class="col-xs-24 col-sm-3 col-md-6 col-lg-12 show-sm">
+            <%= link_to "hello@dixonandmoe.com", "mailto:hello@dixonandmoe.com", class: "home-header__email" %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </header>
 
-
-<%# Clients %>
-<section class="home-clients">
-
-  <%# Expertise %>
-  <div class="home-clients__section">
+<%# Expertise %>
+<section class="home-expertise">
+  <div class="home-expertise__shapes">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="home-expertise__shape"></div>
+    </div>
+  </div>
+  <div class="home-expertise__text">
     <div class="row">
-      <div class="col-md-6 show-md">
-        <h4 class="home-clients__title">Our Expertise</h4>
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-md-6 show-md">
+          <h4 class="home-expertise__title">Our Expertise</h4>
+        </div>
       </div>
-      <div class="col-xs-24 col-sm-21 col-sm-offset-3 col-md-16 col-md-offset-8 col-lg-12 col-lg-offset-10">
-        <h2 class="page-section__description">We brand, build, design and market, and can help you with your next project at just about any stage.</h2>
-        <%= link_to "see our work", "/work/", class: "page-section__link" %>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-sm-offset-3 col-md-16 col-md-offset-8 col-lg-12 col-lg-offset-12">
+          <h2 class="page-section__description">We brand, build, design and market, and can help you with your next project at just about any stage.</h2>
+          <%= link_to "see our work", "/work/", class: "page-section__link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<%# Projects %>
+<section class="home-projects">
+  <div class="home-projects__title">
+    <div class="rellax" data-rellax-speed="1">
+      <div class="row">
+        <div class="col-xs-24 col-md-22 col-md-offset-2">
+          <h2>Work</h2>
+        </div>
       </div>
     </div>
   </div>
 
-  <%# Work %>
-  <div class="home-clients__section" style="margin-top:120px">
+  <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+
+
+    <div class="home-project__shape--hatch"></div>
+    <div class="home-project__shape--outline"></div>
+
+
     <div class="row">
-      <div class="col-xs-24 col-md-22 col-md-offset-2">
-        <h2 style="margin-bottom:24px;">Work</h2>
-        <!-- <h4 class="process-phase__subtitle">our clients</h4> -->
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <div class="row">
+    <%# WisePOPS %>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="WisePOPS | Popups for the rest of us">
+        <span class="home-project__title">WisePops <span class="home-project__title-line"></span><span class="home-project__title-date">2016</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://wisepops.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/wisepops-logo.svg", alt: "WisePops | Intelligent Website Popups", itemprop: "contentUrl") %>
+          </figure>
+        </a><br><br>
+        
+        <h3>WisePops</h3>
+        <p class="home-project__description" itemprop="description">Focused on pricing strategy and conversion optimization, we helped WisePops more then double their revenue in 3 months with a new marketing site and brand refresh.</p>
+        <div class="home-project__tags">
+          <span class="home-project__tag">branding</span>,
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">product</span>
+        </div>
       </div>
     </div>
-    <div class="row" style="margin-top:180px;">
-      <%# WisePOPS %>
-      <div class="col-xs-24 col-sm-12 col-md-6">
-        <div class="home-client" itemscope itemtype="https://schema.org/CreativeWork">
-          <meta itemprop="name" content="WisePOPS | Popups for the rest of us">
-          <span class="home-client__title">WisePops <span class="home-client__title-line"></span><span class="home-client__title-date">2016</span></span><br><br><br><br>
-          <a class="home-client__link" href="https://wisepops.com/" target="_blank" itemprop="url">
-            <figure class="home-client__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <%= image_tag("clients/wisepops-logo.svg", alt: "WisePops | Intelligent Website Popups", itemprop: "contentUrl") %>
-            </figure>
-          </a><br><br>
-          
-          <h3>WisePops</h3>
-          <p class="home-client__description" itemprop="description">Focused on pricing strategy and conversion optimization, we helped WisePops more then double their revenue in 3 months with a new marketing site and brand refresh.</p>
-          <div class="home-client__tags">
-            <span class="home-client__tag">branding</span>,
-            <span class="home-client__tag">design</span>,
-            <span class="home-client__tag">product</span>
-          </div>
+    <%# AgendaNYC %>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="Wisepops | Popups for the rest of us">
+        <span class="home-project__title">AgendaNYC <span class="home-project__title-line"></span><span class="home-project__title-date">2016</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://wisepops.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/agendanyc-logo.svg", alt: "AgendaNYC | Communications, Strategy and Creative in NYC", itemprop: "contentUrl") %>
+          </figure>
+        </a><br><br>
+        <h3>AgendaNYC</h3>
+        
+        <p class="home-project__description" itemprop="description">We brand, build, launch and market all kinds of websites and products, and not necessarily in that order. We brand, build, launch and market kinds of websites and products.</p>
+        <div class="home-project__tags">
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">frontend</span>,
+          <span class="home-project__tag">seo</span>
         </div>
       </div>
-      <%# AgendaNYC %>
-      <div class="col-xs-24 col-sm-12 col-md-6">
-        <div class="home-client" itemscope itemtype="https://schema.org/CreativeWork">
-          <meta itemprop="name" content="Wisepops | Popups for the rest of us">
-          <span class="home-client__title">AgendaNYC <span class="home-client__title-line"></span><span class="home-client__title-date">2016</span></span><br><br><br><br>
-          <a class="home-client__link" href="https://wisepops.com/" target="_blank" itemprop="url">
-            <figure class="home-client__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <%= image_tag("clients/agendanyc-logo.svg", alt: "AgendaNYC | Communications, Strategy and Creative in NYC", itemprop: "contentUrl") %>
-            </figure>
-          </a><br><br>
-          <h3>AgendaNYC</h3>
-          
-          <p class="home-client__description" itemprop="description">We brand, build, launch and market all kinds of websites and products, and not necessarily in that order. We brand, build, launch and market kinds of websites and products.</p>
-          <div class="home-client__tags">
-            <span class="home-client__tag">design</span>,
-            <span class="home-client__tag">frontend</span>,
-            <span class="home-client__tag">seo</span>
-          </div>
-        </div>
-      </div>
-      <%# GrooveHQ %>
-      <div class="col-xs-24 col-sm-12 col-md-6 col-md-offset-6">
-        <div class="home-client" itemscope itemtype="https://schema.org/CreativeWork">
-          <meta itemprop="name" content="GrooveHQ | Simple Help Desk Software">
-          <span class="home-client__title">GrooveHQ <span class="home-client__title-line"></span><span class="home-client__title-date">2015</span></span><br><br><br><br>
-          <a class="home-client__link" href="https://groovehq.com/" target="_blank" itemprop="url">
-            <figure class="home-client__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <%= image_tag("clients/groovehq-logo.svg", alt: "GrooveHQ | Simple Help Desk Software", itemprop: "contentUrl") %>
-            </figure>
-          </a>
-          <div class="home-client__tags">
-            <span class="home-client__tag">design</span>,
-            <span class="home-client__tag">UI/UX</span>,
-            <span class="home-client__tag">marketing</span>
-          </div>
-          <p class="home-client__description" itemprop="description">To complement Groove's highly successful product and blog, we worked with their CEO Alex to design and A/B test a brand new <a href="http://groovehq.com/" target="_blank">marketing site</a> from the ground up.</p>
-        </div>
-      </div>
-      <%# Aptible %>
-      <!-- <div class="col-xs-24 col-sm-12 col-md-6">
-        <div class="home-client" itemscope itemtype="https://schema.org/CreativeWork">
-          <meta itemprop="name" content="Aptible | HIPPA Compliant Cloud Services">
-          <span class="home-client__title">Aptible <span class="home-client__title-line"></span><span class="home-client__title-date">04</span></span><br><br><br><br>
-          <a class="home-client__link" href="https://aptible.com/" target="_blank" itemprop="url">
-            <figure class="home-client__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-              <%= image_tag("clients/aptible-logo.svg", alt: "Aptible | HIPPA Compliant Cloud Services", itemprop: "contentUrl") %>
-            </figure>
-          </a>
-          <div class="home-client__tags">
-            <span class="home-client__tag">design</span>,
-            <span class="home-client__tag">frontend</span>,
-            <span class="home-client__tag">marketing</span>
-          </div>
-          <p class="home-client__description" itemprop="description">Collaborating with their VP of marketing we built an animated <a href="https://www.aptible.com/technology/" target="_blank">technology page</a>, created ads, and designed <a href="https://www.aptible.com/company/resources/#hipaa-badges-section" target="_blank">"Powered by Aptible"</a> badges to drive customer aquisition.</p>
-        </div>
-      </div> -->
     </div>
+    <%# GrooveHQ %>
+    <div class="col-xs-24 col-sm-12 col-md-6 col-md-offset-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="GrooveHQ | Simple Help Desk Software">
+        <span class="home-project__title">GrooveHQ <span class="home-project__title-line"></span><span class="home-project__title-date">2015</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://groovehq.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/groovehq-logo.svg", alt: "GrooveHQ | Simple Help Desk Software", itemprop: "contentUrl") %>
+          </figure>
+        </a>
+        <div class="home-project__tags">
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">UI/UX</span>,
+          <span class="home-project__tag">marketing</span>
+        </div>
+        <p class="home-project__description" itemprop="description">To complement Groove's highly successful product and blog, we worked with their CEO Alex to design and A/B test a brand new <a href="http://groovehq.com/" target="_blank">marketing site</a> from the ground up.</p>
+      </div>
+    </div>
+    <%# Aptible %>
+    <!-- <div class="col-xs-24 col-sm-12 col-md-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="Aptible | HIPPA Compliant Cloud Services">
+        <span class="home-project__title">Aptible <span class="home-project__title-line"></span><span class="home-project__title-date">04</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://aptible.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/aptible-logo.svg", alt: "Aptible | HIPPA Compliant Cloud Services", itemprop: "contentUrl") %>
+          </figure>
+        </a>
+        <div class="home-project__tags">
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">frontend</span>,
+          <span class="home-project__tag">marketing</span>
+        </div>
+        <p class="home-project__description" itemprop="description">Collaborating with their VP of marketing we built an animated <a href="https://www.aptible.com/technology/" target="_blank">technology page</a>, created ads, and designed <a href="https://www.aptible.com/company/resources/#hipaa-badges-section" target="_blank">"Powered by Aptible"</a> badges to drive customer aquisition.</p>
+      </div>
+    </div> -->
   </div>
 </section>
 

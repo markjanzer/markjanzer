@@ -1,5 +1,6 @@
 //= require vendor/_fastclick.min
 //= require vendor/_parallax.min
+//= require vendor/_rellax.min
 //= require vendor/_classie
 //= require blocks/_navigation
 
@@ -11,6 +12,11 @@ if ('addEventListener' in document) {
       FastClick.attach(document.body);
   }, false);
 }
+
+// ------------------------
+// rellax.js init
+// ------------------------
+var rellax = new Rellax('.rellax');
 
 // ------------------------
 // parallax.js init

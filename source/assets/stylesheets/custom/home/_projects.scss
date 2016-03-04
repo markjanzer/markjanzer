@@ -4,38 +4,32 @@
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.home-clients {
+.home-projects {
 	margin-bottom: 480px;
 	@media only screen and (min-width: $screen-lg-min) {
 		// margin-bottom: 960px;
 	}
 	// margin-bottom: 144px; // to compensate for home-client padding-bottom
 }
-.home-clients__expertise {
-
-}
-.home-clients__work {
-
-}
 
 
-.home-clients__title {
+.home-projects__title {
 	position: absolute;
 	float: left;
-	margin-top: 64px;
+	margin-top: -128px;
 	margin-left: -32px;
 	transform:rotate(270deg);
 }
-.home-clients__description {
+.home-projects__description {
 	margin-bottom: 24px;
 	@include font-size($font-size-600);
 }
 
-.home-client {
+.home-project {
 	margin-bottom: 64px;
 }
 
-.home-client__title-line {
+.home-project__title-line {
 	display: inline-block;
 	vertical-align: middle;
 	width: 48px;
@@ -44,7 +38,7 @@
 	// padding-bottom: -12px;
 	background: $color-black;
 }
-.home-client__title-date {
+.home-project__title-date {
 	font-family: $font-family-secondary;
 	@include font-size($font-size-400);
 }
@@ -52,29 +46,29 @@
 
 
 
-.home-client__link {
+.home-project__link {
 	display: block;
 	margin-bottom: 4px;
 }
-.home-client__logo {
+.home-project__logo {
 	width: 100%;
 	// text-align: center;
 }
-.home-client__logo img {
+.home-project__logo img {
 	// width:100%;
 	margin-left: 64px;
 	// position: relative;
 }
-.home-client__description {
+.home-project__description {
 	margin-top: 48px;
 	line-height: 1.618;
 	@include font-size($font-size-300);
 }
-.home-client__tags {
+.home-project__tags {
 	margin-top: 48px;
 	font-family: $font-family-secondary;
 }
-.home-client__tag {
+.home-project__tag {
 	padding-bottom: 4px;
 	border-bottom: 2px solid $color-blue-dk;
 }
