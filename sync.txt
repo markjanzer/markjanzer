@@ -1,4 +1,4 @@
-      create  build/assets/stylesheets/all-cabdb999.css
+   identical  build/assets/stylesheets/all-cabdb999.css
    identical  build/assets/images/clients/wisepops-hero-413a6582.png
    identical  build/assets/images/icons/apple-touch-icon-120x120-precomposed-9f509193.png
    identical  build/assets/images/process-test-4-890bd581.png
@@ -9,7 +9,7 @@
    identical  build/assets/images/clients/agendanyc-hero-419b408f.png
    identical  build/assets/images/work/agendanyc-hero--right-ce273cbf.png
    identical  build/assets/images/work/agendanyc-hero-72c6efbb.png
-      create  build/assets/images/work/aptible-hero--left-8f609d49.png
+      create  build/assets/images/work/aptible-hero--left-de5616e3.png
    identical  build/assets/images/work/aptible-hero-c41bfc39.png
    identical  build/assets/images/work/groovehq-hero--left-1cf93ab2.png
    identical  build/assets/images/work/groovehq-hero--right-5aea060f.png
@@ -98,21 +98,21 @@
    identical  build/assets/images/process/shape-design-lg-d67e7834.svg
    identical  build/assets/javascripts/all-de2a3604.js
        error  build/writing/tags/business/index.html
-      update  build/guides/how-to-form-an-llc-in-california/index.html
-      update  build/guides/seo-for-designers-part-1/index.html
-      update  build/guides/seo-for-designers-part-2/index.html
+   identical  build/guides/how-to-form-an-llc-in-california/index.html
+   identical  build/guides/seo-for-designers-part-1/index.html
+   identical  build/guides/seo-for-designers-part-2/index.html
       update  build/index.html
-      update  build/process/index.html
+   identical  build/process/index.html
    identical  build/robots.txt
    identical  build/sitemap.xml
-      update  build/work/wisepops/index.html
-      update  build/work/index.html
-      update  build/writing/web-animation/index.html
-      update  build/writing/agency-year-1-make-all-the-mistakes/index.html
-      update  build/writing/how-to-form-an-llc-in-california/index.html
-      update  build/writing/how-to-get-an-ssl-certificate-https-for-your-business/index.html
-      update  build/writing-old/index.html
-      update  build/writing/index.html
+   identical  build/work/wisepops/index.html
+   identical  build/work/index.html
+   identical  build/writing/web-animation/index.html
+   identical  build/writing/agency-year-1-make-all-the-mistakes/index.html
+   identical  build/writing/how-to-form-an-llc-in-california/index.html
+   identical  build/writing/how-to-get-an-ssl-certificate-https-for-your-business/index.html
+   identical  build/writing-old/index.html
+   identical  build/writing/index.html
        error  build/writing/tags/animation/index.html
    identical  build/feed.xml
        error  build/writing/tags/incorporation/index.html
@@ -130,11 +130,11 @@
        error  build/writing/2016/01/07/index.html
        error  build/writing/2015/index.html
        error  build/writing/2015/10/index.html
-      update  build/contact/index.html
+   identical  build/contact/index.html
        error  build/writing/2015/10/20/index.html
+      remove  build/assets/images/work/aptible-hero--left-8f609d49.png
       remove  build/assets/javascripts/all-de2a3604.js.gz
-      remove  build/assets/stylesheets/all-2af859ce.css
-      remove  build/assets/stylesheets/all-2af859ce.css.gz
+      remove  build/assets/stylesheets/all-cabdb999.css.gz
       remove  build/contact/index.html.gz
       remove  build/feed.xml.gz
       remove  build/guides/how-to-form-an-llc-in-california/index.html.gz
@@ -152,26 +152,25 @@
       remove  build/writing/index.html.gz
       remove  build/writing/web-animation/index.html.gz
       remove  build/writing-old/index.html.gz
-      remove  build/blog/2015/10
-      remove  build/blog/tags
+      remove  build/blog/2015
         gzip  build/contact/index.html.gz (8.2 KB smaller)
         gzip  build/assets/javascripts/all-de2a3604.js.gz (14.1 KB smaller)
-        gzip  build/feed.xml.gz (19.3 KB smaller)
         gzip  build/guides/seo-for-designers-part-1/index.html.gz (6.1 KB smaller)
+        gzip  build/feed.xml.gz (19.3 KB smaller)
         gzip  build/guides/how-to-form-an-llc-in-california/index.html.gz (11.9 KB smaller)
         gzip  build/guides/seo-for-designers-part-2/index.html.gz (6.1 KB smaller)
         gzip  build/robots.txt.gz (16 Bytes larger)
         gzip  build/process/index.html.gz (14 KB smaller)
-        gzip  build/assets/stylesheets/all-cabdb999.css.gz (102.5 KB smaller)
         gzip  build/sitemap.xml.gz (5.6 KB smaller)
-        gzip  build/index.html.gz (32.9 KB smaller)
+        gzip  build/assets/stylesheets/all-cabdb999.css.gz (102.5 KB smaller)
         gzip  build/work/index.html.gz (16.5 KB smaller)
         gzip  build/work/wisepops/index.html.gz (10.3 KB smaller)
+        gzip  build/index.html.gz (32.9 KB smaller)
         gzip  build/writing/agency-year-1-make-all-the-mistakes/index.html.gz (12.6 KB smaller)
         gzip  build/writing/how-to-form-an-llc-in-california/index.html.gz (12.9 KB smaller)
         gzip  build/writing/how-to-get-an-ssl-certificate-https-for-your-business/index.html.gz (10.7 KB smaller)
         gzip  build/writing/index.html.gz (15.7 KB smaller)
-        gzip  build/writing/web-animation/index.html.gz (7.6 KB smaller)
         gzip  build/writing-old/index.html.gz (6.5 KB smaller)
+        gzip  build/writing/web-animation/index.html.gz (7.6 KB smaller)
         gzip  Total gzip savings: 313.7 KB
 There were errors during this build, re-run with `middleman build --verbose` to see the full exception.
