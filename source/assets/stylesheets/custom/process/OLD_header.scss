@@ -1,86 +1,62 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Dixon & Moe Home Page — Process
-// stylesheets/custom/home/_process.scss
+// Dixon & Moe Process Page — Header
+// stylesheets/custom/process/_header.scss
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.home-process {
-	position: relative;
-	height: 1520px;
-}
-.home-process__tagline {
-	float: right;
-	// margin-top: 168px;
-	margin-right: -32px;
-	transform: rotate(270deg);
-}
-.home-process__link {
-	font-family: $font-family-secondary;
-	@include font-size($font-size-400);
-	padding-bottom: 8px;
-	border-bottom: 4px solid $color-blue-dk;
-}
-.home-process__text {
-	position: relative;
-	top: 0;
-	z-index: $z4;
+// Text
+.process-header__text {
+	margin-top: 40vh;
 }
 
 // Shapes
-.home-process__shapes {
-	position: absolute;
-	top: 420px;
+.process-graphic__shapes {
 	width: 100%;
+	margin-top: 50vh;
 }
-.home-process__shape-start {
-	// margin-top: 30vh;
-	position: relative;
-	top: 210px;
-	left: 4.5vw;
+.process-graphic__shape-start {
+	margin-top: 30vh;
+	margin-left: 5vw;
 }
-.home-process__shape-discovery {
-	// margin-top: 12vh;
-	position: relative;
-	top: 80px;
-	left: 9vw;
+.process-graphic__shape-discovery {
+	margin-top: 12vh;
+	margin-left: 9vw;
 }
-.home-process__shape-design {
-	position: relative;
-	top: 0;
-	left: 12vw;
+.process-graphic__shape-design {
+	margin-left: 13vw;
 }
-.home-process__shape-development {
-	// margin-top: 9vh;
-	position: relative;
-	top: 90px;
-	left: 41vw;
+.process-graphic__shape-development {
+	margin-top: 9vh;
+	margin-left: 41vw;
 }
-.home-process__shape-content {
-	// margin-top: 18vh;
-	position: relative;
-	top: 120px;
-	left: 68vw;
+.process-graphic__shape-content {
+	margin-top: 18vh;
+	margin-left: 68vw;
 }
-.home-process__shape-testing {
-	// margin-top: 68vh;
-	position: relative;
-	top: 560px;
-	left: 60vw;
+.process-graphic__shape-testing {
+	margin-top: 68vh;
+	margin-left: 60vw;
 }
 
+// .process-graphic__image {
+// 	position: absolute;
+// 	top: 0;
+// 	width: 125%;
+// }
+
+
 // Grid
-.home-process__grid {
-	position: relative;
-	top: 240px;
+.process-graphic__grid {
+	margin-top: 50vh;
 }
-.home-process__grid-col {
+.process-graphic__grid-col {
 	display: block;
 	float: left;
 	width: 4.15%;
 	height: 720px;
 	border-left: 1px solid $color-gray-200;
 }
-.home-process__grid-col:last-child {
+.process-graphic__grid-col:last-child {
 	width: 0%;
 }
 .grid-col-1-a {
@@ -183,20 +159,15 @@
 	height: 1050px;
 	margin-top: -270px;
 }
-
-// Phases
-.home-process__phases {
-	position: relative;
-	top: 240px;
+.process-graphic__phases {
 	margin-top: 32px;
 }
-.home-process__phase-title {
+.process-graphic__phase-title {
 	text-align: right;
 	font-family: $font-family-secondary;
 	transform: rotate(270deg);
-	@include font-size($font-size-300);
 }
-.home-process__phase-percent {
+.process-graphic__phase-percent {
 	position: relative;
 	z-index: $z2;
 	top: -84px;

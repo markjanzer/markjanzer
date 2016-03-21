@@ -23,7 +23,7 @@ priority: 1.0
 
   <%# Header Graphic %>
   <div class="home-header__shapes">
-    <div class="rellax" data-rellax-speed="-1">
+    <div class="rellax" data-rellax-speed="-2">
       <div class="home-header__shape"></div>
     </div>
   </div>
@@ -50,13 +50,13 @@ priority: 1.0
     <div class="home-header__text">
       <div class="row">
         <div class="rellax" data-rellax-speed="2">
-          <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12">
+          <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
             <h1 class="home-header__description" itemprop="description">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
             <%= link_to "get in touch", "mailto:hello@dixonandmoe.com", class: "home-header__link" %>
           </div>
         </div>
         <div class="rellax" data-rellax-speed="0">
-          <div class="col-xs-24 col-sm-3 col-md-6 col-lg-12 show-sm">
+          <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
             <%= link_to "hello@dixonandmoe.com", "mailto:hello@dixonandmoe.com", class: "home-header__email" %>
           </div>
         </div>
@@ -66,21 +66,21 @@ priority: 1.0
 </header>
 
 <%# Expertise %>
-<section class="home-expertise">
-  <div class="home-expertise__shapes">
+<section class="home-expertise" style="position:relative">
+  <!-- <div class="home-expertise__shapes">
     <div class="rellax" data-rellax-speed="0">
       <div class="home-expertise__shape"></div>
     </div>
-  </div>
+  </div> -->
   <div class="home-expertise__text">
     <div class="row">
       <div class="rellax" data-rellax-speed="0">
         <div class="col-md-6 show-md">
-          <h4 class="home-expertise__title">Our Expertise</h4>
+          <h4 class="home-expertise__tagline">Our Expertise</h4>
         </div>
       </div>
       <div class="rellax" data-rellax-speed="2">
-        <div class="col-xs-24 col-sm-21 col-sm-offset-3 col-md-16 col-md-offset-8 col-lg-12 col-lg-offset-12">
+        <div class="col-xs-24 col-sm-21 col-sm-offset-3 col-md-16 col-md-offset-8 col-lg-15 col-lg-offset-9">
           <h2 class="page-section__description">We brand, build, design and market, and can help you with your next project at just about any stage.</h2>
           <%= link_to "see our work", "/work/", class: "page-section__link" %>
         </div>
@@ -91,8 +91,50 @@ priority: 1.0
 
 
 <%# Projects %>
-<section class="home-projects">
-  <div class="home-projects__title">
+<section class="home-projects" style="background:#0F0D20;margin-top:240px;position:relative">
+
+  <%# WisePops %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="padding-top:120px">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">WisePops</span><span class="project__client-dash"></span><span class="project__client-tags">design, ui/ux, marketing</span></h4>
+        <h2 class="project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
+        <%= link_to "launch site", "http://wisepops.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/wisepops-hero.png", style: "width:960px;margin-left:60px;margin-top:-240px") %>
+      </div>
+    </div>
+  </article>
+  <%# AgendaNYC %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/agendanyc-hero--left.png", style: "width:960px;margin-left:-600px;margin-top:-120px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">AgendaNYC</span><span class="project__client-dash"></span><span class="project__client-tags">frontend, custom cms, seo</span></h4>
+        <h2 class="project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
+        <%= link_to "launch site", "http://www.agendanyc.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+  <%# GrooveHQ %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">GrooveHQ</span><span class="project__client-dash"></span><span class="project__client-tags">design, branding, marketing</span></h4>
+        <!-- <h2 class="project__title" itemprop="description">Groove was looking to build user trust and optimize conversions. <span class="project__title--light">Working with their CEO Alex we redesigned customer acquisition.</span></h2> -->
+        <h2 class="project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
+        <%= link_to "launch site", "https://www.groovehq.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/groovehq-hero--right.png", style: "width:1000px;margin-left:120px;margin-top:-120px;marign-bottom:-120px;") %>
+      </div>
+    </div>
+  </article>
+
+  <!-- <div class="home-projects__title">
     <div class="rellax" data-rellax-speed="1">
       <div class="row">
         <div class="col-xs-24 col-md-22 col-md-offset-2">
@@ -100,28 +142,66 @@ priority: 1.0
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+  <!-- <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="row"> -->
+      <%# image_tag("clients/wisepops-hero.png", style: "position:absolute;width:1280px;margin-left:-120px;margin-top:-240px") %>
+      <!-- <div class="col-lg-6 col-lg-offset-2"> -->
+        <%# image_tag("clients/wisepops-logo.svg", style: "width:180px") %>
+      <!-- </div> -->
+
+      <!-- <div class="col-lg-14"> -->
+        <%# Small Shape %>
+        <!-- <div class="home-project__shape-sm">
+          <div class="rellax" data-rellax-speed="-2">
+            <div class="home-project__shape-sm--hatch">
+              <%= image_tag("projects/project-shape--hatch-600.svg") %>
+            </div>
+          </div>
+        </div>
+        <div class="home-project__shape-sm">
+          <div class="rellax" data-rellax-speed="0">
+            <div class="home-project__shape-sm--outline"></div>
+          </div>
+        </div> -->
+        <%# Large Shape %>
+        <!-- <div class="home-project__shape-lg">
+          <div class="rellax" data-rellax-speed="-2">
+            <div class="home-project__shape-lg--hatch">
+              <%= image_tag("projects/project-shape--hatch-600.svg") %>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="home-project__shape-lg">
+          <div class="rellax" data-rellax-speed="0">
+            <div class="home-project__shape-lg--outline"></div>
+          </div>
+        </div> -->
+
+        <!-- <div class="home-project__text">
+          <h4 class="home-project__tagline">WisePops</h4>
+          <time datetime="2016" class="home-project__year">2016</time>
+          <h3 class="home-project__title">WisePops</h3>
 
 
-    <div class="home-project__shape--hatch"></div>
-    <div class="home-project__shape--outline"></div>
+          <ul class="home-project__tags">
+            <li class="home-project__tag">branding</li>,
+            <li class="home-project__tag">design</li>,
+            <li class="home-project__tag">product</li>
+          </ul>
 
+          <a class="home-project__link" href="https://wisepops.com/" target="_blank" itemprop="url">
+            
+          </a>
 
-    <div class="row">
+        </div> -->
+<!-- 
+      </div>
+  </div> -->
 
-
-    </div>
-
-
-
-
-
-
-  </div>
-
-  <div class="row">
+<!--   <div class="row">
     <%# WisePOPS %>
     <div class="col-xs-24 col-sm-12 col-md-6">
       <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
@@ -179,7 +259,7 @@ priority: 1.0
         </div>
         <p class="home-project__description" itemprop="description">To complement Groove's highly successful product and blog, we worked with their CEO Alex to design and A/B test a brand new <a href="http://groovehq.com/" target="_blank">marketing site</a> from the ground up.</p>
       </div>
-    </div>
+    </div> -->
     <%# Aptible %>
     <!-- <div class="col-xs-24 col-sm-12 col-md-6">
       <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
@@ -198,30 +278,162 @@ priority: 1.0
         <p class="home-project__description" itemprop="description">Collaborating with their VP of marketing we built an animated <a href="https://www.aptible.com/technology/" target="_blank">technology page</a>, created ads, and designed <a href="https://www.aptible.com/company/resources/#hipaa-badges-section" target="_blank">"Powered by Aptible"</a> badges to drive customer aquisition.</p>
       </div>
     </div> -->
-  </div>
+  <!-- </div> -->
 </section>
 
 <%# Process %>
 <section class="home-process">
-  <div class="home-process__graphic">
-    <%= image_tag("process.svg") %>
-  </div>
   <div class="home-process__text">
     <div class="row">
-      <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-2">
-        <h2 class="page-section__description">We take a design focused approach to each project phase, from discovery through development to launch.</h2>
-        <%= link_to "learn about our process", "/process/", class: "page-section__link" %>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h2 class="page-section__description">We take a design focused approach to each project phase, from discovery through development to launch.</h2>
+          <%= link_to "learn about our process", "/process/", class: "page-section__link" %>
+        </div>
       </div>
-      <div class="col-xs-24 col-sm-3 col-md-8 col-lg-10 show-sm">
-        <h4 class="home-process__title">Our Process</h4>
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+          <h4 class="home-process__tagline">Our Process</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-process__grid">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-xs-24">
+          <span class="home-process__grid-col grid-col-1-a"></span>
+          <span class="home-process__grid-col grid-col-1-b"></span>
+          <span class="home-process__grid-col grid-col-2-a"></span>
+          <span class="home-process__grid-col grid-col-2-b"></span>
+          <span class="home-process__grid-col grid-col-3-a"></span>
+          <span class="home-process__grid-col grid-col-3-b"></span>
+          <span class="home-process__grid-col grid-col-4-a"></span>
+          <span class="home-process__grid-col grid-col-4-b"></span>
+          <span class="home-process__grid-col grid-col-5-a"></span>
+          <span class="home-process__grid-col grid-col-5-b"></span>
+          <span class="home-process__grid-col grid-col-6-a"></span>
+          <span class="home-process__grid-col grid-col-6-b"></span>
+          <span class="home-process__grid-col grid-col-7-a"></span>
+          <span class="home-process__grid-col grid-col-7-b"></span>
+          <span class="home-process__grid-col grid-col-8-a"></span>
+          <span class="home-process__grid-col grid-col-8-b"></span>
+          <span class="home-process__grid-col grid-col-9-a"></span>
+          <span class="home-process__grid-col grid-col-9-b"></span>
+          <span class="home-process__grid-col grid-col-10-a"></span>
+          <span class="home-process__grid-col grid-col-10-b"></span>
+          <span class="home-process__grid-col grid-col-11-a"></span>
+          <span class="home-process__grid-col grid-col-11-b"></span>
+          <span class="home-process__grid-col grid-col-12-a"></span>
+          <span class="home-process__grid-col grid-col-12-b"></span>
+          <span class="home-process__grid-col grid-col-13-a"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-process__shapes">
+    <div class="rellax" data-rellax-speed="-2">
+      <ul class="js-parallax-scene">
+        <li class="home-process__shape layer" data-depth="0.33"><%= image_tag("process/shape-content-lg.svg", class: "home-process__shape-content") %></li>
+        <li class="home-process__shape layer" data-depth="0.66"><%= image_tag("process/shape-discovery-lg.svg", class: "home-process__shape-discovery") %></li>
+        <li class="home-process__shape layer" data-depth="1.00"><%= image_tag("process/shape-development-lg.svg", class: "home-process__shape-development") %></li>
+        <li class="home-process__shape layer" data-depth="1.33"><%= image_tag("process/shape-design-lg.svg", class: "home-process__shape-design") %></li>
+        <li class="home-process__shape layer" data-depth="1.66"><%= image_tag("process/shape-testing-lg.svg", class: "home-process__shape-testing") %></li>
+        <li class="home-process__shape layer" data-depth="2.00"><%= image_tag("process/shape-start-lg.svg", class: "home-process__shape-start") %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="home-process__phases">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="home-process__phase-title" style="margin-left:16px;">discovery</h4>
+          <h5 class="home-process__phase-percent">00%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:8px;margin-top:4px;">design</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-8px;margin-top:-4px;">15%</h5>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="home-process__phase-title" style="margin-left:-8px;margin-top:12px;">development</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-16px;margin-top:-12px;">55%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:-16px;margin-top:16px;">content</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-24px;margin-top:-16px;">85%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:-32px;margin-top:24px;">testing</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-32px;margin-top:-24px;">95%</h5>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <%# Writing %>
-<!-- <section class="home-writing parallax__group">
-  <div class="parallax__layer parallax__layer--3">
+<section class="home-writing">
+  <div class="home-writing__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+          <h4 class="home-writing__tagline">Our writing</h4>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h2 class="page-section__description">Sometimes we write about particular projects, building a design agency or just random stuff.</h2>
+          <%= link_to "all our writing", "/writing/", class: "page-section__link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-writing__posts">
+    <article class="home-post" itemscope itemtype="https://schema.org/Article">
+      <div class="row">
+        <%# Shape %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <div class="home-post__shape--right"></div>
+          </div>
+        </div>
+        <%# Image %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <%= image_tag("posts/agency-year-1-make-all-the-mistakes.jpg", class: "home-post__image", style: "width:600px;") %>
+          </div>
+        </div>
+        <%# Text %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-15">
+            <h2 class="home-post__title" itemprop="headline">Agency Year 1: Make All the Mistakes</h2>
+            <%= link_to "read it now", "/writing/agency-year-1-make-all-the-mistakes/", class: "home-post__link" %>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+
+      <!-- <div class="row">
+        
+          
+            <div class="row">
+              <div class="col-xs-24 col-md-24 col-lg-24">
+                <h2 class="home-post__title" itemprop="headline">SEO Field Guide for Designers</h2>
+              </div>
+              <div class="col-xs-24 col-md-20">
+                <p class="home-post__description" itemprop="description">Architects excel at creating amazing content, and as web designers there is nothing more exciting for us than seeing this content presented online in beautiful ways.</p>
+               <%= link_to "read it now", "/clients/", class: "home-post__link" %>
+              </div>
+            </div>
+          </article> -->
+
+
+
+
+<!--   <div class="parallax__layer parallax__layer--3">
     <div class="row">
       <div class="col-xs-24 col-md-8 col-md-offset-2">
         <h2 style="margin-bottom:24px;">Writing</h2>
@@ -270,8 +482,8 @@ priority: 1.0
         <h4 class="home-writing__title">Writing</h4>
       </div>
     </div>
-  </div>
-</section> -->
+  </div> -->
+</section>
 
 <%# Products %>
 <!-- <section class="home-products parallax__group">

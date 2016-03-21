@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://dixonandmoe.com/sitemap.xml
+Sitemap: https://dixonandmoe.com/sitemap.xml

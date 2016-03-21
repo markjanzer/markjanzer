@@ -1,0 +1,44 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Work Page — Section
+// stylesheets/custom/work/_section.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.work-section {
+
+}
+
+// Project
+.project {
+	margin: 60px 0;
+}
+.project__client {
+	color: $color-white;
+	margin-bottom: 32px;
+}
+.project__client-dash {
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 1px;
+	margin: 0 16px;
+	background: $color-white;
+}
+.project__client-tags {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-300);
+}
+.project__title {
+	color: $color-white;
+	margin-bottom: 64px;
+}
+.project__title--light {
+	color: $color-blue-gray;
+}
+.project__link {
+	color: $color-white;
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+	padding-bottom: 8px;
+	border-bottom: 4px solid $color-blue-dk;
+}

@@ -36,16 +36,6 @@ html, body {
   }
 }
 
-// Headroom
-// .js-headroom--unpinned {
-//   transform: translate3d(0,-24px,0);
-//   opacity: 0;
-// }
-// .js-headroom--pinned {
-//   transform: translate3d(0,0,0);
-//   opacity: 1;
-// }
-
 // Visible Nav
 .nav-visible {
   width: 100%;
@@ -67,18 +57,33 @@ html, body {
   }
 }
 .nav-visible__list-item {
+  position: relative;
   float: left;
-  width: 12%;
-  @media only screen and (min-width: $screen-sm-min) {
-    width: 30%;
+}
+.nav-visible__list-item--lg {
+  width: 75%; // 18 columns
+  @media only screen and (min-width: 1200px) {
+    width: 66.66667%; // 16 columns
   }
 }
-.nav-visible__list-item:first-child {
-  width: 75%;
+.nav-visible__list-item--md {
+  display: none;
   @media only screen and (min-width: $screen-sm-min) {
-    width: 66.66667%;
+    display: block;
+    width: 16.66667%; // 4 columns
+  }
+  @media only screen and (min-width: 1200px) {
+    // width: 25%; // 6 columns
+    width: 12.5% // 3 columns
   }
 }
+.nav-visible__list-item--sm {
+  width: 25%; // 6 columns
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 8.33333%; // 2 columns
+  }
+}
+
 .nav-visible__logo,
 .nav-visible__link {
   position: relative;
@@ -111,16 +116,19 @@ html, body {
 }
 
 // Sub pages
-.work .nav-visible__logo,
 .process .nav-visible__logo,
-.writing .nav-visible__logo {
+.contact .nav-visible__logo {
   color: $color-black;
+}
+.process .nav-visible__link {
+  color: transparent;
 }
 
 // Sub pages menu active states
 .nav-hidden--is-visible .work .nav-visible__logo,
 .nav-hidden--is-visible .process .nav-visible__logo,
-.nav-hidden--is-visible .writing .nav-visible__logo {
+.nav-hidden--is-visible .writing .nav-visible__logo,
+.nav-hidden--is-visible .contact .nav-visible__logo {
   color: $color-white;
 }
 
@@ -223,7 +231,7 @@ html, body {
 .nav-button__close {
   position: absolute;
   float: right;
-  right: 24px;
+  width: 100%;
   margin: -3px 0 0;
   padding: 0;
   appearance: none;
@@ -234,14 +242,11 @@ html, body {
   cursor: pointer;
   background: transparent;
   @media only screen and (min-width: 375px) {
-    right: 24px;
   }
   @media only screen and (min-width: $screen-sm-min) {
-    right: initial;
     margin-top: 0;
   }
   @media only screen and (min-width: $screen-lg-min) {
-    margin-left: 8px;
   }
 }
 .nav-button__close {
@@ -268,7 +273,7 @@ html, body {
   transition: opacity 800ms $transition-easing;
 }
 // Blog page
-.writing .nav-button__ampersand {
+.writing:not(.writing_index) .nav-button__ampersand {
   color: $color-white;
 }
 .nav-hidden--is-visible .nav-button__ampersand {

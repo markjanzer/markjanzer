@@ -20,12 +20,18 @@ h6 {
 
 h1 {
 	line-height: 1.414;
-	@include font-size($font-size-600)
+	@include font-size($font-size-500);
+	@media only screen and (min-width: $screen-md-min) {
+		@include font-size($font-size-600);
+	}
 }
 
 h2 {
 	line-height: 1.414;
-	@include font-size($font-size-500)
+	@include font-size($font-size-500);
+	@media only screen and (min-width: $screen-md-min) {
+		@include font-size($font-size-600);
+	}
 }
 
 h3 {
@@ -55,8 +61,12 @@ figcaption {
 }
 
 p {
+	line-height: 1.618;
 	font-style: $font-style-normal;
-	@include font-size($font-size-300)
+	@include font-size($font-size-300);
+	@media only screen and (min-width: $screen-sm-min) {
+		@include font-size($font-size-400);
+	}
 }
 
 i {
@@ -98,13 +108,13 @@ a {
 // }
 
 @media only screen and (min-width: $screen-sm-min) {
-	h1 {
-		@include font-size($font-size-800)
-	}
-	h2 {
-		@include font-size($font-size-700)
-	}
-	p {
-		@include font-size($font-size-400)
-	}
+	// h1 {
+	// 	@include font-size($font-size-800)
+	// }
+	// h2 {
+	// 	@include font-size($font-size-700)
+	// }
+	// p {
+	// 	@include font-size($font-size-400)
+	// }
 }

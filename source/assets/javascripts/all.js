@@ -16,13 +16,16 @@ if ('addEventListener' in document) {
 // ------------------------
 // rellax.js init
 // ------------------------
-var rellax = new Rellax('.rellax');
+// var rellax = new Rellax('.rellax');
 
 // ------------------------
 // parallax.js init
 // ------------------------
-var scene = document.getElementsByClassName('js-parallax-scene')[0];
-var parallax = new Parallax(scene);
+// var scene = document.getElementsByClassName('js-parallax-scene')[0];
+var scene = document.getElementsByClassName('js-parallax-scene');
+for ( var i = 0; i < scene.length; i++ ) {
+	var parallax = new Parallax(scene[i]);
+}
 
 
 // ------------------------

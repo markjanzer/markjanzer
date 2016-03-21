@@ -1,46 +1,72 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Dixon & Moe Home Page Header
-// stylesheets/custom/home/_header.scss
+// Dixon & Moe Contact Page Header
+// stylesheets/custom/contact/_header.scss
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.home-header {
-	padding-bottom: 1080px;
+.contact-header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	min-height: 660px;
 }
-.home-header__shape {
+// Text
+.contact-header__text {
 	position: absolute;
-	width: 420px;
-	height: 420px;
-	margin: -144px 0 0 -144px;
-	background: $color-black;
-	transform: rotate(45deg);
-	@include animation(fadeIn 800ms, headerRotate 800ms);
-	@include keyframes(headerRotate) {
-		0%   { transform: rotate(90deg); }
-		100% { transform: rotate(45deg); }
-	}
-	@media only screen and (min-width: 375px) {
-		width: 480px;
-		height: 480px;
-		margin: -48px 0 0 -168px;
-	}
-	@media only screen and (min-width: $screen-sm-min) {
-		width: 690px;
-		height: 690px;
-		margin: -60px 0 0 -168px;
-	}
-	@media only screen and (min-width: $screen-md-min) {
-		width: 820px;
-		height: 820px;
-		margin: -128px 0 0 -128px;
-	}
-	@media only screen and (min-width: $screen-lg-min) {
-		width: 960px;
-		height: 960px;
-		margin: -144px 0 0 -144px;
-	}
+	right: 0;
+	left: 0;
+	bottom: 60px;
+	// top: 120px;
+	// @media only screen and (min-width: $screen-sm-min) {
+	// 	top: 240px;
+	// }
+	// @media only screen and (min-width: $screen-md-min) {
+	// 	top: 540px;
+	// }
 }
-.home-header__ampersands {
+.contact-header__title {
+	margin-bottom: 32px;
+}
+.contact-header__tagline {
+	float: right;
+	margin-top: 54px;
+	margin-right: -32px;
+	transform: rotate(270deg);
+}
+// .home-header__shape {
+// 	position: absolute;
+// 	width: 420px;
+// 	height: 420px;
+// 	margin: -144px 0 0 -144px;
+// 	background: $color-black;
+// 	transform: rotate(45deg);
+// 	@include animation(fadeIn 800ms, headerRotate 800ms);
+// 	@include keyframes(headerRotate) {
+// 		0%   { transform: rotate(90deg); }
+// 		100% { transform: rotate(45deg); }
+// 	}
+// 	@media only screen and (min-width: 375px) {
+// 		width: 480px;
+// 		height: 480px;
+// 		margin: -48px 0 0 -168px;
+// 	}
+// 	@media only screen and (min-width: $screen-sm-min) {
+// 		width: 690px;
+// 		height: 690px;
+// 		margin: -60px 0 0 -168px;
+// 	}
+// 	@media only screen and (min-width: $screen-md-min) {
+// 		width: 820px;
+// 		height: 820px;
+// 		margin: -128px 0 0 -128px;
+// 	}
+// 	@media only screen and (min-width: $screen-lg-min) {
+// 		width: 960px;
+// 		height: 960px;
+// 		margin: -144px 0 0 -144px;
+// 	}
+// }
+.contact-header__ampersands {
 	position: absolute;
 	width: 270px;
 	top: 270px;
@@ -55,7 +81,7 @@
 		width: 480px;
 	}
 }
-.home-header__ampersand {
+.contact-header__ampersand {
 	width: 270px;
 	@include animation(scaleInDelay 1200ms);
 	@include keyframes(scaleInDelay) {
@@ -70,11 +96,11 @@
 		width: 480px;
 	}
 }
-.home-header__ampersand--solid,
-.home-header__ampersand--hatch {
+.contact-header__ampersand--solid,
+.contact-header__ampersand--hatch {
 	width: 100%;
 }
-.home-header__ampersand--hatch {
+.contact-header__ampersand--hatch {
 	margin-top: 24px;
 	margin-left: 48px;
 	@include keyframes(slideOutDelay) {
@@ -100,7 +126,7 @@
 	}
 }
 
-.home-header__email {
+.contact-header__email {
 	float: right;
 	margin-top: 84px;
 	margin-right: -108px;
@@ -134,7 +160,7 @@
 		}
 	}
 }
-.home-header__text {
+.contact-header__text {
 	position: relative;
 	top: 120px;
 	@media only screen and (min-width: $screen-sm-min) {
@@ -144,9 +170,8 @@
 		top: 300px;
 	}
 }
-.home-header__description {
+.contact-header__title {
 	margin-bottom: 32px;
-	color: $color-white;
 	@include animation(scaleInDelay 1200ms);
 	@include keyframes(scaleInDelay) {
 		0%   { transform: scale(1.125); opacity: 0; }
@@ -154,10 +179,9 @@
 		100% { transform: scale(1); opacity: 1; }
 	}
 }
-.home-header__link {
+.contact-header__link {
 	position: absolute;
 	padding-bottom: 8px;
-	color: $color-white;
 	border-bottom: 4px solid $color-blue-dk;
 	font-family: $font-family-secondary;
 	@include font-size($font-size-400);
