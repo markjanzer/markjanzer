@@ -91,8 +91,8 @@ priority: 1.0
 
 
 <%# Projects %>
-<section class="home-projects" style="background:#0F0D20;margin-top:240px;position:relative">
-
+<section class="home-projects" style="margin-top:240px;position:relative">
+  <!-- background:#0F0D20; -->
   <%# WisePops %>
   <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="padding-top:120px">
     <div class="row">
@@ -102,7 +102,7 @@ priority: 1.0
         <%= link_to "launch site", "http://wisepops.com/", class: "project__link", itemprop: "url", target: "_blank" %>
       </div>
       <div class="col-xs-4 col-lg-9">
-        <%= image_tag("work/wisepops-hero.png", style: "width:960px;margin-left:60px;margin-top:-240px") %>
+        <%= image_tag("work/wisepops-hero.png", style: "width:960px;margin-left:60px;margin-top:-180px") %>
       </div>
     </div>
   </article>
@@ -130,6 +130,19 @@ priority: 1.0
       </div>
       <div class="col-xs-4 col-lg-9">
         <%= image_tag("work/groovehq-hero--right.png", style: "width:1000px;margin-left:120px;margin-top:-120px;marign-bottom:-120px;") %>
+      </div>
+    </div>
+  </article>
+  <%# Aptible %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/aptible-hero--left.png", style: "width:960px;margin-left:-600px;margin-top:-120px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">Aptible</span><span class="project__client-dash"></span><span class="project__client-tags">design, animation, frontend</span></h4>
+        <h2 class="project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
+        <%= link_to "visit page", "https://www.aptible.com/technology/", class: "project__link", itemprop: "url", target: "_blank" %>
       </div>
     </div>
   </article>

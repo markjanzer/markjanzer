@@ -1,102 +1,204 @@
-      create  build/assets/stylesheets/all-8727acd0.css
-   identical  build/assets/images/icons/apple-touch-icon-72x72-precomposed-f64d1425.png
-   identical  build/assets/images/icons/apple-touch-icon-114x114-precomposed-fc53cd41.png
-   identical  build/favicon-8a6fe5a5.png
-   identical  build/assets/images/process-test-5a0ec1c3.png
-   identical  build/assets/images/process-test-5-c2e10577.png
-   identical  build/assets/images/process-test-4-890bd581.png
-   identical  build/assets/images/process-test-3-d7d43297.png
-   identical  build/assets/images/process-test-2-8ecc333a.png
-   identical  build/assets/images/icons/touch-icon-192x192-7a41b867.png
-   identical  build/assets/images/icons/apple-touch-icon-precomposed-73d1ea2f.png
-   identical  build/assets/images/guides/guides-lg-3b86d8e5.png
-   identical  build/assets/images/icons/apple-touch-icon-76x76-precomposed-d16529d6.png
-   identical  build/assets/images/icons/apple-touch-icon-180x180-precomposed-0f943ebb.png
-   identical  build/assets/images/icons/apple-touch-icon-152x152-precomposed-70400aef.png
-   identical  build/assets/images/icons/apple-touch-icon-144x144-precomposed-daeb2442.png
-   identical  build/assets/images/icons/apple-touch-icon-120x120-precomposed-9f509193.png
-   identical  build/assets/images/monograph-1a2f98cd.svg
-   identical  build/assets/images/guides/shape-sm-a5345112.svg
-   identical  build/assets/images/aptible-42d59026.svg
-   identical  build/assets/images/guides/shape-lg-ed8c5997.svg
+      create  build/assets/stylesheets/all-2af859ce.css
+      create  build/assets/images/clients/wisepops-hero-413a6582.png
+      create  build/assets/images/process-test-3-d7d43297.png
+      create  build/assets/images/process-test-2-8ecc333a.png
+      create  build/assets/images/process-test-5-c2e10577.png
+      create  build/assets/images/process-test-5a0ec1c3.png
+      create  build/assets/images/work/agendanyc-hero--left-ab9128e0.png
+      create  build/assets/images/work/agendanyc-hero--right-ce273cbf.png
+      create  build/assets/images/clients/agendanyc-hero-419b408f.png
+      create  build/assets/images/work/agendanyc-hero-72c6efbb.png
+      create  build/assets/images/work/aptible-hero-c41bfc39.png
+      create  build/assets/images/work/groovehq-hero--left-1cf93ab2.png
+      create  build/assets/images/work/groovehq-hero--right-5aea060f.png
+      create  build/assets/images/work/groovehq-hero-f1e6396c.png
+      create  build/assets/images/work/wisepops-hero-fdca5efb.png
+      create  build/assets/images/icons/apple-touch-icon-120x120-precomposed-9f509193.png
+      create  build/favicon-8a6fe5a5.png
+      create  build/assets/images/process-test-4-890bd581.png
+      create  build/assets/images/clients/wisepops-original-e3ce73b7.png
+      create  build/assets/images/icons/touch-icon-192x192-7a41b867.png
+      create  build/assets/images/icons/apple-touch-icon-precomposed-73d1ea2f.png
+      create  build/assets/images/icons/apple-touch-icon-76x76-precomposed-d16529d6.png
+      create  build/assets/images/icons/apple-touch-icon-72x72-precomposed-f64d1425.png
+      create  build/assets/images/icons/apple-touch-icon-180x180-precomposed-0f943ebb.png
+      create  build/assets/images/icons/apple-touch-icon-114x114-precomposed-fc53cd41.png
+      create  build/assets/images/icons/apple-touch-icon-152x152-precomposed-70400aef.png
+      create  build/assets/images/icons/apple-touch-icon-144x144-precomposed-daeb2442.png
+      create  build/assets/images/writing/guides-lg-3b86d8e5.png
+      create  build/assets/images/clients/wisepops-hero-25fcc484.jpg
+      create  build/assets/images/posts/agency-year-1-make-all-the-mistakes-8392b399.jpg
+      create  build/assets/images/process/shape-design-lg--low-d4e7df4f.svg
    identical  build/assets/images/htmlarrows-73a9496d.svg
-   identical  build/assets/images/guides/guides-lg-2e5631be.svg
-   identical  build/assets/images/groove-9813af9f.svg
-   identical  build/assets/images/dixon-and-moe-ampersand-47b690ed.svg
    identical  build/assets/images/htmlcolorcodes-76ce20b2.svg
-   identical  build/assets/images/clients/wisepops-f9b13fd4.svg
-   identical  build/assets/images/clients/teespring-a01850d1.svg
-   identical  build/assets/images/clients/groovehq-8c2a775f.svg
-   identical  build/assets/images/clients/aptible-c489a3fa.svg
-   identical  build/assets/images/ampersand-hatch-9859d6ce.svg
-   identical  build/assets/images/ampersand-solid-3e2a39b9.svg
-   identical  build/assets/images/process-798298ef.svg
-   identical  build/assets/images/products/HTML Color Codes-27171ac4.svg
-   identical  build/assets/images/products/html-arrows-57410cd1.svg
-   identical  build/assets/images/products/html-color-codes-2-c58fafd0.svg
-   identical  build/assets/images/products/html-color-codes-95a39c6b.svg
-   identical  build/assets/images/products/monograph-63d2d324.svg
+      create  build/assets/images/dixon-and-moe-ampersand-47b690ed.svg
+      create  build/assets/images/clients/wisepops-mark-28a8dc02.svg
+      create  build/assets/images/clients/wisepops-logo-beffb37b.svg
+   identical  build/assets/images/groove-9813af9f.svg
+      create  build/assets/images/clients/wisepops-logo--white-4fcc3857.svg
+      create  build/assets/images/clients/wisepops--black-bg-28eb8843.svg
+      create  build/assets/images/clients/wisepops--black-bg-wide-978ff3ef.svg
+      create  build/assets/images/clients/wisepops--black-bg-unsquare-e94af83e.svg
+      create  build/assets/images/clients/teespring-mark-a01850d1.svg
+   identical  build/assets/images/monograph-1a2f98cd.svg
+      create  build/assets/images/ampersand-solid--blue-73b14be3.svg
+      create  build/assets/images/process/shape-content-lg-19a2d427.svg
+      create  build/assets/images/process/shape-content-sm-dark-272eec75.svg
+      create  build/assets/images/process/shape-content-sm-00f80901.svg
+      create  build/assets/images/process/shape-design-lg--short-a91da824.svg
+      create  build/assets/images/clients/groovehq-logo-b485f3b4.svg
+      create  build/assets/images/clients/groovehq-logo--white-bf10f23d.svg
+      create  build/assets/images/process/shape-design-lg--lower-aae87fb9.svg
+      create  build/assets/images/clients/groovehq--black-bg-010e6417.svg
+      create  build/assets/images/clients/groovehq--black-bg-wide-c88a61d3.svg
+      create  build/assets/images/clients/aptible-mark-130ce440.svg
+      create  build/assets/images/clients/aptible-logo-bb2b0245.svg
+      create  build/assets/images/clients/aptible-logo--white-37a43914.svg
+      create  build/assets/images/clients/agendanyc-mark-bcac6422.svg
+      create  build/assets/images/clients/agendanyc-logo-7e6b7d00.svg
+      create  build/assets/images/clients/agendanyc-logo--white-ff5620d8.svg
+      create  build/assets/images/clients/agendanyc--black-bg-028e6df2.svg
+   identical  build/assets/images/aptible-42d59026.svg
+      create  build/assets/images/ampersand-solid-3e2a39b9.svg
+      create  build/assets/images/ampersand-solid--light-1ba96188.svg
+      create  build/assets/images/clients/groovehq-mark-a7469e8a.svg
+      create  build/assets/images/process/shape-design-lg--medium-a540c1a9.svg
+      create  build/assets/images/process/shape-testing-sm-fe2f3375.svg
+      create  build/assets/images/process/shape-testing-lg-eddccc92.svg
+      create  build/assets/images/process-798298ef.svg
+      create  build/assets/images/products/HTML Color Codes-27171ac4.svg
+      create  build/assets/images/products/html-arrows-89c2a489.svg
+      create  build/assets/images/products/html-color-codes-2-c58fafd0.svg
+      create  build/assets/images/products/html-color-codes-f603d740.svg
+      create  build/assets/images/products/monograph-b5ef53fe.svg
+      create  build/assets/images/projects/project-shape--hatch-600-6ecca14d.svg
    identical  build/assets/images/teespring-9402043b.svg
-   identical  build/assets/images/guides/shape-md-3c956fef.svg
-   identical  build/assets/images/clients/agendanyc-e4c25445.svg
-   identical  build/assets/javascripts/all-99e10458.js
-   identical  build/feed.xml
-      update  build/guides/how-to-form-an-llc-in-california/index.html
-      update  build/guides/seo-for-designers-part-1/index.html
-      update  build/guides/seo-for-designers-part-2/index.html
-      update  build/guides/index.html
-      update  build/index.html
-      update  build/process/index.html
-   identical  build/robots.txt
-   identical  build/sitemap.xml
-      update  build/typesetting/index.html
-      update  build/work/index.html
-      update  build/writing/web-animation/index.html
-      update  build/writing/agency-year-1-make-all-the-mistakes/index.html
-      update  build/writing/index.html
-       error  build/writing/tags/animation/index.html
+      create  build/assets/images/process/shape-start-lg-0d503afc.svg
+      create  build/assets/images/process/shape-discovery-sm-c67bfb12.svg
+      create  build/assets/images/process/shape-discovery-lg-67df76b8.svg
+      create  build/assets/images/process/shape-discovery-lg--oval-35d2aca0.svg
+      create  build/assets/images/work/arrow-lg-1687e04d.svg
+      create  build/assets/images/work/arrow-sm--left-0fce519c.svg
+      create  build/assets/images/work/arrow-sm--right-6483ce41.svg
+      create  build/assets/images/work/graph-sm-04430afb.svg
+      create  build/assets/images/process/shape-development-sm-1dce0c0b.svg
+      create  build/assets/images/process/shape-development-sm-dark-7b6d3b05.svg
+      create  build/assets/images/process/shape-development-lg-f8073833.svg
+      create  build/assets/images/work/shape-lg--bigger-1add70ff.svg
+      create  build/assets/images/work/shape-lg-ed8c5997.svg
+      create  build/assets/images/work/shape-md-3c956fef.svg
+      create  build/assets/images/work/shape-sm--bigger-1ddd3098.svg
+      create  build/assets/images/work/shape-sm-a5345112.svg
+      create  build/assets/images/process/shape-design-sm-952352a3.svg
+      create  build/assets/images/process/shape-design-sm-dark-8d540589.svg
+      create  build/assets/images/writing/guides-lg-2e5631be.svg
+      create  build/assets/images/ampersand-hatch--light-ef308801.svg
+      create  build/assets/images/ampersand-hatch-9859d6ce.svg
+      create  build/assets/images/process/shape-design-lg-d67e7834.svg
+      create  build/assets/javascripts/all-de2a3604.js
        error  build/writing/tags/business/index.html
+      create  build/guides/how-to-form-an-llc-in-california/index.html
+      create  build/guides/seo-for-designers-part-1/index.html
+      create  build/guides/seo-for-designers-part-2/index.html
+      update  build/index.html
+      create  build/process/index.html
+   identical  build/robots.txt
+      update  build/sitemap.xml
+      create  build/work/wisepops/index.html
+      create  build/work/index.html
+      create  build/writing/web-animation/index.html
+      create  build/writing/agency-year-1-make-all-the-mistakes/index.html
+      create  build/writing/how-to-form-an-llc-in-california/index.html
+      create  build/writing/how-to-get-an-ssl-certificate-https-for-your-business/index.html
+      create  build/writing-old/index.html
+      create  build/writing/index.html
+       error  build/writing/tags/animation/index.html
+      create  build/contact/index.html
        error  build/writing/tags/incorporation/index.html
        error  build/writing/tags/llc/index.html
+       error  build/writing/tags/guides/index.html
+       error  build/writing/tags/https/index.html
+       error  build/writing/tags/ssl/index.html
+       error  build/writing/tags/website/index.html
        error  build/writing/2016/index.html
+       error  build/writing/2016/03/index.html
+       error  build/writing/2016/03/11/index.html
+       error  build/writing/2016/02/index.html
+       error  build/writing/2016/02/26/index.html
        error  build/writing/2016/01/index.html
        error  build/writing/2016/01/07/index.html
        error  build/writing/2015/index.html
        error  build/writing/2015/10/index.html
+      update  build/feed.xml
        error  build/writing/2015/10/20/index.html
-      remove  build/assets/javascripts/all-99e10458.js.gz
-      remove  build/assets/stylesheets/all-2c91b785.css
-      remove  build/assets/stylesheets/all-2c91b785.css.gz
+      remove  build/assets/custom/bootstrap.min-ed29315e.css
+      remove  build/assets/custom/bootstrap.min-ed29315e.css.gz
+      remove  build/assets/custom/main-8edaa1af.css
+      remove  build/assets/custom/main-8edaa1af.css.gz
+      remove  build/assets/javascripts/body-e2d4e07b.js
+      remove  build/assets/javascripts/body-e2d4e07b.js.gz
+      remove  build/assets/javascripts/classie-60d57e07.js
+      remove  build/assets/javascripts/classie-60d57e07.js.gz
+      remove  build/assets/javascripts/fastclick.min-2973f0ad.js
+      remove  build/assets/javascripts/fastclick.min-2973f0ad.js.gz
+      remove  build/assets/javascripts/headroom.min-fadd0d12.js
+      remove  build/assets/javascripts/headroom.min-fadd0d12.js.gz
+      remove  build/assets/javascripts/html5shiv.min-25ea771a.js
+      remove  build/assets/javascripts/html5shiv.min-25ea771a.js.gz
+      remove  build/assets/javascripts/offcanvas-135466de.js
+      remove  build/assets/javascripts/offcanvas-135466de.js.gz
+      remove  build/assets/javascripts/rellax.min-496c2d9e.js
+      remove  build/assets/javascripts/rellax.min-496c2d9e.js.gz
+      remove  build/assets/stylesheets/all-c1fa74a2.css
+      remove  build/assets/stylesheets/all-c1fa74a2.css.gz
+      remove  build/assets/stylesheets/hydrogen-904c5afc.css
+      remove  build/assets/stylesheets/hydrogen-904c5afc.css.gz
+      remove  build/assets/stylesheets/normalize-6197e73d.css
+      remove  build/assets/stylesheets/normalize-6197e73d.css.gz
+      remove  build/blog/2015/10/20/index.html
+      remove  build/blog/2015/10/20/index.html.gz
+      remove  build/blog/2015/10/index.html
+      remove  build/blog/2015/10/index.html.gz
+      remove  build/blog/2015/index.html
+      remove  build/blog/2015/index.html.gz
+      remove  build/blog/index.html
+      remove  build/blog/index.html.gz
+      remove  build/blog/tags/animation/index.html
+      remove  build/blog/tags/animation/index.html.gz
+      remove  build/blog/web-animation/index.html
+      remove  build/blog/web-animation/index.html.gz
       remove  build/feed.xml.gz
-      remove  build/guides/how-to-form-an-llc-in-california/index.html.gz
-      remove  build/guides/index.html.gz
-      remove  build/guides/seo-for-designers-part-1/index.html.gz
-      remove  build/guides/seo-for-designers-part-2/index.html.gz
       remove  build/index.html.gz
-      remove  build/process/index.html.gz
+      remove  build/rellax/index.html
+      remove  build/rellax/index.html.gz
       remove  build/robots.txt.gz
       remove  build/sitemap.xml.gz
+      remove  build/typesetting/index.html
       remove  build/typesetting/index.html.gz
-      remove  build/work/index.html.gz
-      remove  build/writing/agency-year-1-make-all-the-mistakes/index.html.gz
-      remove  build/writing/index.html.gz
-      remove  build/writing/web-animation/index.html.gz
-      remove  build/blog/2015
-        gzip  build/guides/how-to-form-an-llc-in-california/index.html.gz (5.6 KB smaller)
-        gzip  build/assets/javascripts/all-99e10458.js.gz (13.2 KB smaller)
-        gzip  build/feed.xml.gz (7.9 KB smaller)
-        gzip  build/guides/index.html.gz (14.2 KB smaller)
-        gzip  build/guides/seo-for-designers-part-1/index.html.gz (5.6 KB smaller)
-        gzip  build/guides/seo-for-designers-part-2/index.html.gz (5.6 KB smaller)
+      remove  build/assets/custom
+      remove  build/blog/2015/10/20
+      remove  build/blog/tags/animation
+      remove  build/blog/web-animation
+      remove  build/rellax
+      remove  build/typesetting
+        gzip  build/contact/index.html.gz (8.2 KB smaller)
+        gzip  build/assets/javascripts/all-de2a3604.js.gz (14.1 KB smaller)
+        gzip  build/feed.xml.gz (19.3 KB smaller)
+        gzip  build/guides/seo-for-designers-part-1/index.html.gz (6.1 KB smaller)
+        gzip  build/guides/how-to-form-an-llc-in-california/index.html.gz (11.9 KB smaller)
+        gzip  build/guides/seo-for-designers-part-2/index.html.gz (6.1 KB smaller)
         gzip  build/robots.txt.gz (16 Bytes larger)
-        gzip  build/process/index.html.gz (10.9 KB smaller)
-        gzip  build/assets/stylesheets/all-8727acd0.css.gz (69.2 KB smaller)
-        gzip  build/index.html.gz (19.9 KB smaller)
-        gzip  build/sitemap.xml.gz (3.6 KB smaller)
-        gzip  build/work/index.html.gz (5 KB smaller)
-        gzip  build/typesetting/index.html.gz (7.6 KB smaller)
-        gzip  build/writing/index.html.gz (5.5 KB smaller)
-        gzip  build/writing/agency-year-1-make-all-the-mistakes/index.html.gz (11.7 KB smaller)
-        gzip  build/writing/web-animation/index.html.gz (6.7 KB smaller)
-        gzip  Total gzip savings: 192 KB
+        gzip  build/process/index.html.gz (14 KB smaller)
+        gzip  build/sitemap.xml.gz (5.6 KB smaller)
+        gzip  build/assets/stylesheets/all-2af859ce.css.gz (102.5 KB smaller)
+        gzip  build/work/index.html.gz (16.5 KB smaller)
+        gzip  build/index.html.gz (32 KB smaller)
+        gzip  build/work/wisepops/index.html.gz (10.3 KB smaller)
+        gzip  build/writing/how-to-get-an-ssl-certificate-https-for-your-business/index.html.gz (10.7 KB smaller)
+        gzip  build/writing/how-to-form-an-llc-in-california/index.html.gz (12.9 KB smaller)
+        gzip  build/writing/agency-year-1-make-all-the-mistakes/index.html.gz (12.6 KB smaller)
+        gzip  build/writing/index.html.gz (15.7 KB smaller)
+        gzip  build/writing/web-animation/index.html.gz (7.6 KB smaller)
+        gzip  build/writing-old/index.html.gz (6.5 KB smaller)
+        gzip  Total gzip savings: 312.8 KB
 There were errors during this build, re-run with `middleman build --verbose` to see the full exception.
