@@ -5,8 +5,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .home-expertise {
-	// margin-top: 300px;
-	margin-bottom: 120px;
+	margin-bottom: 240px;
 }
 
 .home-expertise__shape {
@@ -19,9 +18,21 @@
 	transform:rotate(45deg);
 }
 .home-expertise__tagline {
+	float: right;
+	margin-top: 54px;
+	margin-right: -42px;
+	transform: rotate(270deg);
+}
+.home-expertise__link {
 	position: absolute;
-	float: left;
-	margin-top: -128px;
-	margin-left: -54px;
-	transform:rotate(270deg);
+	padding-bottom: 8px;
+	border-bottom: 4px solid $color-blue-dk;
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+	@include animation(slideUpDelay 1200ms);
+	@include keyframes(slideUpDelay) {
+		0%   { transform: translate3d(0,24px,0); border-color: $color-black; opacity: 0; }
+	  25%  { transform: translate3d(0,24px,0); border-color: $color-black; opacity: 0; }
+	  100% { transform: translate3d(0,0,0); border-color: $color-blue-dk; opacity: 1; }
+	}
 }

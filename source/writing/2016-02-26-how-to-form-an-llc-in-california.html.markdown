@@ -5,9 +5,9 @@ date: 2016-02-26
 tags: business, guides, incorporation, llc
 ---
 
-Building your business limited liabiliaty corporation or LLC
+Building a business is an exciting process, and at some point you'll probably want to formalize your company for tax and legal purposes (or just to impress your friends/dates/spouses/parents). Forming an LLC can be daunting at first, but not to worry, the process isn't that difficult, and can be done (mostly) from the comfort of your living room. All told it took us about 60 days and $150 to form our LLC, and we've compiled a cheatsheet based on our experience that will hopefully help you along in the process.
 
-## Choose a Name for Your Company
+## Step 1: Choose a Name for Your Company
 
 ##### — / free
 
@@ -17,21 +17,21 @@ What may very well be the most difficult (and/or most time consuming) part of fo
 <a href="http://tmsearch.uspto.gov/" class="guide-content__link" title="USPTO Trademark Electronic Search System" target="_blank">USPTO Trademark Search</a>
 
 
-## Select a Registered Agent
+## Step 2: Select a Registered Agent
 
 ##### 30 min / $50
 
-A registered agent is a third-party individual or company that accepts legal, tax and other government issued documents on behalf of your LLC. Yes, you can technically serve as your own registered agent, but most literature (and lawyers) advise against it, and at $35 &ndash; $50 a year it really won't set you back too much. The process is very easy, and can be done entirely online; just make sure the agent you select is on the California Business Program's <a href="http://www.sos.ca.gov/business-programs/private-service-companies/" class="guide-content__link" title="California Business Programs Private Service Companies" target="_blank">list of private service companies</a>.
+A registered agent is a third-party individual or company that accepts legal, tax and other government issued documents on behalf of your LLC. Yes, you can technically serve as your own registered agent, but most literature (and lawyers) advise against it, and at $35 &ndash; $50 a year it really won't set you back too much. The process is very easy, and can be done entirely online; just make sure the agent you select is listed in the California Business Program's <a href="http://www.sos.ca.gov/business-programs/private-service-companies/" class="guide-content__link" title="California Business Programs Private Service Companies" target="_blank">list of private service companies</a>.
 
 <a href="http://www.cacorporateagents.com/" class="guide-content__link" title="California Corporate Agents" target="_blank">California Corporate Agents</a> ($50 / year, our agents)<br>
 <a href="http://www.californiaregisteredagents.net/" class="guide-content__link" title="California Registered Agents" target="_blank">California Registered Agents</a> ($35 / year, another option)
 
 
-## File Your Articles of Incorporation
+## Step 3: File Your Articles of Incorporation
 
 ##### 30 days / $75
 
-Download <a href="http://bpd.cdn.sos.ca.gov/llc/forms/llc-1.pdf" class="guide-content__link" title="Form LLC-1 Articles of Organization" target="_blank">Form LLC-1 Articles of Organization</a>, and fill it out with your information, including your company's name, address, managers, and registered agent. If your registered agent is a corporation remember to only put the agent's name and state (don't include their address).
+Now comes the key step in forming your LLC. Download <a href="http://bpd.cdn.sos.ca.gov/llc/forms/llc-1.pdf" class="guide-content__link" title="Form LLC-1 Articles of Organization" target="_blank">Form LLC-1 Articles of Organization</a>, and fill it out with your information, including your company's name, address, managers, and registered agent. If your registered agent is a corporation remember to only put the agent's name and state (don't include their address).
 
 Print, sign, and mail the form to the Secretary of State's office, and include a check for $70. If you want the returned copy certified — always a good idea, but will add about a week to processing time — also include a seperate check for $5, and a simple note indicating your certification request. Alternatively, you can drop the form off at their Sacramento office for an extra $15, with the option to request <a href="http://www.sos.ca.gov/business-programs/business-entities/service-options/" class="guide-content__link" title="California Business Entities Service Options" target="_blank">faster processing</a> (only available in person). Normal processing takes around 15 &ndash; 30 days based on our experience. To verify you're in the system you can search your company's name in the <a href="http://kepler.sos.ca.gov/" class="guide-content__link" title="California Secretary of State Business Search" target="_blank">California Business Search</a>.
 
@@ -39,7 +39,7 @@ Print, sign, and mail the form to the Secretary of State's office, and include a
 <a href="http://www.sos.ca.gov/business-programs/business-entities/filing-tips/filing-tips-llc/#llc1" class="guide-content__link" title="Form LLC-1 Filing Tips" target="_blank">Form LLC-1 Filing Tips</a>
 
 
-## File a Statement of Information
+## Step 4: File a Statement of Information
 
 ##### 21 days / $25
 
@@ -51,17 +51,17 @@ Print, sign, and mail the form along with a check for $20, plus a seperate $5 ch
 <a href="http://www.sos.ca.gov/business-programs/business-entities/statements" title="Business Entities Statements of Information" target="_blank">Statements of Information Processing Options</a>
 
 
-## Draft an LLC Operating Agreement
+## Step 5: Draft an LLC Operating Agreement
 
-##### 4 hours / free
+##### 4+ hours / free
 
-California doesn't require LLCs to submit an operating agreement, however, depending on your team and management it can still be a good idea to write one. An operating agreement is an official contract between the LLC partners that typically outlines the company's financial model (how profits and losses are distributed), and managerial duties and responsibilities (who does what and when). It can also include clauses for succession planning and procedures for transferring or buying out ownership interests if a memeber decide to leave the company.
+California doesn't require LLCs to submit an operating agreement, however, depending on your team and management it can still be a good idea to write one. An operating agreement is an official contract between the LLC partners that typically outlines the company's financial model (how profits and losses are distributed), and managerial duties and responsibilities (who does what and when). It can also include clauses for succession planning and procedures for transferring or buying out ownership interests if a member decides to leave the company.
 
 <a href="https://en.wikipedia.org/wiki/Operating_agreement" title="Wikipedia — Operating Agreement" target="_blank">Wikipedia — Operating Agreement</a><br>
-<a href="https://www.sba.gov/blogs/forming-llc-key-documents-youll-need-file-and-create" title="U.S. Small Business Administration - Forming an LLC">SBA Forming an LLC (&#182; 2)</a>
+<a href="https://www.sba.gov/blogs/forming-llc-key-documents-youll-need-file-and-create" title="U.S. Small Business Administration - Forming an LLC">SBA Forming an LLC</a> (paragraph 3)
 
 
-## Get an EIN number
+## Step 6: Get an EIN number
 
 ##### 30 min / free
 
@@ -71,8 +71,8 @@ For banking, tax and payroll purposes you'll need to <a href="https://www.irs.go
 <a href="https://www.irs.gov/Businesses/Small-Businesses-&-Self-Employed/How-to-Apply-for-an-EIN" title="How to Apply for an EIN" target="_blank">How to Apply for an EIN (irs.gov)</a>
 
 
-## Get an D-U-N-S number
+<!-- ## Get an D-U-N-S number
 
-##### 30 days / free
+##### 30 days / free -->
 
 

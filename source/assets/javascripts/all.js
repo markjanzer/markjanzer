@@ -1,4 +1,5 @@
 //= require vendor/_fastclick.min
+//= require vendor/_headroom.min
 //= require vendor/_parallax.min
 //= require vendor/_rellax.min
 //= require vendor/_classie
@@ -52,17 +53,17 @@ function logoColor(offset) {
 // ------------------------
 // headroom init
 // ------------------------
-// var header = document.getElementsByClassName('js-layout-header')[0];
-// var headroom = new Headroom(header, {
-//   "offset": 0,
-//   "tolerance": 0,
-//   "classes": {
-//     "initial":  "js-headroom",
-//     "pinned":   "js-headroom--pinned",
-//     "unpinned": "js-headroom--unpinned"
-//   }
-// });
-// headroom.init();
+var header = document.getElementsByClassName('js-layout-header')[0];
+var headroom = new Headroom(header, {
+  "offset": 0,
+  "tolerance": 0,
+  "classes": {
+    "initial":  "js-headroom",
+    "pinned":   "js-headroom--pinned",
+    "unpinned": "js-headroom--unpinned"
+  }
+});
+headroom.init();
 
 
 // // social popups

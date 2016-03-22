@@ -6,12 +6,13 @@
 
 .home-process {
 	position: relative;
-	height: 1520px;
+	// height: 1520px;
+	height: 1380px;
 }
 .home-process__tagline {
 	float: right;
-	// margin-top: 168px;
-	margin-right: -32px;
+	margin-top: 60px;
+	margin-right: -48px;
 	transform: rotate(270deg);
 }
 .home-process__link {
@@ -29,7 +30,8 @@
 // Shapes
 .home-process__shapes {
 	position: absolute;
-	top: 420px;
+	// top: 420px;
+	top: 300px;
 	width: 100%;
 }
 .home-process__shape-start {
@@ -71,7 +73,8 @@
 // Grid
 .home-process__grid {
 	position: relative;
-	top: 240px;
+	// top: 240px;
+	top: 120px;
 }
 .home-process__grid-col {
 	display: block;
@@ -187,7 +190,8 @@
 // Phases
 .home-process__phases {
 	position: relative;
-	top: 240px;
+	// top: 240px;
+	top: 120px;
 	margin-top: 32px;
 }
 .home-process__phase-title {

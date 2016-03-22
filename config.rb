@@ -5,15 +5,15 @@ require 'json'
 #### GLOBAL CONFIGURATION
 
 # Global Variables
-set :global_url,     "http://dixonandmoe.com"
+set :global_url,     "https://dixonandmoe.com"
 set :global_name,    "Dixon & Moe"
-set :global_email,   "alex@dixonandmoe.com"
+set :global_email,   "hello@dixonandmoe.com"
 set :global_domain,  "dixonandmoe.com"
 set :global_twitter, "@dixonandmoe"
 
 # Blog Variables
 set :blog_title,    "Writing — Dixon & Moe"
-set :blog_subtitle, "Design and Marketing"
+set :blog_subtitle, "Design & Marketing"
 set :blog_author,   "Dixon & Moe"
 
 # Asset paths

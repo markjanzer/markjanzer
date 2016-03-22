@@ -36,6 +36,16 @@ html, body {
   }
 }
 
+// Headroom
+.js-headroom--unpinned {
+  transform: translate3d(0,-24px,0);
+  opacity: 0;
+}
+.js-headroom--pinned {
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
 // Visible Nav
 .nav-visible {
   width: 100%;
@@ -73,8 +83,8 @@ html, body {
     width: 16.66667%; // 4 columns
   }
   @media only screen and (min-width: 1200px) {
-    // width: 25%; // 6 columns
-    width: 12.5% // 3 columns
+    width: 25%; // 6 columns
+    // width: 12.5% // 3 columns
   }
 }
 .nav-visible__list-item--sm {
@@ -100,7 +110,6 @@ html, body {
   }
 }
 .nav-visible__logo {
-  color: $color-white;
   z-index: $z6;
   transition: color 400ms $transition-easing;
 }
@@ -116,7 +125,11 @@ html, body {
 }
 
 // Sub pages
+.nav-visible__logo {
+  color: $color-white;
+}
 .process .nav-visible__logo,
+.writing .nav-visible__logo,
 .contact .nav-visible__logo {
   color: $color-black;
 }

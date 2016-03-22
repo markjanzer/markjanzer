@@ -27,7 +27,7 @@
     <header class="blog-header">
       <div class="blog-header__graphic"></div>
       <div class="row">
-        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15 col-lg-offset-2">
           <h1 class="blog-header__title" itemprop="headline"><%= current_page.data.title %></h1>
           <span class="blog-header__date">Posted on
             <time datetime="<%= current_page.data.date %>" itemprop="datePublished"><%= current_page.data.date.strftime("%b %d, %Y") %></datetime>
@@ -45,7 +45,7 @@
     </section>
   </article>
 
-  <br><br><br><br>
+  <!-- <br><br><br><br>
   <aside>
     <div class="row">
       <div class="col-xs-24 col-sm-20 col-md-16 col-sm-centered col-lg-12 col-lg-offset-2">
@@ -63,15 +63,15 @@
           <% end %>
         </ol>
 
-        <!-- <h4>By Year</h4>
+        <h4>By Year</h4>
         <ol>
           <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
             <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
           <% end %>
-        </ol> -->
+        </ol>
       </div>
     </div>
-  </aside>
+  </aside> -->
 
 
 <% end %>
