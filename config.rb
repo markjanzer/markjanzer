@@ -2,18 +2,24 @@ require "builder"
 require 'json'
 
 
-#### DATA
+#### GLOBAL CONFIGURATION
 
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
+# Global Variables
+set :global_url,     "https://dixonandmoe.com"
+set :global_name,    "Dixon & Moe"
+set :global_email,   "hello@dixonandmoe.com"
+set :global_domain,  "dixonandmoe.com"
+set :global_twitter, "@dixonandmoe"
 
-# # Color Codes
-# data.languages.each do |lang|
-#   proxy "/#{lang["directory"]}.html", "/template.html", locals: { lang: lang }, ignore: true
-# end
+# Blog Variables
+set :blog_title,    "Writing — Dixon & Moe"
+set :blog_subtitle, "Design & Marketing"
+set :blog_author,   "Dixon & Moe"
 
-
-
-#### SITEMAP
+# Asset paths
+set :css_dir, "assets/stylesheets"
+set :js_dir, "assets/javascripts"
+set :images_dir, "assets/images"
 
 # Sitemap generation
 page "/sitemap.xml", layout: false
@@ -21,18 +27,16 @@ page "/sitemap.xml", layout: false
 # RSS feed
 page "/feed.xml", layout: false
 
-page "/blog/*.html", layout: :article_layout
+# Blog
+page "/writing/*.html", layout: :layout_article
 
+# Rellax
 page "/rellax.html", layout: false
-
-
-#### GLOBAL CONFIGURATION
-
 
 # Blog settings
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  blog.prefix = "blog"
+  blog.prefix = "writing"
   blog.permalink = "{title}.html"
 
   blog.tag_template = "tag.html"
@@ -48,8 +52,8 @@ end
 activate :directory_indexes
 
 # Define asset paths
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
+set :css_dir,    'assets/stylesheets'
+set :js_dir,     'assets/javascripts'
 set :images_dir, 'assets/images'
 
 

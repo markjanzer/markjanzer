@@ -1,0 +1,213 @@
+---
+itemtype: WebPage
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "monograph-hero.jpg",
+    local_title:       "Process — Dixon & Moe",
+    local_description: "Branding, development and design."
+  }) %>
+<% end %>
+
+<%# Process Header %>
+<header class="process-header">
+  <div class="process-graphic__grid">
+    <div class="rellax" data-rellax-speed="-2">
+      <div class="row">
+        <div class="col-xs-24">
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+          <span class="process-graphic__grid-col"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="process-graphic__shapes">
+    <div class="rellax" data-rellax-speed="-4">
+      <ul class="js-parallax-scene">
+        <li class="process-graphic__shape layer" data-depth="0.25"><%= image_tag("process/shape-content-lg.svg", class: "process-graphic__shape-content") %></li>
+        <li class="process-graphic__shape layer" data-depth="0.50"><%= image_tag("process/shape-discovery-lg.svg", class: "process-graphic__shape-discovery") %></li>
+        <li class="process-graphic__shape layer" data-depth="0.75"><%= image_tag("process/shape-development-lg.svg", class: "process-graphic__shape-development") %></li>
+        <li class="process-graphic__shape layer" data-depth="1.00"><%= image_tag("process/shape-design-lg--lower.svg", class: "process-graphic__shape-design") %></li>
+        <li class="process-graphic__shape layer" data-depth="1.25"><%= image_tag("process/shape-testing-lg.svg", class: "process-graphic__shape-testing") %></li>
+        <li class="process-graphic__shape layer" data-depth="1.50"><%= image_tag("process/shape-start-lg.svg", class: "process-graphic__shape-start") %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="process-graphic__phases">
+    <div class="rellax" data-rellax-speed="-2">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="process-graphic__phase-title" style="margin-left:16px;">discovery</h4>
+          <h5 class="process-graphic__phase-percent">00%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="process-graphic__phase-title" style="margin-left:8px;margin-top:4px;">design</h4>
+          <h5 class="process-graphic__phase-percent" style="margin-left:-8px;margin-top:-4px;">15%</h5>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="process-graphic__phase-title" style="margin-left:-8px;margin-top:12px;">development</h4>
+          <h5 class="process-graphic__phase-percent" style="margin-left:-16px;margin-top:-12px;">55%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="process-graphic__phase-title" style="margin-left:-16px;margin-top:16px;">content</h4>
+          <h5 class="process-graphic__phase-percent" style="margin-left:-24px;margin-top:-16px;">85%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="process-graphic__phase-title" style="margin-left:-32px;margin-top:24px;">testing</h4>
+          <h5 class="process-graphic__phase-percent" style="margin-left:-32px;margin-top:-24px;">95%</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="process-header__text">
+    <div class="rellax" data-rellax-speed="2">
+      <div class="row">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h1 class="process-header__title">We take a design focused approach to each project phase, from discovery through development to launch.</h1>
+          <% link_to "/writing/", class: "page-section__link", style: "border-bottom:none;" do %>phases <span style="font-size:26px;">&#8595;</span><% end %>
+        </div>
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9">
+          <h4 class="process-header__tagline">Our process</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<%# Discovery %>
+<section class="process-phase" style="position:relative;top:900px;">
+  <div class="process-phase__text">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Discovery</h2>
+          <h4 class="process-phase__subtitle">phase one</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rellax" data-rellax-speed="-2">
+    <%= image_tag("process/shape-discovery-sm.svg", class: "process-phase__shape-discovery") %>
+  </div>
+</section>
+<%# Design %>
+<section class="process-phase">
+  <div class="process-phase__text">
+    <div class="rellax" data-rellax-speed="2">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Design</h2>
+          <h4 class="process-phase__subtitle">phase two</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rellax" data-rellax-speed="2">
+    <%= image_tag("process/shape-design-sm-dark.svg", class: "process-phase__shape-design") %>
+  </div>
+</section>
+<%# Development %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Development</h2>
+          <h4 class="process-phase__subtitle">phase three</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-development-sm-dark.svg", class: "process-phase__shape-development") %>
+  </div>
+</section>
+<%# Content %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Content</h2>
+          <h4 class="process-phase__subtitle">phase four</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-content-sm-dark.svg", class: "process-phase__shape-content") %>
+  </div>
+</section>
+<%# Testing %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-9 col-lg-offset-2">
+          <h2 class="process-phase__title">Testing</h2>
+          <h4 class="process-phase__subtitle">phase five</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-testing-sm.svg", class: "process-phase__shape-testing") %>
+  </div>
+</section>
+  <%# Launch! %>
+  <div class="process-phase__text">
+    <div class="row">
+      <div class="col-md-3 col-lg-8 col-lg-offset-2">
+        <h2 class="process-phase__title">Launch!</h2>
+        <h4 class="process-phase__subtitle">phase six</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,75 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Layout
+// stylesheets/blocks/_layout.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+html,
+body {
+	margin:0;
+	padding:0;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+	position: relative;
+	overflow: hidden;
+	color: $color-black;
+	background: $color-white;
+	font-family: $font-family-primary;
+}
+::selection {
+	color: $color-white;
+  background: rgba(15, 13, 32, 0.99);
+}
+::-moz-selection {
+	color: $color-white;
+  background: rgba(15, 13, 32, 0.99);
+}
+
+.row {
+	padding: 8px;
+	.row {
+		padding: 0;
+	}
+}
+.row-full {
+	padding: 0;
+}
+
+@media only screen and (min-width: $screen-md-min) {
+	.row {
+		padding: 0 16px;
+		.row {
+			padding: 0;
+		}
+	}
+	.row-full {
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: $screen-md-min) {
+	.row {
+		padding: 0 32px;
+		.row {
+			padding: 0;
+		}
+	}
+	.row-full {
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 1344px) {
+	.row {
+		padding: 0;
+		.row {
+			padding: 0;
+		}
+	}
+	.row-full {
+		padding: 0;
+	}
+}

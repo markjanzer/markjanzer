@@ -1,0 +1,39 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Guides Page — Section
+// stylesheets/custom/guides/_section.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.guides-section {
+	margin-bottom: 120px;
+}
+.guides-section__title {
+	// position: relative;
+	float: right;
+	margin-top: 64px;
+	margin-right: -64px;
+	transform: rotate(270deg);
+}
+.guides-post {
+	margin-bottom: 120px;
+}
+.guides-post__title {
+	@include font-size($font-size-500);
+}
+.guides-post__link {
+	position: absolute;
+	padding-bottom: 4px;
+	border-bottom: 2px solid $color-blue-dk;
+	font-family: $font-family-secondary;
+	@include font-size($font-size-300);
+	@include animation(slideUpDelay 1200ms);
+	@include keyframes(slideUpDelay) {
+		0%   { transform: translate3d(0,24px,0); border-color: $color-black; opacity: 0; }
+	  25%  { transform: translate3d(0,24px,0); border-color: $color-black; opacity: 0; }
+	  100% { transform: translate3d(0,0,0); border-color: $color-blue-dk; opacity: 1; }
+	}
+}
+.guides-post__description {
+	line-height: 1.618;
+	@include font-size($font-size-300);
+}

@@ -1,0 +1,209 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Home Page — Process
+// stylesheets/custom/home/_process.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.home-process {
+	position: relative;
+	// height: 1520px;
+	height: 1380px;
+}
+.home-process__tagline {
+	float: right;
+	margin-top: 60px;
+	margin-right: -48px;
+	transform: rotate(270deg);
+}
+.home-process__link {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-400);
+	padding-bottom: 8px;
+	border-bottom: 4px solid $color-blue-dk;
+}
+.home-process__text {
+	position: relative;
+	top: 0;
+	z-index: $z4;
+}
+
+// Shapes
+.home-process__shapes {
+	position: absolute;
+	// top: 420px;
+	top: 300px;
+	width: 100%;
+}
+.home-process__shape-start {
+	// margin-top: 30vh;
+	position: relative;
+	top: 210px;
+	left: 4.5vw;
+}
+.home-process__shape-discovery {
+	// margin-top: 12vh;
+	position: relative;
+	top: 80px;
+	left: 9vw;
+}
+.home-process__shape-design {
+	position: relative;
+	top: 0;
+	left: 12vw;
+}
+.home-process__shape-development {
+	// margin-top: 9vh;
+	position: relative;
+	top: 90px;
+	left: 41vw;
+}
+.home-process__shape-content {
+	// margin-top: 18vh;
+	position: relative;
+	top: 120px;
+	left: 68vw;
+}
+.home-process__shape-testing {
+	// margin-top: 68vh;
+	position: relative;
+	top: 560px;
+	left: 60vw;
+}
+
+// Grid
+.home-process__grid {
+	position: relative;
+	// top: 240px;
+	top: 120px;
+}
+.home-process__grid-col {
+	display: block;
+	float: left;
+	width: 4.15%;
+	height: 720px;
+	border-left: 1px solid $color-gray-200;
+}
+.home-process__grid-col:last-child {
+	width: 0%;
+}
+.grid-col-1-a {
+	height: 705px;
+	margin-top: 15px;
+}
+.grid-col-2-a {
+	height: 690px;
+	margin-top: 30px;
+}
+.grid-col-3-a {
+	height: 705px;
+	margin-top: 15px;
+}
+.grid-col-4-a {
+	height: 720px;
+	margin-top: 0;
+}
+.grid-col-5-a {
+	height: 735px;
+	margin-top: -15px;
+}
+.grid-col-6-a {
+	height: 750px;
+	margin-top: -30px;
+}
+.grid-col-7-a {
+	height: 735px;
+	margin-top: -15px;
+}
+.grid-col-8-a {
+	height: 760px;
+	margin-top: -40px;
+}
+.grid-col-9-a {
+	height: 790px;
+	margin-top: -70px;
+}
+.grid-col-10-a {
+	height: 820px;
+	margin-top: -100px;
+}
+.grid-col-11-a {
+	height: 790px;
+	margin-top: -70px;
+}
+.grid-col-12-a {
+	height: 830px;
+	margin-top: -110px;
+}
+.grid-col-13-a {
+	height: 845px;
+	margin-top: -125px;
+}
+.grid-col-1-b {
+	height: 900px;
+	margin-top: -120px;
+}
+.grid-col-2-b {
+	height: 870px;
+	margin-top: -90px;
+}
+.grid-col-3-b {
+	height: 900px;
+	margin-top: -120px;
+}
+.grid-col-4-b {
+	height: 960px;
+	margin-top: -180px;
+}
+.grid-col-5-b {
+	height: 1020px;
+	margin-top: -240px;
+}
+.grid-col-6-b {
+	height: 990px;
+	margin-top: -210px;
+}
+.grid-col-7-b {
+	height: 960px;
+	margin-top: -180px;
+}
+.grid-col-8-b {
+	height: 1020px;
+	margin-top: -240px;
+}
+.grid-col-9-b {
+	height: 1080px;
+	margin-top: -300px;
+}
+.grid-col-10-b {
+	height: 1110px;
+	margin-top: -330px;
+}
+.grid-col-11-b {
+	height: 1080px;
+	margin-top: -300px;
+}
+.grid-col-12-b {
+	height: 1050px;
+	margin-top: -270px;
+}
+
+// Phases
+.home-process__phases {
+	position: relative;
+	// top: 240px;
+	top: 120px;
+	margin-top: 32px;
+}
+.home-process__phase-title {
+	text-align: right;
+	font-family: $font-family-secondary;
+	transform: rotate(270deg);
+	@include font-size($font-size-300);
+}
+.home-process__phase-percent {
+	position: relative;
+	z-index: $z2;
+	top: -84px;
+	font-family: $font-family-secondary;
+	@include font-size($font-size-200);
+}

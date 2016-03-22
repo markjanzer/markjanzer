@@ -1,7 +1,7 @@
 ---
-typeof: WebPage
 title: Dixon & Moe — Strategy, Design, Development and Marketing
 description: We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage.
+itemtype: WebPage
 changefreq: "daily"
 priority: 1.0
 ---
@@ -9,125 +9,299 @@ priority: 1.0
 
 <%# Meta Tags %>
 <% content_for :meta do %>
-  <%= partial("meta/meta_index") %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-hero.jpg",
+    local_title:       "Dixon & Moe — Strategy, Design, Development and Marketing",
+    local_description: "We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage."
+  }) %>
 <% end %>
 
-<%# Page Content %>
-<article vocab="http://schema.org/" typeof="Article" class="home">
+<%# Custom JavaScript %>
+<% content_for :javascripts do %>logoColor(840);<% end %>
 
-	<%# Page Header %>
-  <header class="row">
-    <div class="row">
-      <div class="col-xs-24 col-sm-12">
-        <h1>Designers &<br>
-          Developers &<br>
-          Marketers
-        </h1>
-      </div>
-      <div class="col-xs-24 col-sm-10 col-sm-offset-2">
-        <span class="dash"></span>
-        <p>We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage.</p>
-      </div>
+<%# Header %>
+<header class="home-header">
+
+  <%# Header Graphic %>
+  <div class="home-header__shapes">
+    <div class="rellax" data-rellax-speed="-2">
+      <div class="home-header__shape"></div>
     </div>
-	</header>
+  </div>
 
-  <%# Page Section %>
-  <section class="gray" id="work">
-    <div class="row">
-      <div class="col-xs-24 col-sm-24">
-        <h6>OUR WORK</h6>
-        <h2>Companies we've worked with</h2>
-      </div>
-      <div style="clear:both"></div>
-      <div class="col-sm-8">
-        <div class="base-image" style="background: #39ace6">
-          <img src="/assets/images/teespring.svg">
+  <%# Header Ampersands %>
+  <div class="home-header__ampersands">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="js-parallax-scene">
+        <div class="layer" data-depth="0.75">
+          <figure class="home-header__ampersand">
+            <%= image_tag("ampersand-hatch.svg", class: "home-header__ampersand--hatch") %>
+          </figure>
         </div>
-        <h3>Teespring</h3>
-        <h4>UI Design, Frontend Code, A/B Testing</h4>
-        <p>As the first designer at Teespring, Moe oversaw the frontend re-write from php to Rails. In the process every public facing page was designed, coded and A/B tested before going live—all in 8 weeks.</p>
-      </div>
-      <div class="col-sm-8">
-        <div class="base-image" style="background: #0272b7">
-          <img src="/assets/images/aptible.svg">
-        </div>
-        <h3>Aptible</h3>
-        <h4>Marketing, Design, Animation</h4>
-        <p>Working directly with Sam Yount (VP of marketing), we designed and built the <a href="https://www.aptible.com/technology/" target="_blank">technology page</a>, designed ads, and built the new <a href="https://www.aptible.com/company/resources/#hipaa-badges-section" target="_blank">"Powered by Aptible"</a> badge to help drive customer aquisition.</p>
-      </div>
-      <div class="col-sm-8">
-        <div class="base-image" style="background: #fff">
-          <img src="/assets/images/groove.svg">
-        </div>
-        <h3>Groove</h3>
-        <h4>UI Design, A/B Testing</h4>
-        <p>With the product and blog on point, Groove needed an updated marketing site. Collaborating with the CEO Alex, we designed and A/B tested the <a href="http://groovehq.com/" target="_blank">entire site</a> from the ground up. <strong>(Jan 2016)</strong></p>
-      </div>
-    </div>
-  </section>
-
-
-  <%# Page Section %>
-  <section style="padding: 4em 0 6em;" class="home-blog" id="blog">
-    <div class="row">
-      <div class="col-xs-24 col-sm-16 col-sm-centered">
-        <h6 style="margin-bottom:5em">WRITING</h6>
-        <div class="link">
-          <a href="https://medium.com/@moeamaya/agency-year-1-make-all-the-mistakes-dde0abbe27b7#.86wmwjvdt" target="_blank">Agency Year One</a> <span>— A written account of all the lessons we learned (both positive and negative) in our first year as a full-time digital agency.</span>
-        </div>
-        <div class="link">
-          <a href="http://zeppelin.io/work/stanley-saitowitz" target="_blank">Stanley Saitowitz Case Study</a> <span>— We worked together with the SF based firm to iterate a series of design concepts and ultimately created a site that is refined, easy to use and places emphasis on their incredible work.</span>
-        </div>
-        <div class="link">
-          <a href="https://medium.com/@moeamaya/on-marketing-to-designers-7186904fcdbd" target="_blank">On Marketing to Designers</a> <span>— Based on our particular observations we’d like to propose four methods that are effective when marketing to designers.</span>
+        <div class="layer" data-depth="1.50">
+          <figure class="home-header__ampersand">
+            <%= image_tag("ampersand-solid.svg", class: "home-header__ampersand--solid") %>
+          </figure>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-
-  <%# Page Section %>
-  <section class="gray" id="fun">
-    <div class="row">
-      <div class="col-xs-24 col-sm-24">
-        <h6>SIDE PROJECTS</h6>
-        <h2>Cool things we've made</h2>
-      </div>
-      <div style="clear:both"></div>
-      <div class="col-sm-8">
-        <div class="base-image" style="background: #f3f4f8">
-          <img src="/assets/images/htmlcolorcodes.svg">
+  <%# Header Text %>
+    <div class="home-header__text">
+      <div class="row">
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
+            <h1 class="home-header__description" itemprop="description">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
+            <%= link_to "get in touch", "mailto:hello@dixonandmoe.com", class: "home-header__link" %>
+          </div>
         </div>
-        <h3>HTML Color Codes</h3>
-        <h4>HTML Color picking made easy</h4>
-        <p>HTML Color Codes is a powerful set of free color tools including our intuitive color picker, color chart, color name, tutorials and resources.
-          <br><br>
-          <a href="http://htmlcolorcodes.com/" target="_blank">Visit the site &rarr;</a>
-        </p>
-      </div>
-      <div class="col-sm-8">
-        <div class="base-image" style="background: #a03741">
-          <img src="/assets/images/htmlarrows.svg">
+        <div class="rellax" data-rellax-speed="0">
+          <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+            <%= link_to "hello@dixonandmoe.com", "mailto:hello@dixonandmoe.com", class: "home-header__email" %>
+          </div>
         </div>
-        <h3>HTML Arrows</h3>
-        <h4>HTML Symbols, entities, and codes</h4>
-        <p>Blending beauty with utility, HTML Arrows is a clean and comprehensive reference for all of those HTML symbol codes you can never remember.
-          <br><br>
-          <a href="http://htmlarrows.com/" target="_blank">Visit the site &rarr;</a>
-        </p>
-      </div>
-      <div class="col-sm-8">
-        <div class="base-image" style="background: #fff">
-          <img src="/assets/images/monograph.svg">
-        </div>
-        <h3>Monograph</h3>
-        <h4>Design technologist publication</h4>
-        <p>Monograph is a place for projects — a site to share and view work by creatives, technologists, makers and designers.
-          <br><br>
-          <a href="http://monograph.io/" target="_blank">Visit the site &rarr;</a>
-        </p>
       </div>
     </div>
-  </section>
+  </div>
+</header>
 
-</article>
+<%# Projects %>
+<section class="home-projects">
+  <%# WisePops %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">WisePops</span><span class="project__client-dash"></span><span class="project__client-tags">design, ui/ux, marketing</span></h4>
+        <h2 class="project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
+        <%= link_to "launch site", "http://wisepops.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/wisepops-hero--left.png", style: "width:960px;margin-left:60px;margin-top:-120px") %>
+      </div>
+    </div>
+  </article>
+  <%# AgendaNYC %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/agendanyc-hero--left.png", style: "width:960px;margin-left:-600px;margin-top:-120px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">AgendaNYC</span><span class="project__client-dash"></span><span class="project__client-tags">frontend, custom cms, seo</span></h4>
+        <h2 class="project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
+        <%= link_to "launch site", "http://www.agendanyc.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+  <%# GrooveHQ %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">GrooveHQ</span><span class="project__client-dash"></span><span class="project__client-tags">design, branding, marketing</span></h4>
+        <!-- <h2 class="project__title" itemprop="description">Groove was looking to build user trust and optimize conversions. <span class="project__title--light">Working with their CEO Alex we redesigned customer acquisition.</span></h2> -->
+        <h2 class="project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
+        <%= link_to "launch site", "https://www.groovehq.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/groovehq-hero--right.png", style: "width:1000px;margin-left:120px;margin-top:-120px;marign-bottom:-120px;") %>
+      </div>
+    </div>
+  </article>
+  <%# Aptible %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/aptible-hero--left.png", style: "width:960px;margin-left:-600px;margin-top:-120px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">Aptible</span><span class="project__client-dash"></span><span class="project__client-tags">design, animation, frontend</span></h4>
+        <h2 class="project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
+        <%= link_to "visit page", "https://www.aptible.com/technology/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+</section>
+
+<%# Process %>
+<section class="home-process">
+  <div class="home-process__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h2 class="page-section__description">We take a design focused approach to each project phase, from discovery through development to launch.</h2>
+          <%# link_to "learn about our process", "/process/", class: "page-section__link" %>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+          <h4 class="home-process__tagline">Our Process</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-process__grid">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-xs-24">
+          <span class="home-process__grid-col grid-col-1-a"></span>
+          <span class="home-process__grid-col grid-col-1-b"></span>
+          <span class="home-process__grid-col grid-col-2-a"></span>
+          <span class="home-process__grid-col grid-col-2-b"></span>
+          <span class="home-process__grid-col grid-col-3-a"></span>
+          <span class="home-process__grid-col grid-col-3-b"></span>
+          <span class="home-process__grid-col grid-col-4-a"></span>
+          <span class="home-process__grid-col grid-col-4-b"></span>
+          <span class="home-process__grid-col grid-col-5-a"></span>
+          <span class="home-process__grid-col grid-col-5-b"></span>
+          <span class="home-process__grid-col grid-col-6-a"></span>
+          <span class="home-process__grid-col grid-col-6-b"></span>
+          <span class="home-process__grid-col grid-col-7-a"></span>
+          <span class="home-process__grid-col grid-col-7-b"></span>
+          <span class="home-process__grid-col grid-col-8-a"></span>
+          <span class="home-process__grid-col grid-col-8-b"></span>
+          <span class="home-process__grid-col grid-col-9-a"></span>
+          <span class="home-process__grid-col grid-col-9-b"></span>
+          <span class="home-process__grid-col grid-col-10-a"></span>
+          <span class="home-process__grid-col grid-col-10-b"></span>
+          <span class="home-process__grid-col grid-col-11-a"></span>
+          <span class="home-process__grid-col grid-col-11-b"></span>
+          <span class="home-process__grid-col grid-col-12-a"></span>
+          <span class="home-process__grid-col grid-col-12-b"></span>
+          <span class="home-process__grid-col grid-col-13-a"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-process__shapes">
+    <div class="rellax" data-rellax-speed="-2">
+      <ul class="js-parallax-scene">
+        <li class="home-process__shape layer" data-depth="0.33"><%= image_tag("process/shape-content-lg.svg", class: "home-process__shape-content") %></li>
+        <li class="home-process__shape layer" data-depth="0.66"><%= image_tag("process/shape-discovery-lg.svg", class: "home-process__shape-discovery") %></li>
+        <li class="home-process__shape layer" data-depth="1.00"><%= image_tag("process/shape-development-lg.svg", class: "home-process__shape-development") %></li>
+        <li class="home-process__shape layer" data-depth="1.33"><%= image_tag("process/shape-design-lg.svg", class: "home-process__shape-design") %></li>
+        <li class="home-process__shape layer" data-depth="1.66"><%= image_tag("process/shape-testing-lg.svg", class: "home-process__shape-testing") %></li>
+        <li class="home-process__shape layer" data-depth="2.00"><%= image_tag("process/shape-start-lg.svg", class: "home-process__shape-start") %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="home-process__phases">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="home-process__phase-title" style="margin-left:16px;">discovery</h4>
+          <h5 class="home-process__phase-percent">00%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:8px;margin-top:4px;">design</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-8px;margin-top:-4px;">15%</h5>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="home-process__phase-title" style="margin-left:-8px;margin-top:12px;">development</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-16px;margin-top:-12px;">55%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:-16px;margin-top:16px;">content</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-24px;margin-top:-16px;">85%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:-32px;margin-top:24px;">testing</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-32px;margin-top:-24px;">95%</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Writing %>
+<section class="home-writing">
+  <div class="home-writing__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+          <h4 class="home-writing__tagline">Our writing</h4>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h2 class="page-section__description">Sometimes we write about particular projects, building a design agency or just random stuff.</h2>
+          <%# link_to "all our writing", "/writing/", class: "page-section__link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-writing__posts">
+    <%# Agency Year 1 %>
+    <article class="home-post" itemscope itemtype="https://schema.org/Article">
+      <div class="row">
+        <%# Shape %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <div class="home-post__shape--right"></div>
+          </div>
+        </div>
+        <%# Image %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <%= image_tag("posts/agency-year-1-make-all-the-mistakes.jpg", class: "home-post__image") %>
+          </div>
+        </div>
+        <%# Text %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-15">
+            <h2 class="home-post__title" itemprop="headline">Agency Year 1: Make All the Mistakes</h2>
+            <%= link_to "read it now", "/writing/agency-year-1-make-all-the-mistakes/", class: "home-post__link" %>
+          </div>
+        </div>
+      </div>
+    </article>
+    <%# Form an LLC %>
+    <article class="home-post" itemscope itemtype="https://schema.org/Article">
+      <div class="row">
+        <%# Shape %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <div class="home-post__shape--left"></div>
+          </div>
+        </div>
+        <%# Image %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6 col-md-offset-6">
+            <%= image_tag("posts/how-to-form-an-llc-in-california.jpg", class: "home-post__image") %>
+          </div>
+        </div>
+        <%# Text %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-12">
+            <h2 class="home-post__title" itemprop="headline">How to Form an LLC in California</h2>
+            <%= link_to "read it now", "/writing/how-to-form-an-llc-in-california/", class: "home-post__link" %>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+  </div>
+</section>
+
+<%# Expertise %>
+<section class="home-expertise">
+  <div class="home-expertise__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
+          <h2 class="page-section__description">Got an idea? Let's work together already! We showed you ours, now send us yours. Seriously, what're you waiting for?</h2>
+          <%= link_to "talk to us", "mailto:hello@dixonandmoe.com", class: "home-expertise__link" %>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-sm-3 col-md-6 col-lg-9">
+          <h4 class="home-expertise__tagline">Contact us</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

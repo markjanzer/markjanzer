@@ -76,7 +76,6 @@ task :sync do
 
 end
 
-
 # Checks github to make sure you've pushed recent commit
 def check_github
   check =  `git status -sb`

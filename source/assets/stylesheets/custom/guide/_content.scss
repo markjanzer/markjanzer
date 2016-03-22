@@ -1,0 +1,35 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Guide
+// stylesheets/blocks/_guide.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Header
+.guide-header__title {
+	margin-bottom: 24px;
+	@include font-size($font-size-600);
+}
+
+// Content
+.guide-content {
+	margin-bottom: 120px;
+}
+.guide-content__section {
+	margin-bottom: 96px;
+}
+.guide-content__section-link {
+	font-family: $font-family-secondary;
+	letter-spacing: 0;
+	@include font-size($font-size-400);
+	padding-bottom: 2px;
+	border-bottom: 1px solid $color-blue-dk;
+}
+.guide-content__title {
+	margin-top: 64px;
+	@include font-size($font-size-500);
+}
+.guide-content__paragraph {
+	margin-top: 16px;
+	margin-bottom: 32px;
+	line-height: 1.618;
+}

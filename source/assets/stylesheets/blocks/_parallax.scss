@@ -1,0 +1,78 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Parallax
+// stylesheets/blocks/_parallax.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.parallax {
+  @media only screen and (min-width: $screen-md-min) {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 30px;
+    perspective: 30px;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+  }
+}
+.parallax__group {
+  @media only screen and (min-width: $screen-md-min) {
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    // transform: translate3d(700px, 0, -800px) rotateY(30deg);
+  }
+}
+.parallax__layer {
+  @media only screen and (min-width: $screen-md-min) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+  }
+}
+// 1 + (translateZ * -1) / 300
+.parallax__layer--0 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,0) scale(1);
+  }
+}
+.parallax__layer--1 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-6px) scale(1.2);
+  }
+}
+.parallax__layer--2 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-12px) scale(1.4);
+  }
+}
+.parallax__layer--3 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-18px) scale(1.6);
+  }
+}
+.parallax__layer--4 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-24px) scale(1.8);
+  }
+}
+.parallax__layer--5 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-36px) scale(2.2);
+  }
+}
+.parallax__layer--6 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-48px) scale(2.6);
+  }
+}
+.parallax__layer--7 {
+  @media only screen and (min-width: $screen-md-min) {
+    transform: translate3d(0,0,-60px) scale(3);
+  }
+}

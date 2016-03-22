@@ -1,0 +1,220 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Process Page — Header
+// stylesheets/custom/process/_header.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.process-header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	min-height: 660px;
+}
+
+// Text
+.process-header__text {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 60px;
+	// top: 120px;
+	// @media only screen and (min-width: $screen-sm-min) {
+	// 	top: 240px;
+	// }
+	// @media only screen and (min-width: $screen-md-min) {
+	// 	top: 540px;
+	// }
+}
+.process-header__title {
+	margin-bottom: 32px;
+}
+.process-header__tagline {
+	float: right;
+	margin-top: 54px;
+	margin-right: -32px;
+	transform: rotate(270deg);
+}
+
+// Shapes
+.process-graphic__shapes {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	// margin-top: 50vh;
+}
+.process-graphic__shape-start {
+	// margin-top: 30vh;
+	position: relative;
+	top: -60px;
+	left: 15vw;
+	opacity: 0; // not used
+}
+.process-graphic__shape-discovery {
+	// margin-top: 12vh;
+	position: relative;
+	top: -360px;
+	left: 6vw;
+}
+.process-graphic__shape-design {
+	position: relative;
+	top: -420px;
+	left: 12vw;
+}
+.process-graphic__shape-development {
+	// margin-top: 9vh;
+	position: relative;
+	// top: -330px;
+	top: -390px;
+	left: 41vw;
+}
+.process-graphic__shape-content {
+	// margin-top: 18vh;
+	position: relative;
+	top: -300px;
+	left: 68vw;
+}
+.process-graphic__shape-testing {
+	// margin-top: 68vh;
+	position: relative;
+	top: 120px;
+	left: 64vw;
+}
+
+
+// Grid
+.process-graphic__grid {
+	position: relative;
+	top: 0;
+}
+.process-graphic__grid-col {
+	display: block;
+	float: left;
+	width: 4.15%;
+	// height: 420px;
+	height: 240px;
+	border-left: 1px solid $color-gray-200;
+}
+.process-graphic__grid-col:nth-child(even) {
+	// height: 480px
+	height: 300px;
+}
+.process-graphic__grid-col:last-child {
+	width: 0%;
+}
+// .grid-col-1-a {
+// 	height: 705px;
+// 	margin-top: 15px;
+// }
+// .grid-col-2-a {
+// 	height: 690px;
+// 	margin-top: 30px;
+// }
+// .grid-col-3-a {
+// 	height: 705px;
+// 	margin-top: 15px;
+// }
+// .grid-col-4-a {
+// 	height: 720px;
+// 	margin-top: 0;
+// }
+// .grid-col-5-a {
+// 	height: 735px;
+// 	margin-top: -15px;
+// }
+// .grid-col-6-a {
+// 	height: 750px;
+// 	margin-top: -30px;
+// }
+// .grid-col-7-a {
+// 	height: 735px;
+// 	margin-top: -15px;
+// }
+// .grid-col-8-a {
+// 	height: 760px;
+// 	margin-top: -40px;
+// }
+// .grid-col-9-a {
+// 	height: 790px;
+// 	margin-top: -70px;
+// }
+// .grid-col-10-a {
+// 	height: 820px;
+// 	margin-top: -100px;
+// }
+// .grid-col-11-a {
+// 	height: 790px;
+// 	margin-top: -70px;
+// }
+// .grid-col-12-a {
+// 	height: 830px;
+// 	margin-top: -110px;
+// }
+// .grid-col-13-a {
+// 	height: 845px;
+// 	margin-top: -125px;
+// }
+// .grid-col-1-b {
+// 	height: 900px;
+// 	margin-top: -120px;
+// }
+// .grid-col-2-b {
+// 	height: 870px;
+// 	margin-top: -90px;
+// }
+// .grid-col-3-b {
+// 	height: 900px;
+// 	margin-top: -120px;
+// }
+// .grid-col-4-b {
+// 	height: 960px;
+// 	margin-top: -180px;
+// }
+// .grid-col-5-b {
+// 	height: 1020px;
+// 	margin-top: -240px;
+// }
+// .grid-col-6-b {
+// 	height: 990px;
+// 	margin-top: -210px;
+// }
+// .grid-col-7-b {
+// 	height: 960px;
+// 	margin-top: -180px;
+// }
+// .grid-col-8-b {
+// 	height: 1020px;
+// 	margin-top: -240px;
+// }
+// .grid-col-9-b {
+// 	height: 1080px;
+// 	margin-top: -300px;
+// }
+// .grid-col-10-b {
+// 	height: 1110px;
+// 	margin-top: -330px;
+// }
+// .grid-col-11-b {
+// 	height: 1080px;
+// 	margin-top: -300px;
+// }
+// .grid-col-12-b {
+// 	height: 1050px;
+// 	margin-top: -270px;
+// }
+.process-graphic__phases {
+	position: relative;
+	margin-top: 32px;
+}
+.process-graphic__phase-title {
+	text-align: right;
+	font-family: $font-family-secondary;
+	transform: rotate(270deg);
+	@include font-size($font-size-300);
+}
+.process-graphic__phase-percent {
+	position: relative;
+	z-index: $z2;
+	top: -84px;
+	font-family: $font-family-secondary;
+	@include font-size($font-size-200);
+}

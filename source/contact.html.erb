@@ -1,0 +1,126 @@
+---
+itemtype: WebPage
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-hero.jpg",
+    local_title:       "Contact — Dixon & Moe | Strategy, Design, Development",
+    local_description: "We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage."
+  }) %>
+<% end %>
+
+<%# Custom JavaScript %>
+<% content_for :javascripts do %>logoColor(840);<% end %>
+
+<%# Header %>
+<header class="contact-header">
+
+  <%# Header Ampersands %>
+  <div class="contact-header__ampersands">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="js-parallax-scene">
+        <div class="layer" data-depth="0.75">
+          <figure class="contact-header__ampersand">
+            <%= image_tag("ampersand-hatch--light.svg", class: "contact-header__ampersand--hatch") %>
+          </figure>
+        </div>
+        <div class="layer" data-depth="1.50">
+          <figure class="contact-header__ampersand">
+            <%= image_tag("ampersand-solid--light.svg", class: "contact-header__ampersand--solid") %>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%# Header Text %>
+  <div class="process-header__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h1 class="contact-header__title">Have an interesting project, partnership or skillset? Talk to Robert, our managing director. Here's his email:</h1>
+          <%= link_to "robert@dixonandmoe.com", "mailto:robert@dixonandmoe.com", class: "contact-header__link" %>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9">
+          <h4 class="contact-header__tagline">Contact us</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="contact-section">
+
+  <div class="contact-map__outer">
+    <div class="contact-map__inner js-contact-map"></div>
+  </div>
+  <script type="text/javascript">
+    function initialize() {
+      var mapCanvas = document.getElementsByClassName('js-contact-map')[0];
+      var myLatLng = new google.maps.LatLng(37.773705, -122.416119);
+      var mapStyles = [
+          {
+            "featureType": "landscape",
+            "stylers": [
+              { "visibility": "on" },
+              { "color": "#f7f7f7" }
+            ]
+          },{
+            "featureType": "road",
+            "stylers": [
+              { "visibility": "on" },
+              { "color": "#ffffff" }
+            ]
+          },{
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              { "visibility": "on" },
+              { "color": "#333333" }
+            ]
+          },{
+            "featureType": "poi",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          },{
+            "featureType": "administrative.land_parcel",
+            "elementType": "geometry.stroke",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          },{
+            "featureType": "transit",
+            "stylers": [
+              { "visibility": "off" }
+            ]
+          }
+        ]
+      var mapOptions = {
+        center: myLatLng,
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false,
+        styles: mapStyles
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      // var mapIcon = "";
+      var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map
+          // icon: mapIcon
+      });
+    }
+  </script>
+</section>
+
+<%# Google Map API %>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgKjzXd651z0tFCAHrj91_zK-oNi3rUfA&callback=initialize"></script>

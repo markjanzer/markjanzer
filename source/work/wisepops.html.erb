@@ -1,0 +1,148 @@
+---
+itemtype: WebPage
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "monograph-hero.jpg",
+    local_title:       "Process — Dixon & Moe",
+    local_description: "Branding, development and design."
+  }) %>
+<% end %>
+
+<%# Process Header %>
+<header class="process-header parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-header__text">
+      <div class="row">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12">
+          <h1 class="page-header__title">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--2">
+    <div class="row">
+      <div class="col-xs-24">
+        <%= image_tag("clients/wisepops-hero.png", style: "width:1080px;position:relative;margin-top:48vh;margin-left:106px;opacity:1") %>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    
+  </div>
+</header>
+
+<%# Discovery %>
+<section class="process-phase parallax__group" style="margin-top: 150vh;">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Discovery</h2>
+          <h4 class="process-phase__subtitle">phase one</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-discovery-sm.svg", class: "process-phase__shape-discovery") %>
+  </div>
+</section>
+<%# Design %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Design</h2>
+          <h4 class="process-phase__subtitle">phase two</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-design-sm-dark.svg", class: "process-phase__shape-design") %>
+  </div>
+</section>
+<%# Development %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Development</h2>
+          <h4 class="process-phase__subtitle">phase three</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-development-sm-dark.svg", class: "process-phase__shape-development") %>
+  </div>
+</section>
+<%# Content %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Content</h2>
+          <h4 class="process-phase__subtitle">phase four</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-content-sm-dark.svg", class: "process-phase__shape-content") %>
+  </div>
+</section>
+<%# Testing %>
+<section class="process-phase parallax__group">
+  <div class="parallax__layer parallax__layer--0">
+    <div class="process-phase__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-9 col-lg-offset-2">
+          <h2 class="process-phase__title">Testing</h2>
+          <h4 class="process-phase__subtitle">phase five</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--1">
+    <%= image_tag("process/shape-testing-sm.svg", class: "process-phase__shape-testing") %>
+  </div>
+</section>
+  <%# Launch! %>
+  <div class="process-phase__text">
+    <div class="row">
+      <div class="col-md-3 col-lg-8 col-lg-offset-2">
+        <h2 class="process-phase__title">Launch!</h2>
+        <h4 class="process-phase__subtitle">phase six</h4>
+      </div>
+      <div class="col-lg-9">
+        <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,105 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Dixon & Moe Settings
+// stylesheets/_settings.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+// Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$grid-columns: 24;  // number of total columns
+$grid-gutter: 1rem; // column padding (16px)
+$grid-width: 80rem; // max width of row container
+
+$screen-xs-min: 0em;      // min breakpoint for mobile   (0px)
+$screen-xs-max: 40em;     // max breakpoint for mobile   (640px)
+$screen-sm-min: 40.063em; // min breakpoint for tablet-v (641px)
+$screen-sm-max: 48em;     // max breakpoint for tablet-v (768px)
+$screen-md-min: 48.063em; // min breakpoint for tablet-h (769px)
+$screen-md-max: 64em;     // max breakpoint for tablet-h (1024px)
+$screen-lg-min: 64.063em; // min breakpoint for desktop  (1025px)
+$screen-lg-max: 90em;     // max breakpoint for desktop  (1441px)
+$screen-xl-min: 90.063em; // min breakpoint for desktop+ (1441px)
+
+
+// Colors
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$color-black: #0F0D20;
+$color-white: #f7f7f7;
+$color-shadow: rgba(15, 13, 32, 0.25);
+
+$color-blue-dk: #17152C;
+$color-blue-lt: #3A3656;
+// $color-blue-gray: #5A6676; // really nice on #f7f7f7
+$color-blue-gray: #6A687A;
+
+$color-gray-100: #f7f7f7;
+$color-gray-200: #eaeaea;
+$color-gray-300: #b3b3bc;
+$color-gray-400: #d4d4d4;
+$color-gray-500: #4A4A4D;
+
+// Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$font-family-primary: "Akkurat Pro", "Aktiv Grotesk", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-family-secondary: "Courier New", "Courier", monospace;
+
+// Font Sizes
+$font-size-100: 10px; // micro
+$font-size-200: 12px; // small
+$font-size-300: 16px; // base
+$font-size-400: 21px; // medium
+$font-size-500: 26px; // large
+$font-size-600: 38px; // extra large
+$font-size-700: 50px; // super large
+$font-size-800: 68px; // ultra large
+$font-size-900: 90px; // mega large
+
+// Font scales: 1.618 + 1.333
+// 10px, 12px, 16px, 21px, 26px, 28px, 38px, 42px, 51px, 67px, 68px, 90px
+
+$font-size-default: $font-size-300;
+
+// Font Style
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+// Font Weights
+$font-weight-hairline: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+
+// Line Height
+$font-line-height: 1.618;
+
+// Letter Spacing
+$font-spacing-h1: 0.075em;
+$font-spacing-p: 0.025em;
+
+$body-font-color: $color-black;
+$body-font-family: $font-family-primary;
+
+
+// Transitions
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+$transition-speed: 0.375s;
+// $transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-easing: cubic-bezier(0.16, 0.68, 0.43, 0.99);
+
+
+// Z-Index
+// - - - - - - - - - - - - - - - -
+$z6: 6;  // mobile nav mobile / alerts
+$z5: 5;  // mobile nav mobile / alerts
+$z4: 4;  // nav menus
+$z3: 3;  // buttons and button menus
+$z2: 2;  // layout overlays
+$z1: 1;  // everything else
+$z0: -1; //
+
+

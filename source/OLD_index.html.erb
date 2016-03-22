@@ -1,0 +1,667 @@
+---
+itemtype: WebPage
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-hero.jpg",
+    local_title:       "Dixon & Moe — Strategy, Design, Development and Marketing",
+    local_description: "We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage."
+  }) %>
+<% end %>
+
+<%# Custom JavaScript %>
+<% content_for :javascripts do %>logoColor(840);<% end %>
+
+<%# Header %>
+<header class="home-header">
+
+  <%# Header Graphic %>
+  <div class="home-header__shapes">
+    <div class="rellax" data-rellax-speed="-2">
+      <div class="home-header__shape"></div>
+    </div>
+  </div>
+
+  <%# Header Ampersands %>
+  <div class="home-header__ampersands">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="js-parallax-scene">
+        <div class="layer" data-depth="0.75">
+          <figure class="home-header__ampersand">
+            <%= image_tag("ampersand-hatch.svg", class: "home-header__ampersand--hatch") %>
+          </figure>
+        </div>
+        <div class="layer" data-depth="1.50">
+          <figure class="home-header__ampersand">
+            <%= image_tag("ampersand-solid.svg", class: "home-header__ampersand--solid") %>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%# Header Text %>
+    <div class="home-header__text">
+      <div class="row">
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
+            <h1 class="home-header__description" itemprop="description">We’re a San Francisco based design and software consultancy developing websites and digital products.</h1>
+            <%= link_to "get in touch", "mailto:hello@dixonandmoe.com", class: "home-header__link" %>
+          </div>
+        </div>
+        <div class="rellax" data-rellax-speed="0">
+          <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+            <%= link_to "hello@dixonandmoe.com", "mailto:hello@dixonandmoe.com", class: "home-header__email" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<%# Projects %>
+<section class="home-projects">
+  <%# WisePops %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">WisePops</span><span class="project__client-dash"></span><span class="project__client-tags">design, ui/ux, marketing</span></h4>
+        <h2 class="project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
+        <%= link_to "launch site", "http://wisepops.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/wisepops-hero--left.png", style: "width:960px;margin-left:60px;margin-top:-120px") %>
+      </div>
+    </div>
+  </article>
+  <%# AgendaNYC %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/agendanyc-hero--left.png", style: "width:960px;margin-left:-600px;margin-top:-120px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">AgendaNYC</span><span class="project__client-dash"></span><span class="project__client-tags">frontend, custom cms, seo</span></h4>
+        <h2 class="project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
+        <%= link_to "launch site", "http://www.agendanyc.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+  <%# GrooveHQ %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">GrooveHQ</span><span class="project__client-dash"></span><span class="project__client-tags">design, branding, marketing</span></h4>
+        <!-- <h2 class="project__title" itemprop="description">Groove was looking to build user trust and optimize conversions. <span class="project__title--light">Working with their CEO Alex we redesigned customer acquisition.</span></h2> -->
+        <h2 class="project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
+        <%= link_to "launch site", "https://www.groovehq.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/groovehq-hero--right.png", style: "width:1000px;margin-left:120px;margin-top:-120px;marign-bottom:-120px;") %>
+      </div>
+    </div>
+  </article>
+  <%# Aptible %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/aptible-hero--left.png", style: "width:960px;margin-left:-600px;margin-top:-120px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">Aptible</span><span class="project__client-dash"></span><span class="project__client-tags">design, animation, frontend</span></h4>
+        <h2 class="project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
+        <%= link_to "visit page", "https://www.aptible.com/technology/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+
+  <!-- <div class="home-projects__title">
+    <div class="rellax" data-rellax-speed="1">
+      <div class="row">
+        <div class="col-xs-24 col-md-22 col-md-offset-2">
+          <h2>Work</h2>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="row"> -->
+      <%# image_tag("clients/wisepops-hero.png", style: "position:absolute;width:1280px;margin-left:-120px;margin-top:-240px") %>
+      <!-- <div class="col-lg-6 col-lg-offset-2"> -->
+        <%# image_tag("clients/wisepops-logo.svg", style: "width:180px") %>
+      <!-- </div> -->
+
+      <!-- <div class="col-lg-14"> -->
+        <%# Small Shape %>
+        <!-- <div class="home-project__shape-sm">
+          <div class="rellax" data-rellax-speed="-2">
+            <div class="home-project__shape-sm--hatch">
+              <%= image_tag("projects/project-shape--hatch-600.svg") %>
+            </div>
+          </div>
+        </div>
+        <div class="home-project__shape-sm">
+          <div class="rellax" data-rellax-speed="0">
+            <div class="home-project__shape-sm--outline"></div>
+          </div>
+        </div> -->
+        <%# Large Shape %>
+        <!-- <div class="home-project__shape-lg">
+          <div class="rellax" data-rellax-speed="-2">
+            <div class="home-project__shape-lg--hatch">
+              <%= image_tag("projects/project-shape--hatch-600.svg") %>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="home-project__shape-lg">
+          <div class="rellax" data-rellax-speed="0">
+            <div class="home-project__shape-lg--outline"></div>
+          </div>
+        </div> -->
+
+        <!-- <div class="home-project__text">
+          <h4 class="home-project__tagline">WisePops</h4>
+          <time datetime="2016" class="home-project__year">2016</time>
+          <h3 class="home-project__title">WisePops</h3>
+
+
+          <ul class="home-project__tags">
+            <li class="home-project__tag">branding</li>,
+            <li class="home-project__tag">design</li>,
+            <li class="home-project__tag">product</li>
+          </ul>
+
+          <a class="home-project__link" href="https://wisepops.com/" target="_blank" itemprop="url">
+            
+          </a>
+
+        </div> -->
+<!-- 
+      </div>
+  </div> -->
+
+<!--   <div class="row">
+    <%# WisePOPS %>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="WisePOPS | Popups for the rest of us">
+        <span class="home-project__title">WisePops <span class="home-project__title-line"></span><span class="home-project__title-date">2016</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://wisepops.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/wisepops-logo.svg", alt: "WisePops | Intelligent Website Popups", itemprop: "contentUrl") %>
+          </figure>
+        </a><br><br>
+        
+        <h3>WisePops</h3>
+        <p class="home-project__description" itemprop="description">Focused on pricing strategy and conversion optimization, we helped WisePops more then double their revenue in 3 months with a new marketing site and brand refresh.</p>
+        <div class="home-project__tags">
+          <span class="home-project__tag">branding</span>,
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">product</span>
+        </div>
+      </div>
+    </div>
+    <%# AgendaNYC %>
+    <div class="col-xs-24 col-sm-12 col-md-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="Wisepops | Popups for the rest of us">
+        <span class="home-project__title">AgendaNYC <span class="home-project__title-line"></span><span class="home-project__title-date">2016</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://wisepops.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/agendanyc-logo.svg", alt: "AgendaNYC | Communications, Strategy and Creative in NYC", itemprop: "contentUrl") %>
+          </figure>
+        </a><br><br>
+        <h3>AgendaNYC</h3>
+        
+        <p class="home-project__description" itemprop="description">We brand, build, launch and market all kinds of websites and products, and not necessarily in that order. We brand, build, launch and market kinds of websites and products.</p>
+        <div class="home-project__tags">
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">frontend</span>,
+          <span class="home-project__tag">seo</span>
+        </div>
+      </div>
+    </div>
+    <%# GrooveHQ %>
+    <div class="col-xs-24 col-sm-12 col-md-6 col-md-offset-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="GrooveHQ | Simple Help Desk Software">
+        <span class="home-project__title">GrooveHQ <span class="home-project__title-line"></span><span class="home-project__title-date">2015</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://groovehq.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/groovehq-logo.svg", alt: "GrooveHQ | Simple Help Desk Software", itemprop: "contentUrl") %>
+          </figure>
+        </a>
+        <div class="home-project__tags">
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">UI/UX</span>,
+          <span class="home-project__tag">marketing</span>
+        </div>
+        <p class="home-project__description" itemprop="description">To complement Groove's highly successful product and blog, we worked with their CEO Alex to design and A/B test a brand new <a href="http://groovehq.com/" target="_blank">marketing site</a> from the ground up.</p>
+      </div>
+    </div> -->
+    <%# Aptible %>
+    <!-- <div class="col-xs-24 col-sm-12 col-md-6">
+      <div class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <meta itemprop="name" content="Aptible | HIPPA Compliant Cloud Services">
+        <span class="home-project__title">Aptible <span class="home-project__title-line"></span><span class="home-project__title-date">04</span></span><br><br><br><br>
+        <a class="home-project__link" href="https://aptible.com/" target="_blank" itemprop="url">
+          <figure class="home-project__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <%= image_tag("clients/aptible-logo.svg", alt: "Aptible | HIPPA Compliant Cloud Services", itemprop: "contentUrl") %>
+          </figure>
+        </a>
+        <div class="home-project__tags">
+          <span class="home-project__tag">design</span>,
+          <span class="home-project__tag">frontend</span>,
+          <span class="home-project__tag">marketing</span>
+        </div>
+        <p class="home-project__description" itemprop="description">Collaborating with their VP of marketing we built an animated <a href="https://www.aptible.com/technology/" target="_blank">technology page</a>, created ads, and designed <a href="https://www.aptible.com/company/resources/#hipaa-badges-section" target="_blank">"Powered by Aptible"</a> badges to drive customer aquisition.</p>
+      </div>
+    </div> -->
+  <!-- </div> -->
+</section>
+
+<%# Process %>
+<section class="home-process">
+  <div class="home-process__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h2 class="page-section__description">We take a design focused approach to each project phase, from discovery through development to launch.</h2>
+          <%= link_to "learn about our process", "/process/", class: "page-section__link" %>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+          <h4 class="home-process__tagline">Our Process</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-process__grid">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-xs-24">
+          <span class="home-process__grid-col grid-col-1-a"></span>
+          <span class="home-process__grid-col grid-col-1-b"></span>
+          <span class="home-process__grid-col grid-col-2-a"></span>
+          <span class="home-process__grid-col grid-col-2-b"></span>
+          <span class="home-process__grid-col grid-col-3-a"></span>
+          <span class="home-process__grid-col grid-col-3-b"></span>
+          <span class="home-process__grid-col grid-col-4-a"></span>
+          <span class="home-process__grid-col grid-col-4-b"></span>
+          <span class="home-process__grid-col grid-col-5-a"></span>
+          <span class="home-process__grid-col grid-col-5-b"></span>
+          <span class="home-process__grid-col grid-col-6-a"></span>
+          <span class="home-process__grid-col grid-col-6-b"></span>
+          <span class="home-process__grid-col grid-col-7-a"></span>
+          <span class="home-process__grid-col grid-col-7-b"></span>
+          <span class="home-process__grid-col grid-col-8-a"></span>
+          <span class="home-process__grid-col grid-col-8-b"></span>
+          <span class="home-process__grid-col grid-col-9-a"></span>
+          <span class="home-process__grid-col grid-col-9-b"></span>
+          <span class="home-process__grid-col grid-col-10-a"></span>
+          <span class="home-process__grid-col grid-col-10-b"></span>
+          <span class="home-process__grid-col grid-col-11-a"></span>
+          <span class="home-process__grid-col grid-col-11-b"></span>
+          <span class="home-process__grid-col grid-col-12-a"></span>
+          <span class="home-process__grid-col grid-col-12-b"></span>
+          <span class="home-process__grid-col grid-col-13-a"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-process__shapes">
+    <div class="rellax" data-rellax-speed="-2">
+      <ul class="js-parallax-scene">
+        <li class="home-process__shape layer" data-depth="0.33"><%= image_tag("process/shape-content-lg.svg", class: "home-process__shape-content") %></li>
+        <li class="home-process__shape layer" data-depth="0.66"><%= image_tag("process/shape-discovery-lg.svg", class: "home-process__shape-discovery") %></li>
+        <li class="home-process__shape layer" data-depth="1.00"><%= image_tag("process/shape-development-lg.svg", class: "home-process__shape-development") %></li>
+        <li class="home-process__shape layer" data-depth="1.33"><%= image_tag("process/shape-design-lg.svg", class: "home-process__shape-design") %></li>
+        <li class="home-process__shape layer" data-depth="1.66"><%= image_tag("process/shape-testing-lg.svg", class: "home-process__shape-testing") %></li>
+        <li class="home-process__shape layer" data-depth="2.00"><%= image_tag("process/shape-start-lg.svg", class: "home-process__shape-start") %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="home-process__phases">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="home-process__phase-title" style="margin-left:16px;">discovery</h4>
+          <h5 class="home-process__phase-percent">00%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:8px;margin-top:4px;">design</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-8px;margin-top:-4px;">15%</h5>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4 class="home-process__phase-title" style="margin-left:-8px;margin-top:12px;">development</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-16px;margin-top:-12px;">55%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:-16px;margin-top:16px;">content</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-24px;margin-top:-16px;">85%</h5>
+        </div>
+        <div class="col-xs-4">
+          <h4 class="home-process__phase-title" style="margin-left:-32px;margin-top:24px;">testing</h4>
+          <h5 class="home-process__phase-percent" style="margin-left:-32px;margin-top:-24px;">95%</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Writing %>
+<section class="home-writing">
+  <div class="home-writing__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9 show-sm">
+          <h4 class="home-writing__tagline">Our writing</h4>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h2 class="page-section__description">Sometimes we write about particular projects, building a design agency or just random stuff.</h2>
+          <%= link_to "all our writing", "/writing/", class: "page-section__link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-writing__posts">
+    <article class="home-post" itemscope itemtype="https://schema.org/Article">
+      <div class="row">
+        <%# Shape %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <div class="home-post__shape--right"></div>
+          </div>
+        </div>
+        <%# Image %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-6">
+            <%= image_tag("posts/agency-year-1-make-all-the-mistakes.jpg", class: "home-post__image", style: "width:600px;") %>
+          </div>
+        </div>
+        <%# Text %>
+        <div class="rellax" data-rellax-speed="2">
+          <div class="col-xs-24 col-sm-21 col-md-15">
+            <h2 class="home-post__title" itemprop="headline">Agency Year 1: Make All the Mistakes</h2>
+            <%= link_to "read it now", "/writing/agency-year-1-make-all-the-mistakes/", class: "home-post__link" %>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+
+      <!-- <div class="row">
+        
+          
+            <div class="row">
+              <div class="col-xs-24 col-md-24 col-lg-24">
+                <h2 class="home-post__title" itemprop="headline">SEO Field Guide for Designers</h2>
+              </div>
+              <div class="col-xs-24 col-md-20">
+                <p class="home-post__description" itemprop="description">Architects excel at creating amazing content, and as web designers there is nothing more exciting for us than seeing this content presented online in beautiful ways.</p>
+               <%= link_to "read it now", "/clients/", class: "home-post__link" %>
+              </div>
+            </div>
+          </article> -->
+
+
+
+
+<!--   <div class="parallax__layer parallax__layer--3">
+    <div class="row">
+      <div class="col-xs-24 col-md-8 col-md-offset-2">
+        <h2 style="margin-bottom:24px;">Writing</h2>
+        <h4 class="process-phase__subtitle">our perspectives</h4>
+      </div>
+      <div class="col-xs-24 col-sm-21 col-md-14">
+        <article class="home-post" itemscope itemtype="https://schema.org/Article">
+          <div class="row">
+            <div class="col-xs-24 col-md-24 col-lg-24">
+              <h2 class="home-post__title" itemprop="headline">SEO Field Guide for Designers</h2>
+            </div>
+            <div class="col-xs-24 col-md-20">
+              <p class="home-post__description" itemprop="description">Architects excel at creating amazing content, and as web designers there is nothing more exciting for us than seeing this content presented online in beautiful ways.</p>
+             <%= link_to "read it now", "/clients/", class: "home-post__link" %>
+            </div>
+          </div>
+        </article>
+        <article class="home-post" itemscope itemtype="https://schema.org/Article">
+          <div class="row">
+            <div class="col-xs-24 col-md-24 col-lg-24">
+              <h2 class="home-post__title" itemprop="headline">Agency Year 1: Make All the Mistakes</h2>
+            </div>
+            <div class="col-xs-24 col-md-20">
+              <p class="home-post__description" itemprop="description">We worked together with the SF based firm to iterate a series of design concepts and ultimately created a site that is refined, easy to use and places emphasis on their incredible work.</p>
+             <%= link_to "learn about our first year", "/clients/", class: "home-post__link" %>
+            </div>
+          </div>
+        </article>
+        <article class="home-post" itemscope itemtype="https://schema.org/Article">
+          <div class="row">
+            <div class="col-xs-24 col-md-24 col-lg-24">
+              <h2 class="home-post__title" itemprop="headline">How to Form an LLC in California</h2>
+            </div>
+            <div class="col-xs-24 col-md-20">
+              <p class="home-post__description" itemprop="description">Based on our particular observations we’d like to propose four methods that are effective when marketing to designers.</p>
+             <%= link_to "read it on Monograph.io", "/clients/", class: "home-post__link" %>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--4">
+    <div class="row" style="padding-top:90px;">
+      <div class="col-sm-3 col-md-6 show-sm">
+        <h4 class="home-writing__title">Writing</h4>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<%# Expertise %>
+<section class="home-expertise">
+  <div class="home-expertise__shapes">
+    <div class="rellax" data-rellax-speed="0">
+      <div class="home-expertise__shape"></div>
+    </div>
+  </div>
+  <div class="home-expertise__text">
+    <div class="row">
+      <div class="rellax" data-rellax-speed="0">
+        <div class="col-md-6 show-md">
+          <h4 class="home-expertise__tagline">Our Expertise</h4>
+        </div>
+      </div>
+      <div class="rellax" data-rellax-speed="2">
+        <div class="col-xs-24 col-sm-21 col-sm-offset-3 col-md-16 col-md-offset-8 col-lg-15 col-lg-offset-9">
+          <h2 class="page-section__description">We brand, build, design and market, and can help you with your next project at just about any stage.</h2>
+          <%= link_to "see our work", "/work/", class: "page-section__link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%# Products %>
+<!-- <section class="home-products parallax__group">
+  <%# Section Title %>
+  <div class="parallax__layer parallax__layer--4">
+    <div class="row">
+      <div class="col-xs-24 show-sm">
+        <h4 class="home-products__title">Our Products</h4>
+      </div>
+    </div>
+  </div>
+  <%# Section Description %>
+  <div class="parallax__layer parallax__layer--2">
+    <div class="row" style="padding-top:240px">
+      <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-4">
+        <h2 class="page-section__description">We’re especially fond of creating helpful tools and products for the design community.</h2>
+        <%= link_to "and winning awwwards", "http://www.awwwards.com/", class: "page-section__link" %>
+      </div>
+    </div>
+  </div>
+  <%# Section Content %>
+  <div class="parallax__layer parallax__layer--3">
+    <div class="row" style="padding-top:720px">
+      <div class="col-xs-24 col-md-20 col-md-offset-2" style="margin-bottom:168px;">
+        <h2 style="margin-bottom:24px;">Products</h2>
+        <h4 class="process-phase__subtitle">shit we built</h4>
+      </div>
+      <%# Monograph %>
+      <div class="col-xs-24 col-sm-12 col-md-8">
+        <div class="home-product" itemscope itemtype="https://schema.org/CreativeWork">
+          <a href="https://wisepops.com/" target="_blank" itemprop="url">
+            <figure class="home-product__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+              <%= image_tag("products/monograph.svg", alt: "Monograph | Better Websites for Architects", itemprop: "contentUrl") %>
+            </figure>
+          </a>
+          <p class="home-product__description" itemprop="description">A design technologist publication, Monograph is a place for projects; to share and view work by creatives, makers and designers.</p>
+          <%= link_to "monograph.io", "http://archive.monograph.io/", class: "home-product__link" %>
+        </div>
+      </div>
+      <%# HTML Color Codes %>
+      <div class="col-xs-24 col-sm-12 col-md-8">
+        <div class="home-product" itemscope itemtype="https://schema.org/CreativeWork">
+          <a href="https://groovehq.com/" target="_blank" itemprop="url">
+            <figure class="home-product__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+              <%= image_tag("products/html-color-codes.svg", alt: "HTML Color Codes | A Powerful Suite of Online Color Tools", itemprop: "contentUrl") %>
+            </figure>
+          </a>
+          <p class="home-product__description" itemprop="description">A powerful set of free color tools, HTML Color Codes includes an intuitive color picker, color chart and names, tutorials, and resources.</p>
+          <%= link_to "htmlcolorcodes.com", "http://htmlcolorcodes.com/", class: "home-product__link" %>
+        </div>
+      </div>
+      <%# HTML Arrows %>
+      <div class="col-xs-24 col-sm-12 col-md-8">
+        <div class="home-product" itemscope itemtype="https://schema.org/CreativeWork">
+          <a href="https://aptible.com/" target="_blank" itemprop="url">
+            <figure class="home-product__logo" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+              <%= image_tag("products/html-arrows.svg", alt: "HTML Arrows | Comprehensive Reference for HTML Symbol Codes", itemprop: "contentUrl") %>
+            </figure>
+          </a>
+          <p class="home-product__description" itemprop="description">Blending beauty with utility, HTML Arrows is a comprehensive reference for all of those HTML symbol codes you can never remember.</p>
+          <%= link_to "htmlarrows.com", "http://htmlarrows.com/", class: "home-product__link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%# Section Graphic %>
+  <div class="parallax__layer parallax__layer--4">
+    <div class="home-products__graphic"></div>
+  </div>
+</section> -->
+
+<%# Page Section %>
+<!-- <section class="gray" id="work">
+  <div class="row">
+    <div class="col-xs-24 col-sm-24">
+      <h6>OUR WORK</h6>
+      <h2>Companies we've worked with</h2>
+    </div>
+    <div style="clear:both"></div>
+    <div class="col-sm-8">
+      <div class="base-image" style="background: #39ace6">
+        <img src="/assets/images/teespring.svg">
+      </div>
+      <h3>Teespring</h3>
+      <h4>UI Design, Frontend Code, A/B Testing</h4>
+      <p>As the first designer at Teespring, Moe oversaw the frontend re-write from php to Rails. In the process every public facing page was designed, coded and A/B tested before going live—all in 8 weeks.</p>
+    </div>
+    <div class="col-sm-8">
+      <div class="base-image" style="background: #0272b7">
+        <img src="/assets/images/aptible.svg">
+      </div>
+      <h3>Aptible</h3>
+      <h4>Marketing, Design, Animation</h4>
+      <p>Working directly with Sam Yount (VP of marketing), we designed and built the <a href="https://www.aptible.com/technology/" target="_blank">technology page</a>, designed ads, and built the new <a href="https://www.aptible.com/company/resources/#hipaa-badges-section" target="_blank">"Powered by Aptible"</a> badge to help drive customer aquisition.</p>
+    </div>
+    <div class="col-sm-8">
+      <div class="base-image" style="background: #fff">
+        <img src="/assets/images/groove.svg">
+      </div>
+      <h3>Groove</h3>
+      <h4>UI Design, A/B Testing</h4>
+      <p>With the product and blog on point, Groove needed an updated marketing site. Collaborating with the CEO Alex, we designed and A/B tested the <a href="http://groovehq.com/" target="_blank">entire site</a> from the ground up. <strong>(Jan 2016)</strong></p>
+    </div>
+  </div>
+</section> -->
+
+
+<%# Page Section %>
+<!-- <section style="padding: 4em 0 6em;" class="home-blog" id="blog">
+  <div class="row">
+    <div class="col-xs-24 col-sm-16 col-sm-centered">
+      <h6 style="margin-bottom:5em">WRITING</h6>
+      <div class="link">
+        <a href="http://zeppelin.io/blog/best-architecture-websites-part-1" target="_blank">Best Architecture Websites</a> <span>— Architects excel at creating amazing content, and as web designers there is nothing more exciting for us than seeing this content presented online in beautiful ways.</span>
+      </div>
+      <div class="link">
+        <a href="http://zeppelin.io/work/stanley-saitowitz" target="_blank">Stanley Saitowitz Case Study</a> <span>— We worked together with the SF based firm to iterate a series of design concepts and ultimately created a site that is refined, easy to use and places emphasis on their incredible work.</span>
+      </div>
+      <div class="link">
+        <a href="https://medium.com/@moeamaya/on-marketing-to-designers-7186904fcdbd" target="_blank">On Marketing to Designers</a> <span>— Based on our particular observations we’d like to propose four methods that are effective when marketing to designers.</span>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<%# Page Section %>
+<!-- <section class="gray" id="fun">
+  <div class="row">
+    <div class="col-xs-24 col-sm-24">
+      <h6>SIDE PROJECTS</h6>
+      <h2>Cool things we've made</h2>
+    </div>
+    <div style="clear:both"></div>
+    <div class="col-sm-8">
+      <div class="base-image" style="background: #f3f4f8">
+        <img src="/assets/images/htmlcolorcodes.svg">
+      </div>
+      <h3>HTML Color Codes</h3>
+      <h4>HTML Color picking made easy</h4>
+      <p>HTML Color Codes is a powerful set of free color tools including our intuitive color picker, color chart, color name, tutorials and resources.
+        <br><br>
+        <a href="http://htmlcolorcodes.com/" target="_blank">Visit the site &rarr;</a>
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <div class="base-image" style="background: #a03741">
+        <img src="/assets/images/htmlarrows.svg">
+      </div>
+      <h3>HTML Arrows</h3>
+      <h4>HTML Symbols, entities, and codes</h4>
+      <p>Blending beauty with utility, HTML Arrows is a clean and comprehensive reference for all of those HTML symbol codes you can never remember.
+        <br><br>
+        <a href="http://htmlarrows.com/" target="_blank">Visit the site &rarr;</a>
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <div class="base-image" style="background: #fff">
+        <img src="/assets/images/monograph.svg">
+      </div>
+      <h3>Monograph</h3>
+      <h4>Design technologist publication</h4>
+      <p>Monograph is a place for projects — a site to share and view work by creatives, technologists, makers and designers.
+        <br><br>
+        <a href="http://monograph.io/" target="_blank">Visit the site &rarr;</a>
+      </p>
+    </div>
+  </div>
+</section> -->

@@ -1,0 +1,43 @@
+---
+itemtype: WebPage
+title: "SEO for Designers: Part 2 — Markup"
+date: 2016-02-26
+changefreq: "weekly"
+priority: 0.5
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "seo-for-designers-part-2-dixon-and-moe.jpg",
+    local_title:       "SEO for Designers: Part 2 — Dixon & Moe",
+    local_description: "Branding, development and design."
+  }) %>
+<% end %>
+
+<%# Article %>
+<article itemscope itemtype="https://schema.org/Article">
+
+  <%# Article Header %>
+  <header class="guide-header">
+    <div class="guide-header__graphic"></div>
+    <div class="row">
+      <div class="col-xs-24 col-sm-21 col-md-16 col-lg-12 col-lg-offset-2">
+        <h1 class="guide-header__title" itemprop="headline"><%= current_page.data.title %></h1>
+        <span class="guide-header__date">Updated
+          <time datetime="<%= current_page.data.date %>" itemprop="datePublished"><%= current_page.data.date.strftime("%b %d, %Y") %></datetime>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <%# Article Content %>
+  <section class="guide-section" itemprop="articleBody">
+    <div class="row">
+      <div class="col-xs-24 col-sm-21 col-sm-offset-3 col-md-15 col-md-offset-2">
+      </div>
+    </div>
+  </section>
+</article>

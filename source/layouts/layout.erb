@@ -1,97 +1,62 @@
 <!doctype html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="http://dixonandmoe.com<%= current_page.url %>">
-
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <%# Meta Tags %>
-    <%= yield_content :meta %>
+    <% if content_for?(:meta) %>
+      <%= yield_content :meta %>
+    <% end %>
 
     <%# Typekit Fonts %>
     <script src="//use.typekit.net/byb6vzw.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-
     <%# CSS Assets %>
     <%= stylesheet_link_tag "all" %>
 
     <%# CSS Custom %>
-    <style><%= yield_content :stylesheets %></style>
+    <% if content_for?(:stylesheets) %>
+      <style><%= yield_content :stylesheets %></style>
+    <% end %>
 
     <%# Favicons %>
-    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="/assets/images/favicon.ico">
-    <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="favicon.ico">
+    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
 
-    <%# Google Webmaster Tools %>
-    <meta name="google-site-verification" content="" />
+    <%# Touch Icons %>
+    <%= partial("partials/head/touch_icons") %>
 
-    <%# Google Knowledge Graph %>
-    <script type="application/ld+json">
-    { "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "url" : "http://dixonandmoe.com/",
-      "name" : "Dixon & Moe",
-      "logo" : "http://dixonandmoe.com<%= image_path('dixonandmoe-logo.png') %>",
-      "image" : "http://dixonandmoe.com<%= image_path('dixonandmoe-hero.jpg') %>",
-      "foundingDate" : "2010",
-      "founder" : [
-        { "@type" : "Person",
-          "name" : "Alexander Dixon",
-          "email" : "alex@dixonandmoe.com"
-        },
-        { "@type" : "Person",
-          "name" : "Moe Amaya",
-          "email" : "moe@dixonandmoe.com"
-        } ],
-      "address" : [
-        { "@type" : "PostalAddress",
-          "streetAddress" : "1420 Turk Street #1205",
-          "addressLocality" : "San Francisco",
-          "addressRegion" : "CA",
-          "postalCode" : "94115",
-          "addressCountry" : "USA"
-        } ],
-      "contactPoint" : [
-        { "@type" : "ContactPoint",
-          "url" : "http://dixonandmoe.com/",
-          "email" : "moe@dixonandmoe.com",
-          "contactType" : "customer service"
-        } ]
-    }
-    </script>
+    <%# Knowledge Graph %>
+    <%= partial("partials/head/knowledge_graph") %>
   </head>
 
-  <body vocab="http://schema.org/" typeof="<%= current_page.data.typeof %>" class="<%= page_classes %>">
-    <meta property="url" content="http://dixonandmoe.com<%= current_page.url %>">
+  <body class="<%= page_classes %>" itemscope itemtype="https://schema.org/<%= current_page.data.itemtype %>">
 
-    <%# Main %>
-    <main id="main" class="animate-delay-fade" property="mainContentOfPage" typeof="WebPageElement" role="main">
-      <%# Desktop Header %>
-      <%= partial "partials/header" %>
+    <!-- <div style="position:fixed;top:0;right:0;left:0;bottom:0;width:100%;height:100%;border:12px solid #0F0D20;"></div> -->
 
-      <%# Mobile Overlay %>
-      <div class="nav-overlay"></div>
+    <%# Layout Modal %>
+    <div class="layout-modal js-layout-modal"></div>
 
-      <%# Mobile Header %>
-      <nav id="mobile" class="row hide-md">
-        <div class="col-xs-24">
-          <h2><%= link_to "Dixon & Moe", "/" %></h2>
-          <a id="nav-open-button" class="nav-button hide-md"><span></span></a>
-        </div>
-      </nav>
+    <%# Layout Overlay %>
+    <div class="layout-overlay js-layout-overlay"></div>
 
-      <%# Content %>
+    <%# Layout Navigation %>
+    <%= partial("partials/navigation") %>
+
+    <%# Layout Content %>
+    <main class="layout-content js-layout-content" <% unless current_page.data.itemtype == "Article" %>itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement"<% end %> role="main">
       <%= yield %>
-
-      <%# Footer %>
-      <%= partial "partials/footer" %>
-
     </main>
 
-    <%# JS Body Assets %>
-    <%= javascript_include_tag "body" %>
+    <%# Layout Footer %>
+    <%= partial("partials/footer") %>
+
+    <%# JS Assets %>
+    <%= javascript_include_tag "all" %>
+
+    <%# JS Custom %>
+    <% if content_for?(:javascripts) %>
+      <script><%= yield_content :javascripts %></script>
+    <% end %>
 
     <%# Google Anlaytics %>
     <script>
@@ -99,11 +64,9 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-64800746-1', 'auto');
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
-
     </script>
   </body>
 </html>

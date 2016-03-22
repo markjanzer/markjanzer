@@ -1,0 +1,69 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Footer
+// stylesheets/blocks/_footer.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.layout-footer {
+	padding: 3em 0 3em;
+	// background-color: $color-black;
+}
+.page-footer__section {
+	margin-bottom: 3em;
+}
+.page-footer__section-title {
+	margin-bottom: 1.5em;
+}
+.page-footer__section-link {
+	display: block;
+	margin-bottom: 0.1875em;
+	color: $color-white;
+	text-transform: none;
+	letter-spacing: 0.025em;
+}
+.page-footer__section-link:hover {
+	// color: $color-purple-200;
+}
+.page-footer__post-title {
+	color: $color-white;
+	margin-bottom: 0.1875em;
+}
+.page-footer__post-title:hover {
+	// color: $color-purple-200;
+}
+.page-footer__post-summary {
+	margin: 0;
+	color: $color-white;
+	@include font-size($font-size-300)
+}
+.page-footer__post-link {
+	// color: $color-gray-600;
+}
+.page-footer__post-link:hover {
+	// color: $color-purple-200;
+}
+
+.breadcrumb-list {
+	padding-bottom: 4.5em;
+}
+.breadcrumb-list__list-item {
+	display: inline-block;
+	vertical-align: middle;
+}
+.breadcrumb-list__link,
+.breadcrumb-list__seperator {
+	// color: $color-purple-200;
+	font-weight: $font-weight-light;
+	@include font-size($font-size-500);
+}
+.breadcrumb-list__seperator {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0.375em;
+}
+
+@media only screen and (min-width: $screen-md-min) {
+	.page-footer {
+		padding: 3em 0 6em;
+	}
+}

@@ -1,0 +1,261 @@
+---
+itemtype: CollectionPage
+title: Work — Dixon & Moe
+description: A bespoke web design and development outfit based in SF.
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "monograph-hero.jpg",
+    local_title:       "Work — Dixon & Moe",
+    local_description: "Branding, development and design."
+  }) %>
+<% end %>
+
+<%# Custom JavaScript %>
+<% content_for :javascripts do %>logoColor(120);<% end %>
+
+<%# Header %>
+<header class="work-header">
+  <div class="work-header__grid">
+    <div class="rellax" data-rellax-speed="-2">
+      <%# 1 — 12 %>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <%# 13 — 24 %>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <%# 25 — 36 %>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <%# 37 — 48 %>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+      <span class="work-header__grid-col"></span>
+    </div>
+  </div>
+  <div class="work-header__shapes">
+    <div class="rellax" data-rellax-speed="-2">
+      <ul class="js-parallax-scene">
+        <li class="work-header__shape layer" data-depth="0.50"><%= image_tag("work/shape-md.svg", class: "work-header__shape-md") %></li>
+        <li class="work-header__shape layer" data-depth="0.75"><%= image_tag("work/graph-sm.svg", class: "work-header__graph-sm") %></li>
+        <li class="work-header__shape layer" data-depth="1.00"><%= image_tag("work/shape-lg--bigger.svg", class: "work-header__shape-lg") %></li>
+        <li class="work-header__shape layer" data-depth="1.25"><%= image_tag("work/shape-sm--bigger.svg", class: "work-header__shape-sm") %></li>
+        <li class="work-header__shape layer" data-depth="1.50"><%= image_tag("work/arrow-lg.svg", class: "work-header__arrow-lg") %></li>
+        <li class="work-header__shape layer" data-depth="1.75"><%= image_tag("work/arrow-sm--right.svg", class: "work-header__arrow-sm--right") %></li>
+        <li class="work-header__shape layer" data-depth="2.00"><%= image_tag("work/arrow-sm--left.svg", class: "work-header__arrow-sm--left") %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="work-header__text">
+    <div class="rellax" data-rellax-speed="2">
+      <div class="row">
+        <div class="col-xs-24 col-sm-21 col-md-16 col-lg-15">
+          <h1 class="work-header__title">We brand, build, design and market, and can help you with your next project at just about any stage.</h1>
+          <% link_to "/work/", class: "work-header__link" do %>projects <span class="work-header__link-arrow">&#8595;</span><% end %>
+        </div>
+        <div class="col-xs-24 col-sm-3 col-md-8 col-lg-9">
+          <h4 class="work-header__tagline">Our work</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<%# Projects %>
+<section class="work-section" style="margin-top:240px;">
+  <%# WisePops %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("clients/wisepops-hero.png", style: "width:960px;margin-left:-480px;margin-top:-240px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">WisePops</span><span class="project__client-dash"></span><span class="project__client-tags">design, ui/ux, marketing</span></h4>
+        <h2 class="project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
+        <%= link_to "launch site", "http://wisepops.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+  <%# AgendaNYC %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">AgendaNYC</span><span class="project__client-dash"></span><span class="project__client-tags">frontend, custom cms, seo</span></h4>
+        <h2 class="project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
+        <%= link_to "launch site", "http://www.agendanyc.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/agendanyc-hero.png", style: "width:960px;margin-left:120px;margin-top:-120px") %>
+      </div>
+    </div>
+  </article>
+  <%# GrooveHQ %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/groovehq-hero.png", style: "width:960px;margin-left:-660px;margin-top:-180px") %>
+      </div>
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">GrooveHQ</span><span class="project__client-dash"></span><span class="project__client-tags">design, branding, marketing</span></h4>
+        <!-- <h2 class="project__title" itemprop="description">Groove was looking to build user trust and optimize conversions. <span class="project__title--light">Working with their CEO Alex we redesigned customer acquisition.</span></h2> -->
+        <h2 class="project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
+        <%= link_to "launch site", "https://www.groovehq.com/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+    </div>
+  </article>
+  <%# Aptible %>
+  <article class="project" itemscope itemtype="https://schema.org/CreativeWork" style="margin-top:240px;">
+    <div class="row">
+      <div class="col-xs-20 col-sm-21 col-md-18 col-lg-15">
+        <h4 class="project__client"><span class="project__client-name" itemprop="name">Aptible</span><span class="project__client-dash"></span><span class="project__client-tags">design, animation, frontend</span></h4>
+        <h2 class="project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
+        <%= link_to "visit page", "https://www.aptible.com/technology/", class: "project__link", itemprop: "url", target: "_blank" %>
+      </div>
+      <div class="col-xs-4 col-lg-9">
+        <%= image_tag("work/aptible-hero.png", style: "width:1080px;margin-left:60px;margin-top:-120px") %>
+      </div>
+    </div>
+  </article>
+
+</section><!-- 
+
+ Working with their CEO Alex we redesigned the website to promote customer acquisition.
+
+We redesigned their website to build user trust and drive customer acquisition. -->
+
+
+    <!-- <div class="client__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">A polished product for WisePops</h2>
+          <a class="process-phase__subtitle" style="font-size:21px;border-bottom:4px solid #0F0D20;padding-bottom:8px;margin-right:16px;">view case</a>
+          <a class="process-phase__subtitle" style="font-size:21px;">launch site</a><br><br><br><br>
+          <p class="process-phase__description">Working remotely with the CEO Ben, we helped the Paris based company to update their product's UI and UX, and built out a completely new marketing website which launched in January.</p>
+        </div>
+        <div class="col-lg-9 col-lg-offset-1">
+          <%# image_tag("clients/wisepops-original.png", style: "width:480px;margin-top:0vh;margin-left:0;opacity:1") %>
+          <p class="process-phase__description">Working remotely with the CEO Ben, we helped the Paris based company to update their product's UI and UX, and built out a completely new marketing website which launched in January.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--2">
+    <%# image_tag("clients/agendanyc-logo--white.svg", style: "width:270px;margin-top:-3vh;margin-left:120px;opacity:1") %>
+    <%# image_tag("clients/agendanyc-hero.png", style: "width:600px;margin-top:-4vh;margin-left:480px;opacity:1") %>
+    <%= image_tag("clients/wisepops-hero.png", style: "width:960px;margin-top:-27vh;margin-left:560px;opacity:1") %>
+  </div>
+  <div class="parallax__layer parallax__layer--3">
+    <%= image_tag("clients/wisepops-logo--white.svg", style: "width:300px;margin-top:3vh;margin-left:120px;opacity:1") %>
+  </div>
+</section> -->
+
+<!-- <%# Agenda NYC %>
+<section class="client parallax__group" style="margin-top:0vh">
+  <div class="parallax__layer parallax__layer--1">
+    <div class="client__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Developing a home for Agenda NYC</h2>
+          <a class="process-phase__subtitle" style="font-size:21px;border-bottom:4px solid #0F0D20;padding-bottom:8px">agendanyc.com</a><br><br><br><br>
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+        <div class="col-lg-9 col-lg-offset-1">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--2">
+    <%# image_tag("clients/agendanyc-logo--white.svg", style: "width:270px;margin-top:-3vh;margin-left:120px;opacity:1") %>
+    <%# image_tag("clients/agendanyc-hero.png", style: "width:600px;margin-top:-4vh;margin-left:480px;opacity:1") %>
+    <%= image_tag("clients/agendanyc-hero.png", style: "width:840px;margin-top:-3vh;margin-left:480px;opacity:1") %>
+  </div>
+  <div class="parallax__layer parallax__layer--3">
+    <%= image_tag("clients/agendanyc-logo--white.svg", style: "width:270px;margin-top:9vh;margin-left:240PX;opacity:1") %>
+  </div>
+</section>
+
+<%# Groove HQ %>
+<section class="client parallax__group" style="margin-top:20vh">
+  <div class="parallax__layer parallax__layer--1">
+    <div class="client__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Design to convert for Groove HQ</h2>
+          <h4 class="process-phase__subtitle">groovehq.com</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--2">
+    <%= image_tag("clients/groovehq-logo--white.svg", style: "width:300px;margin-top:-6vh;margin-left:240px;opacity:1") %>
+  </div>
+</section>
+
+<%# Aptible %>
+<section class="client parallax__group" style="margin-top:-40vh">
+  <div class="parallax__layer parallax__layer--1">
+    <div class="client__text">
+      <div class="row">
+        <div class="col-md-3 col-lg-8 col-lg-offset-2">
+          <h2 class="process-phase__title">Animated product page for Aptible</h2>
+          <h4 class="process-phase__subtitle">apitible.com</h4>
+        </div>
+        <div class="col-lg-9">
+          <p class="process-phase__description">Websites today are both destination and conduit; they must provide a delightful, memorable user experience, and in parallel operate as the primary distribution network for an organization’s online brand and content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax__layer parallax__layer--2">
+    <%= image_tag("clients/aptible-logo--white.svg", style: "width:300px;margin-top:-6vh;margin-left:240px;opacity:1") %>
+  </div>
+</section> -->
