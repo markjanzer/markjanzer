@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Akkurat Pro";
+  src: url('../type/lineto-akkurat-pro-regular.eot') format('embedded-opentype'),
+       url('../type/lineto-akkurat-pro-regular.woff') format('woff'),
+       url('../type/lineto-akkurat-pro-regular.ttf')  format('truetype'),
+       url('../type/lineto-akkurat-pro-regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Akkurat Pro";
+  src: url('../type/lineto-akkurat-pro-bold.eot') format('embedded-opentype'),
+       url('../type/lineto-akkurat-pro-bold.woff') format('woff'),
+       url('../type/lineto-akkurat-pro-bold.ttf')  format('truetype'),
+       url('../type/lineto-akkurat-pro-bold.svg') format('svg');
+  font-weight: bold;
+}
