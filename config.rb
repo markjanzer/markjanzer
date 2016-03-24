@@ -22,7 +22,7 @@ set :js_dir, "assets/javascripts"
 set :images_dir, "assets/images"
 
 # Sitemap generation
-page "/sitemap.xml", layout: false
+# page "/sitemap.xml", layout: false
 
 # RSS feed
 page "/feed.xml", layout: false
