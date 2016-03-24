@@ -6,125 +6,105 @@
 
 .home-projects {
 	margin-bottom: 240px;
-	@media only screen and (min-width: $screen-lg-min) {
-		// margin-bottom: 960px;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 120px;
 	}
-	// margin-bottom: 144px; // to compensate for home-client padding-bottom
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-bottom: 240px;
+	}
 }
 
-
-// .home-projects__title {
-// 	position: absolute;
-// 	float: left;
-// 	margin-top: -128px;
-// 	margin-left: -32px;
-// 	transform:rotate(270deg);
-// }
-.home-projects__description {
-	margin-bottom: 24px;
-	@include font-size($font-size-600);
-}
-
+// Project
 .home-project {
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 120px;
+	}
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-bottom: 240px;
+	}
+}
+.home-project__client {
+	margin-bottom: 32px;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 21px;
+		@include font-size($font-size-300);
+	}
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-bottom: 32px;
+		@include font-size($font-size-400);
+	}
+}
+.home-project__client-dash {
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 1px;
+	margin: 0 16px;
+	background: $color-black;
+}
+.home-project__client-tags {
+	font-family: $font-family-secondary;
+	@include font-size($font-size-300);
+}
+.home-project__title {
 	margin-bottom: 64px;
+	@include font-size($font-size-400);
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 32px;
+		@include font-size($font-size-500);
+	}
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-bottom: 64px;
+		@include font-size($font-size-600);
+	}
 }
-
-// Project Shapes - sm
-.home-project__shape-sm--hatch {
-	position: absolute;
-	width: 180px;
-	height: 180px;
-	margin-top: -240px;
-	// margin-left: 240px;
-	transform: rotate(45deg);
+.home-project__title--light {
+	color: $color-blue-gray;
 }
-.home-project__shape-sm--hatch img {
-	width: 180px;
-}
-.home-project__shape-sm--outline {
-	position: absolute;
-	width: 180px;
-	height: 180px;
-	margin-left: 60px;
-	border: 4px solid white;
-	transform: rotate(45deg);
-}
-
-// Project Shapes - lg
-.home-project__shape-lg--hatch {
-	position: absolute;
-	width: 600px;
-	height: 600px;
-	margin-top: -240px;
-	// margin-left: 240px;
-	transform: rotate(45deg);
-}
-.home-project__shape-lg--outline {
-	position: absolute;
-	width: 600px;
-	height: 600px;
-	margin-left: 60px;
-	border: 4px solid white;
-	transform: rotate(45deg);
-}
-
-
-
-
-
-
-.home-project__title-line {
-	display: inline-block;
-	vertical-align: middle;
-	width: 48px;
-	height: 1px;
-	margin: 0 12px;
-	// padding-bottom: -12px;
-	background: $color-black;
-}
-
-.home-project__tagline:after {
-	content: '';
-	width: 48px;
-	height: 1px;
-	margin-left: 16px;
-	display: inline-block;
-	vertical-align: middle;
-	background: $color-black;
-}
-.home-project__year {
-	font-family: $font-family-secondary;
-	@include font-size($font-size-300);
-	transform: rotate(45deg);
-}
-
-
-
-
 .home-project__link {
-	display: block;
-	margin-bottom: 4px;
-}
-.home-project__logo {
-	width: 100%;
-	// text-align: center;
-}
-.home-project__logo img {
-	// width:100%;
-	margin-left: 64px;
-	// position: relative;
-}
-.home-project__description {
-	margin-top: 48px;
-	line-height: 1.618;
-	@include font-size($font-size-300);
-}
-.home-project__tags {
-	margin-top: 48px;
 	font-family: $font-family-secondary;
-}
-.home-project__tag {
-	display: inline;
+	@include font-size($font-size-300);
 	padding-bottom: 4px;
 	border-bottom: 2px solid $color-blue-dk;
+	@media only screen and (min-width: $screen-lg-min) {
+		@include font-size($font-size-400);
+		padding-bottom: 8px;
+		border-bottom: 4px solid $color-blue-dk;
+	}
+}
+.home-project__image {
+	width: 480px;
+	@media only screen and (min-width: $screen-md-min) {
+		width: 720px;
+		margin-top: -90px;
+	}
+	@media only screen and (min-width: $screen-lg-min) {
+		width: 960px;
+		margin-top: -120px;
+	}
+}
+.home-project__image--right {
+	// , style: "width:960px;margin-left:60px;margin-top:-120px"
+	// @media only screen and (min-width: $screen-md-min) {
+	// 	margin-top: -90px;
+	// }
+	// @media only screen and (min-width: $screen-lg-min) {
+	// 	margin-top: -120px;
+	// }
+	// @media only screen and (min-width: $screen-md-min) {
+	// 	margin-left: 16px;
+	// }
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-left: 48px;
+	}
+}
+.home-project__image--left {
+	// , style: "width:960px;margin-left:-600px;margin-top:-120px"
+	float: right;
+	// @media only screen and (min-width: $screen-md-min) {
+	// 	margin-right: 16px;
+	// }
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-right: 48px;
+	}
 }

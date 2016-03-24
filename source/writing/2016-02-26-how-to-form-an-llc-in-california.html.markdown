@@ -1,11 +1,12 @@
 ---
 itemtype: WebPage
 title: How to Form an LLC in California
+description: Cheap, fast and easy. A DIY checklist for creating your LLC in California. Read about our experience and learn how to do it yourself on the cheap.
 date: 2016-02-26
 tags: business, guides, incorporation, llc
 ---
 
-Building a business is an exciting process, and at some point you'll probably want to formalize your company for tax and legal purposes (or just to impress your friends/dates/spouses/parents). Forming an LLC can be daunting at first, but not to worry, the process isn't that difficult, and can be done (mostly) from the comfort of your living room. All told it took us about 60 days and $150 to form our LLC, and we've compiled a cheatsheet based on our experience that will hopefully help you along in the process.
+Building a business is an exciting process, and at some point you'll probably want to formalize your company for tax and legal purposes (or just to impress your friends/dates/spouses/parents). Forming an LLC can be daunting at first, but not to worry, the process isn't that difficult, and can be done (mostly) from the comfort of your laptop. All told it took us about 60 days and $150 to form our LLC, and we've compiled a cheatsheet based on our experience that walks you through all the steps.
 
 ## Step 1: Choose a Name for Your Company
 
@@ -33,7 +34,7 @@ A registered agent is a third-party individual or company that accepts legal, ta
 
 Now comes the key step in forming your LLC. Download <a href="http://bpd.cdn.sos.ca.gov/llc/forms/llc-1.pdf" class="guide-content__link" title="Form LLC-1 Articles of Organization" target="_blank">Form LLC-1 Articles of Organization</a>, and fill it out with your information, including your company's name, address, managers, and registered agent. If your registered agent is a corporation remember to only put the agent's name and state (don't include their address).
 
-Print, sign, and mail the form to the Secretary of State's office, and include a check for $70. If you want the returned copy certified — always a good idea, but will add about a week to processing time — also include a seperate check for $5, and a simple note indicating your certification request. Alternatively, you can drop the form off at their Sacramento office for an extra $15, with the option to request <a href="http://www.sos.ca.gov/business-programs/business-entities/service-options/" class="guide-content__link" title="California Business Entities Service Options" target="_blank">faster processing</a> (only available in person). Normal processing takes around 15 &ndash; 30 days based on our experience. To verify you're in the system you can search your company's name in the <a href="http://kepler.sos.ca.gov/" class="guide-content__link" title="California Secretary of State Business Search" target="_blank">California Business Search</a>.
+Print, sign, and mail the form to the Secretary of State's office, and include a check for $70. If you want the returned copy certified — always a good idea, but it will add about a week to processing time — also include a seperate check for $5, and a simple note indicating your certification request. Alternatively, you can drop the form off at their Sacramento office for an extra $15, with the option to request <a href="http://www.sos.ca.gov/business-programs/business-entities/service-options/" class="guide-content__link" title="California Business Entities Service Options" target="_blank">faster processing</a> (only available in person). Normal processing takes around 15 &ndash; 30 days based on our experience. To verify you're in the system you can search your company's name in the <a href="http://kepler.sos.ca.gov/" class="guide-content__link" title="California Secretary of State Business Search" target="_blank">California Business Search</a>.
 
 <a href="http://bpd.cdn.sos.ca.gov/llc/forms/llc-1.pdf" class="guide-content__link" title="Form LLC-1 Articles of Incorporation" target="_blank">Form LLC-1</a><br>
 <a href="http://www.sos.ca.gov/business-programs/business-entities/filing-tips/filing-tips-llc/#llc1" class="guide-content__link" title="Form LLC-1 Filing Tips" target="_blank">Form LLC-1 Filing Tips</a>

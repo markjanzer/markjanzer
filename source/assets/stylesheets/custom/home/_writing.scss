@@ -34,6 +34,12 @@
 	margin-left: 240px;
 	position: absolute;
 	border: 4px solid white;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-left: 180px;
+	}
+	@media only screen and (min-width: $screen-lg-min) {
+		margin-left: 240px;
+	}
 }
 
 

@@ -3,7 +3,8 @@
 source "https://rubygems.org"
 
 # Middleman
-gem "middleman", "~>3.3.10"
+gem "middleman", "~> 3.3.10"
+# gem "middleman", "~> 4.1.2"
 
 # Blog engine
 gem "middleman-blog", "~> 3.5.3"
@@ -20,4 +21,5 @@ gem "nokogiri"
 # Build dynamic XML sitemaps
 gem "builder"
 
+# AWS SDK
 gem "aws-sdk"
