@@ -44,7 +44,14 @@ html, body {
 .js-headroom--pinned {
   transform: translate3d(0,0,0);
   opacity: 1;
+  height: auto;
 }
+// Fixes bug where nav list doesn't show
+// if you scroll down the page
+.nav-hidden--is-visible .js-headroom--pinned {
+  height: 100vh;
+}
+
 
 // Visible Nav
 .nav-visible {
