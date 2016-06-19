@@ -145,6 +145,11 @@ section.san-francisco {
   color: #F0F0F0;
   z-index: -1;
 }
+
+.section h4 {
+  text-transform: uppercase;
+}
+
 .lg-green {
   width: 160px;
   height: 160px;
