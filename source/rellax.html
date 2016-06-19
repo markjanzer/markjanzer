@@ -64,7 +64,7 @@
           <div class="title">
             <div class="row">
               <div class="col-md-offset-1 col-md-6">
-                <h1>RELLAX<span>JS</span></h1>
+                <h1 itemprop="name">RELLAX<span>JS</span></h1>
               </div>
               <div class="col-md-4 text-right">
                 <a href="https://github.com/dixonandmoe/rellax">GITHUB</a>
@@ -73,8 +73,8 @@
           </div>
           <div class="subtitle">
             <div class="row">
-              <div class="col-md-offset-1 col-md-2">
-                <h3>Light (754b gz)</h3>
+              <div class="col-md-offset-1 col-md-2" itemprop="description">
+                <h3>Light (727b gz)</h3>
               </div>
               <div class="col-md-2">
                 <h3>Vanilla Javascript</h3>
@@ -176,7 +176,7 @@
 
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <h4>JAVASCRIPT (ACCEPTS ANY CLASS NAME)</h4>
+                  <h4>Javascript (accepts any class name)</h4>
                 </div>
               </div>
 
@@ -193,7 +193,7 @@
 
               <div class="row">
                 <div class="col-md-12 text-center" style="margin-top:80px">
-                  <h4>BASIC MARKUP (DEFAULT SPEED: -2)</h4>
+                  <h4>Basic Markup (default Speed: -4)</h4>
                 </div>
               </div>
 
@@ -212,7 +212,7 @@
 
               <div class="row">
                 <div class="col-md-12 text-center" style="margin-top:40px">
-                  <h4>OPTIONAL SPEED (-10 to +10)</h4>
+                  <h4>Optional Speed (-10 to +10)</h4>
                 </div>
               </div>
 
@@ -220,7 +220,7 @@
                 <div class="col-md-offset-2 col-md-8">
                   <div class="text-editor">
                     <code>
-                      &lt;div <span class="purple">class</span>="<span class="green">rellax</span>" <span class="purple">data-rellax-speed</span>="<span class="green">-6</span>"&gt;<br>
+                      &lt;div <span class="purple">class</span>="<span class="green">rellax</span>" <span class="purple">data-rellax-speed</span>="<span class="green">-7</span>"&gt;<br>
                       <span class="white">&nbsp;&nbsp;I’m extra slow and smooth</span><br>
                       &lt;/div&gt;
                     </code>
@@ -312,6 +312,7 @@
     <!-- javascript -->
     <script type="text/javascript" src="/assets/javascripts/rellax.min.js"></script>
     <script>
+      // Need DEBUG for old version of Rellax.js
       var DEBUG = false;
       var rellax = new Rellax('.rellax');
     </script>
