@@ -5,7 +5,10 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .home-expertise {
-	margin-bottom: 240px;
+	margin-bottom: 120px;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 240px;
+	}
 }
 
 .home-expertise__shape {

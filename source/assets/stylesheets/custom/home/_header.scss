@@ -5,7 +5,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .home-header {
-	padding-bottom: 960px;
+	padding-bottom: 360px;
 	@media only screen and (min-width: $screen-md-min) {
 		padding-bottom: 720px;
 	}
@@ -17,7 +17,7 @@
 	position: absolute;
 	width: 420px;
 	height: 420px;
-	margin: -144px 0 0 -144px;
+	margin: -32px 0 0 -144px;
 	background: $color-black;
 	transform: rotate(45deg);
 	@include animation(fadeIn 800ms, headerRotate 800ms);

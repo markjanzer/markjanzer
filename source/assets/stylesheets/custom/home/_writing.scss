@@ -6,7 +6,10 @@
 
 .home-writing {
 	position: relative;
-	margin-bottom: 300px;
+	margin-bottom: 120px;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 300px;
+	}
 }
 .home-writing__tagline {
 	position: relative;
@@ -17,7 +20,10 @@
 }
 .home-post {
 	position: relative;
-	margin-top: 180px;
+	margin-top: 90px;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-bottom: 180px;
+	}
 }
 .home-post__shape--right {
 	width: 300px;
@@ -45,9 +51,13 @@
 
 
 .home-post__title {
-	margin-top: 80px;
+	margin-top: 24px;
 	margin-bottom: 16px;
-	@include font-size($font-size-500);
+	@include font-size($font-size-400);
+	@media only screen and (min-width: $screen-md-min) {
+		margin-top: 80px;
+		@include font-size($font-size-500);
+	}
 }
 .home-post__description {
 	line-height: 1.618;

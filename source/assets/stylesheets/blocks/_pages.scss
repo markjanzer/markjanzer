@@ -42,7 +42,10 @@
 }
 .page-section__description {
 	margin-bottom: 24px;
-	@include font-size($font-size-600);
+	@include font-size($font-size-500);
+	@media only screen and (min-width: $screen-md-min) {
+		@include font-size($font-size-600);
+	}
 }
 .page-section__link {
 	font-family: $font-family-secondary;

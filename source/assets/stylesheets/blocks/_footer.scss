@@ -8,6 +8,12 @@
 	padding: 3em 0 3em;
 	// background-color: $color-black;
 }
+.layout-footer__group {
+	margin-bottom: 12px;
+	@media only screen and (min-width: $screen-md-min) {
+		margin-top: 0;
+	}
+}
 .page-footer__section {
 	margin-bottom: 3em;
 }

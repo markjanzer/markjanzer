@@ -5,7 +5,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .home-projects {
-	margin-bottom: 240px;
+	margin-bottom: 120px;
 	@media only screen and (min-width: $screen-md-min) {
 		margin-bottom: 120px;
 	}
@@ -16,6 +16,9 @@
 
 // Project
 .home-project {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 90px;
 	@media only screen and (min-width: $screen-md-min) {
 		margin-bottom: 120px;
 	}
@@ -23,6 +26,28 @@
 		margin-bottom: 240px;
 	}
 }
+.home-project__text {
+	flex: 0 1 auto;
+	order: 2;
+	@media only screen and (min-width: $screen-md-min) {
+		order: auto;
+	}
+}
+.home-project__assets {
+	flex: 0 1 auto;
+	order: 1;
+	margin-bottom: 32px;
+	@media only screen and (min-width: $screen-md-min) {
+		order: auto;
+		margin-bottom: 0;
+	}
+}
+.home-project:nth-child(odd) .home-project__assets {
+	@media only screen and (min-width: $screen-md-min) {
+		order: 2;
+	}
+}
+
 .home-project__client {
 	margin-bottom: 32px;
 	@media only screen and (min-width: $screen-md-min) {
@@ -31,6 +56,12 @@
 	}
 	@media only screen and (min-width: $screen-lg-min) {
 		margin-bottom: 32px;
+		@include font-size($font-size-400);
+	}
+}
+.home-project__client-name {
+	@include font-size($font-size-500);
+	@media only screen and (min-width: $screen-md-min) {
 		@include font-size($font-size-400);
 	}
 }
@@ -43,12 +74,18 @@
 	background: $color-black;
 }
 .home-project__client-tags {
+	display: block;
+	margin-top: 12px;
 	font-family: $font-family-secondary;
 	@include font-size($font-size-300);
+	@media only screen and (min-width: $screen-md-min) {
+		display: inline-block;
+		margin-top: 0;
+	}
 }
 .home-project__title {
-	margin-bottom: 64px;
-	@include font-size($font-size-400);
+	margin-bottom: 24px;
+	@include font-size($font-size-300);
 	@media only screen and (min-width: $screen-md-min) {
 		margin-bottom: 32px;
 		@include font-size($font-size-500);
@@ -73,7 +110,7 @@
 	}
 }
 .home-project__image {
-	width: 480px;
+	width: 600px;
 	@media only screen and (min-width: $screen-md-min) {
 		width: 720px;
 		margin-top: -90px;

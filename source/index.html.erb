@@ -70,62 +70,65 @@ priority: 1.0
 
 <%# Projects %>
 <section class="home-projects">
+  <%# Monograph %>
+  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="home-project__text col-xs-24 col-sm-21 col-md-15">
+      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">Monograph</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, product, marketing</span></h4>
+      <h2 class="home-project__title" itemprop="description">Monograph is a digital marketing platform for architects. <span class="home-project__title--light">We designed and built the entire product in-house, and are launching later this year.</span></h2>
+      <%= link_to "launch site", "http://monograph.io/", class: "home-project__link", itemprop: "url", target: "_blank" %>
+    </div>
+    <div class="home-project__assets col-xs-24 col-md-8">
+      <%= image_tag("work/monograph-hero--right.png", class: "home-project__image home-project__image--right", style: "margin-left:0;") %>
+    </div>
+  </article>
   <%# WisePops %>
-  <article class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="row">
-      <div class="col-xs-20 col-sm-21 col-md-15">
-        <h4 class="home-project__client"><span class="project__client-name" itemprop="name">WisePops</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, ui/ux, marketing</span></h4>
-        <h2 class="home-project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="home-project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
-        <%= link_to "launch site", "http://wisepops.com/", class: "home-project__link", itemprop: "url", target: "_blank" %>
-      </div>
-      <div class="col-xs-4 col-md-8 col-md-offset-1">
-        <%= image_tag("work/wisepops-hero--left.png", class: "home-project__image home-project__image--right") %>
-      </div>
+  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="home-project__assets col-xs-24 col-md-8">
+      <%= image_tag("work/wisepops-hero--right.png", class: "home-project__image home-project__image--left") %>
+    </div>
+    <div class="home-project__text col-xs-24 col-sm-21 col-md-15 col-md-offset-1">
+      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">WisePops</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, ui/ux, marketing</span></h4>
+      <h2 class="home-project__title" itemprop="description">WisePops wanted to take their SaaS popup business to the next level. <span class="home-project__title--light">We helped them double their revenue in 3 months with a brand refresh and new marketing site.</span></h2>
+      <%= link_to "launch site", "http://wisepops.com/", class: "home-project__link", itemprop: "url", target: "_blank" %>
     </div>
   </article>
   <%# AgendaNYC %>
-  <article class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="row">
-      <div class="col-xs-4 col-md-8">
-        <%= image_tag("work/agendanyc-hero--left.png", class: "home-project__image home-project__image--left") %>
-      </div>
-      <div class="col-xs-20 col-sm-21 col-md-15 col-md-offset-1">
-        <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">AgendaNYC</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">frontend, custom cms, seo</span></h4>
-        <h2 class="home-project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="home-project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
-        <%= link_to "launch site", "http://www.agendanyc.com/", class: "home-project__link", itemprop: "url", target: "_blank" %>
-      </div>
+  <article class="home-project row" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="home-project__text col-xs-24 col-sm-21 col-md-15">
+      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">AgendaNYC</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">frontend, custom cms, seo</span></h4>
+      <h2 class="home-project__title" itemprop="description">Agenda had a vision for their agency's new website. <span class="home-project__title--light">We collaborated with their team to evolve that vision from wireframes into a vibrant, exciting online experience.</span></h2>
+      <%= link_to "launch site", "http://www.agendanyc.com/", class: "home-project__link", itemprop: "url", target: "_blank" %>
+    </div>
+    <div class="home-project__assets col-xs-24 col-md-8 col-md-offset-1">
+      <%= image_tag("work/agendanyc-hero--right.png", class: "home-project__image home-project__image--right") %>
     </div>
   </article>
   <%# GrooveHQ %>
   <article class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="row">
-      <div class="col-xs-20 col-sm-21 col-md-15">
-        <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">GrooveHQ</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, branding, marketing</span></h4>
-        <h2 class="home-project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="home-project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
-        <%= link_to "launch site", "https://www.groovehq.com/", class: "home-project__link", itemprop: "url", target: "_blank" %>
-      </div>
-      <div class="col-xs-4 col-md-8 col-md-offset-1">
-        <%= image_tag("work/groovehq-hero--right.png", class: "home-project__image home-project__image--right") %>
-      </div>
+    <div class="home-project__assets col-xs-24 col-md-8">
+      <%= image_tag("work/groovehq-hero--left.png", class: "home-project__image home-project__image--left") %>
+    </div>
+    <div class="home-project__text col-xs-24 col-sm-21 col-md-15 col-md-offset-1">
+      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">GrooveHQ</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, branding, marketing</span></h4>
+      <h2 class="home-project__title" itemprop="description">Groove was looking to optimize conversions for their help desk software. <span class="home-project__title--light">Working with their CEO Alex we used design to build user trust and drive customer acquisition.</span></h2>
+      <%= link_to "launch site", "https://www.groovehq.com/", class: "home-project__link", itemprop: "url", target: "_blank" %>
     </div>
   </article>
   <%# Aptible %>
   <article class="home-project" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="row">
-      <div class="col-xs-4 col-md-8">
-        <%= image_tag("work/aptible-hero--left.png", class: "home-project__image home-project__image--left") %>
-      </div>
-      <div class="col-xs-20 col-sm-21 col-md-15 col-md-offset-1">
-        <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">Aptible</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, animation, frontend</span></h4>
-        <h2 class="home-project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="home-project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
-        <%= link_to "visit page", "https://www.aptible.com/technology/", class: "home-project__link", itemprop: "url", target: "_blank" %>
-      </div>
+    <div class="home-project__text col-xs-24 col-sm-21 col-md-15">
+      <h4 class="home-project__client"><span class="home-project__client-name" itemprop="name">Aptible</span><span class="home-project__client-dash"></span><span class="home-project__client-tags">design, animation, frontend</span></h4>
+      <h2 class="home-project__title" itemprop="description">Aptible needed a better way to explain their cloud technology. <span class="home-project__title--light">We created a beautiful animation to visually communicate their HIPAA compliant services.</span></h2>
+      <%= link_to "visit page", "https://www.aptible.com/technology/", class: "home-project__link", itemprop: "url", target: "_blank" %>
+    </div>
+    <div class="home-project__assets col-xs-24 col-md-8 col-md-offset-1">
+      <%= image_tag("work/aptible-hero--right.png", class: "home-project__image home-project__image--right") %>
     </div>
   </article>
 </section>
 
 <%# Process %>
-<section class="home-process">
+<section class="home-process show-md">
   <div class="home-process__text">
     <div class="row">
       <div class="rellax" data-rellax-speed="2">
@@ -292,12 +295,12 @@ priority: 1.0
     <div class="row">
       <div class="rellax" data-rellax-speed="2">
         <div class="col-xs-24 col-sm-21 col-md-18 col-lg-15">
-          <h2 class="page-section__description">Interested in getting more visitors, converting existing users, or creating useful animations? Let's chat!</h2>
+          <h2 class="page-section__description">Interested in getting more visitors, converting more customers, or creating useful animations? Let's chat!</h2>
           <%= link_to "message us", "mailto:hello@dixonandmoe.com", class: "home-expertise__link" %>
         </div>
       </div>
       <div class="rellax" data-rellax-speed="0">
-        <div class="col-sm-3 col-md-6 col-lg-9">
+        <div class="col-sm-3 col-md-6 col-lg-9 show-sm">
           <h4 class="home-expertise__tagline">Contact us</h4>
         </div>
       </div>
