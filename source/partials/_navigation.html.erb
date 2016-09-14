@@ -10,10 +10,15 @@
 				<% end %>
 			</li>
 			<li class="nav-visible__list-item nav-visible__list-item--md">
+				<% active_link_to "/contact/", class: "nav-visible__link", itemprop: "url" do %>
+					<span itemprop="name">Contact</span>
+				<% end %>
+			</li>
+			<!-- <li class="nav-visible__list-item nav-visible__list-item--md">
 				<% active_link_to "/work/", class: "nav-visible__link", itemprop: "url" do %>
 					<span itemprop="name">Work</span>
 				<% end %>
-			</li>
+			</li> -->
 			<!-- <li class="nav-visible__list-item nav-visible__list-item--md">
 				<% active_link_to "/writing/", class: "nav-visible__link", itemprop: "url" do %>
 					<span itemprop="name">Writing</span>
