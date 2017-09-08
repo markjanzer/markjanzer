@@ -52,7 +52,7 @@
 	margin-bottom: 32px;
 	@media only screen and (min-width: $screen-md-min) {
 		margin-bottom: 21px;
-		@include font-size($font-size-300);
+		@include font-size($font-size-3);
 	}
 	@media only screen and (min-width: $screen-lg-min) {
 		margin-bottom: 32px;
@@ -77,7 +77,7 @@
 	display: block;
 	margin-top: 12px;
 	font-family: $font-family-secondary;
-	@include font-size($font-size-300);
+	@include font-size($font-size-3);
 	@media only screen and (min-width: $screen-md-min) {
 		display: inline-block;
 		margin-top: 0;
@@ -85,7 +85,7 @@
 }
 .home-project__title {
 	margin-bottom: 24px;
-	@include font-size($font-size-300);
+	@include font-size($font-size-3);
 	@media only screen and (min-width: $screen-md-min) {
 		margin-bottom: 32px;
 		@include font-size($font-size-500);
@@ -100,7 +100,7 @@
 }
 .home-project__link {
 	font-family: $font-family-secondary;
-	@include font-size($font-size-300);
+	@include font-size($font-size-3);
 	padding-bottom: 4px;
 	border-bottom: 2px solid $color-blue-dk;
 	@media only screen and (min-width: $screen-lg-min) {

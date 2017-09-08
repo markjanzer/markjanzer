@@ -1,4 +1,6 @@
 module Utilities
+  
+  # Active link_to
   def active_link_to(*args, &block)
 
     # Check for block
@@ -19,21 +21,11 @@ module Utilities
     options = args[options_idx] || {}
     options[:class] ||= ""
 
-    if url == page
-      options[:class] << " active"
+    if (url == page || url == parent_url)
+      options[:class] << " is-active"
       args[options_idx] = options
-    elsif parent_url == "/css/"
-      if url == parent_url
-        options[:class] << " active"
-        args[options_idx] = options
-      end
-    elsif parent_url == "/html/"
-      if url == parent_url
-        options[:class] << " active"
-        args[options_idx] = options
-      end
     end
-
+    
     link_to(*args, &block)
   end
 end

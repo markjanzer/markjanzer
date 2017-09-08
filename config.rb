@@ -1,78 +1,57 @@
 require "builder"
-require 'json'
+require "json"
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Global Configuration
 
-#### GLOBAL CONFIGURATION
+# Global variables
+set :base_url,  "https://dixonandmoe.com"
+set :base_name, "Dixon & Moe"
+set :base_email, "hello@dixonandmoe.com"
+set :base_domain, "dixonandmoe.com"
+set :base_twitter, "@dixonandmoe"
 
-# Global Variables
-set :global_url,     "https://dixonandmoe.com"
-set :global_name,    "Dixon & Moe"
-set :global_email,   "hello@dixonandmoe.com"
-set :global_domain,  "dixonandmoe.com"
-set :global_twitter, "@dixonandmoe"
-
-# Blog Variables
-set :blog_title,    "Writing — Dixon & Moe"
-set :blog_subtitle, "Design & Marketing"
-set :blog_author,   "Dixon & Moe"
-
-# Asset paths
-set :css_dir, "assets/stylesheets"
-set :js_dir, "assets/javascripts"
-set :images_dir, "assets/images"
-
-# Sitemap generation
-# page "/sitemap.xml", layout: false
-
-# RSS feed
-page "/feed.xml", layout: false
-
-# Blog
-page "/writing/*.html", layout: :layout_article
-
-# Rellax
+# Pages with no layout
+page "/*.xml",  layout: false
+page "/*.json", layout: false
+page "/*.txt",  layout: false
 page "/rellax.html", layout: false
 
-# Blog settings
-activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
-  blog.prefix = "writing"
-  blog.permalink = "{title}.html"
+# Asset paths
+set :css_dir,    "assets/stylesheets"
+set :js_dir,     "assets/javascripts"
+set :fonts_dir,  "assets/fonts"
+set :images_dir, "assets/images"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-
-  # Enable pagination
-  blog.paginate = true
-  blog.per_page = 10
-  # blog.page_link = "page/{num}"
-end
+# Use Sprockets for asset pipeline
+activate :sprockets
 
 # Pretty URLs
 activate :directory_indexes
 
-# Define asset paths
-set :css_dir,    'assets/stylesheets'
-set :js_dir,     'assets/javascripts'
-set :images_dir, 'assets/images'
-
-
-
-#### DEVELOPMENT CONFIGURATION
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Development Configuration
 
 configure :development do
+
+  # Config Variables
+  config[:base_url] = "http://localhost:4567"
+
   # Reload the browser automatically whenever files change
   activate :livereload
+
 end
 
-
-
-#### PRODUCTION CONFIGURATION
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Production Configuration
 
 configure :build do
 
+  # Config Variables
+  config[:base_url] = "https://dixonandmoe.com"
+
   # Enable cache buster
-  activate :asset_hash
+  activate :asset_hash, exts: %w(.js .css)
 
   # Minify CSS on build
   activate :minify_css
@@ -83,6 +62,10 @@ configure :build do
   # GZIP files for even better compression
   activate :gzip, exts: %w(.js .css .html .htm .xml .txt)
 
+  # Use IMGIX for serving images
+  # activate :imgix, host: "dixonandmoe.imgix.net", use_https: true, include_library_param: false
+
   # Ignore DS_Store file
   ignore ".DS_Store"
+
 end

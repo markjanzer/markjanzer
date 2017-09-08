@@ -1,0 +1,47 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Layout
+// stylesheets/blocks/_layout.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+html,
+body {
+  color: $color-black;
+  font-family: $font-family-2;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  @media only screen and (max-resolution: 191.8dpi) {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+::selection {
+  color: $color-white;
+  background: rgba(15, 13, 32, 0.99);
+}
+::-moz-selection {
+  color: $color-white;
+  background: rgba(15, 13, 32, 0.99);
+}
+
+.body-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.is-scrolled .body-header {
+  position: fixed;
+}
+.body-content {
+
+}

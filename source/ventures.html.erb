@@ -1,0 +1,46 @@
+---
+itemtype: CollectionPage
+title: Work — Dixon & Moe
+description: A bespoke web design and development outfit based in SF.
+changefreq: "daily"
+priority: 1.0
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/work/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe.jpg",
+    local_title:       "Work — Dixon & Moe",
+    local_description: "From concept to prototype or strategy to deployment, we work with companies to understand their audience, what they need, and how to best reach them online."
+  }) %>
+<% end %>
+
+
+
+
+
+
+<header class="page-header">
+  <div class="page-header__text">
+    <h1 class="page-header__title" itemprop="name">Work</h1>
+    <p class="page-header__abstract" itemprop="description">Create and purchase perforated metal walls from an image</p>
+    <div class="page-header__byline">ImageWall</div>
+  </div>
+</header>
+
+<section class="page-section">
+  <%= link_to "Zahner — Crafting a Digital Legacy", "/work/zahner-crafting-a-digital-legacy" %>
+  <%= link_to "ImageWall — Building tools of the future", "/work/imagewall-building-tools-of-the-future" %>
+  <div class="page-section__summary">
+
+  </div>
+  <div class="">
+
+  </div>
+  <div class="">
+
+  </div>
+</section>

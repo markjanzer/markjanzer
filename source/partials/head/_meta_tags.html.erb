@@ -1,51 +1,37 @@
-<%# Meta Tags --> partials/head/_meta_tags.html.erb
-	#
-	# Global Variables (defined in config.rb)
-	# @ global_url:        website url
-	# @ global_name:       website name
-	# @ global_domain:     website domain
-	# @ global_twitter:    website Twitter handle
-  #
-  # Local Variables (passed into partial from page)
-  # @ local_type:        Facebook content type (website, article)
-  # @ local_card:        Twitter card type (summary, summary_large_image, app, player)
-  # @ local_image:       page hero image
-  # @ local_title:       page title text
-  # @ local_description: page description text
-  #
+<%# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  # Metatags
+  # partials/head/_metatags.html.erb
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 %>
 
-<%# Metadata %>
 <meta charset="utf-8">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="<%= global_url %><%= current_page.url %>">
+<meta name="turbolinks-cache-control" content="no-preview">
+<link rel="canonical" href="<%= config.base_url %><%= local_path %>">
 <title><%= local_title %></title>
 <meta name="title" content="<%= local_title %>">
 <meta name="description" content="<%= local_description %>">
-<meta itemprop="url" content="<%= global_url %><%= current_page.url %>">
-
 <%# Facebook %>
-<meta property="og:site_name" content="<%= global_name %>">
+<meta property="og:site_name" content="<%= config.base_name %>">
 <meta property="og:type" content="<%= local_type %>">
-<meta property="og:url" content="<%= global_url %><%= current_page.url %>">
+<meta property="og:url" content="<%= config.base_url %><%= local_path %>">
 <meta property="og:title" content="<%= local_title %>">
 <meta property="og:description" content="<%= local_description %>">
-<% if local_image.include? ("://") %>
-  <meta property="og:image" content="<%= local_image %>">
+<% if local_image.include?("://") %>
+<meta property="og:image" content="<%= local_image %>">
 <% else %>
-  <meta property="og:image" content="<%= global_url %><%= image_path(local_image) %>">
+<meta property="og:image" content="<%= config.base_url %><%= image_path(local_image) %>">
 <% end %>
-
+<meta property="fb:app_id" content="">
 <%# Twitter %>
-<meta name="twitter:site" content="<%= global_twitter %>">
-<meta name="twitter:domain" content="<%= global_domain %>">
+<meta name="twitter:domain" content="<%= config.base_domain %>">
 <meta name="twitter:card" content="<%= local_card %>">
-<meta name="twitter:url" content="<%= global_url %><%= current_page.url %>">
+<meta name="twitter:url" content="<%= config.base_url %><%= local_path %>">
 <meta name="twitter:title" content="<%= local_title %>">
 <meta name="twitter:description" content="<%= local_description %>">
-<% if local_image.include? ("://") %>
-  <meta name="twitter:image" content="<%= local_image %>">
+<% if local_image.include?("://") %>
+<meta name="twitter:image" content="<%= local_image %>">
 <% else %>
-  <meta name="twitter:image" content="<%= global_url %><%= image_path(local_image) %>">
+<meta name="twitter:image" content="<%= config.base_url %><%= image_path(local_image) %>">
 <% end %>

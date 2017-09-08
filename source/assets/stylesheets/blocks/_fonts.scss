@@ -1,0 +1,32 @@
+// Couldn't get this to work
+// 
+
+// @font-face {
+//   font-family: "Akkurat Pro";
+//   src: url('../fonts/lineto-akkurat-pro-regular.eot?') format('eot'), url('../fonts/lineto-akkurat-pro-regular.woff') format('woff'), url('../fonts/lineto-akkurat-pro-regular.ttf') format('truefonts');
+// }
+
+// @font-face {
+//   font-family: "Akkurat Pro";
+//   src: url('../fonts/lineto-akkurat-pro-bold.eot?') format('eot'), url('../fonts/lineto-akkurat-pro-bold.woff') format('woff'), url('../fonts/lineto-akkurat-pro-bold.ttf') format('truefonts');
+//   font-weight: bold;
+// }
+
+@font-face {
+  font-family: "PX Grotesk";
+  src: font-url("px-grotesk-regular-webfont.eot") format("eot"),
+       font-url("px-grotesk-regular-webfont.woff") format("woff"),
+       font-url("px-grotesk-regular-webfont.ttf") format("truetype"),
+       font-url("px-grotesk-regular-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Akkurat Mono";
+  src: font-url("lineto-akkurat-mono.eot") format("eot"),
+       font-url("lineto-akkurat-mono.woff") format("woff"),
+       font-url("lineto-akkurat-mono.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,10 +1,10 @@
 <script type="application/ld+json">
   { "@context" : "https://schema.org",
     "@type" : "Organization",
-    "url" : "<%= global_url %>/",
-    "name" : "Dixon & Moe",
-    "logo" : "<%= global_url %><%= image_path('dixon-and-moe-logo.png') %>",
-    "image" : "<%= global_url %><%= image_path('dixon-and-moe-hero.jpg') %>",
+    "url" : "<%= config.base_url %>",
+    "name" : "<%= config.base_name %>",
+    "logo" : "<%= config.base_url %><%= image_path('dixon-and-moe-logo.png') %>",
+    "image" : "<%= config.base_url %><%= image_path('dixon-and-moe-hero.jpg') %>",
     "foundingDate" : "2010",
     "founder" : [
       { "@type" : "Person",
@@ -12,7 +12,14 @@
       },
       { "@type" : "Person",
         "name" : "Moe Amaya"
-      } ],
+      },
+      { "@type" : "Person",
+        "name" : "Robert Yuen"
+      },
+      { "@type" : "Person",
+        "name" : "Mark Janzer"
+      }
+    ],
     "address" : [
       { "@type" : "PostalAddress",
         "streetAddress" : "165 11th St",
@@ -29,8 +36,8 @@
       } ],
     "contactPoint" : [
       { "@type" : "ContactPoint",
-        "url" : "<%= global_url %>/",
-        "email" : "hello@dixonandmoe.com",
+        "url" : "<%= config.base_url %>",
+        "email" : "<%= config.base_email %>",
         "contactType" : "customer service"
       } ]
   }

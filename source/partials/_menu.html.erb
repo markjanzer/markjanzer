@@ -1,0 +1,29 @@
+<nav class="menu-desktop" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
+  <% active_link_to "/", class: "menu-desktop__logo", title: "Dixon & Moe", itemprop: "url" do %>
+    <span class="menu-desktop__logo-icon">&</span>
+    <span class="menu-desktop__logo-text" itemprop="name">Dixon & Moe</span>
+  <% end %>
+  <ul class="menu-desktop__list">
+    <li class="menu-desktop__item">
+      <% active_link_to "/work/", class: "menu-desktop__link", itemprop: "url" do %>
+        <span itemprop="name">Work</span>
+      <% end %>
+    </li>
+    <li class="menu-desktop__item">
+      <% active_link_to "/ventures/", class: "menu-desktop__link", itemprop: "url" do %>
+        <span itemprop="name">Ventures</span>
+      <% end %>
+    </li>
+    <li class="menu-desktop__item">
+      <% active_link_to "/about/", class: "menu-desktop__link", itemprop: "url" do %>
+        <span itemprop="name">About</span>
+      <% end %>
+    </li>
+  </ul>
+
+  <button class="menu-desktop__button js-menu-mobile-toggle">
+    <span class="menu-desktop__button-line"></span>
+    <span class="menu-desktop__button-line"></span>
+    <span class="menu-desktop__button-line"></span>
+  </button>
+</nav>

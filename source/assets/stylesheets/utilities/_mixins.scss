@@ -5,7 +5,7 @@
 // Typography (requires function: rem-calc)
 //------------------------------------------------
 // @ size: pixels
-// @ base: pixels (default: $font-size-300)
+// @ base: pixels (default: $font-size-3)
 @function rem-calc($size, $base: $font-size-default) {
   @return ($size / $base) * 1rem;
 }
@@ -40,7 +40,7 @@
 // @ style:   normal or italic
 // @ height:  integer or decimal
 // @ weight:  integer
-// @ family:  string or variable ("Akkurat", $font-family-primary)
+// @ family:  string or variable ("Akkurat", $font-family-1)
 // @ margin:  em or px value (sets bottom margin)
 // @ spacing: em value (explicitly set the letter spacing property)
 @mixin font(

@@ -25,7 +25,7 @@
 	padding-bottom: 4px;
 	border-bottom: 2px solid $color-blue-dk;
 	font-family: $font-family-secondary;
-	@include font-size($font-size-300);
+	@include font-size($font-size-3);
 	@include animation(slideUpDelay 1200ms);
 	@include keyframes(slideUpDelay) {
 		0%   { transform: translate3d(0,24px,0); border-color: $color-black; opacity: 0; }
@@ -35,5 +35,5 @@
 }
 .guides-post__description {
 	line-height: 1.618;
-	@include font-size($font-size-300);
+	@include font-size($font-size-3);
 }

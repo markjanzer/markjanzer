@@ -33,7 +33,7 @@
 .home-product__description {
 	margin-bottom: 32px;
 	line-height: 1.618;
-	@include font-size($font-size-300);
+	@include font-size($font-size-3);
 }
 .home-product__link {
 	font-family: $font-family-secondary;
@@ -65,7 +65,7 @@
 // .home-clients__description {
 // 	margin-top: 48px;
 // 	line-height: 1.618;
-// 	@include font-size($font-size-300);
+// 	@include font-size($font-size-3);
 // }
 // .home-clients__tags {
 // 	font-family: $font-family-secondary;

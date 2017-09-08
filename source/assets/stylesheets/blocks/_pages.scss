@@ -6,50 +6,306 @@
 
 
 .page-header {
-	margin-top: 320px;
-	margin-bottom: 0;
+  padding: 11.25em 0 7.5em;
+}
+.page-header__text {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0.875em;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 1em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    padding: 0 2em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 calc(50% - 40em);
+  }
 }
 .page-header__title {
-	margin-bottom: 24px;
-	@include font-size($font-size-700);
-}
-.page-header__subtitle {
-	font-family: $font-family-secondary;
-	@include font-size($font-size-400);
+  margin: 0;
+  font-size: 48 / 16 * 1rem;
+  font-family: $font-family-1;
+  font-weight: 400;
+  line-height: 1.125;
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: 75%;
+    padding-bottom: 5rem;
+  }
 }
 .page-header__link {
-	font-family: $font-family-secondary;
-	@include font-size($font-size-400);
-	padding-bottom: 8px;
-	border-bottom: 4px solid $color-blue-dk;
+  color: $color-black;
+}
+.page-header__group--large {
+  position: relative;
+  float: left;
+  @media only screen and (min-width: $screen-lg-min) {
+    width: 50%;
+    margin-right: 16.66667%;
+  }
+}
+.page-header__group--small {
+  position: relative;
+  float: left;
+  @media only screen and (min-width: $screen-lg-min) {
+    width: 16.66667%;
+  }
+}
+.page-text__kicker {
+  margin: 0 0 0.75rem;
+  color: $color-gray-3;
+  font-size: 12 / 16 * 1rem;
+  font-family: $font-family-3;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+.page-text__description {
+  margin: 0;
+  font-size: 24 / 16 * 1rem;
+  line-height: 1.33333;
+}
+.page-text__item {
+  line-height: 24 / 16 * 1rem;
+}
+.page-text__link {
+  color: $color-black;
 }
 
 
-.page-section {
-	margin-bottom: 180px;
+
+// Case Study
+.page-case {
+  position: relative;
 }
-.page-section__title--left {
-	position: relative;
-	float: left;
-	margin-left: -32px;
-	transform:rotate(270deg);
+.page-case__foreground {
+  position: relative;
+  @media only screen and (min-width: $screen-md-min) {
+    padding: 0 2em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    height: 45em;
+    padding: 0 calc(50% - 40em);
+  }
 }
-.page-section__title--right {
-	float: right;
-	// margin-top: 168px;
-	// margin-right: -32px;
-	transform: rotate(270deg);
+.page-case__card {
+  position: absolute;
+  display: block;
+  bottom: 5em;
+  width: 50%;
+  max-width: 40em;
+  padding: 2em;
+  background-color: $color-white;
+  box-shadow: 0 0 2em rgba(40,38,51,0.125);
 }
-.page-section__description {
-	margin-bottom: 24px;
-	@include font-size($font-size-500);
-	@media only screen and (min-width: $screen-md-min) {
-		@include font-size($font-size-600);
-	}
+.page-case__title {
+  margin: 0;
+  font-size: 68 / 16 * 1rem;
+  font-family: $font-family-1;
+  font-weight: 400;
+  line-height: 1;
 }
-.page-section__link {
-	font-family: $font-family-secondary;
-	@include font-size($font-size-400);
-	padding-bottom: 8px;
-	border-bottom: 4px solid $color-blue-dk;
+.page-case__title .page-case__link {
+  text-decoration: none;
 }
+.page-case__title .page-case__link:hover {
+  text-decoration: underline;
+}
+.page-case__abstract {
+  margin: 2rem 0;
+  font-size: 24 / 16 * 1rem;
+  font-family: $font-family-2;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.page-case__link {
+  color: $color-black;
+}
+.page-case__byline {
+  font-size: 12 / 16 * 1rem;
+  font-family: $font-family-3;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+.page-case__byline:before {
+  content: "Client";
+  color: $color-gray-3;
+  margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+// .page-header__abstract {
+//   margin: 1em 0 0.66667em;
+//   font-size: 24 / 16 * 1rem;
+//   font-family: $font-family-2;
+//   font-weight: 400;
+//   line-height: 1.2;
+// }
+// .page-header__byline {
+//   font-size: 12 / 16 * 1rem;
+//   font-family: $font-family-3;
+//   font-weight: 400;
+//   line-height: 1;
+//   letter-spacing: 0.075em;
+//   text-transform: uppercase;
+// }
+// .page-header__byline:before {
+//   content: "Client";
+//   color: $color-gray-3;
+//   margin-right: 1rem;
+// }
+// .page-header__byline.is-venture:before {
+//   content: "Venture";
+// }
+// .page-header__hero {
+//   position: relative;
+//   width: 100%;
+//   min-height: 30em;
+//   padding-top: 5em;
+// }
+// .page-header__hero--imagewall {
+//   height: 45em;
+// }
+// .page-header__hero--zahner {
+//   padding-bottom: 2em;
+// }
+// // .page-header__hero--imagewall {
+// //   height: 45em;
+// //   background-color: #f7f9f9;
+// // }
+// .page-header__background {
+//   position: absolute;
+//   width: 100%;
+// }
+// .page-header__background--imagewall {
+//   width: 100%;
+//   height: 45em;
+//   overflow: hidden;
+//   background-color: #f7f9f9;
+// }
+// .page-header__background--zahner {
+//   height: 30em;
+//   overflow: hidden;
+//   background-color: #0a0a0a;
+// }
+// .page-header__background--monograph {
+//   position: relative;
+//   height: 37.5em;
+//   overflow: hidden;
+// }
+// .page-header__background--mit-design-lab {
+//   height: 30em;
+//   overflow: hidden;
+// }
+// .page-header__foreground {
+//   position: relative;
+//   @media only screen and (min-width: $screen-md-min) {
+//     padding: 0 2em;
+//   }
+//   @media only screen and (min-width: $screen-lg-min) {
+//     padding: 0 calc(50% - 40em);
+//   }
+// }
+// .page-header__foreground--imagewall {
+//   padding-top: 4em;
+// }
+// .page-header__foreground--zahner,
+// .page-header__foreground--mit-design-lab {
+//   padding-top: 5em;
+// }
+// .page-header__foreground--monograph {
+//   padding-top: 1em;
+// }
+// .page-header__video {
+//   position: absolute;
+//   height: 100%;
+//   min-width: 100%;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate3d(-50%, -50%, 0);
+// }
+// .page-header__video--zahner,
+// .page-header__video--monograph,
+// .page-header__video--mit-design-lab {
+//   width: auto;
+//   height: auto;
+//   min-width: 100%;
+//   min-height: 100%;
+// }
+// .page-header__video--zahner {
+//   opacity: 0.5;
+// }
+// .page-header__image {
+//   display: block;
+//   border: none;
+// }
+
+// // ImageWall
+// .page-header__image--imagewall-below {
+//   position: relative;
+//   float: left;
+//   width: 22.75em;
+//   margin: -2em;
+// }
+// .page-header__image--imagewall-above {
+//   position: relative;
+//   float: right;
+//   width: 5em;
+//   margin: -1em 9em -1em 0;
+// }
+
+// // Zahner
+// .page-header__image--zahner-below {
+//   position: relative;
+//   width: 45em;
+//   box-shadow: 0 0 1rem rgba(40,38,51,0.5);
+// }
+// .page-header__image--zahner-above {
+//   position: relative;
+//   float: right;
+//   width: 33em;
+//   margin-top: -25em;
+//   margin-right: 10em;
+// }
+
+// // MIT
+// .page-header__image--mit-design-lab-below,
+// .page-header__image--mit-design-lab-above {
+//   position: relative;
+//   width: 41.25em;
+//   box-shadow: 0 0 2rem rgba(40,38,51,0.25);
+// }
+// .page-header__image--mit-design-lab-below {
+//   z-index: 2;
+// }
+// .page-header__image--mit-design-lab-above {
+//   float: right;
+//   margin-top: -46em;
+//   z-index: 1;
+// }
+
+
+// .page-header__caption,
+// .page-header__caption a {
+//   color: $color-black;
+//   font-size: 12 / 16 * 1rem;
+//   font-family: $font-family-3;
+//   line-height: 1.5;
+//   letter-spacing: 0.075em;
+//   text-transform: uppercase;
+// }
+// .page-header__credit {
+//   display: block;
+//   color: $color-gray-3;
+// }
