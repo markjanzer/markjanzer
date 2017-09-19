@@ -1,10 +1,30 @@
+---
+itemtype: WebPage
+---
 
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/work/zahner/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-zahner-hero.jpg",
+    local_title:       "Zahner | Work — Dixon & Moe",
+    local_description: ""
+  }) %>
+<% end %>
 
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/work/", title: "Work", type: "CollectionPage" },
+      { url: "#{config.base_url}/work/zahner/", title: "Zahner", type: "WebPage" }
+    ]
+  }) %>
+<% end %>
 
-
-
-
-
+<%# Page Content %>
 <header class="case-header">
   <div class="case-header__text">
     <h1 class="case-header__title" itemprop="name">Crafting a Digital Legacy</h1>
@@ -20,24 +40,70 @@
       </video>
     </div>
 
-    <div class="case-header__foreground case-header__foreground--zahner">
+    <!-- <div class="case-header__foreground case-header__foreground--zahner">
       <%= image_tag("work/zahner/zahner-foreground--below.jpg", class: "case-header__image case-header__image--zahner-below") %>
       <%= image_tag("work/zahner/zahner-foreground--above.png", class: "case-header__image case-header__image--zahner-above") %>
-    </div>
+    </div> -->
   </figure>
 </header>
 
 <section class="case-section">
   <div class="case-text">
-    <div class="case-text__group">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
       <h5 class="case-text__kicker">Overview</h5>
       <p class="case-text__summary">We helped Zahner take their vast 120+ years of projects, expertise and vision into the digital age with a gorgeous new website and CMS.</p>
     </div>
+    <div class="case-text__group" style="padding-bottom: 5rem;width:66.66667%;float:left;">
+      <h5 class="case-text__kicker">Overview</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;line-height:1.5">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives. A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub.</p>
+    </div>
+    <div class="case-text__group" style="padding-bottom: 5rem;width:16.66667%;float:right;">
+      <h5 class="case-text__kicker">Deliverables</h5>
+      <p class="case-text__summary" style="font-size: 16px;font-family:'Akkurat Pro';font-weight:400;line-height:2">+ Website<br>+ CMS<br>+ Branding</p>
+    </div>
     <div class="">
 
     </div>
-    <div class="">
+    <div class=""></div>
   </div>
-
+  <div class="" style="width:100%">
+    <%= image_tag("work/zahner/zahner-overview-2.png", class: "", style: "width:100%;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <!-- <h2 class="case-text__kicker" style="font-size: 36px;font-family: 'PX Grotesk';text-transform: none;color: #282633;letter-spacing: 0;">Template Taxonomies</h2> -->
+      <h5 class="case-text__kicker">Template Taxonomies</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+    </div>
+  </div>
+  <div class="" style="width:100%"> 
+    <%= image_tag("work/zahner/zahner-cards-3.png", class: "", style: "width:100%;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <!-- <h2 class="case-text__kicker" style="font-size: 36px;font-family: 'PX Grotesk';text-transform: none;color: #282633;letter-spacing: 0;">Template Taxonomies</h2> -->
+      <h5 class="case-text__kicker">Template Taxonomies</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+    </div>
+  </div>
+  <div class="" style="width:100%"> 
+    <%= image_tag("work/zahner/zahner-styleguide.png", class: "", style: "width:100%;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <!-- <h2 class="case-text__kicker" style="font-size: 36px;font-family: 'PX Grotesk';text-transform: none;color: #282633;letter-spacing: 0;">Template Taxonomies</h2> -->
+      <h5 class="case-text__kicker">Styleguide</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+    </div>
+  </div>
+  <div class="" style="width:100%"> 
+    <%= image_tag("work/zahner/zahner-command-center.png", class: "", style: "width:100%;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <!-- <h2 class="case-text__kicker" style="font-size: 36px;font-family: 'PX Grotesk';text-transform: none;color: #282633;letter-spacing: 0;">Template Taxonomies</h2> -->
+      <h5 class="case-text__kicker">Styleguide</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+    </div>
   </div>
 </section>

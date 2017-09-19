@@ -1,33 +1,34 @@
 ---
 itemtype: CollectionPage
-title: Work — Dixon & Moe
-description: A bespoke web design and development outfit based in SF.
-changefreq: "daily"
-priority: 1.0
 ---
 
 <%# Meta Tags %>
 <% content_for :meta do %>
   <%= partial("partials/head/meta_tags", locals: {
-    local_path:        "/work/",
+    local_path:        "/ventures/",
     local_type:        "website",
     local_card:        "summary_large_image",
-    local_image:       "dixon-and-moe.jpg",
-    local_title:       "Work — Dixon & Moe",
-    local_description: "From concept to prototype or strategy to deployment, we work with companies to understand their audience, what they need, and how to best reach them online."
+    local_image:       "dixon-and-moe-hero.jpg",
+    local_title:       "Ventures — Dixon & Moe",
+    local_description: ""
   }) %>
 <% end %>
 
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/ventures/", title: "Ventures", type: "CollectionPage" }
+    ]
+  }) %>
+<% end %>
 
-
-
-
-
+<%# Page Content %>
 <header class="page-header">
   <div class="page-header__text">
-    <h1 class="page-header__title" itemprop="name">Work</h1>
-    <p class="page-header__abstract" itemprop="description">Create and purchase perforated metal walls from an image</p>
-    <div class="page-header__byline">ImageWall</div>
+    <h1 class="page-header__title" itemprop="name">Ventures</h1>
+    <p class="page-header__abstract" itemprop="description">hire us</p>
+    <div class="page-header__byline">things we make</div>
   </div>
 </header>
 

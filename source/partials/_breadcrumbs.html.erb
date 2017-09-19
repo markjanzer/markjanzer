@@ -1,0 +1,16 @@
+<div class="page-footer__breadcrumbs">
+  <%= link_to config.base_name, config.base_url, class: "page-footer__link page-footer__link--home" %>
+  <% if local_paths.any? %>
+    <ol class="page-footer__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <% local_paths.each_with_index do |path, index| %>
+        <span class="page-footer__caret"></span>
+        <li class="page-footer__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="<%= path[:url] %>" class="page-footer__link" itemprop="item" itemscope itemtype="https://schema.org/<%= path[:type] %>">
+            <span class="page-footer__title" itemprop="name"><%= path[:title] %></span>
+          </a>
+          <meta itemprop="position" content="<%= index + 1 %>">
+        </li>
+      <% end %>
+    </ol>
+  <% end %>
+</div>

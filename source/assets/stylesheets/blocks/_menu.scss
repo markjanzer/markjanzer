@@ -8,10 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3em;
+  padding: 1.5em;
   background-color: transparent;
   transition: all 400ms $transition;
   overflow: hidden;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 3em;
+  }
 }
 .is-scrolled .body-header:hover .menu-desktop {
   background-color: $color-white;
@@ -30,9 +33,11 @@
 }
 .menu-desktop__logo-icon {
   position: relative;
-  padding-left: 0.125em;
   font-size: 20 / 16 * 1rem;
   font-weight: 700;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-left: 0.125em;
+  }
 }
 .menu-desktop__logo-icon:before {
   content: "";
@@ -58,8 +63,11 @@
   // transform-origin: left;
 }
 .menu-desktop__logo-text {
-  display: flex;
-  align-items: center;
+  display: none;
+  @media only screen and (min-width: $screen-sm-min) {
+    display: flex;
+    align-items: center;
+  }
 }
 .is-scrolled .menu-desktop__logo-text {
   opacity: 0;
@@ -89,7 +97,10 @@
   visibility: visible;
 }
 .menu-desktop__item {
-  margin-left: 3em;
+  margin-left: 1.5em;
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-left: 3em;
+  }
 }
 .menu-desktop__link.is-active {
   font-weight: 700;
@@ -102,6 +113,7 @@
 
 
 .menu-desktop__button {
+  display: none;
   @media only screen and (min-width: $screen-md-min) {
     display: none;
   }

@@ -1,10 +1,30 @@
+---
+itemtype: WebPage
+---
 
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/work/monograph/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-monograph-hero.jpg",
+    local_title:       "Monograph | Work — Dixon & Moe",
+    local_description: ""
+  }) %>
+<% end %>
 
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/work/", title: "Work", type: "CollectionPage" },
+      { url: "#{config.base_url}/work/monograph/", title: "Monograph", type: "WebPage" }
+    ]
+  }) %>
+<% end %>
 
-
-
-
-
+<%# Page Content %>
 <header class="case-header">
   <div class="case-header__text">
     <h1 class="case-header__title" itemprop="name">Upgrading Architecture's Back Office</h1>

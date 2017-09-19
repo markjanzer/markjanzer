@@ -1,3 +1,8 @@
+<%# Meta Tags %>
+<% if content_for?(:breadcrumbs) %>
+  <%= yield_content :breadcrumbs %>
+<% end %>
+
 <!-- <footer class="layout-footer js-layout-footer">
 
 	<div class="row">

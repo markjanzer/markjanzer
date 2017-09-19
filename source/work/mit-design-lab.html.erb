@@ -1,10 +1,30 @@
+---
+itemtype: WebPage
+---
 
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/work/mit-design-lab",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-mit-design-lab-hero.jpg",
+    local_title:       "MIT Design Lab | Work — Dixon & Moe",
+    local_description: ""
+  }) %>
+<% end %>
 
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/work/", title: "Work", type: "CollectionPage" },
+      { url: "#{config.base_url}/work/mit-design-lab/", title: "MIT Design Lab", type: "WebPage" }
+    ]
+  }) %>
+<% end %>
 
-
-
-
-
+<%# Page Content %>
 <header class="case-header">
   <div class="case-header__text">
     <h1 class="case-header__title" itemprop="name">Micro Sites, Macro Brand</h1>
@@ -33,7 +53,7 @@
     </div>
     <div class="case-text__group" style="padding-bottom: 5rem;width:66.66667%;float:left;">
       <h5 class="case-text__kicker">Overview</h5>
-      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;line-height:1.5">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives. A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub.</p>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;line-height:1.5">We worked with the Design Lab's leadership team to create and deploy a digital strategy that afforded the flexibility of their current system—one-off websites for every research project—while opening up collaboration and establishing a clear overarching brand.</p>
     </div>
     <div class="case-text__group" style="padding-bottom: 5rem;width:16.66667%;float:right;">
       <h5 class="case-text__kicker">Deliverables</h5>
@@ -50,8 +70,8 @@
   <div class="case-text">
     <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
       <!-- <h2 class="case-text__kicker" style="font-size: 36px;font-family: 'PX Grotesk';text-transform: none;color: #282633;letter-spacing: 0;">Template Taxonomies</h2> -->
-      <h5 class="case-text__kicker">Template Taxonomies</h5>
-      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+      <h5 class="case-text__kicker">A New Digital Hub</h5>
+      <p class="case-text__summary" style="line-height:1.5;font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">Managing projects across their distributed setup of one-off WordPress websites had become a major bottleneck, especially for project leads working on multiple research intiatives. To streamline the collaborative process we built a custom web platform that gave every team member permissioned access to their projects from a single login, minimizing redundancy and fostering communication.</p>
     </div>
     <div class="">
 
@@ -66,8 +86,19 @@
 
   <div class="case-text">
     <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
-      <h5 class="case-text__kicker">Template Taxonomies</h5>
-      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+      <h5 class="case-text__kicker">Layout Taxonomies</h5>
+      <p class="case-text__summary" style="line-height:1.5;font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">To maintain brand contintinuity between the main website and the project micro-sites we prototyped with the Lab's team various layout taxonomies to narrow down the default templates. Following multiple elimination rounds we distilled the handful of selected templates down to their core components and proceeded to develop drag-n-drop content modules that enabled further variation within the layouts themselves.</p>
+    </div>
+  </div>
+
+  <div class="" style="width:100%"> 
+    <%= image_tag("work/mit-design-lab/mit-design-lab-taxonomy.jpg", class: "", style: "width:100%;") %>
+  </div>
+
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">Micro-site Editor</h5>
+      <p class="case-text__summary" style="line-height:1.5;font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">In addition to the main website's administrative area, we developed a custom space for creating and managing the research micro-sites. Live-previewing of micro-site customizations like default layout, colors, and content was enthusiastically received by the Lab's team, as was the ability to manage everything from a single URL on their MIT domain.</p>
     </div>
   </div>
 

@@ -1,11 +1,6 @@
 ---
-title: Dixon & Moe — Strategy, Design, Development and Marketing
-description: We're a San Francisco design and software consultancy developing websites and digital products, and can help you with your next project at just about any stage.
 itemtype: WebPage
-changefreq: "daily"
-priority: 1.0
 ---
-
 
 <%# Meta Tags %>
 <% content_for :meta do %>
@@ -19,12 +14,20 @@ priority: 1.0
   }) %>
 <% end %>
 
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: []
+  }) %>
+<% end %>
+
 <header class="page-header">
   <div class="page-header__text">
-    <h1 class="page-header__title" itemprop="name">Strategy, design, development — we help AEC companies understand, prototype and deploy custom technologies.</h1>
+    <h1 class="page-header__title" itemprop="name"><span class="page-header__primary">Strategy<span class="page-header__punctuation">,</span> design<span class="page-header__punctuation">,</span> development</span><span class="page-header__punctuation"> — </span><span class="page-header__secondary">we help AEC companies understand, prototype and deploy custom technologies.</span></h1>
     <div class="page-header__group page-header__group--large">
       <h5 class="page-text__kicker">Mission</h5>
-      <p class="page-text__description">As trained (building) architects, software engineers and interface designers, we believe technology can be a motive force in the AEC disciplines. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
+      <p class="page-text__description page-text__description--desktop">As trained (building) architects, software engineers and interface designers, we believe technology can be a motive force in the AEC disciplines. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
+      <p class="page-text__description page-text__description--mobile">We're trained (building) architects, software engineers and interface designers helping AEC companies understand, prototype and deploy custom technologies. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
     </div>
     <div class="page-header__group page-header__group--small">
       <h5 class="page-text__kicker">Clients</h5>
@@ -47,10 +50,10 @@ priority: 1.0
       <h5 class="page-text__kicker">Ventures</h5>
       <ul class="page-text__list">
         <li class="page-text__item">
-          <%= link_to "Monograph 2.0", "/work/monograph/", class: "page-text__link" %>
+          <%= link_to "MG Dashboard", "/work/monograph/", class: "page-text__link" %>
         </li>
         <li class="page-text__item">
-          <span class="page-text__link page-text__link--empty">Monograph 1.0</span>
+          <span class="page-text__link page-text__link--empty">MG Websites</span>
         </li>
         <li class="page-text__item">
           <%= link_to "Rellax", "/rellax/", class: "page-text__link" %>
@@ -61,19 +64,41 @@ priority: 1.0
 </header>
 
 <section class="page-section">
-  <figure class="page-case">
-    <div class="case-header__background case-header__background--imagewall">
+  <article class="page-feature" itemscope itemtype="https://schema.org/CreativeWork">
+    <figure class="page-feature__background page-feature__background--imagewall">
       <video class="case-header__video" preload="auto" loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
         <meta itemprop="name" content="ImageWall browser based WebGL 3D experience.">
           <source src="<%= asset_url("assets/images/work/imagewall/imagewall-background.mp4") %>" type="video/mp4" itemprop="url">
       </video>
-    </div>
-    <div class="page-case__foreground">
-      <figcaption class="page-case__card">
-        <h2 class="page-case__title"><%= link_to "Building Tools of the Future", "/work/imagewall", class: "page-case__link" %></h2>
-        <p class="page-case__abstract">3D app to design and purchase custom perforated metal from an image. <%= link_to "Read the case study", "/work/imagewall/", class: "page-case__link" %></p>
-        <div class="page-case__byline">ImageWall</div>
+    </figure>
+    <div class="page-feature__foreground">
+      <div class="page-feature__text">
+        <h2 class="page-feature__title" itemprop="name"><%= link_to "Building Tools of the Future", "/work/imagewall/", class: "page-feature__link", itemprop: "url" %></h2>
+        <p class="page-feature__abstract" itemprop="description">3D app to design and purchase custom perforated metal from an image. <%= link_to "Read the case study", "/work/imagewall/", class: "page-feature__link" %></p>
+        <div class="page-feature__byline">ImageWall</div>
       </figcaption>
     </div>
-  </figure>
+  </article>
+  <div class="page-projects">
+    <article class="page-card" itemscope itemtype="https://schema.org/CreativeWork">
+      <figure class="page-card__media" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= image_tag("work/zahner/zahner-background--cover.jpg", class: "page-card__image", itemprop: "url") %>
+      </figure>
+      <div class="page-card__text">
+        <h3 class="page-card__title" itemprop="name"><%= link_to "Crafting a Digital Legacy", "/work/zahner/", class: "page-card__link", itemprop: "url" %></h3>
+        <p class="page-card__abstract" itemprop="description">A ground up redesign for Zahner's flagship website.</p>
+        <div class="page-card__byline">A. Zahner Co.</div>
+      </div>
+    </article>
+    <article class="page-card" itemscope itemtype="https://schema.org/CreativeWork">
+      <figure class="page-card__media" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= image_tag("work/mit-design-lab/mit-design-lab-background--cover.jpg", class: "page-card__image", itemprop: "url") %>
+      </figure>
+      <div class="page-card__text">
+        <h3 class="page-card__title" itemprop="name"><%= link_to "Micro Sites, Macro Brand", "/work/mit-design-lab/", class: "page-card__link", itemprop: "url" %></h3>
+        <p class="page-card__abstract" itemprop="description">Developing a digital platform for MIT's new Design Lab</p>
+        <div class="page-card__byline">MIT Design Lab</div>
+      </div>
+    </article>
+  </div>
 </section>

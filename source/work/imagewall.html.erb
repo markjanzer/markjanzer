@@ -1,14 +1,34 @@
+---
+itemtype: WebPage
+---
 
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/work/imagewall/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-imagewall-hero.jpg",
+    local_title:       "ImageWall | Work — Dixon & Moe",
+    local_description: ""
+  }) %>
+<% end %>
 
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/work/", title: "Work", type: "CollectionPage" },
+      { url: "#{config.base_url}/work/imagewall/", title: "ImageWall", type: "WebPage" }
+    ]
+  }) %>
+<% end %>
 
-
-
-
-
+<%# Page Content %>
 <header class="case-header">
   <div class="case-header__text">
     <h1 class="case-header__title" itemprop="name">Building Tools of the Future</h1>
-    <p class="case-header__abstract" itemprop="description">A 3D webapp to design and purchase custom perforated metal.</p>
+    <p class="case-header__abstract" itemprop="description">Scaling a 3D webapp to design and purchase custom perforated metal.</p>
     <div class="case-header__byline">ImageWall</div>
   </div>
   <figure class="case-header__hero case-header__hero--imagewall">
@@ -18,26 +38,72 @@
           <source src="<%= asset_url("assets/images/work/imagewall/imagewall-background.mp4") %>" type="video/mp4" itemprop="url">
       </video>
     </div>
-
     <div class="case-header__foreground case-header__foreground--imagewall">
       <%= image_tag("work/imagewall/imagewall-foreground--below.png", class: "case-header__image case-header__image--imagewall-below") %>
       <%= image_tag("work/imagewall/imagewall-foreground--above.png", class: "case-header__image case-header__image--imagewall-above") %>
     </div>
-  </figure><br><br><br><br><br><br><br><br>
+  </figure>
 </header>
 
-<section class="case-section">
- <div class="case-text" style="padding-bottom: 5rem;">
-    <div class="case-text__group">
-      <h5 class="case-text__kicker">Overview</h5>
-      <p class="case-text__summary">Working closely with the ImageWall team we leveled up their online 3D design tool that lets anyone create and purchase perforated metal walls from an image.</p>
-    </div>
-    <div class="">
 
+<!-- 
+  ImageWall lets anyone design and purchase perforated metal walls online, sustaining the platforms growth required an infrastructure upgrade.
+  A 3D webapp that lets anyone create and purchase perforated metal walls from an image, sustaining ImageWall's growth required an infrastructure upgrade.
+  Working closely with the ImageWall team we leveled up their online 3D design tool that lets anyone create and purchase perforated metal walls from an image. -->
+
+<section class="case-section">
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">Background</h5>
+      <p class="case-text__summary">ImageWall's online platform to design and purchase perforated metal walls was growing, but sustaining the growth required an infrastructure upgrade.</p>
+    </div>
+    <div class="case-text__group" style="padding-bottom: 5rem;width:66.66667%;float:left;">
+      <h5 class="case-text__kicker">Overview</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;line-height:1.5">We partnered with the ImageWall team to prototype, develop and launch a completely rebuilt 3D web experience that focused on streamlining the customization and sales process, so they could scale their product without hiring more staff. The collaborative effort resulted in a faster, intuitive user experience tightly integrated with secure online payment options so a customer could go from design to purchase completely online–no humans required.</p>
+    </div>
+    <div class="case-text__group" style="padding-bottom: 5rem;width:16.66667%;float:right;">
+      <h5 class="case-text__kicker">Scope</h5>
+      <p class="case-text__summary" style="font-size: 16px;font-family:'Akkurat Pro';font-weight:400;line-height:2">Strategy<br>Prototyping<br>UI/UX<br>Design<br>Development</p>
+    </div>
+  </div>
+  <div class="" style="width: 100%;">
+    <%= image_tag("work/imagewall/imagewall-cover.png", class: "", style: "width:100%;margin:0 auto;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">Divide and Conquer</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">With a short timeline we elected to split into groups and work in tandem. Part of our team tackled the marketing website, CMS and user authentication while the rest jumped straight into prototyping the 3D webapp's UI and customization interface. We held weekly video chats with the ImageWall team to discuss design decisions and feedback on the working prototypes, folding new ideas and directions into the following week's mockups.</p>
+    </div>
+  </div>
+  <div class="" style="padding: 5em calc(50% - 40em);background: #f7f9f9;">
+    <%= image_tag("work/imagewall/imagewall-ui-studies.png", class: "", style: "width:100%;margin:0 auto;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">Iterative Process</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">Creating an intuitive user experience was a priority; the further a customer could take their design to completion the less they would need to engage with the sales team. We drilled down into every detail, iterating and testing interactive prototypes with users and teammates unfamiliar with the project to understand behavior patterns and common questions.</p>
+    </div>
+  </div>
+  <div class="" style="padding: 5em calc(50% - 40em);background: #f7f9f9;">
+    <%= image_tag("work/imagewall/imagewall-ui-studies.png", class: "", style: "width:100%;margin:0 auto;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">Iterative Process</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">Creating an intuitive user experience was a priority; the further a customer could take their design to completion the less they would need to engage with the sales team. We drilled down into every detail, iterating and testing interactive prototypes with users and teammates unfamiliar with the project to understand behavior patterns and common questions.</p>
     </div>
   </div>
   <div class="" style="padding: calc(50% - 40em);background: #f7f9f9;">
-    <%= image_tag("work/imagewall/imagewall-ui-studies.png", class: "", style: "width:100%;margin:0 auto;") %>
+    <%= image_tag("work/imagewall/imagewall-payment-flow.png", class: "", style: "width:100%;margin:0 auto;") %>
+  </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">Template Taxonomies</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+    </div>
+  </div>
+  <div class="" style="width:100%">
+    <%= image_tag("work/imagewall/imagewall-closer.png", class: "", style: "width:100%;margin:0 auto;") %>
   </div>
 </section>
 

@@ -1,0 +1,56 @@
+---
+itemtype: WebPage
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/about/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-hero.jpg",
+    local_title:       "About — Dixon & Moe",
+    local_description: ""
+  }) %>
+<% end %>
+
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/about/", title: "Ventures", type: "WebPage" }
+    ]
+  }) %>
+<% end %>
+
+<%# Page Content %>
+<header class="page-header">
+  <div class="page-header__text">
+    <h1 class="page-header__title" itemprop="name">About</h1>
+    <p class="page-header__abstract" itemprop="description">hire us</p>
+    <div class="page-header__byline">things we make</div>
+  </div>
+</header>
+
+<section class="page-section">
+
+
+  <h2>Competitive Advantage</h2>
+  <p>Technology has more applications than simply production. Mesmerize your clients with engaging visualizations; pitch projects rooted in data-driven analyses with well articulated maps to back them up.</p>
+
+  <h2>Management</h2>
+  <p>Before you hire your next accountant or HR admin, take a step back and try to understand why you're making this decision. It could be the perfect move as your firm grows, but more often than not, its a deficiency in current processes, something that software—custom or off the shelf—could solve at a much more cost-effective price.
+
+
+
+  </p>
+  <div class="page-section__summary">
+
+  </div>
+  <div class="">
+
+  </div>
+  <div class="">
+
+  </div>
+</section>
