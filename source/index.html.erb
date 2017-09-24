@@ -22,8 +22,15 @@ itemtype: WebPage
 <% end %>
 
 <header class="page-header">
+  <div class="page-header__hero">
+    <%= image_tag("circle.png", class: "page-header__hero-circle") %>
+    <%= image_tag("polygon.png", class: "page-header__hero-polygon") %>
+  </div>
   <div class="page-header__text">
     <h1 class="page-header__title" itemprop="name"><span class="page-header__primary">Strategy<span class="page-header__punctuation">,</span> design<span class="page-header__punctuation">,</span> development</span><span class="page-header__punctuation"> — </span><span class="page-header__secondary">we help AEC companies understand, prototype and deploy custom technologies.</span></h1>
+    <div class="page-header__group page-header__group--digit">
+      <h5 class="page-text__digit">A0</h5>
+    </div>
     <div class="page-header__group page-header__group--large">
       <h5 class="page-text__kicker">Mission</h5>
       <p class="page-text__description page-text__description--desktop">As trained (building) architects, software engineers and interface designers, we believe technology can be a motive force in the AEC disciplines. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
@@ -63,42 +70,90 @@ itemtype: WebPage
   </div>
 </header>
 
-<section class="page-section">
+<section class="page-section page-section--feature">
   <article class="page-feature" itemscope itemtype="https://schema.org/CreativeWork">
-    <figure class="page-feature__background page-feature__background--imagewall">
-      <video class="case-header__video" preload="auto" loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-        <meta itemprop="name" content="ImageWall browser based WebGL 3D experience.">
-          <source src="<%= asset_url("assets/images/work/imagewall/imagewall-background.mp4") %>" type="video/mp4" itemprop="url">
+    <figure class="page-feature__background page-feature__background--imagewall" style="background-color: white;">
+      <video class="case-header__video" preload="auto" itemprop="video" itemscope itemtype="https://schema.org/VideoObject" poster="<%= asset_url("assets/images/work/imagewall/imagewall-feature-hero.gif") %>">
+        <meta itemprop="name" content="ImageWall — Design and Purchase Custom Perforated Metal Walls from an Image">
+        <source src="<%= asset_url("assets/images/work/imagewall/imagewall-feature-hero-3.mp4") %>" type="video/mp4" itemprop="url">
       </video>
+      <div class="page-feature__overlay"></div>
     </figure>
     <div class="page-feature__foreground">
-      <div class="page-feature__text">
+      <div class="page-feature__text page-feature__text--small">
+        <h5 class="page-feature__digit">W1</h5>
+      </div>
+      <div class="page-feature__text page-feature__text--large">
         <h2 class="page-feature__title" itemprop="name"><%= link_to "Building Tools of the Future", "/work/imagewall/", class: "page-feature__link", itemprop: "url" %></h2>
-        <p class="page-feature__abstract" itemprop="description">3D app to design and purchase custom perforated metal from an image. <%= link_to "Read the case study", "/work/imagewall/", class: "page-feature__link" %></p>
         <div class="page-feature__byline">ImageWall</div>
-      </figcaption>
+        <p class="page-feature__abstract" itemprop="description">Scaling a 3D webapp to design and order custom perforated metal from an image.</p>
+      </div>
+      <div class="page-feature__text page-feature__text--medium">
+        <% link_to "/work/imagewall/", class: "page-feature__cta" do %>
+          <span class="page-feature__cta-text">Read the <br>case study</span>
+          <span class="page-feature__cta-arrow"></span>
+        <% end %>
+      </div>
     </div>
   </article>
-  <div class="page-projects">
+  <div class="page-projects" style="display: none">
     <article class="page-card" itemscope itemtype="https://schema.org/CreativeWork">
-      <figure class="page-card__media" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-        <%= image_tag("work/zahner/zahner-background--cover.jpg", class: "page-card__image", itemprop: "url") %>
-      </figure>
-      <div class="page-card__text">
+      <div class="page-card__text page-card__text--small">
+        <h5 class="page-card__digit">W2</h5>
+      </div>
+      <div class="page-card__text page-card__text--large">
+        <div class="page-card__byline">A. Zahner Co.</div>
         <h3 class="page-card__title" itemprop="name"><%= link_to "Crafting a Digital Legacy", "/work/zahner/", class: "page-card__link", itemprop: "url" %></h3>
         <p class="page-card__abstract" itemprop="description">A ground up redesign for Zahner's flagship website.</p>
-        <div class="page-card__byline">A. Zahner Co.</div>
       </div>
     </article>
     <article class="page-card" itemscope itemtype="https://schema.org/CreativeWork">
-      <figure class="page-card__media" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-        <%= image_tag("work/mit-design-lab/mit-design-lab-background--cover.jpg", class: "page-card__image", itemprop: "url") %>
-      </figure>
-      <div class="page-card__text">
+      <div class="page-card__text page-card__text--small" style="border-top-color:transparent;">
+        <h5 class="page-card__digit">W3</h5>
+      </div>
+      <div class="page-card__text page-card__text--large" style="border-top-color:transparent;">
+        <div class="page-card__byline">MIT Design Lab</div>
         <h3 class="page-card__title" itemprop="name"><%= link_to "Micro Sites, Macro Brand", "/work/mit-design-lab/", class: "page-card__link", itemprop: "url" %></h3>
         <p class="page-card__abstract" itemprop="description">Developing a digital platform for MIT's new Design Lab</p>
-        <div class="page-card__byline">MIT Design Lab</div>
       </div>
     </article>
+  </div>
+</section>
+
+<section class="page-section page-section--services">
+  <div class="page-section__text">
+
+    <h1 class="page-section__title" itemprop="name">How we can help you.</h1>
+    <div class="page-section__group page-section__group--small">
+      <h5 class="page-text__digit">S1</h5>
+    </div>
+    <div class="page-section__group page-section__group--large">
+      <h5 class="page-text__kicker">Internal Tools</h5>
+      <p class="page-text__description">Have an excel sheet or presentation but no team to implement? We can help take your idea from concept to design to deployment and beyond.</p>
+    </div>
+
+    <div class="page-section__group page-section__group--small">
+      <h5 class="page-text__digit">S2</h5>
+    </div>
+    <div class="page-section__group page-section__group--large">
+      <h5 class="page-text__kicker">Pilot Projects</h5>
+      <p class="page-text__description">Considering building out your in-house software capabilities? Test the waters with a pilot project before making the investment.</p>
+    </div>
+
+    <div class="page-section__group page-section__group--small">
+      <h5 class="page-text__digit">S3</h5>
+    </div>
+    <div class="page-section__group page-section__group--large">
+      <h5 class="page-text__kicker">External Products</h5>
+      <p class="page-text__description">Million dollar idea? We can help you execute on your product vision from start to finish– design, development, marketing and optimization.</p>
+    </div>
+
+    <div class="page-section__group page-section__group--small">
+      <h5 class="page-text__digit">S4</h5>
+    </div>
+    <div class="page-section__group page-section__group--large">
+      <h5 class="page-text__kicker">Technology Advisors</h5>
+      <p class="page-text__description">Have a lot of questions and not sure where to turn? We offer technology consultations and retainer options for companies in need of advice.</p>
+    </div>
   </div>
 </section>

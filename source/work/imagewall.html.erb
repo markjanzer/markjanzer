@@ -33,7 +33,8 @@ itemtype: WebPage
   </div>
   <figure class="case-header__hero case-header__hero--imagewall">
     <div class="case-header__background case-header__background--imagewall">
-      <video class="case-header__video" preload="auto" loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+      <!-- loop autoplay -->
+      <video class="case-header__video" preload="auto" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
         <meta itemprop="name" content="ImageWall browser based WebGL 3D experience.">
           <source src="<%= asset_url("assets/images/work/imagewall/imagewall-background.mp4") %>" type="video/mp4" itemprop="url">
       </video>
@@ -84,27 +85,31 @@ itemtype: WebPage
       <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">Creating an intuitive user experience was a priority; the further a customer could take their design to completion the less they would need to engage with the sales team. We drilled down into every detail, iterating and testing interactive prototypes with users and teammates unfamiliar with the project to understand behavior patterns and common questions.</p>
     </div>
   </div>
-  <div class="" style="padding: 5em calc(50% - 40em);background: #f7f9f9;">
-    <%= image_tag("work/imagewall/imagewall-ui-studies.png", class: "", style: "width:100%;margin:0 auto;") %>
+  <div class="" style="padding: 0 calc(50% - 40em);">
+    <%= image_tag("work/imagewall/imagewall-customized-metal-panels.png", class: "", style: "width:100%;margin:0 auto;") %>
   </div>
   <div class="case-text">
     <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
-      <h5 class="case-text__kicker">Iterative Process</h5>
-      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">Creating an intuitive user experience was a priority; the further a customer could take their design to completion the less they would need to engage with the sales team. We drilled down into every detail, iterating and testing interactive prototypes with users and teammates unfamiliar with the project to understand behavior patterns and common questions.</p>
+      <h5 class="case-text__kicker">Fast Customization</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">The editor's final layout was informed by a desire to make sure every customization was, at most, a single click away. Grouping similar options and surfacing the most important ones—like uploading an image—let us create an elegant heirarchy that guided user's actions and exposed the power of ImageWall's editor as quickly as possible. Live pricing updates based on selected customizations offer instant feedback and key users into the next part of their journey: payment.</p>
     </div>
   </div>
   <div class="" style="padding: calc(50% - 40em);background: #f7f9f9;">
-    <%= image_tag("work/imagewall/imagewall-payment-flow.png", class: "", style: "width:100%;margin:0 auto;") %>
+    <%= image_tag("work/imagewall/imagewall-payment-flow-2.png", class: "", style: "width:100%;margin:0 auto;") %>
   </div>
   <div class="case-text">
     <div class="case-text__group" style="padding-top: 5rem;padding-bottom: 5rem;">
-      <h5 class="case-text__kicker">Template Taxonomies</h5>
-      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+      <h5 class="case-text__kicker">Instant Invoicing</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">We opted to integrate two purchasing methods: credit card payments via Stripe, and a more traditional emailed invoice. Drawing on existing eCommerce precedents we kept the checkout process simple, breaking it down into three modal screens with an indicator bar to highlight the current step. Upon purchase completion the new system programmatically generates a PDF invoice and emails it to the customer along with a service agreement–offloading the manual followup process to save time and increase reliability.</p>
     </div>
   </div>
   <div class="" style="width:100%">
     <%= image_tag("work/imagewall/imagewall-closer.png", class: "", style: "width:100%;margin:0 auto;") %>
   </div>
+  <div class="case-text">
+    <div class="case-text__group" style="padding-bottom: 5rem;">
+      <h5 class="case-text__kicker">All Together Now</h5>
+      <p class="case-text__summary" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;width:66.66667%;line-height:1.5">While a major focus of the project was the 3D experience, the ImageWall platform encompasses much more. The marketing website, CMS, user profiles, and administrative area all contribute to powering ImageWall's growth, and streamlining it's management. While it's still early we've received great feedback from the team, and the metrics look promising.</p>
+    </div>
+  </div>
 </section>
-
-<section class="case-section"></section>

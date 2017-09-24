@@ -25,6 +25,12 @@ body {
   box-sizing: border-box; 
 }
 
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 ::selection {
   color: $color-white;
   background: rgba(15, 13, 32, 0.99);
@@ -40,7 +46,9 @@ body {
   z-index: 1;
 }
 .is-scrolled .body-header {
-  position: fixed;
+  @media only screen and (min-width: $screen-sm-min) {
+    position: fixed;
+  }
 }
 .body-content {
 
