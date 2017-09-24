@@ -193,6 +193,7 @@
     max-width: 87.5%;
   }
   @media only screen and (min-width: $screen-lg-min) {
+    max-width: none;
     font-size: 24 / 16 * 1rem;
   }
 }
