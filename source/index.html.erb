@@ -27,14 +27,14 @@ itemtype: WebPage
     <%= image_tag("polygon.png", class: "page-header__hero-polygon") %>
   </div>
   <div class="page-header__text">
-    <h1 class="page-header__title" itemprop="name"><span class="page-header__primary">Strategy<span class="page-header__punctuation">,</span> design<span class="page-header__punctuation">,</span> development</span><span class="page-header__punctuation"> — </span><span class="page-header__secondary">we help AEC companies understand, prototype and deploy custom technologies.</span></h1>
+    <h1 class="page-header__title" itemprop="name"><span class="page-header__primary">Strategy<span class="u-hide-xs u-show-sm">,</span> design<span class="u-hide-xs u-show-sm">,</span> development</span><span class="u-hide-xs u-show-sm"> — we help AEC companies understand, prototype and deploy custom technologies.</span></h1>
     <div class="page-header__group page-header__group--digit">
-      <h5 class="page-text__digit">A0</h5>
+      <h5 class="page-text__icon">A0</h5>
     </div>
     <div class="page-header__group page-header__group--large">
       <h5 class="page-text__kicker">Mission</h5>
-      <p class="page-text__description page-text__description--desktop">As trained (building) architects, software engineers and interface designers, we believe technology can be a motive force in the AEC disciplines. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
-      <p class="page-text__description page-text__description--mobile">We're trained (building) architects, software engineers and interface designers helping AEC companies understand, prototype and deploy custom technologies. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
+      <p class="page-text__summary page-text__summary--desktop">As trained (building) architects, software engineers and interface designers, we believe technology can be a motive force in the AEC disciplines. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
+      <p class="page-text__summary page-text__summary--mobile">We're trained (building) architects, software engineers and interface designers helping AEC companies understand, prototype and deploy custom technologies. <%= link_to "Read more", "/about/", class: "page-header__link" %>.</p>
     </div>
     <div class="page-header__group page-header__group--small">
       <h5 class="page-text__kicker">Clients</h5>
@@ -72,11 +72,12 @@ itemtype: WebPage
 
 <section class="page-section page-section--feature">
   <article class="page-feature" itemscope itemtype="https://schema.org/CreativeWork">
-    <figure class="page-feature__background page-feature__background--imagewall" style="background-color: white;">
-      <video class="case-header__video" preload="auto" itemprop="video" itemscope itemtype="https://schema.org/VideoObject" poster="<%= asset_url("assets/images/work/imagewall/imagewall-feature-hero.gif") %>">
+    <figure class="page-feature__background page-feature__background--imagewall">
+      <video class="page-feature__video" preload="auto" itemprop="video" itemscope itemtype="https://schema.org/VideoObject" poster="" autoplay mute>
         <meta itemprop="name" content="ImageWall — Design and Purchase Custom Perforated Metal Walls from an Image">
         <source src="<%= asset_url("assets/images/work/imagewall/imagewall-feature-hero-3.mp4") %>" type="video/mp4" itemprop="url">
       </video>
+      <%= image_tag("work/imagewall/imagewall-feature-hero.gif", class: "page-feature__image") %>
       <div class="page-feature__overlay"></div>
     </figure>
     <div class="page-feature__foreground">
@@ -96,64 +97,112 @@ itemtype: WebPage
       </div>
     </div>
   </article>
-  <div class="page-projects" style="display: none">
-    <article class="page-card" itemscope itemtype="https://schema.org/CreativeWork">
-      <div class="page-card__text page-card__text--small">
-        <h5 class="page-card__digit">W2</h5>
-      </div>
-      <div class="page-card__text page-card__text--large">
-        <div class="page-card__byline">A. Zahner Co.</div>
-        <h3 class="page-card__title" itemprop="name"><%= link_to "Crafting a Digital Legacy", "/work/zahner/", class: "page-card__link", itemprop: "url" %></h3>
-        <p class="page-card__abstract" itemprop="description">A ground up redesign for Zahner's flagship website.</p>
+</section>
+
+<section class="page-section page-section--projects">
+  <div class="page-section__text">
+    <h2 class="page-section__title" itemprop="name">Selected case studies.</h2>
+    <div class="page-section__icon">
+      <h5 class="page-text__icon">W2</h5>
+    </div>
+    <article class="page-project" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="page-project__text page-project__text--large">
+        <div class="page-project__byline"><span class="u-hide-sm u-show-md">A. </span>Zahner<span class="u-hide-sm u-show-md"> Co.</span></div>
+        <h3 class="page-project__title" itemprop="name">
+          <%= link_to "Crafting a Digital Legacy", "/work/zahner/", class: "page-project__link", itemprop: "url" %>
+        </h3>
+        <p class="page-project__abstract" itemprop="description">A ground up redesign for Zahner's flagship website.</p>
       </div>
     </article>
-    <article class="page-card" itemscope itemtype="https://schema.org/CreativeWork">
-      <div class="page-card__text page-card__text--small" style="border-top-color:transparent;">
-        <h5 class="page-card__digit">W3</h5>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">W3</h5>
+    </div>
+    <article class="page-project" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="page-project__text page-project__text--large">
+        <div class="page-project__byline">MIT<span class="u-hide-sm u-show-md"> Design Lab</span></div>
+        <h3 class="page-project__title" itemprop="name">
+          <%= link_to "Micro Sites, Macro Brand", "/work/zahner/", class: "page-project__link", itemprop: "url" %>
+        </h3>
+        <p class="page-project__abstract" itemprop="description">Developing a digital platform for MIT's new Design Lab.</p>
       </div>
-      <div class="page-card__text page-card__text--large" style="border-top-color:transparent;">
-        <div class="page-card__byline">MIT Design Lab</div>
-        <h3 class="page-card__title" itemprop="name"><%= link_to "Micro Sites, Macro Brand", "/work/mit-design-lab/", class: "page-card__link", itemprop: "url" %></h3>
-        <p class="page-card__abstract" itemprop="description">Developing a digital platform for MIT's new Design Lab</p>
+    </article>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">W4</h5>
+    </div>
+    <article class="page-project" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="page-project__text page-project__text--large">
+        <div class="page-project__byline is-venture">Monograph</div>
+        <h3 class="page-project__title" itemprop="name">
+          <a href="/work/zahner/" class="page-project__link" title="Monograph — Architecture's New Back Office" itemprop="url">Architecture's <span class="u-hide-sm u-show-lg">New </span>Back Office</a>
+        </h3>
+        <p class="page-project__abstract" itemprop="description">Project planning and time tracking for architects.</p>
       </div>
     </article>
   </div>
 </section>
 
 <section class="page-section page-section--services">
+  <h2 class="page-section__subtitle">How we can help you.</h2>
+  <div class="page-services">
+    <div class="page-service">
+      <div class="page-service__icon">
+        <h5 class="page-service__icon-text">S1</h5>
+      </div>
+      <div class="page-service__text">
+        <h4 class="page-service__title">Internal Tools</h4>
+        <p class="page-service__summary">Have an excel sheet or presentation but no team to implement? We can help take your idea from concept to design to deployment and beyond.</p>
+      </div>
+    </div>
+    <div class="page-service">
+      <div class="page-service__icon">
+        <h5 class="page-service__icon-text">S2</h5>
+      </div>
+      <div class="page-service__text">
+        <h4 class="page-service__title">Pilot Projects</h4>
+        <p class="page-service__summary">Considering building out your in-house software capabilities? Test the waters with a pilot project before making the investment.</p>
+      </div>
+    </div>
+    <div class="page-service">
+      <div class="page-service__icon">
+        <h5 class="page-service__icon-text">S3</h5>
+      </div>
+      <div class="page-service__text">
+        <h4 class="page-service__title">Product Validation</h4>
+        <p class="page-service__summary">Million dollar idea? We can help you execute on your product vision from start to finish– design, development, marketing and optimization.</p>
+      </div>
+    </div>
+    <div class="page-service">
+      <div class="page-service__icon">
+        <h5 class="page-service__icon-text">S4</h5>
+      </div>
+      <div class="page-service__text">
+        <h4 class="page-service__title">Technology Advisors</h4>
+        <p class="page-service__summary">Have a lot of questions and not sure where to turn? We offer technology consultations and retainer options for companies in need of advice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section page-section--contact">
   <div class="page-section__text">
-
-    <h1 class="page-section__title" itemprop="name">How we can help you.</h1>
-    <div class="page-section__group page-section__group--small">
-      <h5 class="page-text__digit">S1</h5>
+    <h2 class="page-section__title"><span class="u-hide-xs u-show-sm">We're based in San Francisco, but work with companies worldwide. </span>Have a project or idea? Drop us a line.</h2>
+    <div class="page-section__icon">
+      <h5 class="page-text__icon">C1</h5>
     </div>
     <div class="page-section__group page-section__group--large">
-      <h5 class="page-text__kicker">Internal Tools</h5>
-      <p class="page-text__description">Have an excel sheet or presentation but no team to implement? We can help take your idea from concept to design to deployment and beyond.</p>
+      <h5 class="page-text__kicker">New Business</h5>
+      <p class="page-text__summary">Robert Yuen<br><%= link_to "robert@dixonandmoe.com", "mailto:robert@dixonandmoe.com", class: "page-text__link", title: "Email Robert Yuen" %><br><span class="page-text__link">+1 (617) 834–2828</span></p>
     </div>
-
     <div class="page-section__group page-section__group--small">
-      <h5 class="page-text__digit">S2</h5>
+      <h5 class="page-text__kicker">Our Office</h5>
+      <p class="page-text__summary">165 11th Street<br>San Francisco, CA<br>94103</p>
     </div>
-    <div class="page-section__group page-section__group--large">
-      <h5 class="page-text__kicker">Pilot Projects</h5>
-      <p class="page-text__description">Considering building out your in-house software capabilities? Test the waters with a pilot project before making the investment.</p>
-    </div>
-
     <div class="page-section__group page-section__group--small">
-      <h5 class="page-text__digit">S3</h5>
-    </div>
-    <div class="page-section__group page-section__group--large">
-      <h5 class="page-text__kicker">Product Validation</h5>
-      <p class="page-text__description">Million dollar idea? We can help you execute on your product vision from start to finish– design, development, marketing and optimization.</p>
-    </div>
-
-    <div class="page-section__group page-section__group--small">
-      <h5 class="page-text__digit">S4</h5>
-    </div>
-    <div class="page-section__group page-section__group--large">
-      <h5 class="page-text__kicker">Technology Advisors</h5>
-      <p class="page-text__description">Have a lot of questions and not sure where to turn? We offer technology consultations and retainer options for companies in need of advice.</p>
+      <h5 class="page-text__kicker">Elsewhere</h5>
+      <p class="page-text__summary">
+        <%= link_to "Twitter", "https://twitter.com/@dixonandmoe", class: "page-text__link", title: "Dixon & Moe on Twitter", target: "_blank" %><br>
+        <%= link_to "Medium", "https://medium.com/@dixonandmoe", class: "page-text__link", title: "Dixon & Moe on Medium", target: "_blank" %>
+      </p>
     </div>
   </div>
 </section>

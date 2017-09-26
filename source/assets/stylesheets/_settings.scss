@@ -7,15 +7,15 @@
 
 // Breakpoints
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-$screen-xs-min: 20.051em;   // min breakpoint for mobile-l (321px)
+$screen-xs-min: 20.0625em;   // min breakpoint for mobile-l (321px)
 $screen-xs-max: 40em;       // max breakpoint for mobile-l (640px)
-$screen-sm-min: 40.051em;   // min breakpoint for tablet   (641px)
+$screen-sm-min: 40.0625em;   // min breakpoint for tablet   (641px)
 $screen-sm-max: 60em;       // max breakpoint for tablet   (960px)
-$screen-md-min: 60.051em;   // min breakpoint for desktop  (961px)
+$screen-md-min: 60.0625em;   // min breakpoint for desktop  (961px)
 $screen-md-max: 80em;       // max breakpoint for desktop  (1280px)
-$screen-lg-min: 80.051em;   // min breakpoint for desktop+ (1281px)
+$screen-lg-min: 80.0625em;   // min breakpoint for desktop+ (1281px)
 $screen-lg-max: 100em;      // max breakpoint for desktop+ (1600px)
-$screen-xl-min: 100.051em;  // min breakpoint for desktop+ (1601px)
+$screen-xl-min: 100.0625em;  // min breakpoint for desktop+ (1601px)
 $screen-xl-max: 120em;      // max breakpoint for desktop+ (1920px)
 
 
@@ -42,7 +42,7 @@ $color-black: #282633;
 // $color-black: #4662d6;
 $color-white: #FFFFFF;
 $color-shadow: rgba(15, 13, 32, 0.25);
-$color-gray-1: #f7f7f7;
+$color-gray-1: #f7f8f9;
 $color-gray-2: #eaeaea;
 $color-gray-3: #B0AFB2;
 

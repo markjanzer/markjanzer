@@ -1,0 +1,283 @@
+// Case Study
+.page-feature {
+  position: relative;
+}
+.case-header__background {
+  position: absolute;
+  width: 100%;
+}
+.case-header__background--imagewall {
+  width: 100%;
+  height: 45em;
+  overflow: hidden;
+  background-color: #f7f9f9;
+}
+.page-feature__background {
+  position: relative;
+  width: 100%;
+  @media only screen and (min-width: $screen-sm-min) {
+    position: absolute;
+  }
+}
+.page-feature__background--imagewall {
+  width: 100%;
+  height: 15em;
+  overflow: hidden;
+  @media only screen and (min-width: $screen-sm-min) {
+    height: 25em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    height: 37.5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    height: 45em;
+  }
+}
+.page-feature__video,
+.page-feature__image {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.page-feature__image {
+  @media only screen and (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+.page-feature__overlay {
+  position: absolute;
+  top: 0;
+  left: 5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  background-size: 1.5em 1.5em;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAALNJREFUeAHt1kEKgCAQBVDrMNG++x+hvXSZohP8RVpCT3D1QcbniJZiECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAr8RWJftvOdIG55HKmbEWgCFUwEEKAiEWAcBCgIhnkLePH76jNdjf7VmV6x5C3Rc0EexI26vpV2xIAsIUBAIsQ4CFATEBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAwKcCF4PwChwDPg60AAAAAElFTkSuQmCC")
+}
+.page-feature__foreground {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-top: -7.25em;
+  padding: 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    margin-top: -7.75em;
+    padding: 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    height: 25em;
+    margin-top: 0;
+    padding: 1.5em 3em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    height: 37.5em;
+    padding: 3em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    height: 45em;
+    padding: 5em 5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 0 calc(50% - 40em);
+  }
+}
+.page-feature__text {
+  position: relative;
+}
+.page-feature__text--small {
+  width: 8.33333%;
+}
+.page-feature__text--medium {
+  display: none;
+  width: 16.66667%;
+  @media only screen and (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+.page-feature__text--large {
+  width: 91.66667%;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 50%;
+    margin-right: 8.33333%;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: 40em;
+  }
+}
+.page-feature__digit {
+  position: absolute;
+  bottom: 1.4375rem;
+  margin: 0;
+  font-size: 10 / 16 * 1rem;
+  font-family: $font-family-3;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  @media only screen and (min-width: $screen-sm-min) {
+    bottom: 2.875em;
+    font-size: 10 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    bottom: 2.375em;
+    font-size: 12 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    bottom: 2.875em;
+  }
+}
+.page-feature__title {
+  margin: 0;
+  font-size: 40 / 16 * 1rem;
+  font-family: $font-family-1;
+  font-weight: 400;
+  line-height: 1;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 42 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 54 / 16 * 1rem;
+  }
+  @media only screen and (min-width: 64.051em) {
+    max-width: 75%;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: 33.33333rem;
+    font-size: 68 / 16 * 1rem;
+  }
+}
+.page-feature__title .page-feature__link {
+  // text-decoration: none;
+}
+.page-feature__title .page-feature__link:hover {
+  text-decoration: underline;
+}
+.page-feature__abstract {
+  margin: 0;
+  font-size: 16 / 16 * 1rem;
+  font-family: $font-family-2;
+  font-weight: 400;
+  line-height: 1.2;
+  @media only screen and (min-width: $screen-sm-min) {
+    // max-width: 79.16667%;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    max-width: 87.5%;
+    font-size: 20 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: 33.33333rem;
+    font-size: 24 / 16 * 1rem;
+  }
+}
+.page-feature__link {
+  display: block;
+  color: $color-black;
+}
+.page-feature__byline {
+  margin: 1.625rem 0 0.5rem;
+  font-size: 12 / 16 * 1rem;
+  font-family: $font-family-3;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  @media only screen and (min-width: $screen-sm-min) {
+    margin: 2em 0 0.5rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    margin: 3rem 0 1rem;
+  }
+}
+.page-feature__byline:before {
+  content: "Client";
+  color: $color-gray-3;
+  margin-right: 1rem;
+}
+.page-feature__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: $color-white;
+  background-color: $color-black;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 9.375em;
+    height: 9.375em;
+    margin-bottom: -4.25em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    width: 11.25em;
+    height: 11.25em;
+    margin-bottom: -4.875em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    width: 15em;
+    height: 15em;
+    margin-bottom: -6.75em;
+  }
+}
+.page-feature__cta:hover {
+  animation: ctaCircle 2s;
+}
+@keyframes ctaCircle {
+  0%   { transform: rotate3d(0,0,0); }
+  100% { transform: rotate3d(4,2,1,360deg); }
+}
+.page-feature__cta-text {
+  width: 100%;
+  text-align: center;
+  font-size: 24 / 16 * 1rem;
+  line-height: 1.2;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 16 / 16 * 1rem;
+    margin-bottom: 0.5rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 20 / 16 * 1rem;
+    margin-bottom: 0.625rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    font-size: 24 / 16 * 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.page-feature__cta:hover .page-feature__cta-text {
+  animation: ctaCircleText 2s;
+}
+@keyframes ctaCircleText {
+  0%   { transform: rotate3d(0,0,0) }
+  100% { transform: rotate3d(-1,-2,-1,360deg) scale(1); }
+}
+.page-feature__cta-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-left: 2rem;
+  border-width: 0.125rem 0.125rem 0 0;
+  border-style: solid;
+  border-color: $color-white;
+  transform: rotate(45deg);
+}
+.page-feature__cta-arrow:before {
+  content: "";
+  position: absolute;
+  top: -0.0625rem;
+  right: 0;
+  width: 3rem;
+  height: 0.125rem;
+  background-color: $color-white;
+  transform: rotate(-45deg);
+  transform-origin: right top;
+}

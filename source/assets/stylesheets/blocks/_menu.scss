@@ -8,10 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: 1em;
   background-color: transparent;
   transition: all 400ms $transition;
   overflow: hidden;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 1.5em;
+  }
   @media only screen and (min-width: $screen-sm-min) {
     padding: 3em;
   }
