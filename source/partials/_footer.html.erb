@@ -1,48 +1,4 @@
-<%# Meta Tags %>
 <% if content_for?(:breadcrumbs) %>
   <%= yield_content :breadcrumbs %>
 <% end %>
-
-<!-- <footer class="layout-footer js-layout-footer">
-
-	<div class="row">
-		<div class="layout-footer__group col-xs-24 col-sm-12 col-md-8">
-			<h5>&copy; 2010 – 2016&nbsp;&nbsp;&nbsp;<%= link_to "Dixon & Moe, LLC", "https://dixonandmoe.com/" %></h5>
-		</div>
-		<div class="layout-footer__group col-xs-24 col-sm-12 col-md-8 text-sm-center">
-			<%= link_to "hello@dixonandmoe.com", "mailto:hello@dixonandmoe.com" %>
-		</div>
-		<div class="layout-footer__group col-xs-24 col-sm-12 col-md-8 text-sm-right">
-			<%= link_to "Twitter", "https://twitter.com/@dixonandmoe" %> – <%= link_to "Medium", "https://medium.com/dixon-moe" %>
-		</div>
-
-
-
-
-	<section class="row">
-
-		<%# Credits %>
-		<div class="col-md-7 credits">
-			<h5>Designed By</h5>
-			<h3><%= link_to "Dixon & Moe", "http://dixonandmoe.com/" %></h3>
-		</div>
-
-		<%# Contact %>
-		<div class="col-md-6 contact">
-			<h5>Email us</h5>
-			<h4><%= link_to "moe@dixonandmoe.com", "mailto:moe@dixonandmoe.com" %></h4>
-		</div>
-
-		<%# Socialize %>
-		<div class="col-md-5 social">
-			<h5>Socialize</h5>
-			<h4><%= link_to "Twitter", "https://twitter.com/dixonandmoe" %></h4>
-		</div>
-
-		<%# Copyright %>
-		<div class="col-md-5 copyright">
-			<h5>&copy; 2015 Dixon &amp; Moe </h5>
-		</div>
-
-	</section>
-</footer> -->
+<%= link_to "Say Hello", "mailto:hello@dixonandmoe.com", class: "footer__link" %>

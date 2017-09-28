@@ -7,39 +7,71 @@
 .case-header {
   padding: 7.5em 0 3em;
   @media only screen and (min-width: $screen-sm-min) {
-    padding: 9.375em 0 5em;
-  }
-  @media only screen and (min-width: $screen-md-min) {
     padding: 11.25em 0 5em;
   }
   @media only screen and (min-width: $screen-lg-min) {
-    padding: 13.125em 0 5em;
+    padding: 13.125em 0 8.4375em;
   }
 }
+
+
+// .case-header {
+//   padding: 7.5em 0 3em;
+//   @media only screen and (min-width: $screen-sm-min) {
+//     padding: 9.375em 0 5em;
+//   }
+//   @media only screen and (min-width: $screen-md-min) {
+//     padding: 11.25em 0 5em;
+//   }
+//   @media only screen and (min-width: $screen-lg-min) {
+//     padding: 13.125em 0 5em;
+//   }
+// }
 .case-header__text {
   position: relative;
   width: 100%;
-  padding: 0 0.875em;
+  padding: 0 1em 3em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.5em 3em;
+  }
   @media only screen and (min-width: $screen-sm-min) {
-    padding: 0 3em;
+    padding: 0 3em 5em;
   }
   @media only screen and (min-width: $screen-lg-min) {
-    padding: 0 calc(50% - 40em);
+    padding: 0 5em 5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 0 calc(50% - 40em) 5em;
   }
 }
 .case-header__title {
   margin: 0;
-  font-size: 68 / 16 * 1rem;
+  font-size: 40 / 16 * 1rem;
   font-family: $font-family-1;
   font-weight: 400;
   line-height: 1;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 48 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 54 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    font-size: 68 / 16 * 1rem;
+  }
 }
 .case-header__abstract {
   margin: 1em 0 0.66667em;
-  font-size: 24 / 16 * 1rem;
+  font-size: 16 / 16 * 1rem;
   font-family: $font-family-2;
   font-weight: 400;
   line-height: 1.2;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 20 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    font-size: 24 / 16 * 1rem;
+  }
 }
 .case-header__byline {
   font-size: 12 / 16 * 1rem;
@@ -63,78 +95,95 @@
 .case-header__hero {
   position: relative;
   width: 100%;
-  min-height: 30em;
-  padding-top: 5em;
 }
-.case-header__hero--imagewall {
-  height: 45em;
-}
-.case-header__hero--zahner {
-  padding-bottom: 2em;
-}
-// .case-header__hero--imagewall {
-//   height: 45em;
-//   background-color: #f7f9f9;
-// }
 .case-header__background {
-  position: absolute;
+  position: relative;
+  overflow: hidden;
   width: 100%;
+  height: 13.5em;
+  @media only screen and (min-width: $screen-xs-min) {
+    height: 15em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    height: 25em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    height: 30em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    height: 37.5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    height: 45em;
+  }
 }
 .case-header__background--imagewall {
-  width: 100%;
-  height: 45em;
-  overflow: hidden;
-  background-color: #f7f9f9;
+  // @media only screen and (min-width: $screen-md-min) {
+  //   height: 37.5em;
+  // }
+  @media only screen and (min-width: 64.0625em) {
+    height: 45em;
+  }
 }
 .case-header__background--zahner {
-  height: 30em;
-  overflow: hidden;
   background-color: #0a0a0a;
 }
-.case-header__background--monograph {
-  position: relative;
-  height: 37.5em;
-  overflow: hidden;
-}
-.case-header__background--mit-design-lab {
-  height: 30em;
-  overflow: hidden;
-}
 .case-header__foreground {
-  position: relative;
-  @media only screen and (min-width: $screen-md-min) {
-    padding: 0 2em;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 3em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    padding: 4em 3em;
   }
   @media only screen and (min-width: $screen-lg-min) {
-    padding: 0 calc(50% - 40em);
+    padding: 4em 5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 4em calc(50% - 40em);
   }
 }
-.case-header__foreground--imagewall {
-  padding-top: 4em;
-}
-.case-header__foreground--zahner,
-.case-header__foreground--mit-design-lab {
-  padding-top: 5em;
-}
-.case-header__foreground--monograph {
-  padding-top: 1em;
-}
-.case-header__video {
+.case-header__video,
+.case-header__mobile {
   position: absolute;
-  height: 100%;
-  min-width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-}
-.case-header__video--zahner,
-.case-header__video--monograph,
-.case-header__video--mit-design-lab {
   width: auto;
   height: auto;
   min-width: 100%;
   min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
+.case-header__video {
+  display: none;
+  @media only screen and (min-width: $screen-md-min) {
+    display: block;
+  }
+}
+.case-header__mobile {
+  @media only screen and (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+.case-header__video--imagewall {
+  height: 100%;
+  min-width: 100%;
+}
+// .case-header__video--zahner,
+// .case-header__video--imagewall,
+// .case-header__video--monograph,
+// .case-header__video--mit-design-lab {
+//   width: auto;
+//   height: auto;
+//   min-width: 100%;
+//   min-height: 100%;
+// }
 .case-header__video--zahner {
   opacity: 0.5;
 }
@@ -144,32 +193,61 @@
 }
 
 // ImageWall
-.case-header__image--imagewall-below {
+.case-header__image--imagewall-left {
   position: relative;
   float: left;
-  width: 22.75em;
-  margin: -2em;
+  height: 12.625em;
+  margin: -0.625em;
+  @media only screen and (min-width: $screen-xs-min) {
+    height: 13.5em;
+    margin: -0.75em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    height: 23em;
+    margin: -2em -1.5em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    height: 28em;
+    margin: -2em -1.75em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    height: 41.5em;
+    margin: -2em;
+  }
 }
-.case-header__image--imagewall-above {
+.case-header__image--imagewall-right {
   position: relative;
   float: right;
-  width: 5em;
-  margin: -1em 9em -1em 0;
+  width: 1.5em;
+  margin: -0.3125em 8.33333% -0.3125em -0.3125em;
+  @media only screen and (min-width: $screen-xs-min) {
+    margin: -0.375em 8.33333% -0.375em -0.375em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 2.75em;
+    margin: -1em 8.33333% -1em -1em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    width: 3.375em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    width: 5em;
+  }
 }
 
 // Zahner
-.case-header__image--zahner-below {
-  position: relative;
-  width: 45em;
-  box-shadow: 0 0 1rem rgba(40,38,51,0.5);
-}
-.case-header__image--zahner-above {
-  position: relative;
-  float: right;
-  width: 33em;
-  margin-top: -25em;
-  margin-right: 10em;
-}
+// .case-header__image--zahner-below {
+//   position: relative;
+//   width: 45em;
+//   box-shadow: 0 0 1rem rgba(40,38,51,0.5);
+// }
+// .case-header__image--zahner-above {
+//   position: relative;
+//   float: right;
+//   width: 33em;
+//   margin-top: -25em;
+//   margin-right: 10em;
+// }
 
 // MIT
 .case-header__image--mit-design-lab-below,
@@ -186,8 +264,20 @@
   margin-top: -46em;
   z-index: 1;
 }
-
-
+.case-header__caption {
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem 0;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 1rem 1.5rem 0;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 1rem 3rem 0;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 1rem calc(50% - 40rem) 0;
+  }
+}
 .case-header__caption,
 .case-header__caption a {
   color: $color-black;
@@ -204,23 +294,113 @@
 
 
 
-// Section
+// Case Section
 .case-section {
 
 }
 
+// Case Media
+.case-media {
+  display: flex;
+  padding: 0 1em 3em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.5em 3em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 3em 5em;
+  }
+}
+.case-media-xl {
+  // full bleed
+  width: 100%;
+  padding: 0 0 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 0 5em;
+  }
+}
+.case-media-lg {
+  // 1280
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 calc(50% - 40em) 5em;
+  }
+}
+.case-media-md {
+  // 1120
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 calc(50% - 35em) 5em;
+  }
+}
+.case-media-sm {
+  // 960
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 calc(50% - 30em) 5em;
+  }
+}
+.case-media__image {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.case-media__image--left,
+.case-media__image--right {
+  width: 54.16667%;
+  height: 54.16667%;
+  box-shadow: 0 0.25rem 2rem rgba(40,38,51,0.125);
+}
+.case-media__image--right {
+  z-index: -1;
+  margin-top: 4.16667%;
+  margin-left: -8.33333%;
+}
 
-
+// Case Text
 .case-text {
   position: relative;
-  @media only screen and (min-width: $screen-md-min) {
-    padding: 0 2em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.5em;
   }
-  @media only screen and (min-width: $screen-lg-min) {
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 3em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    // padding: 0 5em;
+    // padding: 0 calc(50% - 30em);
+    max-width: 60em;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
     padding: 0 calc(50% - 30em);
   }
 }
-.case-text__kicker {
+.case-text__summary {
+  width: 100%;
+  padding-bottom: 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-bottom: 5em;
+  }
+}
+.case-text__block {
+  width: 100%;
+  padding-bottom: 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 66.66667%;
+    padding-bottom: 5em;
+  }
+}
+.case-text__scope {
+  display: none;
+  width: 16.66667%;
+  margin-left: 16.66667%;
+  padding-bottom: 5em;
+  @media only screen and (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+.case-text__title {
   margin: 0;
   color: $color-gray-3;
   font-size: 12 / 16 * 1rem;
@@ -230,9 +410,33 @@
   letter-spacing: 0.075em;
   text-transform: uppercase;
 }
-.case-text__summary {
+.case-text__description {
   margin: 1rem 0 0;
-  font-size: 36 / 16 * 1rem;
+  font-size: 16 / 16 * 1rem;
+  line-height: 1.5;
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 20 / 16 * 1rem;
+  }
+}
+.case-text__summary .case-text__description {
+  font-size: 24 / 16 * 1rem;
   font-family: $font-family-1;
   line-height: 1.25;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 28 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 36 / 16 * 1rem;
+  }
+}
+.case-text__scope .case-text__description {
+  margin: 0.75rem 0 0;
+  font-size: 12 / 16 * 1rem;
+  line-height: 2;
+  @media only screen and (min-width: $screen-sm-min) {
+    // font-size: 16 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 16 / 16 * 1rem;
+  }
 }

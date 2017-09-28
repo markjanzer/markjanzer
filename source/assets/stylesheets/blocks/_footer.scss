@@ -1,8 +1,29 @@
-// // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// // Footer
-// // stylesheets/blocks/_footer.scss
-// //
-// // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+.footer__breadcrumbs {
+  display: flex;
+}
+.footer__list {
+  display: flex;
+}
+.footer__link {
+  color: $color-black;
+  // text-decoration: none;
+}
+.footer__list .footer__link {
+  text-decoration: none;
+}
+.footer__link--home {
+  text-decoration: none;
+}
+.footer__caret {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+
+
 
 // .layout-footer {
 // 	padding: 3em 0 3em;

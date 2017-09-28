@@ -50,6 +50,22 @@ body {
     position: fixed;
   }
 }
-.body-content {
-
+.body-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1em 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.5em 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 3em 3em;
+  }
+  // @media only screen and (min-width: $screen-lg-min) {
+  //   padding: 0 3em 3em;
+  // }
+  // @media only screen and (min-width: $screen-xl-min) {
+  //   padding: 0 calc(50% - 40em) 5em;
+  // }
 }

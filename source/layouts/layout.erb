@@ -7,17 +7,8 @@
       <%= yield_content :meta %>
     <% end %>
 
-    <%# Typekit Fonts %>
-    <!-- <script src="//use.typekit.net/byb6vzw.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
- -->
     <%# CSS Assets %>
     <%= stylesheet_link_tag :application %>
-
-    <%# CSS Custom %>
-    <% if content_for?(:stylesheets) %>
-      <style><%= yield_content :stylesheets %></style>
-    <% end %>
 
     <%# Favicons %>
     <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="favicon.ico">
@@ -44,7 +35,7 @@
 
     <%# Body Footer %>
     <footer class="body-footer js-body-footer">
-      <%# partial("partials/footer") %>
+      <%= partial("partials/footer") %>
     </footer>
 
     <%# JS Assets %>
