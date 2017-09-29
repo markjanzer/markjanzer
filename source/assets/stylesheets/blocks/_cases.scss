@@ -13,20 +13,6 @@
     padding: 13.125em 0 8.4375em;
   }
 }
-
-
-// .case-header {
-//   padding: 7.5em 0 3em;
-//   @media only screen and (min-width: $screen-sm-min) {
-//     padding: 9.375em 0 5em;
-//   }
-//   @media only screen and (min-width: $screen-md-min) {
-//     padding: 11.25em 0 5em;
-//   }
-//   @media only screen and (min-width: $screen-lg-min) {
-//     padding: 13.125em 0 5em;
-//   }
-// }
 .case-header__text {
   position: relative;
   width: 100%;
@@ -117,16 +103,13 @@
     height: 45em;
   }
 }
+.case-header__background--zahner {
+  background-color: #0a0a0a;
+}
 .case-header__background--imagewall {
-  // @media only screen and (min-width: $screen-md-min) {
-  //   height: 37.5em;
-  // }
   @media only screen and (min-width: 64.0625em) {
     height: 45em;
   }
-}
-.case-header__background--zahner {
-  background-color: #0a0a0a;
 }
 .case-header__foreground {
   position: absolute;
@@ -250,20 +233,22 @@
 // }
 
 // MIT
-.case-header__image--mit-design-lab-below,
-.case-header__image--mit-design-lab-above {
-  position: relative;
-  width: 41.25em;
-  box-shadow: 0 0 2rem rgba(40,38,51,0.25);
-}
-.case-header__image--mit-design-lab-below {
-  z-index: 2;
-}
-.case-header__image--mit-design-lab-above {
-  float: right;
-  margin-top: -46em;
-  z-index: 1;
-}
+// .case-header__image--mit-design-lab-below,
+// .case-header__image--mit-design-lab-above {
+//   position: relative;
+//   width: 41.25em;
+//   box-shadow: 0 0 2rem rgba(40,38,51,0.25);
+// }
+// .case-header__image--mit-design-lab-below {
+//   z-index: 2;
+// }
+// .case-header__image--mit-design-lab-above {
+//   float: right;
+//   margin-top: -46em;
+//   z-index: 1;
+// }
+
+
 .case-header__caption {
   position: relative;
   width: 100%;
@@ -301,7 +286,6 @@
 
 // Case Media
 .case-media {
-  display: flex;
   padding: 0 1em 3em;
   @media only screen and (min-width: $screen-xs-min) {
     padding: 0 1.5em 3em;
@@ -321,12 +305,18 @@
 .case-media-lg {
   // 1280
   @media only screen and (min-width: 64.0625em) {
+    padding: 0 5em 5em;
+  }
+  @media only screen and ($screen-lg-min) {
     padding: 0 calc(50% - 40em) 5em;
   }
 }
 .case-media-md {
   // 1120
   @media only screen and (min-width: 64.0625em) {
+    padding: 0 5em 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
     padding: 0 calc(50% - 35em) 5em;
   }
 }
@@ -334,6 +324,28 @@
   // 960
   @media only screen and (min-width: 64.0625em) {
     padding: 0 calc(50% - 30em) 5em;
+  }
+}
+.case-media--flex {
+  display: flex;
+}
+.case-media--frame {
+  margin-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-bottom: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    margin-bottom: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
 }
 .case-media__image {
@@ -348,10 +360,46 @@
   height: 54.16667%;
   box-shadow: 0 0.25rem 2rem rgba(40,38,51,0.125);
 }
+.case-media__image--background {
+  position: absolute;
+  @media only screen and (min-width: 64.0625em) {
+    padding-top: 9.5em;
+  }
+}
+.case-media__image--foreground {
+  @media only screen and (min-width: 64.0625em) {
+    margin: -1.25em;
+    padding: 0 calc(50% - 35em);
+  }
+}
 .case-media__image--right {
   z-index: -1;
   margin-top: 4.16667%;
   margin-left: -8.33333%;
+}
+.case-media__image--frame-1 {
+  width: calc(100% + 0.625em);
+  margin: -0.3125em;
+  @media only screen and (min-width: $screen-xs-min) {
+    width: calc(100% + 0.75em);
+    margin: -0.375em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    width: calc(100% + 1.5em);
+    margin: -0.75em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    width: calc(100% + 2em);
+    margin: -1em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    width: calc(100% + 2.5em);
+    margin: -1.25em;
+  }
+}
+.case-media__image--frame-2 {
+  width: calc(100% + 4em);
+  margin: -2em;
 }
 
 // Case Text
@@ -367,8 +415,6 @@
     padding: 0 3em;
   }
   @media only screen and (min-width: 64.0625em) {
-    // padding: 0 5em;
-    // padding: 0 calc(50% - 30em);
     max-width: 60em;
     margin: 0 auto;
   }

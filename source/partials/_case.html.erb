@@ -1,0 +1,17 @@
+<li class="page-item">
+  <%# image_tag("work/imagewall/imagewall-hero.jpg", style: "width: 30em;height:30em;border-radius:50%;") %>
+  <article class="page-case" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="page-case__icon">
+      <h5 class="page-case__icon-text">W<%= local_index %></h5>
+    </div>
+    <div class="page-case__text">
+      <div class="page-case__byline<%= " is-venture" if is_venture %>"><%= local_client %></div>
+      <h2 class="page-case__title">
+        <% link_to local_path, class: "page-case__link", itemprop: "url" do %>
+          <span itemprop="name"><%= local_title %></span>
+        <% end %>
+      </h2>
+      <p class="page-case__abstract" itemprop="description"><%= local_description %></p>
+    </div>
+  </article>
+</li>

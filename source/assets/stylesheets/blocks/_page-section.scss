@@ -386,17 +386,65 @@
   }
 }
 
-// // Page Clients
-// .page-section__clients {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin: 0 auto;
-//   max-width: 1280px;
-//   width: 50%;
-// }
-// .page-section__client {
-//   width: 12.5%;
-// }
-// .page-section__client img {
-//   width: 100%;
-// }
+// Page Clients
+.page-section--clients {
+  margin: 3em auto;
+  padding: 3em 1em;
+  background-color: $color-gray-1;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 3em 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    max-width: calc(100% - 3em);
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 3em 0 4.5em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    max-width: calc(100% - 6em);
+    margin-bottom: 7.5em;
+    padding: 5em 0;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: 80em;
+    margin-top: 7.5em;
+  }
+}
+.page-section--clients .page-section__subtitle {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-bottom: 0;
+  }
+}
+.page-clients {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 2em);
+  margin: 0 -1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    width: calc(100% + 3em);
+    margin: 0 -1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 100%;
+    margin: 0;
+    padding: 0 1em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 1.5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 0 2em;
+  }
+}
+.page-client {
+  width: 50%;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 25%;
+  }
+}
+.page-client img {
+  width: 100%;
+}

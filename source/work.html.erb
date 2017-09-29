@@ -23,28 +23,83 @@ itemtype: CollectionPage
   }) %>
 <% end %>
 
-<%# Page Content %>
 <header class="page-header">
+  <div class="page-header__hero">
+    <%= image_tag("circle.png", class: "page-header__hero-circle") %>
+    <%= image_tag("polygon.png", class: "page-header__hero-polygon") %>
+  </div>
   <div class="page-header__text">
-    <h1 class="page-header__title" itemprop="name">Work</h1>
-    <p class="page-header__abstract" itemprop="description">Create and purchase perforated metal walls from an image</p>
-    <div class="page-header__byline">ImageWall</div>
+    <h1 class="page-header__title" itemprop="name"><span class="page-header__primary">Selected Work</h1>
   </div>
 </header>
 
 <section class="page-section">
-  <%= link_to "Zahner — Crafting a Digital Legacy", "/work/zahner" %>
-  <%= link_to "ImageWall — Building tools of the future", "/work/imagewall" %>
-  <%= link_to "MIT Design Lab — Micro Sites, Macro Brand", "/work/mit-design-lab" %>
-  <%= link_to "Monograph — Upgrading Architecture's Back Office", "/work/monograph" %>
-  <div class="page-section__summary">
-
-  </div>
-  <div class="">
-
-  </div>
-  <div class="">
-
+  <ul class="page-list">
+    <%= partial("partials/case", locals: {
+      is_venture: false,
+      local_path: "/work/imagewall/",
+      local_image: "",
+      local_index: 1,
+      local_title: "Building Tools of the Future",
+      local_client: "ImageWall",
+      local_description: "Scaling a 3D webapp to design and purchase custom perforated metal.",
+    }) %>
+    <%= partial("partials/case", locals: {
+      is_venture: false,
+      local_path: "/work/zahner/",
+      local_image: "",
+      local_index: 2,
+      local_title: "Crafting a Digital Legacy",
+      local_client: "A. Zahner Co.",
+      local_description: "A ground up redesign for Zahner's flagship website.",
+    }) %>
+    <%= partial("partials/case", locals: {
+      is_venture: false,
+      local_path: "/work/mit-design-lab/",
+      local_image: "",
+      local_index: 3,
+      local_title: "Micro Sites, Macro Brand",
+      local_client: "MIT Design Lab",
+      local_description: "Developing a digital platform for MIT's new Design Lab.",
+    }) %>
+    <%= partial("partials/case", locals: {
+      is_venture: true,
+      local_path: "/work/monograph/",
+      local_image: "",
+      local_index: 4,
+      local_title: "Upgrading Architecture's Back Office",
+      local_client: "Monograph",
+      local_description: "Project planning and time tracking software for architects.",
+    }) %>    
+  </ul>
+</section>
+<section class="page-section page-section--clients">
+  <h2 class="page-section__subtitle">Selected clients</h2>
+  <div class="page-clients">
+    <div class="page-client">
+      <%= image_tag("clients/imagewall-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/mit-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/flux-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/fsb-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/mass-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/zahner-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/stanley-saitowitz-logo.svg", class: "page-section__image") %>
+    </div>
+    <div class="page-client">
+      <%= image_tag("clients/agenda-logo.svg", class: "page-section__image") %>
+    </div>
   </div>
 </section>
 
