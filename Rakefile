@@ -2,14 +2,9 @@ require "rubygems"
 require "aws-sdk"
 require "fileutils"
 require "httparty"
-require "json"
 
-data = JSON.load(File.read("keys.json"))
-
-# vars stored in keys.json (gitignored)
-website = data["website"]
-bucket = data["bucket"]
-
+website = "v4.dixonandmoe.com"
+bucket = "v4.dixonandmoe.com"
 
 desc "build static pages"
 task :build do
@@ -24,16 +19,24 @@ task :gzip do
   uploads = []
   deletes = []
 
-  changes = ["create  build/", "update  build/"]
+  changes = ["create  build/", "updated  build/"]
   removes = ["remove  build/"]
 
   File.readlines("sync.txt").each do |line|
     if changes.any? { |change| line.include? change }
-      item = line.split("build/").last.strip
+      if line.include?("(")
+        item = line.split("(").first.split("build/").last.strip
+      else
+        item = line.split("build/").last.strip
+      end
       uploads << item.to_s
     elsif removes.any? { |remove| line.include? remove }
       unless line.include? ".gz"
-        item = line.split("build/").last.strip
+        if line.include?("(")
+          item = line.split("(").first.split("build/").last.strip
+        else
+          item = line.split("build/").last.strip
+        end
         deletes << item.to_s
       end
     end
