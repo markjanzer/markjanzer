@@ -1,5 +1,4 @@
-require "builder"
-require "json"
+require "sprockets/es6"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Global Configuration
@@ -24,7 +23,9 @@ set :fonts_dir,  "assets/fonts"
 set :images_dir, "assets/images"
 
 # Use Sprockets for asset pipeline
-activate :sprockets
+activate :sprockets do |s|
+  s.supported_output_extensions << '.es6'
+end
 
 # Pretty URLs
 activate :directory_indexes
