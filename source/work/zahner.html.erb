@@ -32,10 +32,8 @@ itemtype: WebPage
       <div class="case-header__byline">A. Zahner Co.</div>
     </div>
     <figure class="case-header__hero case-header__hero--zahner">
-
       <div class="case-header__background case-header__background--zahner">
-        <!-- loop autoplay -->
-        <video class="case-header__video case-header__video--zahner" preload="auto"  itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+        <video class="case-header__video case-header__video--zahner" preload="auto" mute loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
           <meta itemprop="name" content="Hero video for azahner.com by Tex Jernigan &copy; A. Zahner Co.">
             <source src="<%= asset_url("assets/images/work/zahner/zahner-background.mp4") %>" type="video/mp4" itemprop="url">
         </video>
@@ -53,55 +51,82 @@ itemtype: WebPage
         <h5 class="case-text__title">Background</h5>
         <p class="case-text__description">We helped Zahner take their vast 120+ years of projects, expertise and vision into the digital age with a gorgeous new website and custom CMS.</p>
       </div>
-      <div class="case-text__block" style="padding-bottom: 5rem;width:66.66667%;float:left;">
-        <h5 class="case-text__title">Overview</h5>
-        <p class="case-text__description" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;line-height:1.5">
-          An internationally acclaimed engineering and fabrication company, Zahner is well known in the art and architecture circles for their ability to design the impossible. To reflect this commitment to experimentation and continuing innovation they needed a website that would set them apart, and push their brand into the future.</p>
-        <p class="case-text__description" style="font-size: 20px;font-family:'Akkurat Pro';font-weight:400;line-height:1.5">Working with their team we crafted a digital experience to articulate these mythic qualities, developing a flexible design system to highlight their vast catalog of projects, services, products and people, and providing the tools to easily manage and curate their content moving forward.</p>
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C1</h5>
       </div>
-      <div class="case-text__scope" style="padding-bottom: 5rem;width:16.66667%;float:right;">
+      <div class="case-text__block">
+        <h5 class="case-text__title">Overview</h5>
+        <p class="case-text__description">
+          An internationally acclaimed engineering and fabrication company, Zahner is well known in the art and architecture circles for their ability to design the impossible. To reflect this commitment to experimentation and continuing innovation they needed a website that would set them apart, and push their brand into the future.</p>
+        <p class="case-text__description">Working with their team we crafted a digital experience to articulate these mythic qualities, developing a flexible design system to highlight their vast catalog of projects, services, products and people, and providing the tools to easily manage and curate their content moving forward.</p>
+      </div>
+      <div class="case-text__scope">
         <h5 class="case-text__title">Scope</h5>
-        <p class="case-text__description" style="font-size: 16px;font-family:'Akkurat Pro';font-weight:400;line-height:2">Strategy<br>Design<br>Development<br>Deployment<br>CMS</p>
+        <p class="case-text__description">Strategy<br>Design<br>Development<br>Deployment<br>CMS</p>
       </div>
     </div>
-    <figure class="case-media" style="width:100%">
-      <%= image_tag("work/zahner/zahner-overview-2.png", class: "", style: "width:100%;") %>
+    <figure class="case-media case-media-lg case-media--flex">
+      <%= image_tag("work/zahner/zahner-case-study-01-website--left.jpg", class: "case-media__image case-media__image--left", alt: "Zahner home page") %>
+      <%= image_tag("work/zahner/zahner-case-study-01-website--right.jpg", class: "case-media__image case-media__image--right", alt: "Zahner home page") %>
     </figure>
     <div class="case-text">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C2</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">What's Old is New Again</h5>
         <p class="case-text__description">Embracing the timeless nature of art and architecture, we created an immersive homepage experience that supplements recent works with related quotes, products, materials, and blog posts using a dynamic, visual heirarchy. Custom content algorithms assemble items from the archive based on their shared connections, layering past and present to create a bold, new homepage everytime an update is published.</p>
       </div>
     </div>
-    <figure class="case-media case-media-xl" style="width:100%"> 
-      <%= image_tag("work/zahner/zahner-cards-5.png", class: "", style: "width:100%;") %>
+    <figure class="case-media case-media-xl"> 
+      <%= image_tag("work/zahner/zahner-cards-17.png", class: "", style: "width:100%;") %>
     </figure>
     <div class="case-text">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C3</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">Modular Systems</h5>
         <p class="case-text__description">To manage the breadth of content types and create a common thread throughout the site we developed a responsive and extensible card-based system. Using proportion to guide the heirarchy, every content type was given a particular design—projects featured large, rectangular images; materials a triangular corner visual; blog posts a vertical, text heavy treatment—so when mixed together each would be reconizable.</p>
       </div>
     </div>
-    <figure class="case-media case-media-xl" style="width:100%"> 
-      <%= image_tag("work/zahner/zahner-cards-9.png", class: "", style: "width:100%;") %>
-    </figure>
-    <!-- <figure class="" style="width:100%"> 
+    <!-- <figure class=""> 
       <%= image_tag("work/zahner/zahner-styleguide.png", class: "", style: "width:100%;") %>
-    </figure> -->
+    </figure>
     <div class="case-text">
       <div class="case-text__block">
         <h5 class="case-text__title">Flexible Styleguide</h5>
         <p class="case-text__description">Introducing a set of consistent, replicable styles to complement the modular card system was a key part of our design strategy. Defining base and accent colors, typography, and line weights established brand continuity across the website's 400+ pages and tightly integrated on-page content with CTAs (calls to action) to drive engagement and lead generation.</p>
       </div>
-    </div>
-    <figure class="" style="width:100%;"> 
-      <%= image_tag("work/zahner/zahner-command-center-5.png", class: "", style: "width:100%;") %>
+    </div> -->
+    <figure class="case-media case-media-xl"> 
+      <%= image_tag("work/zahner/zahner-command-center-14.png", class: "", style: "width:100%;") %>
     </figure>
     <div class="case-text" style="">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C4</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">Digital Command Center</h5>
         <p class="case-text__description">A custom content management system underpinning the site's massive archive</p>
       </div>
     </div>
   </section>
+  <footer class="case-footer">
+    <h3 class="case-footer__title">Up next</h3>
+    <article class="case-card" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="case-card__icon">
+        <h5 class="case-card__icon-text">W3</h5>
+      </div>
+      <div class="case-card__text">
+        <div class="case-card__byline">MIT Design Lab</div>
+        <h2 class="case-card__title">
+          <% link_to "/work/mit-design-lab/", class: "case-card__link", itemprop: "url" do %>
+            <span itemprop="name">Micro Sites, Macro Brand</span>
+          <% end %>
+        </h2>
+        <p class="case-card__abstract" itemprop="description">Developing a digital platform for MIT's new Design Lab</p>
+      </div>
+    </article>
+  </footer>
 </article>

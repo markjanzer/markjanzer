@@ -51,6 +51,9 @@ itemtype: WebPage
         <h5 class="case-text__title">Background</h5>
         <p class="case-text__description">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
       </div>
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C1</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">Overview</h5>
         <p class="case-text__description">We worked with the Design Lab's leadership team to create and deploy a digital strategy that afforded the flexibility of their current system—one-off websites for every research project—while opening up collaboration and establishing a clear overarching brand.</p>
@@ -61,7 +64,7 @@ itemtype: WebPage
       </div>
     </div>
 
-    <div class="case-media case-media-md case-media--flex">
+    <div class="case-media case-media-lg case-media--flex">
       <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-01-website--left.jpg", class: "case-media__image case-media__image--left", alt: "MIT Design Lab home page") %>
       <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-01-website--right.jpg", class: "case-media__image case-media__image--right", alt: "MIT Design Lab projects page") %>
     </div>
@@ -71,6 +74,9 @@ itemtype: WebPage
       <%= image_tag("work/mit-design-lab/mit-design-lab-cover.jpg", class: "case-media__image", alt: "") %>
     </figure> -->
     <div class="case-text">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C2</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">A New Digital Hub</h5>
         <p class="case-text__description">Managing projects across their distributed setup of one-off WordPress websites had become a major bottleneck, especially for project leads working on multiple research intiatives. To streamline the collaborative process we built a custom web platform that gave every team member permissioned access to their projects from a single login, minimizing redundancy and fostering communication.</p>
@@ -80,15 +86,21 @@ itemtype: WebPage
       <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-03-layout-taxonomies.jpg", class: "case-media__image", alt: "", itemprop: "url") %>
     </figure>
     <div class="case-text">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C3</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">Layout Taxonomies</h5>
         <p class="case-text__description">To maintain brand contintinuity between the main website and the project micro-sites we prototyped with the Lab's team various layout taxonomies to narrow down the default templates. Following multiple elimination rounds we distilled the handful of selected templates down to their core components and proceeded to develop drag-n-drop content modules that enabled further variation within the layouts themselves.</p>
       </div>
     </div>
-    <figure class="case-media case-media-md" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <figure class="case-media case-media-lg" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-04-micro-site-editor.png", class: "case-media__image case-media__image--frame-1", alt: "", itemprop: "url") %>
     </figure>
     <div class="case-text">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C4</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">Micro-site Editor</h5>
         <p class="case-text__description">In addition to the main website's administrative area, we developed a custom space for creating and managing the research micro-sites. Live-previewing of micro-site customizations like default layout, colors, and content was enthusiastically received by the Lab's team, as was the ability to manage everything from a single URL on their MIT domain.</p>
@@ -101,6 +113,9 @@ itemtype: WebPage
       </figcaption>
     </figure>
     <div class="case-text">
+      <div class="case-text__numeral">
+        <h5 class="case-text__numeral-text">C5</h5>
+      </div>
       <div class="case-text__block">
         <h5 class="case-text__title">Template Taxonomies</h5>
         <p class="case-text__description">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
@@ -108,6 +123,20 @@ itemtype: WebPage
     </div>
   </section>
   <footer class="case-footer">
-
+    <h3 class="case-footer__title">Up next</h3>
+    <article class="case-card" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="case-card__icon">
+        <h5 class="case-card__icon-text">W1</h5>
+      </div>
+      <div class="case-card__text">
+        <div class="case-card__byline">ImageWall</div>
+        <h2 class="case-card__title">
+          <% link_to "/work/imagewall/", class: "case-card__link", itemprop: "url" do %>
+            <span itemprop="name">Building Tools of the Future</span>
+          <% end %>
+        </h2>
+        <p class="case-card__abstract" itemprop="description">Scaling a 3D webapp to design and purchase custom perforated metal.</p>
+      </div>
+    </article>
   </footer>
 </article>

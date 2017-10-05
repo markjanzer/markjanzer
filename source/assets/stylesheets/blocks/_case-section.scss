@@ -1,0 +1,276 @@
+// Case Section
+.case-section {
+
+}
+
+// Case Media
+.case-media {
+  padding: 0 1em 3em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.5em 3em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 3em 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 3em 7.5em;
+  }
+}
+.case-media-xl {
+  // full bleed
+  width: 100%;
+  padding: 0 0 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 0 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 0 7.5em;
+  }
+}
+.case-media-lg {
+  // 1280
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 5em 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 calc(50% - 40em) 7.5em;
+  }
+}
+.case-media-md {
+  // 1120
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 5em 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 calc(50% - 33.33333em) 7.5em;
+  }
+}
+.case-media-sm {
+  // 960
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 calc(50% - 33.33333em) 7.5em;
+  }
+}
+.case-media--flex {
+  display: flex;
+}
+.case-media--frame {
+  margin-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-bottom: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    margin-bottom: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+.case-media__image {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.case-media__image--left,
+.case-media__image--right {
+  width: 54.16667%;
+  height: 54.16667%;
+  box-shadow: 0 0.25rem 2rem rgba(40,38,51,0.125);
+}
+.case-media__image--background {
+  position: absolute;
+  @media only screen and (min-width: 64.0625em) {
+    padding-top: 9.5em;
+  }
+}
+.case-media__image--foreground {
+  @media only screen and (min-width: 64.0625em) {
+    margin: -1.25em;
+    padding: 0 calc(50% - 35em);
+  }
+}
+.case-media__image--right {
+  z-index: -1;
+  margin-top: 4.16667%;
+  margin-left: -8.33333%;
+}
+.case-media__image--frame-1 {
+  width: calc(100% + 0.625em);
+  margin: -0.3125em;
+  @media only screen and (min-width: $screen-xs-min) {
+    width: calc(100% + 0.75em);
+    margin: -0.375em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    width: calc(100% + 1.5em);
+    margin: -0.75em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    width: calc(100% + 2em);
+    margin: -1em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    width: calc(100% + 2.5em);
+    margin: -1.25em;
+  }
+}
+.case-media__image--frame-2 {
+  width: calc(100% + 4em);
+  margin: -2em;
+}
+
+// Case Text
+// .case-text {
+//   position: relative;
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding: 0 1em;
+//   @media only screen and (min-width: $screen-xs-min) {
+//     padding: 0 1.5em;
+//   }
+//   @media only screen and (min-width: $screen-sm-min) {
+//     padding: 0 3em;
+//   }
+//   @media only screen and (min-width: 64.0625em) {
+//     max-width: 60em;
+//     margin: 0 auto;
+//     padding: 0;
+//   }
+//   @media only screen and (min-width: $screen-lg-min) {
+//     max-width: 66.66667em;
+//   }
+// }
+.case-text {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 3em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 0 calc(50% - 40em);
+  }
+}
+.case-text__numeral {
+  position: relative;
+  display: none;
+  width: 8.33333%;
+  margin-left: 8.33333%;
+  @media only screen and (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+.case-text__numeral-text {
+  margin: 1.6875rem 0 0;
+  font-size: 10 / 16 * 1rem;
+  font-family: $font-family-3;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  @media only screen and (min-width: $screen-sm-min) {
+    margin: 2rem 0 0;
+    font-size: 10 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 12 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    margin: 2.375rem 0 0;
+  }
+}
+
+
+.case-text__summary {
+  width: 100%;
+  padding-bottom: 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-bottom: 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    margin-right: 8.33333%;
+  }
+}
+.case-text__block {
+  width: 100%;
+  padding-bottom: 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 66.66667%;
+    padding-bottom: 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    // width: 58.33333%;
+    padding-bottom: 7.5em;
+    width: 50%;
+  }
+}
+.case-text__scope {
+  display: none;
+  width: 16.66667%;
+  margin-left: 16.66667%;
+  padding-bottom: 5em;
+  @media only screen and (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+.case-text__title {
+  margin: 0;
+  color: $color-gray-3;
+  font-size: 12 / 16 * 1rem;
+  font-family: $font-family-3;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+.case-text__description {
+  margin: 1rem 0 0;
+  font-size: 16 / 16 * 1rem;
+  line-height: 1.5;
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 20 / 16 * 1rem;
+  }
+}
+.case-text__summary .case-text__description {
+  font-size: 24 / 16 * 1rem;
+  font-family: $font-family-1;
+  line-height: 1.25;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 28 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 36 / 16 * 1rem;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    font-size: 40 / 16 * 1rem;
+  }
+}
+.case-text__scope .case-text__description {
+  margin: 0.75rem 0 0;
+  font-size: 12 / 16 * 1rem;
+  line-height: 2;
+  @media only screen and (min-width: $screen-sm-min) {
+    // font-size: 16 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 16 / 16 * 1rem;
+  }
+}

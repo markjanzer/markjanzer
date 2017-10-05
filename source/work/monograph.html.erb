@@ -1,0 +1,56 @@
+---
+itemtype: WebPage
+---
+
+<%# Meta Tags %>
+<% content_for :meta do %>
+  <%= partial("partials/head/meta_tags", locals: {
+    local_path:        "/ventures/monograph/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-monograph-hero.jpg",
+    local_title:       "Monograph | Ventures — Dixon & Moe",
+    local_description: "Monograph is a business dashboard for architecture and engineering firms to track and analyze their financial and operational performance."
+  }) %>
+<% end %>
+
+<%# Breadcrumbs %>
+<% content_for :breadcrumbs do %>
+  <%= partial("partials/breadcrumbs", locals: {
+    local_paths: [
+      { url: "#{config.base_url}/ventures/", title: "Ventures", type: "CollectionPage" },
+      { url: "#{config.base_url}/ventures/monograph/", title: "Monograph", type: "WebPage" }
+    ]
+  }) %>
+<% end %>
+
+<article class="case" itemscope itemtype="https://schema.org/CreativeWork">
+  <header class="case-header">
+    <div class="case-header__text">
+      <h1 class="case-header__title" itemprop="name">Upgrading Architecture's Back Office</h1>
+      <p class="case-header__abstract" itemprop="description">Project planning and time tracking software for architects.</p>
+      <div class="case-header__byline is-venture">Monograph</div>
+    </div>
+    <figure class="case-header__hero case-header__hero--monograph" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+      <div class="case-header__background case-header__background--monograph">
+        <video class="case-header__video case-header__video--monograph" preload="auto" loop muted autoplay poster="<%= asset_url("assets/images/work/monograph-background.jpg") %>">
+          <meta itemprop="name" content="The Ministry of Information from Terry Gilliam’s 1985 film Brazil.">
+            <source src="<%= asset_url("assets/images/work/monograph/monograph-background.mp4") %>" type="video/mp4" itemprop="url">
+        </video>
+      </div>
+      <figcaption class="case-header__caption">
+        <span itemprop="caption">The Ministry of Information from <a href="https://en.wikipedia.org/wiki/Brazil_(1985_film)" target="_blank" title="Brazil (1985 film) — Wikipedia">Terry Gilliam’s 1985 film Brazil</a></span>
+        <span class="case-header__credit">Copyright Universal Pictures / 20th Century Fox.</span>
+      </figcaption>
+    </figure>
+  </header>
+
+  <section class="case-section">
+   <div class="case-text">
+      <div class="case-text__summary">
+        <h5 class="case-text__title">Overview</h5>
+        <p class="case-text__description">Monograph is a business dashboard for architecture and engineering firms to track and analyze their financial and operational performance.</p>
+      </div>
+    </div>
+  </section>
+</article>
