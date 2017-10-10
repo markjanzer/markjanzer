@@ -5,6 +5,7 @@
 
 // Case Media
 .case-media {
+  width: 100%;
   padding: 0 1em 3em;
   @media only screen and (min-width: $screen-xs-min) {
     padding: 0 1.5em 3em;
@@ -12,13 +13,8 @@
   @media only screen and (min-width: $screen-sm-min) {
     padding: 0 3em 5em;
   }
-  @media only screen and (min-width: $screen-lg-min) {
-    padding: 0 3em 7.5em;
-  }
 }
 .case-media-xl {
-  // full bleed
-  width: 100%;
   padding: 0 0 3em;
   @media only screen and (min-width: $screen-sm-min) {
     padding: 0 0 5em;
@@ -28,16 +24,14 @@
   }
 }
 .case-media-lg {
-  // 1280
   @media only screen and (min-width: 64.0625em) {
-    padding: 0 5em 5em;
+    padding: 0 5em 7.5em;
   }
   @media only screen and (min-width: $screen-lg-min) {
     padding: 0 calc(50% - 40em) 7.5em;
   }
 }
 .case-media-md {
-  // 1120
   @media only screen and (min-width: 64.0625em) {
     padding: 0 5em 5em;
   }
@@ -45,12 +39,111 @@
     padding: 0 calc(50% - 33.33333em) 7.5em;
   }
 }
-.case-media-sm {
-  // 960
-  @media only screen and (min-width: 64.0625em) {
-    padding: 0 calc(50% - 33.33333em) 7.5em;
+.case-media--scale {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+.case-media--scale .case-media__block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+// ImageWall
+// .case-media--imagewall-02 .case-media__image {
+//   border-radius: 0.25em;
+// }
+.case-media--imagewall-03 .case-media__image {
+  flex: 0 1 auto;
+  width: 200%;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 125%;
   }
 }
+.case-media--imagewall-04 .case-media__block--below {
+  position: absolute;
+}
+.case-media--imagewall-04 .case-media__block--above {
+  padding: 3em 0.875em 0;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 3em 1.25em 0;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 5em calc(8.33333% + 2em) 0;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    padding: 7.5em calc(8.33333% + 2em) 0;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    padding: 10em 5em 0;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    margin-bottom: -1em;
+    padding: 10em calc(50% - 34.33333em) 0;
+  }
+}
+.case-media--imagewall-06 .case-media__block--below {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-top: 3.75em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    padding-top: 5em;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    padding-top: 7.5em;
+  }
+}
+.case-media--imagewall-06 .case-media__block--below .case-media__image {
+  width: 112.5%;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    width: 112.5%;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    width: 100%;
+  }
+}
+.case-media--imagewall-06 .case-media__block--above {
+  padding: 0 0.875em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding: 0 1.25em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 0 calc(8.33333% + 2em);
+  }
+  @media only screen and (min-width: 64.0625em) {
+    padding: 0 5em;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    padding: 0 calc(50% - 34.33333em);
+  }
+}
+
+
+// .case-media__image--background {
+//   position: absolute;
+//   @media only screen and (min-width: 64.0625em) {
+//     padding-top: 9.5em;
+//   }
+// }
+// .case-media__image--foreground {
+//   @media only screen and (min-width: 64.0625em) {
+//     margin: -1.25em;
+//     padding: 0 calc(50% - 35em);
+//   }
+// }
+
 .case-media--flex {
   display: flex;
 }
@@ -73,35 +166,26 @@
     padding-bottom: 5em;
   }
 }
+.case-media__block,
 .case-media__image {
   position: relative;
   display: block;
   width: 100%;
   margin: 0 auto;
 }
-.case-media__image--left,
-.case-media__image--right {
+.case-media__block--left,
+.case-media__block--right {
   width: 54.16667%;
   height: 54.16667%;
   box-shadow: 0 0.25rem 2rem rgba(40,38,51,0.125);
 }
-.case-media__image--background {
-  position: absolute;
-  @media only screen and (min-width: 64.0625em) {
-    padding-top: 9.5em;
-  }
-}
-.case-media__image--foreground {
-  @media only screen and (min-width: 64.0625em) {
-    margin: -1.25em;
-    padding: 0 calc(50% - 35em);
-  }
-}
-.case-media__image--right {
+.case-media__block--right {
   z-index: -1;
   margin-top: 4.16667%;
   margin-left: -8.33333%;
 }
+
+
 .case-media__image--frame-1 {
   width: calc(100% + 0.625em);
   margin: -0.3125em;

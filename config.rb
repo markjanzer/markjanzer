@@ -52,7 +52,8 @@ configure :build do
   config[:base_url] = "https://dixonandmoe.com"
 
   # Enable cache buster
-  activate :asset_hash, exts: %w(.js .css)
+  activate :asset_hash
+  # , exts: %w(.js .css)
 
   # Minify CSS on build
   activate :minify_css

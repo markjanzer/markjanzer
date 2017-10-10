@@ -35,7 +35,7 @@ itemtype: WebPage
       <div class="case-header__background case-header__background--imagewall">
         <video class="case-header__video case-header__video--imagewall" preload="auto" mute loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject" poster="">
           <meta itemprop="name" content="ImageWall browser-based 3D designer">
-          <source src="<%= asset_url("assets/images/work/imagewall/imagewall-background.mp4") %>" type="video/mp4" itemprop="url">
+          <source src="<%= asset_url("assets/images/work/imagewall/imagewall-case-study-01-hero.mp4") %>" type="video/mp4" itemprop="url">
         </video>
         <%= image_tag("work/imagewall/imagewall-case-study-01-hero.gif", class: "case-header__mobile", alt: "ImageWall browser-based 3D designer") %>
       </div>
@@ -64,10 +64,22 @@ itemtype: WebPage
         <p class="case-text__description">Strategy<br>Prototyping<br>UI/UX<br>Design<br>Development</p>
       </div>
     </div>
-    <div class="case-media case-media-lg case-media--flex">
-      <%= image_tag("work/imagewall/imagewall-case-study-02-website--left.jpg", class: "case-media__image case-media__image--left", alt: "ImageWall home page") %>
-      <%= image_tag("work/imagewall/imagewall-case-study-02-website--right.jpg", class: "case-media__image case-media__image--right", alt: "ImageWall 3D interactive designer page") %>
-    </div>
+    <figure class="case-media case-media-lg case-media--flex case-media--imagewall-02">
+      <div class="case-media__block case-media__block--left" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall home page",
+          image_src: "work/imagewall/imagewall-case-study-02-website--left.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+      <div class="case-media__block case-media__block--right" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall designer page",
+          image_src: "work/imagewall/imagewall-case-study-02-website--right.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+    </figure>
     <div class="case-text">
       <div class="case-text__numeral">
         <h5 class="case-text__numeral-text">C2</h5>
@@ -77,9 +89,15 @@ itemtype: WebPage
         <p class="case-text__description">With a short timeline we elected to split into groups and work in tandem. Part of our team tackled the marketing website, CMS and user authentication while the rest jumped straight into prototyping the 3D webapp's UI and customization interface. We held weekly video chats with the ImageWall team to discuss design decisions and feedback on the working prototypes, folding new ideas and directions into the following week's mockups.</p>
       </div>
     </div>
-    <div class="case-media case-media-xl">
-      <%= image_tag("work/imagewall/imagewall-case-study-03-ui-studies-4.png", class: "case-media__image case-media__image--frame-1", alt: "ImageWall 3D interactive designer UI studies") %>
-    </div>
+    <figure class="case-media case-media-xl case-media--scale case-media--imagewall-03">
+      <div class="case-media__block" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall interactive 3D designer UI studies",
+          image_src: "work/imagewall/imagewall-case-study-03-ui-studies.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+    </figure>
     <div class="case-text">
       <div class="case-text__numeral">
         <h5 class="case-text__numeral-text">C3</h5>
@@ -89,15 +107,22 @@ itemtype: WebPage
         <p class="case-text__description">Creating an intuitive user experience was a priority; the further a customer could take their design to completion the less they would need to engage with the sales team. We drilled down into every detail, iterating and testing interactive prototypes with users and teammates unfamiliar with the project to understand behavior patterns and common questions.</p>
       </div>
     </div>
-<!--     <div class="case-media case-media-lg">
-      <%= image_tag("work/imagewall/imagewall-case-study-04-customized-metal-panels.jpg", class: "case-media__image", alt: "ImageWall customized metal panels") %>
-    </div> -->
-<!--     <div class="case-media case-media-md">
-      <%= image_tag("work/imagewall/imagewall-case-study-04-customized-metal-panels-8.jpg", class: "case-media__image", alt: "ImageWall customized metal panels") %>
-    </div> -->
-    <div class="case-media case-media-xl">
-      <%= image_tag("work/imagewall/imagewall-case-study-04-customized-metal-panels-10.png", class: "case-media__image", alt: "ImageWall customized metal panels") %>
-    </div>
+    <figure class="case-media case-media-xl case-media--imagewall-04">
+      <div class="case-media__block case-media__block--below" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall customized metal panels",
+          image_src: "work/imagewall/imagewall-case-study-04-customized-panels--below.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+      <div class="case-media__block case-media__block--above" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall 3D designer interface",
+          image_src: "work/imagewall/imagewall-case-study-04-customized-panels--above.png",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+    </figure>
     <div class="case-text">
       <div class="case-text__numeral">
         <h5 class="case-text__numeral-text">C4</h5>
@@ -107,8 +132,14 @@ itemtype: WebPage
         <p class="case-text__description">The editor's final layout was informed by a desire to make sure every customization was, at most, a single click away. Grouping similar options and surfacing the most important ones let us create an elegant heirarchy that guided user's actions and exposed the power of ImageWall's editor as quickly as possible. Live pricing updates offer instant feedback and key users into the next part of their journey: payment.</p>
       </div>
     </div>
-    <figure class="case-media case-media-lg">
-      <%= image_tag("work/imagewall/imagewall-case-study-05-payment-flow.jpg", class: "case-media__image", alt: "ImageWall payment flow", style: "margin:0 -1em") %>
+    <figure class="case-media case-media-lg case-media--imagewall-05">
+      <div class="case-media__block" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall payment flow",
+          image_src: "work/imagewall/imagewall-case-study-05-payment-flow.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
     </figure>
     <div class="case-text">
       <div class="case-text__numeral">
@@ -119,10 +150,22 @@ itemtype: WebPage
         <p class="case-text__description">We opted to integrate two purchasing methods: credit card payments via Stripe, and a more traditional emailed invoice. Upon purchase completion the new system programmatically generates a PDF invoice and emails it to the customer along with a service agreement–offloading the manual followup process to save time and increase reliability.</p>
       </div>
     </div>
-    <div class="case-media case-media-xl">
-      <%= image_tag("work/imagewall/imagewall-case-study-06-platform--background.jpg", class: "case-media__image case-media__image--background", alt: "Pearl Marriott Facade (photo copyright Ben Coffman") %>
-      <%= image_tag("work/imagewall/imagewall-case-study-06-platform--foreground.png", class: "case-media__image case-media__image--foreground", alt: "ImageWall project page, admin and login screens") %>
-    </div>
+    <figure class="case-media case-media-xl case-media--imagewall-06">
+      <div class="case-media__block case-media__block--below" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "Pearl Marriott Facade (photo copyright Ben Coffman)",
+          image_src: "work/imagewall/imagewall-case-study-06-platform--below.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+      <div class="case-media__block case-media__block--above" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "ImageWall project page, admin and login screens",
+          image_src: "work/imagewall/imagewall-case-study-06-platform--above.png",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+    </figure>
     <div class="case-text">
       <div class="case-text__numeral">
         <h5 class="case-text__numeral-text">C6</h5>
