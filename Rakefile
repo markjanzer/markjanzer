@@ -69,7 +69,7 @@ task :sync do
   puts "[INIT] >>>> Syncing with S3"
 
   # sync css / js files
-  system "aws --profile=dixonandmoe s3 sync gzip/ s3://#{bucket}/ --region us-west-1 --acl=public-read --delete --cache-control='max-age=2629000' --content-encoding='gzip' --exclude '*' --include '*.css' --exclude 'assets/fonts/*' --include '*.js'"
+  system "aws --profile=dixonandmoe s3 sync gzip/ s3://#{bucket}/ --region us-west-1 --acl=public-read --delete --cache-control='max-age=2629000' --content-encoding='gzip' --exclude '*' --include '*.css' --include '*.js'"
 
   # sync html / xml files
   system "aws --profile=dixonandmoe s3 sync gzip/ s3://#{bucket}/ --region us-west-1 --acl=public-read --delete --cache-control='max-age=0, no-cache' --content-encoding='gzip' --exclude '*' --include '*.html' --include '*.xml' --include '*.txt'"

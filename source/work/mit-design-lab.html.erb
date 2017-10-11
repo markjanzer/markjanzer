@@ -34,14 +34,11 @@ itemtype: WebPage
     <figure class="case-header__hero case-header__hero--mit-design-lab" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
       <div class="case-header__background case-header__background--mit-design-lab">
         <video class="case-header__video case-header__video--mit-design-lab" preload="auto" loop autoplay>
-          <meta itemprop="name" content="">
-          <source src="<%= asset_url("assets/images/work/mit-design-lab/mit-design-lab-background.mp4") %>" type="video/mp4" itemprop="url">
+          <meta itemprop="name" content="MIT Design Lab">
+          <source src="<%= asset_url("assets/images/work/mit-design-lab/mit-design-lab-case-study-01-hero.mp4") %>" type="video/mp4" itemprop="url">
         </video>
+        <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-01-hero.gif", class: "case-header__mobile", alt: "MIT Design Lab") %>
       </div>
-      <!-- <div class="case-header__foreground case-header__foreground--mit-design-lab">
-        <%= image_tag("work/mit-design-lab/mit-design-lab-foreground--below.jpg", class: "case-header__image case-header__image--mit-design-lab-below") %>
-        <%= image_tag("work/mit-design-lab/mit-design-lab-foreground--above.jpg", class: "case-header__image case-header__image--mit-design-lab-above") %>
-      </div> -->
     </figure>
   </header>
 
@@ -63,16 +60,22 @@ itemtype: WebPage
         <p class="case-text__description">Strategy<br>Design<br>Development<br>CMS</p>
       </div>
     </div>
-
-    <div class="case-media case-media-lg case-media--flex">
-      <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-01-website--left.jpg", class: "case-media__image case-media__image--left", alt: "MIT Design Lab home page") %>
-      <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-01-website--right.jpg", class: "case-media__image case-media__image--right", alt: "MIT Design Lab projects page") %>
-    </div>
-
-
-    <!-- <figure class="case-media" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <%= image_tag("work/mit-design-lab/mit-design-lab-cover.jpg", class: "case-media__image", alt: "") %>
-    </figure> -->
+    <figure class="case-media case-media-lg case-media--flex case-media--mit-design-lab-02">
+      <div class="case-media__block case-media__block--left" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "MIT Design Lab Home Page",
+          image_src: "work/mit-design-lab/mit-design-lab-case-study-02-website--left.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+      <div class="case-media__block case-media__block--right" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "MIT Design Lab Projects Page",
+          image_src: "work/mit-design-lab/mit-design-lab-case-study-02-website--right.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+    </figure>
     <div class="case-text">
       <div class="case-text__numeral">
         <h5 class="case-text__numeral-text">C2</h5>
@@ -82,8 +85,14 @@ itemtype: WebPage
         <p class="case-text__description">Managing projects across their distributed setup of one-off WordPress websites had become a major bottleneck, especially for project leads working on multiple research intiatives. To streamline the collaborative process we built a custom web platform that gave every team member permissioned access to their projects from a single login, minimizing redundancy and fostering communication.</p>
       </div>
     </div>
-    <figure class="case-media case-media-sm" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-03-layout-taxonomies.jpg", class: "case-media__image", alt: "", itemprop: "url") %>
+    <figure class="case-media case-media-md case-media--mit-design-lab-03">
+      <div class="case-media__block" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "MIT Design Lab Layout Taxonomies",
+          image_src: "work/mit-design-lab/mit-design-lab-case-study-03-layout-taxonomies.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
     </figure>
     <div class="case-text">
       <div class="case-text__numeral">
@@ -94,8 +103,14 @@ itemtype: WebPage
         <p class="case-text__description">To maintain brand contintinuity between the main website and the project micro-sites we prototyped with the Lab's team various layout taxonomies to narrow down the default templates. Following multiple elimination rounds we distilled the handful of selected templates down to their core components and proceeded to develop drag-n-drop content modules that enabled further variation within the layouts themselves.</p>
       </div>
     </div>
-    <figure class="case-media case-media-lg" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <%= image_tag("work/mit-design-lab/mit-design-lab-case-study-04-micro-site-editor.png", class: "case-media__image case-media__image--frame-1", alt: "", itemprop: "url") %>
+    <figure class="case-media case-media-lg case-media--mit-design-lab-04">
+      <div class="case-media__block" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "MIT Design Lab Micro-site Editor",
+          image_src: "work/mit-design-lab/mit-design-lab-case-study-04-micro-site-editor.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
     </figure>
     <div class="case-text">
       <div class="case-text__numeral">
@@ -106,19 +121,22 @@ itemtype: WebPage
         <p class="case-text__description">In addition to the main website's administrative area, we developed a custom space for creating and managing the research micro-sites. Live-previewing of micro-site customizations like default layout, colors, and content was enthusiastically received by the Lab's team, as was the ability to manage everything from a single URL on their MIT domain.</p>
       </div>
     </div>
-    <figure class="case-media case-media-xl" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <%= image_tag("work/mit-design-lab/mit-design-lab-templates.jpg", class: "case-media__image", alt: "", itemprop: "url") %>
-      <figcaption class="case-header__caption">
-        <span itemprop="caption">Tangible Map micro site.</span>
-      </figcaption>
+    <figure class="case-media case-media-xl case-media--mit-design-lab-05">
+      <div class="case-media__block" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "MIT Design Lab Tangible Map Micro-site",
+          image_src: "work/mit-design-lab/mit-design-lab-case-study-05-tangible-map-micro-site.png",
+          image_class: "case-media__image"
+        }) %>
+      </div>
     </figure>
     <div class="case-text">
       <div class="case-text__numeral">
         <h5 class="case-text__numeral-text">C5</h5>
       </div>
       <div class="case-text__block">
-        <h5 class="case-text__title">Template Taxonomies</h5>
-        <p class="case-text__description">A diverse collection of multidisciplinary research groups, MIT’s Design Lab needed a new digital hub to support and connect their initiatives.</p>
+        <h5 class="case-text__title">Up(load) and Away</h5>
+        <p class="case-text__description">The result is a platform that enables simple cross-project collaboration by different groups, cataloging the output under a unified brand and providing the Design Lab with a digital presence to match their cutting edge research. Already the lab has create over 60 projects and 20 micro-sites, and we're very excited (and greatful) to be a part of the platform's growth.</p>
       </div>
     </div>
   </section>

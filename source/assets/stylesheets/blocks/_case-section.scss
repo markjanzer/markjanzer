@@ -33,7 +33,7 @@
 }
 .case-media-md {
   @media only screen and (min-width: 64.0625em) {
-    padding: 0 5em 5em;
+    padding: 0 calc(8.33333% + 2.5em) 5em;
   }
   @media only screen and (min-width: $screen-lg-min) {
     padding: 0 calc(50% - 33.33333em) 7.5em;
@@ -53,9 +53,6 @@
 }
 
 // ImageWall
-// .case-media--imagewall-02 .case-media__image {
-//   border-radius: 0.25em;
-// }
 .case-media--imagewall-03 .case-media__image {
   flex: 0 1 auto;
   width: 200%;
@@ -72,17 +69,20 @@
     padding: 3em 1.25em 0;
   }
   @media only screen and (min-width: $screen-sm-min) {
+    margin-bottom: -1em;
     padding: 5em calc(8.33333% + 2em) 0;
   }
   @media only screen and (min-width: $screen-md-min) {
     padding: 7.5em calc(8.33333% + 2em) 0;
   }
   @media only screen and (min-width: 64.0625em) {
-    padding: 10em 5em 0;
+    padding: 10em calc(8.33333% + 1.5em) 0;
   }
   @media only screen and (min-width: $screen-lg-min) {
-    margin-bottom: -1em;
     padding: 10em calc(50% - 34.33333em) 0;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 17.5em calc(50% - 40em) 0;
   }
 }
 .case-media--imagewall-06 .case-media__block--below {
@@ -91,15 +91,20 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 3em;
+  margin-top: 3em;
   @media only screen and (min-width: $screen-sm-min) {
-    padding-top: 3.75em;
+    margin-top: 3.75em;
   }
   @media only screen and (min-width: $screen-md-min) {
-    padding-top: 5em;
+    margin-top: 5em;
   }
   @media only screen and (min-width: 64.0625em) {
-    padding-top: 7.5em;
+    margin-top: 7.5em;
+  }
+  @media only screen and (min-width: $screen-xl-min) {
+    align-items: flex-end;
+    max-height: 54.375em;
+    margin-top: 10em;
   }
 }
 .case-media--imagewall-06 .case-media__block--below .case-media__image {
@@ -128,8 +133,25 @@
   @media only screen and (min-width: $screen-lg-min) {
     padding: 0 calc(50% - 34.33333em);
   }
+  @media only screen and (min-width: $screen-xl-min) {
+    padding: 0 calc(50% - 40em);
+  }
 }
 
+// MIT
+.case-media--mit-design-lab-05 .case-media__block {
+  padding: 3em 0;
+  background-color: #000000;
+  @media only screen and (min-width: $screen-sm-min) {
+    padding: 5em 0;
+  }
+  @media only screen and (min-width: 64.0625em) {
+    padding: 7.5em 0;
+  }
+  // @media only screen and (min-width: $screen-lg-min) {
+  //   padding: 0 calc(50% - 34.33333em);
+  // }
+}
 
 // .case-media__image--background {
 //   position: absolute;
