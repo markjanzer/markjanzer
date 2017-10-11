@@ -33,16 +33,12 @@ itemtype: WebPage
     </div>
     <figure class="case-header__hero case-header__hero--zahner">
       <div class="case-header__background case-header__background--zahner">
-        <video class="case-header__video case-header__video--zahner" preload="auto" mute loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-          <meta itemprop="name" content="Hero video for azahner.com by Tex Jernigan &copy; A. Zahner Co.">
-            <source src="<%= asset_url("assets/images/work/zahner/zahner-background.mp4") %>" type="video/mp4" itemprop="url">
+        <video class="case-header__video case-header__video--zahner" preload="auto" mute loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject" poster="<%= asset_url("assets/images/work/zahner/zahner-case-study-01-hero-poster.jpg") %>">
+          <meta itemprop="name" content="A. Zahner Co.">
+            <source src="<%= asset_url("assets/images/work/zahner/zahner-case-study-01-hero.mp4") %>" type="video/mp4" itemprop="url">
         </video>
       </div>
-
-      <!-- <div class="case-header__foreground case-header__foreground--zahner">
-        <%= image_tag("work/zahner/zahner-foreground--below.jpg", class: "case-header__image case-header__image--zahner-below") %>
-        <%= image_tag("work/zahner/zahner-foreground--above.png", class: "case-header__image case-header__image--zahner-above") %>
-      </div> -->
+      <%= image_tag("work/zahner/zahner-case-study-01-hero.gif", class: "case-header__mobile", alt: "A. Zahner Co.") %>
     </figure>
   </header>
   <section class="case-section">
@@ -65,9 +61,21 @@ itemtype: WebPage
         <p class="case-text__description">Strategy<br>Design<br>Development<br>Deployment<br>CMS</p>
       </div>
     </div>
-    <figure class="case-media case-media-lg case-media--flex">
-      <%= image_tag("work/zahner/zahner-case-study-01-website--left.jpg", class: "case-media__image case-media__image--left", alt: "Zahner home page") %>
-      <%= image_tag("work/zahner/zahner-case-study-01-website--right.jpg", class: "case-media__image case-media__image--right", alt: "Zahner home page") %>
+    <figure class="case-media case-media-lg case-media--flex case-media--zahner-02">
+      <div class="case-media__block case-media__block--left" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "Zahner Home Page",
+          image_src: "work/zahner/zahner-case-study-02-website--left.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
+      <div class="case-media__block case-media__block--right" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "Zahner Home Page",
+          image_src: "work/zahner/zahner-case-study-02-website--right.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
     </figure>
     <div class="case-text">
       <div class="case-text__numeral">

@@ -31,9 +31,9 @@ itemtype: WebPage
       <p class="case-header__abstract" itemprop="description">Developing a digital platform for MIT's new <%= link_to "Design Lab", "http://design.mit.edu", class: "case-header__link", title: "MIT Design Lab", target: "_blank" %>.</p>
       <div class="case-header__byline">MIT Design Lab</div>
     </div>
-    <figure class="case-header__hero case-header__hero--mit-design-lab" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+    <figure class="case-header__hero case-header__hero--mit-design-lab">
       <div class="case-header__background case-header__background--mit-design-lab">
-        <video class="case-header__video case-header__video--mit-design-lab" preload="auto" loop autoplay>
+        <video class="case-header__video case-header__video--mit-design-lab" preload="auto" mute loop autoplay itemprop="video" itemscope itemtype="https://schema.org/VideoObject" poster="<%= asset_url("assets/images/work/mit-design-lab/mit-design-lab-case-study-01-hero-poster.jpg") %>">
           <meta itemprop="name" content="MIT Design Lab">
           <source src="<%= asset_url("assets/images/work/mit-design-lab/mit-design-lab-case-study-01-hero.mp4") %>" type="video/mp4" itemprop="url">
         </video>
