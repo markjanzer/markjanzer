@@ -69,8 +69,10 @@
   }
 }
 .case-card__text {
-  // width: 91.66667%;
   width: 83.33333%;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 75%;
+  }
 }
 .case-card__byline {
   margin: 0;

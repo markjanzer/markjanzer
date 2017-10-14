@@ -197,14 +197,25 @@
 }
 .case-media__block--left,
 .case-media__block--right {
-  width: 54.16667%;
-  height: 54.16667%;
+  width: 66.66667%;
+  height: 66.66667%;
   box-shadow: 0 0.25rem 2rem rgba(40,38,51,0.125);
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 54.16667%;
+    height: 54.16667%;
+  }
 }
 .case-media__block--right {
   z-index: -1;
-  margin-top: 4.16667%;
-  margin-left: -8.33333%;
+  margin-top: 1em;
+  margin-left: -33.33333%;
+  @media only screen and (min-width: $screen-xs-min) {
+    margin-top: 1.5em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-top: 4.16667%;
+    margin-left: -8.33333%;
+  }
 }
 
 
@@ -293,7 +304,7 @@
   letter-spacing: 0.075em;
   text-transform: uppercase;
   @media only screen and (min-width: $screen-sm-min) {
-    margin: 2.25rem 0 0;
+    margin: 2rem 0 0;
     font-size: 10 / 16 * 1rem;
   }
   @media only screen and (min-width: $screen-md-min) {
@@ -349,10 +360,11 @@
   text-transform: uppercase;
 }
 .case-text__description {
-  margin: 1rem 0 0;
+  margin: 0.75rem 0 0;
   font-size: 16 / 16 * 1rem;
   line-height: 1.5;
   @media only screen and (min-width: $screen-md-min) {
+    margin: 1rem 0 0;
     font-size: 20 / 16 * 1rem;
   }
 }
@@ -371,11 +383,88 @@
   }
 }
 .case-text__scope .case-text__description {
-  margin: 0.75rem 0 0;
+  margin: 0.625rem 0 0;
   font-size: 12 / 16 * 1rem;
   line-height: 2;
   @media only screen and (min-width: $screen-sm-min) {
     // font-size: 16 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    font-size: 16 / 16 * 1rem;
+  }
+}
+
+.case-text__stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -1.5em;
+  padding-bottom: 3em;
+  @media only screen and (min-width: $screen-sm-min) {
+    display: block;
+    width: 16.66667%;
+    margin-top: 0.75em;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    margin-top: 1em;
+  }
+}
+.case-text__stat {
+  width: 50%;
+  margin-bottom: 1.5rem;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: 100%;
+    font-size: 40 / 16 * 1rem;
+  }
+}
+.case-text__stat:first-child {
+  padding-right: 0.5em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding-right: 0.75em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-right: 0;
+  }
+}
+.case-text__stat:last-child {
+  padding-left: 0.5em;
+  @media only screen and (min-width: $screen-xs-min) {
+    padding-left: 0.75em;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-left: 0;
+  }
+}
+.case-text__stat-display {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 40 / 16 * 1rem;
+  font-family: $font-family-1;
+  line-height: 1;
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-bottom: 0.25rem;
+    font-size: 32 / 16 * 1rem;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    margin-bottom: 0.5rem;
+    font-size: 40 / 16 * 1rem;
+  }
+  // @media only screen and (min-width: $screen-sm-min) {
+  //   font-size: 48 / 16 * 1rem;
+  //   margin-bottom: 0.5rem;
+  // }
+  // @media only screen and (min-width: $screen-md-min) {
+  //   font-size: 54 / 16 * 1rem;
+  // }
+  // @media only screen and (min-width: $screen-lg-min) {
+  //   font-size: 68 / 16 * 1rem;
+  // }
+}
+.case-text__stat-caption {
+  font-size: 16 / 16 * 1rem;
+  font-family: $font-family-2;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: 12 / 16 * 1rem;
   }
   @media only screen and (min-width: $screen-md-min) {
     font-size: 16 / 16 * 1rem;

@@ -1,5 +1,5 @@
 ---
-itemtype: WebPage
+itemtype: AboutPage
 ---
 
 <%# Meta Tags %>
@@ -24,33 +24,121 @@ itemtype: WebPage
 <% end %>
 
 <%# Page Content %>
-<header class="page-header">
+<header class="page-header page-header--about">
+  <div class="page-header__hero">
+    <%= image_tag("circle.png", class: "page-header__hero-circle") %>
+    <%= image_tag("polygon.png", class: "page-header__hero-polygon") %>
+  </div>
   <div class="page-header__text">
-    <h1 class="page-header__title" itemprop="name">About</h1>
-    <p class="page-header__abstract" itemprop="description">hire us</p>
-    <div class="page-header__byline">things we make</div>
+    <h1 class="page-header__title page-header__title--large" itemprop="name"><span class="u-hide-xs u-show-sm">We're trained </span><span class="page-header__primary">architects<span class="u-hide-xs u-show-sm">, interface</span> designers<span class="u-hide-xs u-show-sm">, and software</span> developers</span><span class="u-hide-xs u-show-sm"> creating technology for the building industry.</span></h1>
+    <div class="page-header__group page-header__group--digit">
+      <h5 class="page-text__icon">A1</h5>
+    </div>
+    <div class="page-header__group page-header__group--large">
+      <h5 class="page-text__kicker">What we do</h5>
+      <p class="page-text__summary">We help AEC companies understand how software can optimize performance, remove redundancy, streamline processes, and boost their bottom line. Then we build it.</p>
+    </div>
   </div>
 </header>
 
-<section class="page-section">
-
-
-  <h2>Competitive Advantage</h2>
-  <p>Technology has more applications than simply production. Mesmerize your clients with engaging visualizations; pitch projects rooted in data-driven analyses with well articulated maps to back them up.</p>
-
-  <h2>Management</h2>
-  <p>Before you hire your next accountant or HR admin, take a step back and try to understand why you're making this decision. It could be the perfect move as your firm grows, but more often than not, its a deficiency in current processes, something that software—custom or off the shelf—could solve at a much more cost-effective price.
-
-
-
-  </p>
-  <div class="page-section__summary">
-
+<section class="page-section page-section--services">
+  <div class="page-section__text">
+    <h2 class="page-section__title" itemprop="name">Our services.</h2>
+    <div class="page-section__icon">
+      <h5 class="page-text__icon">S1</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">Champion</h3>
+        <p class="page-service__abstract" itemprop="description">We can help you craft a persuasive financial argument for your superiors to get a project funded or off the ground.</p>
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S2</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">Strategy</h3>
+        <p class="page-service__abstract" itemprop="description">Scope, feasibility, budget, market, return— we work with you to determine if and how a project can be realized.</p>
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S3</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">Prototyping</h3>
+        <p class="page-service__abstract" itemprop="description">Before you commit we can help you quickly validate an idea or potential project through static and/or interactive prototypes.</p>
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S4</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">User Experience</h3>
+        <p class="page-service__abstract" itemprop="description">Your project shouldn't require an operating manual; we can help you create an intuitive experience for your users.</p>
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S5</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">User Interface</h3>
+        <p class="page-service__abstract" itemprop="description">Where the magic happens; clean, refined and considered UIs are part of every successful project, and where we excel.</p>
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S6</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">Design</h3>
+        <p class="page-service__abstract" itemprop="description">Experience, performance, accessibility— design is so much more than just great visuals, and we know it inside and out.</p> 
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S7</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">Development</h3>
+        <p class="page-service__abstract" itemprop="description">Going from design to launch is the most exciting part, and often the most complex. Let us guide the process.</p>
+      </div>
+    </div>
+    <div class="page-section__icon u-hide-sm">
+      <h5 class="page-text__icon">S8</h5>
+    </div>
+    <div class="page-service" itemscope itemtype="https://schema.org/Service">
+      <div class="page-service__text page-service__text--large">
+        <h3 class="page-service__title" itemprop="name">Consulting</h3>
+        <p class="page-service__abstract" itemprop="description">Sometimes all you need is a sounding board or a fresh perspective, and we're happy to offer our expertise for your project or idea.</p>
+      </div>
+    </div>
   </div>
-  <div class="">
+</section>
 
-  </div>
-  <div class="">
-
+<section class="page-section page-section--contact">
+  <div class="page-section__text">
+    <h2 class="page-section__title">Get in touch.</h2>
+    <div class="page-section__icon">
+      <h5 class="page-text__icon">C1</h5>
+    </div>
+    <div class="page-section__group page-section__group--large">
+      <h5 class="page-text__kicker">New Business</h5>
+      <p class="page-text__summary">Robert Yuen<br><%= link_to "robert@dixonandmoe.com", "mailto:robert@dixonandmoe.com", class: "page-text__link", title: "Email Robert Yuen" %><br><span class="page-text__link">+1 (617) 834–2828</span></p>
+    </div>
+    <div class="page-section__group page-section__group--small">
+      <h5 class="page-text__kicker">Our Office</h5>
+      <p class="page-text__summary">165 11th Street<br>San Francisco, CA<br>94103</p>
+    </div>
+    <div class="page-section__group page-section__group--small">
+      <h5 class="page-text__kicker">Elsewhere</h5>
+      <p class="page-text__summary">
+        <%= link_to "Twitter", "https://twitter.com/dixonandmoe", class: "page-text__link", title: "Dixon & Moe on Twitter", target: "_blank" %><br>
+        <%= link_to "LinkedIn", "https://www.linkedin.com/company/dixon-&-moe", class: "page-text__link", title: "Dixon & Moe on LinkedIn", target: "_blank" %>
+      </p>
+    </div>
   </div>
 </section>
