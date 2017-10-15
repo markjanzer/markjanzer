@@ -7,7 +7,7 @@ require "sprockets/es6"
 set :base_url,  "https://dixonandmoe.com"
 set :base_name, "Dixon & Moe"
 set :base_email, "hello@dixonandmoe.com"
-set :base_imgix, "https://dixonandmoe-dev.imgix.net/assets/images/"
+set :base_imgix, "https://dixonandmoe-dev.imgix.net"
 set :base_domain, "dixonandmoe.com"
 set :base_twitter, "@dixonandmoe"
 
