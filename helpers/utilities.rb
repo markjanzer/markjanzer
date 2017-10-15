@@ -34,9 +34,9 @@ module Utilities
     image_host = config.base_imgix
     ["320","640","750","960","1280","1600","1920","2240","2560","2880"].each_with_index do |size, index|
       if index != 9
-        src = "#{image_host}#{asset_url(image_src)}?q=75&w=#{size} #{size}w, "
+        src = "#{image_host}#{image_path(image_src)}?q=75&w=#{size} #{size}w, "
       else
-        src = "#{image_host}#{asset_url(image_src)}?q=75&w=#{size} #{size}w"
+        src = "#{image_host}#{image_path(image_src)}?q=75&w=#{size} #{size}w"
       end
         # src = image_host + image_src + "?q=75&w=" + size + " " + size + "w"
       # end
