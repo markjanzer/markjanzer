@@ -1,5 +1,5 @@
-<%# if app.development? %>
+<% if app.development? %>
   <%= image_tag(image_src, class: image_class, itemprop: "url", alt: image_alt) %>
-<%# else %>
-  <!-- <img class="<%= image_class %>" itemprop="url" sizes="100vw" alt="<%= image_alt %>" srcset="<%= image_srcset(image_src) %>" src="https://dixonandmoe.imgix.net/assets/images/<%= image_src %>?q=75&w=320"> -->
-<%# end %>
+<% else %>
+  <img class="<%= image_class %>" itemprop="url" sizes="100vw" alt="<%= image_alt %>" srcset="<%= image_srcset(image_src) %>" src="<%= config.base_imgix %><%= image_src %>?q=75&w=320">
+<% end %>
