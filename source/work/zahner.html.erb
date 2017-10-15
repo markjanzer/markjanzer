@@ -128,8 +128,14 @@ itemtype: WebPage
         </figure>
       </div>
     </div>
-    <figure class="case-media case-media-xl"> 
-      <%= image_tag("work/zahner/zahner-command-center-14.png", class: "", style: "width:100%;") %>
+    <figure class="case-media case-media-lg case-media--zahner-05">
+      <div class="case-media__block" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <%= partial("partials/image", locals: {
+          image_alt: "Networked Content",
+          image_src: "work/zahner/zahner-case-study-05-networked-content.jpg",
+          image_class: "case-media__image"
+        }) %>
+      </div>
     </figure>
     <div class="case-text">
       <div class="case-text__numeral">
