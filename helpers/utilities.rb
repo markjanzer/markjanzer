@@ -29,10 +29,13 @@ module Utilities
     link_to(*args, &block)
   end
 
-  def image_srcset(image_src)
+  def image_srcset(image_src, mobile_2x)
     srcset = ""
     image_host = config.base_imgix
-    ["320","640","750","960","1280","1600","1920","2240","2560","2880"].each_with_index do |size, index|
+    src_array_1x = ["320","640","750","960","1280","1600","1920","2240","2560","2880"]
+    src_array_2x = ["1280","1440","1600","1760","1920","2080","2240","2400","2560","2880"]
+    src_array = mobile_2x ? src_array_2x : src_array_1x
+    src_array.each_with_index do |size, index|
       if index != 9
         src = "#{image_host}#{image_path(image_src)}?q=75&w=#{size} #{size}w, "
       else
