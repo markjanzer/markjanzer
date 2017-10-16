@@ -1,6 +1,8 @@
 <nav class="menu-desktop" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
   <% active_link_to "/", class: "menu-desktop__logo", title: "Dixon & Moe", itemprop: "url" do %>
-    <span class="menu-desktop__logo-icon">&</span>
+    <span class="menu-desktop__logo-icon">
+      <%= partial("partials/icons/ampersand") %>
+    </span>
     <span class="menu-desktop__logo-text" itemprop="name">Dixon & Moe</span>
   <% end %>
   <ul class="menu-desktop__list">

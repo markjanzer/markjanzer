@@ -41,6 +41,9 @@
     padding-left: 0.125em;
   }
 }
+.menu-desktop__logo-icon .icon {
+  fill: $color-black;
+}
 .menu-desktop__logo-icon:before {
   content: "";
   position: absolute;
