@@ -152,15 +152,6 @@
   height: 100%;
   min-width: 100%;
 }
-// .case-header__video--zahner,
-// .case-header__video--imagewall,
-// .case-header__video--monograph,
-// .case-header__video--mit-design-lab {
-//   width: auto;
-//   height: auto;
-//   min-width: 100%;
-//   min-height: 100%;
-// }
 .case-header__video--zahner,
 .case-header__mobile--zahner {
   opacity: 0.5;
@@ -212,46 +203,16 @@
     width: 5em;
   }
 }
-
-// Zahner
-// .case-header__image--zahner-below {
-//   position: relative;
-//   width: 45em;
-//   box-shadow: 0 0 1rem rgba(40,38,51,0.5);
-// }
-// .case-header__image--zahner-above {
-//   position: relative;
-//   float: right;
-//   width: 33em;
-//   margin-top: -25em;
-//   margin-right: 10em;
-// }
-
-// MIT
-// .case-header__image--mit-design-lab-below,
-// .case-header__image--mit-design-lab-above {
-//   position: relative;
-//   width: 41.25em;
-//   box-shadow: 0 0 2rem rgba(40,38,51,0.25);
-// }
-// .case-header__image--mit-design-lab-below {
-//   z-index: 2;
-// }
-// .case-header__image--mit-design-lab-above {
-//   float: right;
-//   margin-top: -46em;
-//   z-index: 1;
-// }
-
-
 .case-header__caption {
   position: relative;
+  display: none;
   width: 100%;
   padding: 1rem 1rem 0;
   @media only screen and (min-width: $screen-xs-min) {
     padding: 1rem 1.5rem 0;
   }
   @media only screen and (min-width: $screen-sm-min) {
+    display: block;
     padding: 1rem 3rem 0;
   }
   @media only screen and (min-width: $screen-lg-min) {

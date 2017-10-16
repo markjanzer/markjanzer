@@ -21,7 +21,7 @@
 <% if local_image.include?("://") %>
 <meta property="og:image" content="<%= local_image %>">
 <% else %>
-<meta property="og:image" content="<%= image_url(local_image) %>">
+<meta property="og:image" content="<%= config.base_url %><%= image_path(local_image) %>">
 <% end %>
 <meta property="fb:app_id" content="">
 <%# Twitter %>
@@ -33,5 +33,5 @@
 <% if local_image.include?("://") %>
 <meta name="twitter:image" content="<%= local_image %>">
 <% else %>
-<meta name="twitter:image" content="<%= image_url(local_image) %>">
+<meta name="twitter:image" content="<%= config.base_url %><%= image_path(local_image) %>">
 <% end %>
