@@ -49,9 +49,6 @@ end
 
 configure :build do
 
-  # Config Variables
-  config[:base_url] = "https://dixonandmoe.com"
-
   # Enable cache buster
   activate :asset_hash, ignore: "assets/fonts/*"
   # , exts: %w(.js .css)
