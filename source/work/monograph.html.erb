@@ -33,10 +33,11 @@ itemtype: WebPage
     </div>
     <figure class="case-header__hero case-header__hero--monograph" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
       <div class="case-header__background case-header__background--monograph">
-        <video class="case-header__video case-header__video--monograph" preload="auto" loop muted autoplay poster="<%= asset_url("assets/images/work/monograph-background.jpg") %>">
+        <video class="case-header__video case-header__video--monograph" preload="auto" loop muted autoplay poster="<%= asset_url("assets/images/work/monograph-case-study-01-hero-cover.jpg") %>">
           <meta itemprop="name" content="The Ministry of Information from Terry Gilliam’s 1985 film Brazil.">
-            <source src="<%= asset_url("assets/images/work/monograph/monograph-background.mp4") %>" type="video/mp4" itemprop="url">
+            <source src="<%= asset_url("assets/images/work/monograph/monograph-case-study-01-hero.mp4") %>" type="video/mp4" itemprop="url">
         </video>
+        <%= image_tag("work/monograph/monograph-case-study-01-hero.gif", class: "case-header__mobile", alt: "MIT Design Lab") %>
       </div>
       <figcaption class="case-header__caption">
         <span itemprop="caption">The Ministry of Information from <a href="https://en.wikipedia.org/wiki/Brazil_(1985_film)" target="_blank" title="Brazil (1985 film) — Wikipedia">Terry Gilliam’s 1985 film Brazil</a></span>
