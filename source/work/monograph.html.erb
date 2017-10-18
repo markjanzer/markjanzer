@@ -18,7 +18,7 @@ itemtype: WebPage
 <% content_for :breadcrumbs do %>
   <%= partial("partials/breadcrumbs", locals: {
     local_paths: [
-      { url: "#{config.base_url}/work/", title: "Ventures", type: "CollectionPage" },
+      { url: "#{config.base_url}/work/", title: "Work", type: "CollectionPage" },
       { url: "#{config.base_url}/work/monograph/", title: "Monograph", type: "WebPage" }
     ]
   }) %>
@@ -102,3 +102,4 @@ itemtype: WebPage
     </article>
   </footer>
 </article>
+<%= partial("partials/contact") %>

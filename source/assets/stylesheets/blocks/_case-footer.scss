@@ -1,5 +1,5 @@
 .case-footer {
-  margin: 0 auto 3em;
+  margin: 0 auto;
   padding: 3em 1em;
   background-color: $color-gray-1;
   @media only screen and (min-width: $screen-xs-min) {
@@ -8,7 +8,7 @@
   @media only screen and (min-width: $screen-sm-min) {
     max-width: calc(100% - 3em);
     padding: 3em 0 4.5em;
-    margin-bottom: 5em;
+    // margin-bottom: 5em;
   }
   @media only screen and (min-width: $screen-md-min) {
     max-width: calc(100% - 6em);
@@ -16,7 +16,7 @@
   }
   @media only screen and (min-width: 64.0625em) {
     margin-top: 2.5em;
-    margin-bottom: 7.5em;
+    // margin-bottom: 7.5em;
   }
   @media only screen and (min-width: $screen-lg-min) {
     max-width: 80em;

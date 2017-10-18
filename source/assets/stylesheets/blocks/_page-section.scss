@@ -271,12 +271,12 @@
     padding: 0 1.5em 5em;
   }
 }
-.page-example:nth-child(3) {
+.page-example:nth-child(5) {
   @media only screen and (min-width: $screen-sm-min) {
     padding-bottom: 0;
   }
 }
-.page-example:nth-child(4) {
+.page-example:nth-child(6) {
   padding-bottom: 0;
 }
 .page-example__icon {
