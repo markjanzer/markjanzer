@@ -1,4 +1,5 @@
 //= require vendor/_fastclick.min
+//= require vendor/_parallax.min
 //= require blocks/_menu
 
 if ('addEventListener' in document) {
@@ -6,3 +7,6 @@ if ('addEventListener' in document) {
       FastClick.attach(document.body);
   }, false);
 }
+
+// var scene = document.getElementById('scene');
+// var parallaxInstance = new Parallax(scene);
