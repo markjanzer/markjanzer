@@ -1,5 +1,5 @@
 //= require vendor/_fastclick.min
-//= require vendor/_parallax.min
+//= require vendor/_picturefill.min
 //= require blocks/_menu
 
 if ('addEventListener' in document) {
