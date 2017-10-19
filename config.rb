@@ -4,10 +4,10 @@ require "sprockets/es6"
 # Global Configuration
 
 # Global variables
-set :base_url,  "https://v4.dixonandmoe.com"
+set :base_url,  "https://dixonandmoe.com"
 set :base_name, "Dixon & Moe"
 set :base_email, "hello@dixonandmoe.com"
-set :base_imgix, "https://dixonandmoe-dev.imgix.net"
+set :base_imgix, "https://dixonandmoe.imgix.net"
 set :base_domain, "dixonandmoe.com"
 set :base_twitter, "@dixonandmoe"
 

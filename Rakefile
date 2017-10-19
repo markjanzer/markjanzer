@@ -3,8 +3,8 @@ require "aws-sdk"
 require "fileutils"
 require "httparty"
 
-website = "v4.dixonandmoe.com"
-bucket = "v4.dixonandmoe.com"
+website = "dixonandmoe.com"
+bucket = "dixonandmoe.com"
 
 desc "build static pages"
 task :build do
