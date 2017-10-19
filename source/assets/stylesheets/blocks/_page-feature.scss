@@ -41,6 +41,13 @@
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+  @media only screen and (min-width: 90.0625em) {
+    min-width: auto;
+    max-width: 100%;
+  }
+}
+.page-feature__video {
+  -webkit-filter: brightness(108.5%);
 }
 .page-feature__image {
   @media only screen and (min-width: $screen-md-min) {
