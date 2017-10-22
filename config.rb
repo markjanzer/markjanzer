@@ -51,7 +51,6 @@ configure :build do
 
   # Enable cache buster
   activate :asset_hash, ignore: "assets/fonts/*"
-  # , exts: %w(.js .css)
 
   # Minify CSS on build
   activate :minify_css
@@ -61,9 +60,6 @@ configure :build do
 
   # GZIP files for even better compression
   activate :gzip, exts: %w(.js .css .html .htm .xml .txt)
-
-  # Use IMGIX for serving images
-  # activate :imgix, host: "dixonandmoe.imgix.net", use_https: true, include_library_param: false
 
   # Ignore DS_Store file
   ignore ".DS_Store"

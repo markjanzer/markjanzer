@@ -41,8 +41,6 @@ module Utilities
       else
         src = "#{image_host}#{image_path(image_src)}?q=75&w=#{size} #{size}w"
       end
-        # src = image_host + image_src + "?q=75&w=" + size + " " + size + "w"
-      # end
       srcset.concat(src)
     end
     return srcset
