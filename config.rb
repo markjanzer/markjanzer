@@ -28,6 +28,9 @@ activate :sprockets do |s|
   s.supported_output_extensions << '.es6'
 end
 
+# CSS Autoprefixer
+activate :autoprefixer
+
 # Pretty URLs
 activate :directory_indexes
 
