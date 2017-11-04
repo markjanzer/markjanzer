@@ -234,7 +234,8 @@
   }
 }
 .page-feature__cta:hover {
-  animation: ctaCircle 2s;
+  animation-name: ctaCircle;
+  animation-duration: 2s;
 }
 @keyframes ctaCircle {
   0%   { transform: rotate3d(0,0,0); }
