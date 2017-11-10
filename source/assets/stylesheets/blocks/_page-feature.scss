@@ -264,7 +264,7 @@
 }
 @keyframes ctaCircleText {
   0%   { transform: rotate3d(0,0,0) }
-  100% { transform: rotate3d(-1,-2,-1,360deg) scale(1); }
+  100% { transform: rotate3d(-1,-2,-1,360deg); }
 }
 .page-feature__cta-arrow {
   position: relative;
