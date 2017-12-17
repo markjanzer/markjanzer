@@ -4,18 +4,54 @@
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// Why html, body
 html,
 body {
-  color: $color-black;
+  // color: $color-black;
+  color: #000;
   font-family: $font-family-2;
-}
-body {
-  width: 100vw;
+  font-size: $gpx8;
+  // line-height: $gpx7;
   overflow-x: hidden;
   @media only screen and (max-resolution: 191.8dpi) {
     -webkit-font-smoothing: antialiased;
   }
+  background-color: $background-color-1;
+
 }
+
+body {
+  @media only screen and (min-width: $screen-xs-min) {
+    width: $gpx0;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+    position: relative;
+    margin: 0 auto;
+  }
+  // @media only screen and (min-width: $screen-lg-min) {
+    // padding: 0 6em;
+  // }
+  // @media only screen and (min-width: $screen-xl-min) {
+  //   padding: 0 calc(50% - 40em) 5em;
+  // }
+}
+
+// body section {
+//   padding: 0 2rem;
+//   // @media only screen and (min-width: $screen-xs-min) {
+//   //   padding: 0 1em;
+//   // }
+//   // @media only screen and (min-width: $screen-sm-min) {
+//   //   padding: 0 4em;
+//   // }
+//   // @media only screen and (min-width: $screen-lg-min) {
+//   //   padding: 0 6em;
+//   // }
+//   // @media only screen and (min-width: $screen-xl-min) {
+//   //   padding: 0 calc(50% - 40em) 5em;
+//   // }
+// }
 
 *,
 *:before,
@@ -40,32 +76,90 @@ body {
   background: rgba(15, 13, 32, 0.99);
 }
 
-.body-header {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
+
+.link {
+  text-decoration: underline;
 }
-.is-scrolled .body-header {
-  @media only screen and (min-width: $screen-sm-min) {
-    position: fixed;
-  }
+
+.shake-custom-1 {
+  @include do-shake(
+        $name: 'shake-custom-1',
+        $h: 0px,
+        $v: 0px,
+        $r: 8deg,
+        $dur: 2000ms,
+        $precision: .03,
+        $opacity: false, 
+        $q: infinite,
+        $t: linear,
+        $delay: 500ms,
+        $chunk: 35%);
 }
-.body-footer {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 1em 1em;
-  @media only screen and (min-width: $screen-xs-min) {
-    padding: 0 1.5em 1.5em;
-  }
-  @media only screen and (min-width: $screen-sm-min) {
-    padding: 0 3em 3em;
-  }
-  // @media only screen and (min-width: $screen-lg-min) {
-  //   padding: 0 3em 3em;
-  // }
-  // @media only screen and (min-width: $screen-xl-min) {
-  //   padding: 0 calc(50% - 40em) 5em;
-  // }
+
+.shake-custom-2 {
+  @include do-shake(
+        $name: 'shake-custom-2',
+        $h: 0px,
+        $v: 0px,
+        $r: 8deg,
+        $dur: 2000ms,
+        $precision: .03,
+        $opacity: false, 
+        $q: infinite,
+        $t: linear,
+        $delay: 500ms,
+        $chunk: 35%);
+}
+
+.shake-custom-3 {
+  @include do-shake(
+        $name: 'shake-custom-3',
+        $h: 0px,
+        $v: 0px,
+        $r: 8deg,
+        $dur: 2000ms,
+        $precision: .03,
+        $opacity: false, 
+        $q: infinite,
+        $t: linear,
+        $delay: 500ms,
+        $chunk: 35%);
+}
+
+.shake-custom-4 {
+  @include do-shake(
+        $name: 'shake-custom-4',
+        $h: 0px,
+        $v: 0px,
+        $r: 8deg,
+        $dur: 2000ms,
+        $precision: .03,
+        $opacity: false, 
+        $q: infinite,
+        $t: linear,
+        $delay: 500ms,
+        $chunk: 35%);
+}
+
+.shake-custom-5 {
+  @include do-shake(
+        $name: 'shake-custom-5',
+        $h: 0px,
+        $v: 0px,
+        $r: 8deg,
+        $dur: 2000ms,
+        $precision: .03,
+        $opacity: false, 
+        $q: infinite,
+        $t: linear,
+        $delay: 500ms,
+        $chunk: 35%);
+}
+
+.hr-top {
+  margin-top: 0;
+}
+
+.hr-bottom {
+  margin-bottom: 0;
 }

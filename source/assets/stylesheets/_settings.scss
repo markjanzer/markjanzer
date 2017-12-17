@@ -39,36 +39,48 @@ $grid-xl-padding: 3rem;     // 48px
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 $color-black: #282633;
 $color-white: #FFFFFF;
-$color-shadow: rgba(15, 13, 32, 0.25);
-$color-gray-1: #f7f8f9;
-$color-gray-2: #eaeaea;
-$color-gray-3: #B0AFB2;
+// $color-shadow: rgba(15, 13, 32, 0.25);
+// $color-gray-1: #f7f8f9;
+// $color-gray-2: #eaeaea;
+// $color-gray-3: #B0AFB2;
+// $color-gray-4: #d4d4d4;
+// $color-gray-5: #4A4A4D;
+$background-color-1: #FFFFFF;
+// $background-color-1: #FFF9FE;
 
-
-$color-gray-4: #d4d4d4;
-$color-gray-5: #4A4A4D;
 
 // Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-$font-family-1: "PxGroteskRegular-Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$font-family-2: "AkkuratRegular-Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$font-family-3: "AkkuratMono-Regular", "Courier New", "Courier", monospace;
+$font-family-1: "Patua One", serif;
+$font-family-2: "Inconsolata", monospace;
+$font-family-3: "Overpass Mono", monospace;
+// $font-family-2: "AkkuratRegular-Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 // Font Sizes
-$font-size-1: 68; // micro
-$font-size-2: 44; // small
-$font-size-3: 36; // base
-$font-size-4: 24; // medium
-$font-size-5: 21; // large
-$font-size-6: 16; // extra large
-$font-size-7: 12; // super large
+$font-size-1: 68px; // micro
+$font-size-2: 44px; // small
+$font-size-3: 36px; // base
+$font-size-4: 24px; // medium
+$font-size-5: 21px; // large
+$font-size-6: 16px; // extra large
+$font-size-7: 12px; // super large
 $font-size-8: 68px; // ultra large
 $font-size-9: 90px; // mega large
+
+// $font-size-1: 68; // micro
+// $font-size-2: 44; // small
+// $font-size-3: 36; // base
+// $font-size-4: 24; // medium
+// $font-size-5: 21; // large
+// $font-size-6: 16; // extra large
+// $font-size-7: 12; // super large
+// $font-size-8: 68px; // ultra large
+// $font-size-9: 90px; // mega large
 
 
 // Transitions
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// $transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
 $transition: cubic-bezier(0.16, 0.68, 0.43, 0.99);
 
 
@@ -81,5 +93,93 @@ $z3: 3;  // buttons and button menus
 $z2: 2;  // layout overlays
 $z1: 1;  // everything else
 $z0: -1; //
+
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+// @function strip-unit($number) {
+//   @if type-of($number) == 'number' and not unitless($number) {
+//     @return $number / ($number * 0 + 1);
+//   }
+
+//   @return $number;
+// }
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @return $value;
+}
+
+// Golden Pixels
+// Pixels
+$gpx0: calc(100vw);
+$gpx1: calc(100vw / 1.618);
+$gpx2: calc(100vw / (1.618 * 1.618));
+$gpx3: calc(100vw / (1.618 * 1.618 * 1.618));
+$gpx4: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618));
+$gpx5: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx6: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx7: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx8: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx9: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx10: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx11: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx12: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+$gpx13: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618));
+
+// Pixels => Number for further math
+// $gnum0: $gpx0 + 0px;
+// $gnum1: $gpx1 + 0px;
+// $gnum2: $gpx2 + 0px;
+// $gnum3: $gpx3 + 0px;
+// $gnum4: $gpx4 + 0px;
+// $gnum5: $gpx5 + 0px;
+// $gnum6: $gpx6 + 0px;
+// $gnum7: $gpx7 + 0px;
+// $gnum8: $gpx8 + 0px;
+// $gnum9: $gpx9 + 0px;
+// $gnum0: calc(100vw + 0px);
+// $gnum1: calc(100vw / 1.618 + 0px);
+// $gnum2: calc(100vw / (1.618 * 1.618) + 0px);
+// $gnum3: calc(100vw / (1.618 * 1.618 * 1.618) + 0px);
+// $gnum4: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618) + 0px);
+// $gnum5: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618) + 0px);
+// $gnum6: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618) + 0px);
+// $gnum7: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618) + 0px);
+// $gnum8: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618) + 0px);
+// $gnum9: calc(100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618) + 0px);
+
+// // These remainders are trash because they are only remainders in comparison to to 100vw.
+// $gpx0-remainder: 0;
+// $gpx1-remainder: calc(100vw - (100vw / 1.618));
+// $gpx2-remainder: calc(100vw - (100vw / (1.618 * 1.618)));
+// $gpx3-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618)));
+// $gpx4-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618)));
+// $gpx5-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618)));
+// $gpx6-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618)));
+// $gpx7-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618)));
+// $gpx8-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618)));
+// $gpx9-remainder: calc(100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618)));
+
+// $gpx0-remainder-half: 0;
+// $gpx1-remainder-half: calc((100vw - (100vw / 1.618)) / 2);
+// $gpx2-remainder-half: calc((100vw - (100vw / (1.618 * 1.618))) / 2);
+// $gpx3-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618))) / 2);
+// $gpx4-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618))) / 2);
+// $gpx5-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618))) / 2);
+// $gpx6-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618))) / 2);
+// $gpx7-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618))) / 2);
+// $gpx8-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618))) / 2);
+// $gpx9-remainder-half: calc((100vw - (100vw / (1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618 * 1.618))) / 2);
+
+
 
 

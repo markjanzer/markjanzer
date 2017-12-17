@@ -1,0 +1,97 @@
+.jobs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.job {
+  cursor: pointer;
+  height: $gpx4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.job-body {
+  position: relative;
+  z-index: 1;
+  background-color: $background-color-1;
+  // To make up for lack of border
+  padding: 0.25rem;
+}
+
+.job.is-active .job-body {
+  z-index: 3;
+  border: 0.25rem solid black;
+  padding: 0rem;
+}
+
+.job-title {
+  font-family: $font-family-1;
+  // font-size: $font-size-2;
+  // font-size: $gpx6;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.job-title span {
+  pointer-events: none;
+  // padding: 0.25rem;
+}
+
+.job-description {
+  display: none;
+  opacity: 0;
+  padding: 1em;
+  transition: opacity 250ms ease-in;
+}
+
+.job.is-active .job-description {
+  display: block;
+  opacity: 1;
+}
+
+.job-background {
+  position: fixed;
+  bottom: -12%;
+  right: 10%;
+  width: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 500ms ease-in;
+}
+
+.job.is-active .job-background {
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  width: 100%;
+}
+
+.ampersand {
+  // font-size: $font-size-3;
+  // height: $gpx1;
+}
+
+.scaling-svg-container {
+  position: relative; 
+  height: 0; 
+  // width: $gpx4; 
+  width: $gpx6; 
+  padding: 0;
+  padding-bottom: 100%; 
+  /* override this inline for aspect ratio other than square */
+}
+.scaling-svg {
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  left: 0; 
+  top: 0;
+}
+
+.jobs-border {
+  width: $gpx2;
+  margin: inherit auto;
+}

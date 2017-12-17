@@ -5,14 +5,10 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 @import "blocks/body";
-@import "blocks/menu";
 @import "blocks/fonts";
+
+@import "blocks/header";
+@import "blocks/projects";
+@import "blocks/jobs";
+@import "blocks/bio";
 @import "blocks/footer";
-@import "blocks/utilities";
-@import "blocks/page-header";
-@import "blocks/page-feature";
-@import "blocks/page-section";
-@import "blocks/page-case";
-@import "blocks/case-header";
-@import "blocks/case-section";
-@import "blocks/case-footer";

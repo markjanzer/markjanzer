@@ -1,0 +1,21 @@
+.bio {
+  width: $gpx1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: $gpx9;
+  line-height: $gpx8;
+  height: $gpx4;
+}
+
+.bio-prompt {
+  // display: inline-block;
+  width: calc(100% - 61.8%);
+}
+
+.bio-influences {
+  // display: inline-block;
+  width: 61.8%;
+  margin: 1rem;
+}
