@@ -1,16 +1,8 @@
 .projects {
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
-  // flex-wrap: wrap;
-  // height: $gpx3;
-  // width: $gpx2;
   position: relative;
-  // margin: 0 auto;
 }
 
 .project {
-  // width: 33.33%;
   // height: $gpx3;
   min-height: $gpx4;
   display: flex;
@@ -21,7 +13,7 @@
 }
 
 .project.is-active {
-  width: $gpx1;
+  // width: $gpx1;
 }
 
 .project-body {
@@ -54,6 +46,7 @@
   flex-wrap: wrap;
   width: $gpx2;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .project-title__line {
@@ -62,6 +55,10 @@
   position: relative;
   display: flex;
   min-width: 0px;
+}
+
+.project.is-active .project-title {
+  cursor: auto;
 }
 
 .project.is-active .project-title__line {
@@ -83,7 +80,7 @@
 
 .hidden {
   opacity: 0;
-  transition: 1000ms all;
+  // transition: 1000ms all;
   max-width: 0px;
   min-width: 0px;
 }

@@ -2,6 +2,19 @@
 itemtype: WebPage
 ---
 
+<%# Meta Tags %>
+<%# content_for :meta do %>
+  <%# partial("partials/head/meta_tags", locals: {
+    local_path:        "/",
+    local_type:        "website",
+    local_card:        "summary_large_image",
+    local_image:       "dixon-and-moe-hero.jpg",
+    local_title:       "Dixon & Moe — Strategy, Design, Development",
+    local_description: "We're a San Francisco based software company helping AEC firms understand, prototype and deploy custom technologies."
+  }) %>
+<%# end %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <header class="header">
   <span class="header-text">Mark Janzer</span>
 </header>
@@ -158,15 +171,17 @@ itemtype: WebPage
   <div class="job shake-trigger">
     <div class="job-body">
       <div class="job-title">
-        <span class="ampersand scaling-svg-container shake-custom-1"><%= partial "partials/icons/ampersand.html.erb" %></span>
+        <span class="scaling-svg-container shake-custom-1"><%= partial "partials/icons/ampersand.html.erb" %></span>
       </div>
       <div class="job-description">
-        Currently lead engineer at Dixon and Moe.
+        I am currently lead engineer at Dixon and Moe.
         <br><br>
         As trained architects, interface designers and software developers, <a href="#">Dixon & Moe</a> believe technology can be a motive force in the Architecture, Engineering, Construction and Real Estate industries.</div>
     </div>
     <div class="job-background">
-      <%= partial "partials/icons/massive_ampersand.html.erb" %>
+      <div class="big-ampersand">
+        <%= partial "partials/icons/ampersand.html.erb" %>
+      </div>
     </div>
   </div>
 </section>
@@ -175,7 +190,6 @@ itemtype: WebPage
 
 <section class="bio">
 
-  <!-- <div class="test-1">My name is Mark Janzer</div> -->
   <div class="bio-prompt">A Few Influences:</div>
   <div class="bio-influences">
     <a href="#">Anthology of Rap</a>
@@ -195,11 +209,11 @@ itemtype: WebPage
 </section>
 
 <footer class="footer">
-  <a class="footer-icon link" href="mailto:mark@dixonandmoe.com">
-    <%= partial "partials/icons/email.html.erb" %>
-  </a>
   <a class="footer-icon link" href="https://github.com/markjanzer/">
     <%= partial "partials/icons/github.html.erb" %>
+  </a>
+  <a class="footer-icon link" href="mailto:mark@dixonandmoe.com">
+    <%= partial "partials/icons/email.html.erb" %>
   </a>
   <a class="footer-icon link" href="https://www.linkedin.com/in/markjanzer">
     <%= partial "partials/icons/linkedin.html.erb" %>
