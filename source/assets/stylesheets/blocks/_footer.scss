@@ -3,11 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-icon {
   margin: 0 1.5rem;
-  height: $gpx8;
-  width: $gpx8;
+
+  height: $gpx7;
+  width: $gpx7;
+  @media only screen and (min-width: $screen-sm-min) {
+    height: $gpx8;
+    width: $gpx8;
+  }
 }

@@ -3,12 +3,17 @@
 }
 
 .job {
-  min-height: $gpx4;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: $gpx2;
   margin: auto;
+
+  width: $gpx0;
+  min-height: $gpx2;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+    min-height: $gpx3;
+  }
 }
 
 .job.is-active {
@@ -34,18 +39,21 @@
 
 .job-title {
   font-family: $font-family-1;
-  // font-size: $gpx4;
-  font-size: $gpx6;
-  // position: relative;
-  min-height: $gpx4;
-  // margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: $gpx2;
   margin: 0 auto;
   cursor: pointer;
+
+  width: $gpx0;
+  font-size: $gpx4;
+  min-height: $gpx2; 
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+    font-size: $gpx5;
+    min-height: $gpx3;
+  }
 }
 
 .job-title span {
@@ -54,6 +62,11 @@
 
 .job.is-active .job-title {
   cursor: auto;
+
+  min-height: $gpx3; 
+  @media only screen and (min-width: $screen-sm-min) {
+    min-height: $gpx4;
+  }
 }
 
 .job-description {
@@ -90,11 +103,19 @@
 }
 
 .scaling-svg-container {
-  width: $gpx6; 
-  height: $gpx6;
+  width: $gpx4; 
+  height: $gpx4;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx5; 
+    height: $gpx5;
+  }
 }
 
 .jobs-border {
-  width: $gpx2;
   margin: inherit auto;
+
+  width: $gpx0;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+  }
 }

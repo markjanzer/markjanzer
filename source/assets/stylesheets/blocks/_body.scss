@@ -7,17 +7,18 @@
 // Why html, body
 html,
 body {
-  // color: $color-black;
   color: #000;
   font-family: $font-family-2;
-  font-size: $gpx8;
-  // line-height: $gpx7;
   overflow-x: hidden;
   @media only screen and (max-resolution: 191.8dpi) {
     -webkit-font-smoothing: antialiased;
   }
   background-color: $background-color-1;
 
+  font-size: $gpx6;
+  @media only screen and (min-width: $screen-sm-min) {
+    font-size: $gpx7;
+  }
 }
 
 body {

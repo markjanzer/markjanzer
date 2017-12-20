@@ -1,21 +1,26 @@
 .bio {
-  width: $gpx1;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  font-size: $gpx9;
-  line-height: $gpx8;
-  height: $gpx4;
+
+  width: $gpx0;
+  font-size: $gpx8;
+  line-height: $gpx7;
+  height: $gpx2;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+    font-size: $gpx9;
+    line-height: $gpx8;
+    height: $gpx3;
+  }
 }
 
 .bio-prompt {
-  // display: inline-block;
   width: calc(100% - 61.8%);
 }
 
 .bio-influences {
-  // display: inline-block;
   width: 61.8%;
   margin: 1rem;
 }

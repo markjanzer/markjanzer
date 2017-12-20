@@ -1,15 +1,41 @@
+
+  // padding-left: $page-xs-padding;
+  // padding-right: $page-xs-padding;
+  // @media only screen and (min-width: $screen-sm-min) {
+  //   padding-left: $page-sm-padding;
+  //   padding-right: $page-sm-padding;
+  // }
+  // @media only screen and (min-width: $screen-md-min) {
+  //   padding-left: $page-md-padding;
+  //   padding-right: $page-md-padding;
+  // }
+  // @media only screen and (min-width: $screen-lg-min) {
+  //   padding-top: 2rem;
+  //   padding-left: $page-lg-padding;
+  //   padding-right: $page-lg-padding;
+  //    padding-bottom: 2rem;
+  // }
+  // @media only screen and (min-width: $screen-xl-min) {
+  //   padding-left: $page-xl-padding;
+  //   padding-right: $page-xl-padding;
+  // }
+
 .projects {
   position: relative;
 }
 
 .project {
-  // height: $gpx3;
-  min-height: $gpx4;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: $gpx2;
   margin: auto;
+
+  width: $gpx0;
+  min-height: $gpx2;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+    min-height: $gpx3;
+  }
 }
 
 .project.is-active {
@@ -35,18 +61,21 @@
 
 .project-title {
   font-family: $font-family-1;
-  // font-size: $gpx4;
-  font-size: $gpx6;
-  // position: relative;
-  min-height: $gpx4;
-  // margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: $gpx2;
   margin: 0 auto;
   cursor: pointer;
+
+  width: $gpx0;
+  font-size: $gpx4;
+  min-height: $gpx2;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+    font-size: $gpx5;
+    min-height: $gpx3;
+  }
 }
 
 .project-title__line {
@@ -80,7 +109,6 @@
 
 .hidden {
   opacity: 0;
-  // transition: 1000ms all;
   max-width: 0px;
   min-width: 0px;
 }
@@ -92,8 +120,10 @@
 
 .project.is-active .hidden {
   opacity: 1;
-  // change this
-  max-width: $gpx6;
+  max-width: $gpx4;
+  @media only screen and (min-width: $screen-sm-min) {
+    max-width: $gpx5;
+  }
 }
 
 .project.is-active .abbreviation {
@@ -106,12 +136,19 @@
 }
 
 .project.is-active .space.hidden {
-  min-width: $gpx7;
+  min-width: $gpx5;
+  @media only screen and (min-width: $screen-sm-min) {
+    min-width: $gpx6;
+  }
 }
 
 
-.project.is-active .negative-margin {
-  margin: 0 -0.1rem;
+.small-negative-margin {
+  margin: 0 -0.2rem;
+}
+
+.negative-margin {
+  margin: 0 -0.4rem;
 }
 
 .project.is-active .line-break {
@@ -173,15 +210,23 @@
 }
 
 .project-image {
-  width: 100vw;
+  // width: 100vw;
+  min-height: 100vh;
+  // max-width: 300vw;
 }
 
 .project-divider {
-  width: $gpx3;
   margin: 0 auto;
+  width: $gpx1;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx2;
+  }
 }
 
 .projects-border {
-  width: $gpx2;
   margin: 0 auto;
+  width: $gpx0;
+  @media only screen and (min-width: $screen-sm-min) {
+    width: $gpx1;
+  }
 }
