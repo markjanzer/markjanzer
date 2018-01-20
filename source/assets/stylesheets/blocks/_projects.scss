@@ -161,6 +161,7 @@
   opacity: 0;
   padding: 1em;
   transition: opacity 250ms ease-in;
+  line-height: 1.25;
 }
 
 .project.is-active .project-description {
@@ -177,16 +178,18 @@
   opacity: 0;
   z-index: -1;
   transition: opacity 500ms ease-in;
+  background-size: cover;
+  background-position: center center;
 }
 
 .project.is-active .project-background {
   z-index: 2;
   display: block;
   opacity: 1;
+  min-width: 100%;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
-
 .project.tessarray .project-background {
   background-color: #33235C;
 }
@@ -196,6 +199,14 @@
 .project.rap .project-background {
   background-color: #D9536B;
 }
+.project-image {
+  // width: 100vw;
+  width: 100%;
+  // min-width: 100%;
+  min-height: 100%;
+}
+
+
 .box {
   background-color: #eaeaea;
 }
@@ -207,12 +218,6 @@
 }
 .box.is-loaded img {
   opacity: 1;
-}
-
-.project-image {
-  // width: 100vw;
-  min-height: 100vh;
-  // max-width: 300vw;
 }
 
 .project-divider {

@@ -9,18 +9,50 @@ if ('addEventListener' in document) {
   }, false);
 }
 
-// How does this work without parallax?
-// var scene = document.getElementById('scene');
-// var parallaxInstance = new Parallax(scene);
-
-var tessarrayExample = new Tessarray("#container", ".box", {
+// Tessarray Example
+var tessarrayExample = new Tessarray('#container', '.box', {
   containerTransition: {
     duration: 500,
     timingFunction: "cubic-bezier(0.320, 1.385, 0.730, -0.470)",
-    delay: 0
-  }
+    delay: 0,
+  },
+  resize: false,
+  flickr: getHeightAndSpacing()
 });
 
+function getHeightAndSpacing() {
+  var targetRowHeight, boxSpacing;
+  var viewWidth = $("#container").clientWidth;
+  if (viewWidth <= 640) {
+    targetRowHeight = viewWidth * 0.30;
+    boxSpacing = 8;
+  } else if (viewWidth <= 768) {
+    targetRowHeight = viewWidth * 0.27;
+    boxSpacing = 12;
+  } else {
+    targetRowHeight = viewWidth * 0.20;
+    boxSpacing = 14;
+  }
+  return {
+    targetRowHeight: targetRowHeight,
+    boxSpacing: boxSpacing
+  };
+};
+
+var responsiveResize = function() {
+  var heightAndSpacing = getHeightAndSpacing();
+  if (heightAndSpacing.targetRowHeight !== tessarrayExample.options.flickr.targetRowHeight) {
+    tessarrayExample.options.flickr.targetRowHeight = heightAndSpacing.targetRowHeight;
+    if (heightAndSpacing.boxSpacing !== tessarrayExample.options.flickr.boxSpacing) {
+      tessarrayExample.options.flickr.boxSpacing = heightAndSpacing.boxSpacing;
+    }
+    tessarrayExample.render();
+  }
+};
+
+window.addEventListener("resize", tessarrayExample.debounce(responsiveResize, 100));
+
+// Util
 const bindListenerToDocument = (event, elementClass, callback) => {
   if (Array.isArray(elementClass)) {
     document.addEventListener(event, (event) => {
@@ -37,7 +69,7 @@ const bindListenerToDocument = (event, elementClass, callback) => {
   }
 }
 
-const $ = (selector) => {
+function $(selector) {
   if (selector.charAt(0) === "#") {
     return document.querySelector(selector);
   } else {
@@ -45,6 +77,7 @@ const $ = (selector) => {
   }
 }
 
+// Project opening and closing
 bindListenerToDocument("click", "project-title", (event) => openProject(event));
 document.addEventListener("click", event => {
   if ($(".project.is-active").length > 0) {
@@ -120,11 +153,3 @@ function closeAllJobs(event) {
     }, 1000)
   });
 }
-
-// Letter Tessarray
-// function open() {
-//   Array.from($(".hide")).forEach(hideElement => {
-//     hideElement.style.position = "relative";
-//   });
-// }
-
