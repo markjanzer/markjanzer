@@ -41,7 +41,6 @@ var tessarrayExample = new Tessarray('#container', '.box', {
 });
 
 var responsiveResize = function() {
-  console.log("responsiveResize");
   var heightAndSpacing = getHeightAndSpacing();
   if (heightAndSpacing.targetRowHeight !== tessarrayExample.options.flickr.targetRowHeight) {
     tessarrayExample.options.flickr.targetRowHeight = heightAndSpacing.targetRowHeight;
@@ -85,12 +84,16 @@ document.addEventListener("click", event => {
   if ($(".project.is-active").length > 0) {
     if (!event.target.closest(".project-body")) {
       closeAllProjects();
-      console.log("closeAllProjects");
     }
   }
 })
 
 function openProject(event) {
+  // Don't proceed if project is already open
+  var projectDiv = event.target.closest(".project");
+  if (projectDiv.classList.contains("is-active")) return;
+
+  console.log("openProject");
   closeAllProjects();
   var projectTitle = event.target;
   var project = projectTitle.closest(".project");
@@ -105,6 +108,7 @@ function openProject(event) {
 }
 
 function closeAllProjects(event) {
+  // console.log("closeAllProjects");
   var openProjects = $(".project.is-active");
   Array.from(openProjects).forEach(project => {
     project.classList.remove("is-active");
@@ -136,6 +140,10 @@ document.addEventListener("click", event => {
 });
 
 function openJob(event) {
+  var jobDiv = event.target.closest(".job");
+  console.log(jobDiv.classList.contains("is-active"));
+  if (jobDiv.classList.contains("is-active")) return;
+
   console.log("openJob");
   closeAllJobs();
   var jobTitle = event.target;
