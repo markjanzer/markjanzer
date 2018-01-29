@@ -10,6 +10,26 @@ if ('addEventListener' in document) {
 }
 
 // Tessarray Example
+
+function getHeightAndSpacing() {
+  var targetRowHeight, boxSpacing;
+  var viewWidth = $("#container").clientWidth;
+  if (viewWidth <= 640) {
+    targetRowHeight = viewWidth * 0.40;
+    boxSpacing = 8;
+  } else if (viewWidth <= 768) {
+    targetRowHeight = viewWidth * 0.30;
+    boxSpacing = 12;
+  } else {
+    targetRowHeight = viewWidth * 0.23;
+    boxSpacing = 14;
+  }
+  return {
+    targetRowHeight: targetRowHeight,
+    boxSpacing: boxSpacing
+  };
+};
+
 var tessarrayExample = new Tessarray('#container', '.box', {
   containerTransition: {
     duration: 500,
@@ -20,26 +40,8 @@ var tessarrayExample = new Tessarray('#container', '.box', {
   flickr: getHeightAndSpacing()
 });
 
-function getHeightAndSpacing() {
-  var targetRowHeight, boxSpacing;
-  var viewWidth = $("#container").clientWidth;
-  if (viewWidth <= 640) {
-    targetRowHeight = viewWidth * 0.30;
-    boxSpacing = 8;
-  } else if (viewWidth <= 768) {
-    targetRowHeight = viewWidth * 0.27;
-    boxSpacing = 12;
-  } else {
-    targetRowHeight = viewWidth * 0.20;
-    boxSpacing = 14;
-  }
-  return {
-    targetRowHeight: targetRowHeight,
-    boxSpacing: boxSpacing
-  };
-};
-
 var responsiveResize = function() {
+  console.log("responsiveResize");
   var heightAndSpacing = getHeightAndSpacing();
   if (heightAndSpacing.targetRowHeight !== tessarrayExample.options.flickr.targetRowHeight) {
     tessarrayExample.options.flickr.targetRowHeight = heightAndSpacing.targetRowHeight;
@@ -89,7 +91,6 @@ document.addEventListener("click", event => {
 })
 
 function openProject(event) {
-  console.log("openProject");
   closeAllProjects();
   var projectTitle = event.target;
   var project = projectTitle.closest(".project");
@@ -97,8 +98,10 @@ function openProject(event) {
   projectBackground.style.zIndex = "2";
   project.classList.add("is-active");
   project.classList.remove("shake-trigger");
-  tessarrayExample.render();
-  // open();
+
+  if (projectTitle.closest(".project").classList.contains("tessarray")) {
+    responsiveResize();
+  }
 }
 
 function closeAllProjects(event) {

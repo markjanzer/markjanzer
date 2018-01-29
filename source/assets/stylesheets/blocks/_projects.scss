@@ -150,6 +150,9 @@
 .negative-margin {
   margin: 0 -0.4rem;
 }
+.is-active .negative-margin {
+  margin: 0;
+}
 
 .project.is-active .line-break {
   flex-grow: 1;
@@ -198,12 +201,6 @@
 }
 .project.rap .project-background {
   background-color: #D9536B;
-}
-.project-image {
-  // width: 100vw;
-  width: 100%;
-  // min-width: 100%;
-  min-height: 100%;
 }
 
 
