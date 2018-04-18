@@ -86,7 +86,8 @@ document.addEventListener("click", event => {
       closeAllProjects();
     }
   }
-})
+});
+bindListenerToDocument("click", "close-project", (event) => closeAllProjects() );
 
 function openProject(event) {
   // Don't proceed if project is already open
@@ -138,13 +139,13 @@ document.addEventListener("click", event => {
     }
   }
 });
+bindListenerToDocument("click", "close-job", (event) => closeAllJobs() );
 
 function openJob(event) {
+  // Don't proceed if job is already open
   var jobDiv = event.target.closest(".job");
-  console.log(jobDiv.classList.contains("is-active"));
   if (jobDiv.classList.contains("is-active")) return;
 
-  console.log("openJob");
   closeAllJobs();
   var jobTitle = event.target;
   var job = jobTitle.closest(".job");
@@ -153,7 +154,7 @@ function openJob(event) {
   job.classList.add("is-active");
   job.classList.remove("shake-trigger");
 }
-function closeAllJobs(event) {
+function closeAllJobs() {
   var openJobs = $(".job.is-active");
   Array.from(openJobs).forEach(job => {
     job.classList.remove("is-active");
