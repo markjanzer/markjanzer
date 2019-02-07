@@ -9,16 +9,6 @@
 
     <%# CSS Assets %>
     <%= stylesheet_link_tag :application %>
-
-    <%# Favicons %>
-    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="favicon.ico">
-    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
-
-    <%# Touch Icons %>
-    <%= partial("partials/head/touch_icons") %>
-
-    <%# Knowledge Graph %>
-    <%= partial("partials/head/knowledge_graph") %>
   </head>
 
   <body class="<%= page_classes %>" itemscope itemtype="https://schema.org/<%= current_page.data.itemtype %>">
