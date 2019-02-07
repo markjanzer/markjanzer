@@ -8,4 +8,5 @@ gem "sprockets-es6"
 gem "middleman-livereload"
 gem "middleman-autoprefixer"
 gem "sprockets", ">= 3.7.2"
+gem "ffi", ">= 1.9.24"
 
