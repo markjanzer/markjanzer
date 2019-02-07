@@ -22,7 +22,7 @@ $trigger: 'shake-trigger' !default;
 %running  { animation-play-state: running; }
 
 @function apply-random($input) {
-  @return if($input != 0, random($input) - $input/2, 0);
+  @return if($input != 0px, random($input) - $input/2, 0);
 }
 
 /// Do The Shake
