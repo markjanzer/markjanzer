@@ -7,5 +7,5 @@ gem "middleman-sprockets", "~> 4"
 gem "sprockets-es6" 
 gem "middleman-livereload"
 gem "middleman-autoprefixer"
-# gem "sprockets", ">= 3.7.2"
+gem "sprockets", ">= 3.7.2"
 
