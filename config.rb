@@ -15,6 +15,7 @@ set :fonts_dir,  "assets/fonts"
 set :images_dir, "assets/images"
 
 # Use Sprockets for asset pipeline
+require "sprockets/es6"
 activate :sprockets do |s|
   s.supported_output_extensions << '.es6'
 end
@@ -47,13 +48,13 @@ configure :build do
   activate :asset_hash, ignore: "assets/fonts/*"
 
   # Minify CSS on build
-  activate :minify_css
+  # activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
 
   # GZIP files for even better compression
-  activate :gzip, exts: %w(.js .css .html .htm .xml .txt)
+  # activate :gzip, exts: %w(.js .css .html .htm .xml .txt)
 
   # Ignore DS_Store file
   ignore ".DS_Store"
