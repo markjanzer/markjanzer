@@ -43,6 +43,7 @@ end
 # Production Configuration
 
 configure :build do
+  config[:base_url] = "https://likeyboard.io"
 
   # Enable cache buster
   activate :asset_hash, ignore: "assets/fonts/*"
