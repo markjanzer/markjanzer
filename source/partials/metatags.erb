@@ -1,0 +1,23 @@
+<!-- title -->
+<!-- url -->
+<!-- description -->
+<!-- image -->
+
+<!-- Primary Meta Tags -->
+<title><%= defined?(title) ? title : 'Mark Janzer' %></title>
+<meta name="title" content="<%= defined?(title) ? title : 'Mark Janzer' %>">
+<meta name="description" content="<%= defined?(description) ? description : 'Portfolio for Mark Janzer.' %>">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="<%= defined?(url) ? url : config.base_url + current_page.url %>">
+<meta property="og:title" content="<%= defined?(title) ? title : 'Mark Janzer' %>">
+<meta property="og:description" content="<%= defined?(description) ? description : 'Portfolio for Mark Janzer.' %>">
+<meta property="og:image" content="<%= defined?(image) ? image : '/images/meta.png' %>">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="<%= defined?(url) ? url : config.base_url + current_page.url %>">
+<meta property="twitter:title" content="<%= defined?(title) ? title : 'Mark Janzer' %>">
+<meta property="twitter:description" content="<%= defined?(description) ? description : 'Portfolio for Mark Janzer.' %>">
+<meta property="twitter:image" content="<%= defined?(image) ? image : '/images/meta.png' %>">

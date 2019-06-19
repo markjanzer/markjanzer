@@ -1,10 +1,13 @@
 <!doctype html>
 <html>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Mark Janzer · Portfolio</title>
-    <meta name="description" content="Web developer based in SF with a passion for music, teaching, and learning.">
-    <meta name="keywords" content="Web Developer,Web Design,Keyboard,Rap,Portfolio">
+    <%= partial "partials/metatags" %>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
 
     <%# CSS Assets %>
     <%= stylesheet_link_tag :application %>
